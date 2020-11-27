@@ -457,7 +457,7 @@ input[type="email"] {
   padding: 10px;
  }
  .rates {
- 
+ float: left;
   height: 46px;
   padding: 0 10px;
 }
