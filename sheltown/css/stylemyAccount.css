@@ -417,7 +417,6 @@ input[type="email"] {
   border-radius: 0px;
   margin-bottom: 20px;
   margin-top: 2px;
-
   box-sizing: border-box;
   color: #2c3e50;
   background-color: #eceff1;
@@ -458,7 +457,7 @@ input[type="email"] {
   padding: 10px;
  }
  .rates {
-  float: left;
+ 
   height: 46px;
   padding: 0 10px;
 }
@@ -481,6 +480,11 @@ input[type="email"] {
 .rates > input:checked ~ label {
   color: #ffc700;
 }
+.assistance {
+  margin: 10px 0px;
+  padding: 20px 10px;
+}
+
 
 /*--------------------------------right side end------------------------------------------------*/
 footer {
