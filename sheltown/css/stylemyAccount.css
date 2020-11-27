@@ -457,6 +457,30 @@ input[type="email"] {
   height: 250px !important;
   padding: 10px;
  }
+ .rates {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rates:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rates:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rates:not(:checked) > label:before {
+  content: "★ ";
+}
+.rates > input:checked ~ label {
+  color: #ffc700;
+}
 
 /*--------------------------------right side end------------------------------------------------*/
 footer {
