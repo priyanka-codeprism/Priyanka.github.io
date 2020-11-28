@@ -40,6 +40,14 @@ body {
 .cards img{
 	height: 200px;
 }
+.btn.btn-search{
+  background:#2ECAB6!important; 
+  border-radius: 0;
+  color: white;
+}
+/*input[type="search"]{
+	background: #eceff1;
+}*/
 
 @media (max-width: 620px) {
 	.a1{
