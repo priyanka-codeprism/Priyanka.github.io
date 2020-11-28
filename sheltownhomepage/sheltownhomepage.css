@@ -9,11 +9,14 @@ body {
 }
 .navbar-brand{
 	font-size: 20px;
+	margin-top: 5px!important;
+	margin-bottom: -10px!important
 }
 .navbar-brand p{
 	font-size: 14px;
 	margin-top: -10px;
 }
+
 .navbar ul li a,.nav-item a,.navbar-brand{
 	color: #2ECAB6!important;
 }
