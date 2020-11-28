@@ -45,9 +45,6 @@ body {
   border-radius: 0;
   color: white;
 }
-/*input[type="search"]{
-	background: #eceff1;
-}*/
 .fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
 	color: #2ecab6;
 }
