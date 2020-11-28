@@ -37,6 +37,9 @@ body {
 	color: #2ECAB6;
 	margin-right: 10px;
 }
+.tick p{
+	margin-bottom: 5px;
+}
 .cards img{
 	height: 200px;
 }
