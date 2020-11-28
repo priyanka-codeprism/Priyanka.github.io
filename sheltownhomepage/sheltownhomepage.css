@@ -33,9 +33,13 @@ body {
     background: white;
     /*overflow: visible;*/
 }
-.fa-check,.fa-map-marker-alt{
+.fa-check{
 	color: #2ECAB6;
 	margin-right: 10px;
+}
+.fa-map-marker-alt{
+	color: #2ECAB6;
+	margin-right: 5px;
 }
 .tick p{
 	margin-bottom: 5px;
@@ -50,6 +54,7 @@ body {
 }
 .fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
 	color: #2ecab6;
+	font-size: 30px;
 }
 footer {
   color: #fff;
@@ -58,17 +63,50 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
-@media (max-width: 620px) {
-	.a1{
-		height: 270px;
-	}	
-}
-@media (max-width: 432px) {
-	.a1{
-		height: 300px;
-		padding-top: 90px;
+@media (max-width: 576px) {
+	.tick p,.a2 p{
+		
+		font-size: 14px;
 	}
+	.premium{
+		text-align: left!important;
+	}
+	.a2{
+		padding-top: 10px!important;
+	}
+	input[type="search"]{
+		font-size: 10px;
+		
+	}
+	.btn.btn-search{
+      font-size: 10px;
+	}
+}
+
+@media (max-width: 620px) and (min-width: 445px) {
+  .a1{
+		height: 270px;
+	}
+}
+@media (max-width: 445px) {
+	.a1{
+		height: 290px;
+		padding-top: 70px;
+	}
+	.navbar-brand{
+		padding-left: 0!important;
+	}
+	.dropdown{
+		margin-left: -20px!important
+	}
+	.navbar-brand{
+	font-size: 18px;
+
+      }
+   .navbar-brand p{
+	font-size: 12px;
+	
+}
 	
 	
 }
