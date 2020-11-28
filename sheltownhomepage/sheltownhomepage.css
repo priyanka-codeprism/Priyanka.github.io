@@ -76,12 +76,13 @@ footer a {
 	}
 	input[type="search"]{
 		font-size: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		
+		padding-top: 15px!important;
+		padding-bottom: 15px!important;	
 	}
 	.btn.btn-search{
       font-size: 10px;
+      padding-top: 8px!important;
+	 padding-bottom: 7px!important;
 	}
 }
 
