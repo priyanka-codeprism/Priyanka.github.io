@@ -7,11 +7,9 @@
 body {
   background: #f1f3f6;
 }
-header{
-	height: 9vh;
-}
 .navbar-brand{
 	font-size: 20px;
+
 }
 .navbar-brand p{
 	font-size: 14px;
@@ -22,7 +20,10 @@ header{
 }
 .a1{
 	background: #2ECAB6;
-	height: 200px;
+	height: 250px;
+	background-size: 100% 100%;
+	padding-top: 60px;
+	width:100%;
 }
 .container1{
 	margin: 0 auto;
@@ -39,12 +40,18 @@ header{
 .cards img{
 	height: 200px;
 }
-@media (max-width: 456px) {
-  header{
-	height: 15vh;
-	width: 100%;
+
+@media (max-width: 620px) {
+	.a1{
+		height: 270px;
+	}	
 }
-.a1{
-	width: 100%;
+@media (max-width: 432px) {
+	.a1{
+		height: 300px;
+		padding-top: 90px;
+	}
+	
+	
 }
-}
+
