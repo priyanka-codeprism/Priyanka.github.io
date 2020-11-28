@@ -9,7 +9,6 @@ body {
 }
 .navbar-brand{
 	font-size: 20px;
-
 }
 .navbar-brand p{
 	font-size: 14px;
@@ -54,7 +53,7 @@ body {
 }
 .fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
 	color: #2ecab6;
-	font-size: 30px;
+	font-size: 20px;
 }
 footer {
   color: #fff;
@@ -63,6 +62,7 @@ footer a {
   text-decoration: none;
   color: white;
 }
+/*------------------------all media queries-----------------------------*/
 @media (max-width: 576px) {
 	.tick p,.a2 p{
 		
@@ -76,6 +76,8 @@ footer a {
 	}
 	input[type="search"]{
 		font-size: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		
 	}
 	.btn.btn-search{
