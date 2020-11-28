@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ITC Officina Sans Std Book";
+}
+body {
+  background: #f1f3f6;
+}
+header{
+	height: 9vh;
+}
+.navbar-brand{
+	font-size: 20px;
+}
+.navbar-brand p{
+	font-size: 14px;
+	margin-top: -10px;
+}
+.navbar ul li a,.nav-item a,.navbar-brand{
+	color: #2ECAB6!important;
+}
+.a1{
+	background: #2ECAB6;
+	height: 200px;
+}
+.container1{
+	margin: 0 auto;
+    width: 94%;
+    max-width: 1600px;
+    margin-top: -117px;
+    background: white;
+    /*overflow: visible;*/
+}
+.fa-check,.fa-map-marker-alt{
+	color: #2ECAB6;
+	margin-right: 10px;
+}
+.cards img{
+	height: 200px;
+}
+@media (max-width: 456px) {
+  header{
+	height: 15vh;
+	width: 100%;
+}
+.a1{
+	width: 100%;
+}
+}
