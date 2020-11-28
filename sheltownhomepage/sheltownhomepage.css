@@ -48,6 +48,16 @@ body {
 /*input[type="search"]{
 	background: #eceff1;
 }*/
+.fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
+	color: #2ecab6;
+}
+footer {
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
 
 @media (max-width: 620px) {
 	.a1{
