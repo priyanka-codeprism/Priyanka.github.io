@@ -66,10 +66,13 @@ body {
   border-radius: 0;
   color: white;
 }
+/*---------------------------1st part end---------------------------------------------*/
+/*---------------------------last part start---------------------------------------------*/
 .fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
 	color: #2ecab6;
 	font-size: 20px;
 }
+
 footer {
   color: #fff;
 }
@@ -77,6 +80,7 @@ footer a {
   text-decoration: none;
   color: white;
 }
+/*---------------------------last part end---------------------------------------------*/
 /*------------------------all media queries-----------------------------*/
 @media (max-width: 576px) {
 	.tick p,.a2 p{
@@ -134,22 +138,22 @@ footer a {
   margin-right: auto;
   width: 50%;
 }
-.img {
+/*.img {
   width: 6vh;
   height: auto;
 }
 .size {
   font-size: 14px;
-}
+}*/
 .img1 {
-  width: 3vh;
-  height: 3vh;
-  margin: 0 25px;
+  width: auto;
+  height: 7vh;
+  
 }
-.size1 {
-  font-size: 7px;
+/*.size1 {
+  font-size: 16px;
   word-break: keep-all;
-}
+}*/
 
 .scrolling-wrapper {
   white-space: nowrap;
@@ -160,6 +164,9 @@ footer a {
 }
 .card {
   display: inline-block;
+}
+.cf.card{
+  width: 100%;
 }
 @media (min-width: 580px) {
   .mob {
@@ -180,6 +187,13 @@ footer a {
     width: 100%;
     height: auto;
   }
+  .img1 {
+  width: auto;
+  height: 4vh;
+}
+.cardss p{
+	font-size: 10px;
+}
 }
 
 /*---------------------------------------why sheltown part end---------------------------------------*/
