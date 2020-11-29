@@ -115,7 +115,7 @@ footer a {
 		height: 270px;
 	}
 }
-@media (max-width: 445px) {
+@media (max-width: 445px)  {
 	.a1{
 		height: 290px;
 		padding-top: 70px;
@@ -135,13 +135,23 @@ footer a {
 }	
 	
 }
+@media (max-width: 386px)  {
+  .a1{
+		height: 300px;
+		padding-top: 80px;
+	}
+	.img1 {
+  width: auto;
+  height: 3vh;
+}
+}
 /*-----------------------1st part end------------------------------------------->*/
 /*---------------------------------------why sheltown part start---------------------------------------*/
 .center {
   display: block;
-  margin-left: auto;
+ /* margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%;*/
 }
 /*.img {
   width: 6vh;
