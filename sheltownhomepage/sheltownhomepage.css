@@ -89,8 +89,7 @@ footer a {
 /*---------------------------last part end---------------------------------------------*/
 /*------------------------all media queries-----------------------------*/
 @media (max-width: 576px) {
-	.tick p,.a2 p{
-		
+	.tick p,.a2 p,.last p{	
 		font-size: 14px;
 	}
 	.premium{
