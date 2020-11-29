@@ -7,6 +7,7 @@
 body {
   background: #f1f3f6;
 }
+/*--------------------------navbar------------------------------------------*/
 .navbar-brand{
 	font-size: 20px;
 	margin-top: 5px!important;
@@ -16,10 +17,21 @@ body {
 	font-size: 14px;
 	margin-top: -10px;
 }
-
 .navbar ul li a,.nav-item a,.navbar-brand{
 	color: #2ECAB6!important;
 }
+.blink{
+	width:50px;
+	height: 20px;
+	background: red;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	margin: 0px!important;
+}
+/*-----------------------navbar end------------------------------------------->*/
+/*-----------------------1st part start------------------------------------------->*/
 .a1{
 	background: #2ECAB6;
 	height: 250px;
@@ -110,10 +122,65 @@ footer a {
 
       }
    .navbar-brand p{
-	font-size: 12px;
+	font-size: 12px;	
+}	
 	
 }
-	
-	
+/*-----------------------1st part end------------------------------------------->*/
+/*---------------------------------------why sheltown part start---------------------------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+.img {
+  width: 6vh;
+  height: auto;
+}
+.size {
+  font-size: 14px;
+}
+.img1 {
+  width: 3vh;
+  height: 3vh;
+  margin: 0 25px;
+}
+.size1 {
+  font-size: 7px;
+  word-break: keep-all;
+}
+
+.scrolling-wrapper {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  width: 1000px;
+  height: 190px;
+}
+.card {
+  display: inline-block;
+}
+@media (min-width: 580px) {
+  .mob {
+    display: none;
+  }
+  .h {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .mob1 {
+    display: none;
+  }
+  .g {
+    display: none;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*---------------------------------------why sheltown part end---------------------------------------*/
 
