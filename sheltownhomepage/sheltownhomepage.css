@@ -18,8 +18,11 @@ body {
 	font-size: 14px;
 	margin-top: -10px;
 }
-.navbar ul li a,.nav-item a,.navbar-brand{
+.nav-item a,.navbar-brand{
 	color: #2ECAB6!important;
+}
+ a.nav-link{
+  font-weight: 100!important;
 }
 .blink{
 	width:50px;
