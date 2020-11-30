@@ -217,7 +217,28 @@ footer a {
 }
 
 /*---------------------------------------why sheltown part end---------------------------------------*/
-
+/*.item{
+    	height:60vh;
+    	overflow: hidden;
+    }**/
+    .item .card{
+    	border-radius: 100px 0px 100px 0px;
+    	padding: 10%;
+    }
+    .imgarea{
+    	width: 100px;
+    	height: 100px;
+    	border-radius: 50%;
+    	overflow: hidden;
+    	margin: 0 auto;
+    }
+    .text i{
+    	color: #ff5257;
+    }
+   .text hr{
+   	color: #ff5257;
+   } 
+    
 /*--------------------------------------table part start--------------------------------------------*/
 .fa-info-circle{
 	color: black;
