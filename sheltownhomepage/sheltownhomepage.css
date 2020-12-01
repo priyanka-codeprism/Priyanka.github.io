@@ -75,6 +75,9 @@ body {
   border-radius: 0;
   color: white;
 }
+.a2 a:hover{
+	color:green!important;
+}
 /*---------------------------1st part end---------------------------------------------*/
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
