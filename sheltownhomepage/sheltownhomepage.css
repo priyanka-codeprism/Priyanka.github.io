@@ -91,37 +91,20 @@ footer a {
 }
 /*---------------------------last part end---------------------------------------------*/
 /*------------------------all media queries-----------------------------*/
-@media (max-width: 576px) {
-	.tick p,.a2 p,.last p{	
-		font-size: 14px;
-	}
-	.premium{
-		text-align: left!important;
-	}
-	.a2{
-		padding-top: 10px!important;
-	}
-	input[type="search"]{
-		font-size: 10px;
-		padding-top: 20px!important;
-		padding-bottom: 20px!important;	
-	}
-	.btn.btn-search{
-      font-size: 10px;
-      padding-top: 12px!important;
-	 padding-bottom: 13px!important;
-	}
-}
 
-@media (max-width: 620px) and (min-width: 445px) {
-  .a1{
-		height: 270px;
+@media (max-width: 620px) and (min-width: 576px) {
+  
+	.a1{
+		height: 270px;	
 	}
 }
-@media (max-width: 445px)  {
+@media (max-width: 576px){
 	.a1{
 		height: 290px;
-		padding-top: 70px;
+		padding-top: 50px;
+	}
+	.a1 span{
+		display:block;
 	}
 	.navbar-brand{
 		padding-left: 0!important;
@@ -134,14 +117,32 @@ footer a {
       }
    .navbar-brand p{
 	font-size: 12px;	
+}
+.tick p,.a2 p,.last p{	
+		font-size: 14px;
+	}
+	.premium{
+		text-align: left!important;
+	}
+	.a2{
+		padding-top: 10px!important;
+	}
+	input[type="search"]{
+		font-size: 10px;
+		padding-top: 25px!important;
+		padding-bottom: 25px!important;	
+	}
+	.btn.btn-search{
+      font-size: 10px;
+      padding-top: 17px!important;
+	 padding-bottom: 18px!important;
+	}
+	.faimage img{
+	height: 200px!important;
 }	
 	
 }
-@media (max-width: 386px)  {
-  .a1{
-		height: 300px;
-		padding-top: 80px;
-	}
+@media (max-width: 386px)and (min-width: 381px)  {
 	.img1 {
        width: auto;
        height: 3vh;
@@ -150,30 +151,22 @@ footer a {
 		margin-left: -25px!important
 	}
 }
+@media (max-width: 381px){
+	.dropdown{
+		margin-left: -35px!important
+	}
+}
 /*-----------------------1st part end------------------------------------------->*/
 /*---------------------------------------why sheltown part start---------------------------------------*/
-.center {
+/*.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-/*.img {
-  width: 6vh;
-  height: auto;
-}
-.size {
-  font-size: 14px;
 }*/
-.img1 {
-  width: auto;
-  height: 7vh;
-  
+.img1 {  
+  height: 7vh; 
 }
-/*.size1 {
-  font-size: 16px;
-  word-break: keep-all;
-}*/
 
 .scrolling-wrapper {
   white-space: nowrap;
@@ -182,9 +175,6 @@ footer a {
   width: 1000px;
   height: 190px;
 }
-/*.card {
-  display: inline-block;
-}*/
 .cf.card{
   width: 100%;
 }
@@ -217,10 +207,8 @@ footer a {
 }
 
 /*---------------------------------------why sheltown part end---------------------------------------*/
-/*.item{
-    	height:60vh;
-    	overflow: hidden;
-    }**/
+
+ /*-------------------------hear from customer-------------------------------------*/
     .item .card{
     	border-radius: 100px 0px 100px 0px;
     	padding: 10%;
