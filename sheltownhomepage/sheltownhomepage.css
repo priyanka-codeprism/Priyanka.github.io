@@ -236,8 +236,14 @@ footer a {
     	color: #ff5257;
     }
    .text hr{
-   	color: #ff5257;
-   } 
+   	background-color: #ff5257;
+   }  
+   .owl-dot.active span{
+   	background: #ff5257!important;	
+   }
+   .owl-nav span{
+   	display: none;
+   }
     
 /*--------------------------------------table part start--------------------------------------------*/
 .fa-info-circle{
