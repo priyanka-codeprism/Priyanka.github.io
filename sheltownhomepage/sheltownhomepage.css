@@ -179,7 +179,11 @@ input[type="search"]{
 .cf.card{
   width: 100%;
 }
-
+@media (min-width: 580px){
+.h{
+	display: none;
+}
+}
 @media (max-width: 580px) {
   .mob1 {
     display: none;
@@ -207,6 +211,7 @@ input[type="search"]{
     .item .card{
     	border-radius: 100px 0px 100px 0px;
     	padding: 10%;
+    	height: 400px;
     }
     .imgarea{
     	width: 100px;
@@ -216,7 +221,7 @@ input[type="search"]{
     	margin: 0 auto;
     }
     .text i{
-    	color: #ff5257;
+    	color: limegreen;
     }
    .text hr{
    	background-color: #ff5257;
@@ -227,6 +232,9 @@ input[type="search"]{
    .owl-nav span{
    	display: none;
    }
+   .morecontent span {
+	display: none;
+}
     
 /*--------------------------------------table part start--------------------------------------------*/
 .fa-info-circle{
@@ -261,7 +269,7 @@ footer a {
 	height: 45px;
 	border-radius: 50%;
 	right: 0px;
-	bottom: 15px;
+	bottom: 25px;
 	color:#fff;
 	font-size: 25px; 
 	opacity: 0;
@@ -269,7 +277,7 @@ footer a {
 	transition: all .4s;
 }
 .to-top i.active{
-	bottom: 15px;
+	bottom: 25px;
 	pointer-events: auto;
 	opacity: 1;
 }
