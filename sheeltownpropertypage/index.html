@@ -529,14 +529,128 @@
 <div class="mobview" style="padding-top: 50px;">
   <div class="navbar"style="background:#2ECAB6!important ">
     <div class="d-inline">
-        <a> Filters</a> 
+        <a class="" href="#" onclick="openNav()" > Filters</a> 
         <a> Sort by</a>   
     </div>
     <div>
       <div>SHELTIE'S SHELTER</div>
     </div>
   </div>
+
+  <div id="myNav" class="overlay leftside">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div>
+      <div style=" margin: 0;">
+      <nav class="sidebar" style=" border: solid #2ecab6;border-radius: 5px; padding: 0; margin-top:10px!important; display: inline-block;" >
+        <div id="accordion">
+        <div class="text sorting" style="margin-top:0;">
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" aria-expanded="true">
+
+        <ul> 
+
+          <li>
+            <a class="cat-btn" style="text-decoration: none;">Categories
+               <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="cat-show">
+              <li>PG/Hostel<input type="checkbox" class="check"></li>
+              <li>Apartment<input type="checkbox" class="check"></li>
+              <li>Independent House<input type="checkbox" class="check"></li>
+              <li>Gated Community<input type="checkbox" class="check"></li>
+            </ul>
+
+          </li>
+          <li>
+            <a class="bhk-btn" style="text-decoration: none;">BHK type
+                <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="bhk-show">
+              <li>1 RK<input type="checkbox" class="check"></li>
+              <li>1 BHK<input type="checkbox" class="check"></li>
+              <li>2 BHK<input type="checkbox" class="check"></li>
+              <li>3 BHK<input type="checkbox" class="check"></li>
+              <li>4 BHK<input type="checkbox" class="check"></li>
+            </ul>
+          </li>
+          <li>
+            <a class="pg-btn" style="text-decoration: none;">PG Sharing Type
+              <span class="fas fa-caret-down third"></span>
+            </a>
+            <ul class="pg-show">
+              <li>Single<input type="checkbox" class="check"></li>
+              <li>Twin<input type="checkbox" class="check"></li>
+              <li>Triple<input type="checkbox" class="check"></li>
+              <li>Qudroupal<input type="checkbox" class="check"></li>
+            </ul>
+          </li>
+          <li>
+            <a class="floor-btn" style="text-decoration: none;">Floor Preference
+            <span class="fas fa-caret-down fourth"></span>
+            </a>
+            <ul class="floor-show">
+              <li>1<input type="checkbox" class="check"></li>
+              <li>2<input type="checkbox" class="check"></li>
+              <li>3<input type="checkbox" class="check"></li>
+              <li>4<input type="checkbox" class="check"></li>
+              <li>5<input type="checkbox" class="check"></li>
+            </ul>
+          </li>
+          <li>
+            <a class="fur-btn" style="text-decoration: none;">Furnishing
+              <span class="fas fa-caret-down fifth"></span>
+            </a>
+            <ul class="fur-show">
+              <li>Furnished<input type="checkbox" class="check"></li>
+              <li>Semi-furnished<input type="checkbox" class="check"></li>
+              <li>Not-furnished<input type="checkbox" class="check"></li>
+            </ul>
+          </li>
+          <li>
+            <a class="pro-btn" style="text-decoration: none;">Property Age
+              <span class="fas fa-caret-down sixth"></span>
+            </a>
+            <ul class="pro-show">
+              <li>Below 10<input type="checkbox" class="check"></li>
+              <li>10-12<input type="checkbox" class="check"></li>
+              <li>12-15<input type="checkbox" class="check"></li>
+              <li>Above 15<input type="checkbox" class="check"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+<div id="collapseTwo" class="collapse"  data-parent="#accordion" aria-expanded="false">
+  <div class="checkboxc">
+  <label class="sortc">Popularity<input type="checkbox" class="checkc"></label>
 </div>
+<div class="checkboxc">
+  <label class="sortc">Customer Ratings<input type="checkbox" class="checkc"></label>
+</div>
+      <div class="checkboxc">
+  <label class="sortc">Price-Lowest to Highest<input type="checkbox" value="" class="checkc"></label>
+</div>
+<div class="checkboxc">
+  <label class="sortc">Price-Highest to Lowest<input type="checkbox" value="" class="checkc"></label>
+</div>
+
+</div>
+</div>
+      </nav>
+      
+    </div>
+      
+                          </div>
+                        </div>
+</div>
+<script>
+              function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+              }
+
+              function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+              }
+            </script> 
 <!---Middle card section start-->
 <div style="margin-top: 0;  border: none !important;" class="generalcard">
   <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
