@@ -44,4 +44,89 @@ var showChar = 100;
 	$("#LoginModal").modal("show");		    
   });
 
+  // Custom method to validate username
+			$.validator.addMethod("usernameRegex", function(value, element) {
+				return this.optional(element) || /^[a-zA-Z0-9]*$/i.test(value);
+			}, "Username must contain only letters, numbers");
+			//validate password
+			$.validator.addMethod('strongPassword', function(value, element) {
+			    return this.optional(element) 
+			      || value.length >= 8
+			      && /\d/.test(value)
+			      && /[a-z]/i.test(value);
+			  }, 'Your password must be at least 8 characters long and contain at least one number and one char\'.')
+			var form = $("#myform");
+				form.validate({
+					errorElement: 'span',
+					errorClass: 'help-block',
+					highlight: function(element, errorClass, validClass) {
+						$(element).closest('.form-group').addClass("has-error");
+					},
+					unhighlight: function(element, errorClass, validClass) {
+						$(element).closest('.form-group').removeClass("has-error");
+					},
+					rules: {
+						uname: {
+							required: true,
+							usernameRegex: true,
+							minlength: 6,
+						},
+						pwd : {
+							required: true,
+							strongPassword:true,
+							minlength: 8,
+						},
+						cpwd : {
+							required: true,
+							equalTo: '#pswd',
+						},
+						
+						fname: {
+							required: true,
+							minlength: 6,
+
+						},
+						lname: {
+							required: true,
+							minlength: 6,
+
+						},
+						email: {
+							required: true,
+							minlength: 3,
+						},
+						phno:{
+							required: true,
+							minlength: 10,
+							maxlength:10,
+						},
+									
+					},
+					messages: {
+						uname: {
+							required: "Username required",
+						},
+						pwd : {
+							required: "Password required",
+						},
+						cpwd : {
+							required: "Password required",
+							equalTo: "Password don't match",
+						},
+						fname: {
+							required: "Name required",
+						},
+						lname: {
+							required: "Name required",
+						},
+						email: {
+							required: "Email required",
+						},	
+						phno:{
+							required: "Phone no required",
+						},
+								
+					}
+				});
+
 });//ready function end
