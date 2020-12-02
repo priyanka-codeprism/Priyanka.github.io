@@ -45,6 +45,7 @@ var showChar = 100;
   });
 
   // Custom method to validate username
+  var form = $("#myform");
 			$.validator.addMethod("usernameRegex", function(value, element) {
 				return this.optional(element) || /^[a-zA-Z0-9]*$/i.test(value);
 			}, "Username must contain only letters, numbers");
@@ -55,7 +56,7 @@ var showChar = 100;
 			      && /\d/.test(value)
 			      && /[a-z]/i.test(value);
 			  }, 'Your password must be at least 8 characters long and contain at least one number and one char\'.')
-			var form = $("#myform");
+			//var form = $("#myform");
 				form.validate({
 					errorElement: 'span',
 					errorClass: 'help-block',
@@ -76,9 +77,9 @@ var showChar = 100;
 							strongPassword:true,
 							minlength: 8,
 						},
-						cpwd : {
+						pwd : {
 							required: true,
-							equalTo: '#pswd',
+							equalTo: '#pwd',
 						},
 						
 						fname: {
