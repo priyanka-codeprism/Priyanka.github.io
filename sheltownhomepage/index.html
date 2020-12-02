@@ -744,7 +744,11 @@
                         <td style="color: #23b6ae;text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
                     <tr>
-                        <td>Privacy Manager<a href="#infomodal" data-toggle="modal"><i class="fas fa-info-circle" aria-hidden="true"></i></a></td></td></td>
+                        <td>Privacy Manager
+                          <div class="popup"><i class="fas fa-info-circle" aria-hidden="true"></i>
+                          <span class="popuptext" id="myPopup">In this digitally advanced era our topmost priority is your privacy and we work hard to to maintain it and so we assign a Privacy Manager to you.</span></div>
+                        
+                      </td>
                         <td style="color: #23b6ae;text-align: center;"><i class="fas fa-check"></i></td>
                         <td style="color: #23b6ae;text-align: center;"><i class="fas fa-check"></i></td>
                     </tr>
@@ -821,26 +825,7 @@
   </div>
 </section>
 <!------------info modal start------------------------------>
-<div class="modal fade" id="infomodal" tabindex="-1" role="dialog" >
-    <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLongTitle">Privacy manager</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-               <div class="modal-body">
-                
-                      
-              </div>
-              <div class="modal-footer">
-                      
-                  <button type="button" class="btn btn-info">Submit</button>
-             </div>
-      </div>
-    </div>
-    </div>
+
 <!-----------------info modal end-------------->
 <!-------------------------table part end--------------------------------------->
 
@@ -1073,16 +1058,16 @@ $(document).ready(function() {
         }
     }
 });
- /*$('.more').each(function(){
-var seeMore = $(".readmore").html();
-var seeLess= seeMore.substr(0,100);
-if (seeMore.length>100) {
-  $(".readmore").html(seeLess).append("<a href='' class='readmore'>See more</a>");
-}else{
-  $("this").html(seeMore);
-}
-});*/
 
+$('.popup').on('touchstart click', function(e){ 
+    e.preventDefault();
+    var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+ });
+            // function myFunction() {
+            //   var popup = document.getElementById("myPopup");
+            //   popup.classList.toggle("show");
+            // }
 });
 
 </script>
