@@ -23,9 +23,9 @@ html{
 .nav-item a,.navbar-brand{
 	color: #2ECAB6!important;
 }
- /*a.nav-link{
- 
-}*/
+ a.nav-link{
+  font-weight: bold!important
+}
 .blink{
 	width:50px;
 	height: 20px;
@@ -93,38 +93,7 @@ input[type="search"]{
 	 padding-bottom: 13px!important;
 	}
 /*---------------------------1st part end---------------------------------------------*/
-/*---------------------------last part start---------------------------------------------*/
-.fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
-	color: #2ecab6;
-	font-size: 20px;
-}
 
-footer {
-  color: #fff;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-.to-top i{
-	position: fixed;
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	right: 0px;
-	bottom: 15px;
-	color:#fff;
-	font-size: 25px; 
-	opacity: 0;
-	pointer-events: none;
-	transition: all .4s;
-}
-.to-top i.active{
-	bottom: 15px;
-	pointer-events: auto;
-	opacity: 1;
-}
-/*---------------------------last part end---------------------------------------------*/
 /*------------------------all media queries-----------------------------*/
 
 @media (max-width: 741px) and (min-width: 576px) {
@@ -270,6 +239,7 @@ footer a {
 .fa-info-circle{
 	color: black;
 	font-size: small;
+	margin-left: 10px;
 }
 .mydatatable th{
   text-align: center;
@@ -279,3 +249,35 @@ footer a {
     font-size: smaller;
   }
 }
+/*---------------------------last part start---------------------------------------------*/
+.fa-handshake,.fa-user-shield,.fa-hand-holding-heart{
+	color: #2ecab6;
+	font-size: 20px;
+}
+
+footer {
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.to-top i{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	right: 0px;
+	bottom: 15px;
+	color:#fff;
+	font-size: 25px; 
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+}
+.to-top i.active{
+	bottom: 15px;
+	pointer-events: auto;
+	opacity: 1;
+}
+/*---------------------------last part end---------------------------------------------*/
