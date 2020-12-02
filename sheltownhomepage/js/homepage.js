@@ -57,6 +57,8 @@ var showChar = 100;
 			      && /[a-z]/i.test(value);
 			  }, 'Your password must be at least 8 characters long and contain at least one number and one char\'.')
 			//var form = $("#myform");
+			$(".submit-btn").click(function(){
+				var form = $("#myform");
 				form.validate({
 					errorElement: 'span',
 					errorClass: 'help-block',
@@ -129,5 +131,16 @@ var showChar = 100;
 								
 					}
 				});
+			});
+
+			//validate name
+			function nameValidate(event){
+              console.log(event);
+           if((event.charCode>=97&&event.charCode<=122)||(event.charCode>=65&&event.charCode<=90)){
+              return true;
+          }else{
+              return false;
+            }
+          }
 
 });//ready function end
