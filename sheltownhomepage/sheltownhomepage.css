@@ -295,7 +295,7 @@ footer a {
 #myform label,#myform p{
 	font-size: 18px;
 	}
-#myform input[type=text],#myform input[type=password],input[type=email]
+#myform input[type=text],#myform input[type=password],input[type=email],#myform1 input[type=text]
  {
    padding: 8px 15px 8px 15px;
     border: 1px solid #ccc;
