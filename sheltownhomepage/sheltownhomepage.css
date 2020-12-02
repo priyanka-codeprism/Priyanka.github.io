@@ -290,3 +290,36 @@ footer a {
 	opacity: 1;
 }
 /*---------------------------last part end---------------------------------------------*/
+
+/****************************Signupp  modal **************************/
+#myform label,#myform p{
+	font-size: 18px;
+	}
+#myform input[type=text],#myform input[type=password],input[type=email]
+ {
+   padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    width: 100%;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+.submit-btn{
+    float: right;
+}
+
+.help-block{
+  color:red;
+}
+/*img{
+  max-width: 180px;
+}*/
+input[type=file]{
+  padding: 10px;
+}
+/****************************signup modal end**************************/

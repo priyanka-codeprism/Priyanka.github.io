@@ -26,4 +26,22 @@ var showChar = 100;
     $(this).prev().toggle();
     return false;
   });
-});
+ //display otp div
+  $("#sendOtpbtn").click(function(e){
+  	e.preventDefault();
+     $("#otp").css("display", "block");			    
+  });
+  //hide signuppage1 modal and display signuppage2 modal;
+  $("#verifytotpbtn").click(function(e){
+  	e.preventDefault();
+    $("#SignupModal").modal("hide");
+	$("#SignupModal2").modal("show");		    
+  });
+  //hide signuppage1 modal and display login modal;
+  $("#LoginModal").click(function(e){
+  	e.preventDefault();
+    $("#SignupModal").modal("hide");
+	$("#LoginModal").modal("show");		    
+  });
+
+});//ready function end
