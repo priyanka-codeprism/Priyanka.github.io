@@ -263,12 +263,20 @@ footer a {
   text-decoration: none;
   color: white;
 }
+.teal.accent-3 {
+    background-color: #1de9b6 !important;
+}
+.footer-links a:hover {
+    font-weight: bold!important;
+    text-decoration: underline;
+    color: white;
+}
 .to-top i{
 	position: fixed;
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	right: 0px;
+	right: 10px;
 	bottom: 25px;
 	color:#fff;
 	font-size: 25px; 
