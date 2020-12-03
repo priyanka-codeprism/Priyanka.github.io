@@ -95,10 +95,6 @@ padding: 3px;
 font-size: 16px;
 }
 
-
-/*Right Sidebar*/
-/*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-
 .generalcard{
   margin: 5px 0px;
   padding: 10px 10px;
@@ -106,23 +102,10 @@ font-size: 16px;
   font-size: 18px;
   float:left;
   width: 100%;
-
-
 }
-.image img {
-  height: 320px !important;
-  width: 350px !important;
-  /*object-fit: cover;*/
-  padding: 10px;
-}
+
 /**/
-/*
-/*.lower2{
-  float: right;
-}*/
-/*.lower, .lower2{
-  float: left;
-}
+
 
 /*--------------------------navbar------------------------------------------*/
 .navbar-brand{
@@ -398,7 +381,7 @@ ul.breadcrumb li a:hover {
   margin-left: 10px;
 }
 
-.generalcard,{
+.generalcard{
   font-size: 15px;
 }
 
@@ -445,6 +428,10 @@ ul.breadcrumb li a:hover {
 }
  .row .col .features li {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.fa-check{
+  color: color: #2ECAB6;
+  margin-right: 5px;
 }
 @media only screen and (max-width: 767px) {
 .features {
