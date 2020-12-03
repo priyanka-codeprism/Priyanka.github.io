@@ -381,10 +381,8 @@ ul.breadcrumb li a:hover {
 .btn-info {
   background-color: #2ecab6 !important;
 }
-.carousel {
-  width: 340px;
-  margin-left: 10px;
-  margin-top: 10px;
+.images img{
+  height: 200px;
 }
 .carousel-control-next {
   right: 5px;
@@ -399,8 +397,6 @@ ul.breadcrumb li a:hover {
   float:left;
   margin-left: 10px;
 }
-
-
 
 .generalcard,{
   font-size: 15px;
