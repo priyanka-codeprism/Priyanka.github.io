@@ -1,4 +1,4 @@
-/** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,52 +7,8 @@
 body {
   background: #f1f3f6;
 }
-.navbar-brand {
-  font-size: 20px;
-  margin-top: 5px!important;
-  /*margin-bottom: -10px!important;*/
-/*}
-.navbar-brand p {
-  font-size: 14px;
-  /*margin-top: -10px;*/
-/*}
-.navbar ul li a,
-.nav-item a ,
-.navbar-brand {
-  color: #2ecab6 !important;
-}
-.a1 {
-  background: #2ecab6;
-  height: 250px;
-  background-size: 100% 100%;
-  padding-top: 60px;
-  width: 100%;
-}
-.container1 {
-  margin: 0 auto;
-  width: 94%;
-  max-width: 1600px;
-  margin-top: -117px;
-  background: white;
 
-}
-.fa-check,
-.fa-map-marker-alt {
-  color: #2ecab6;
-  margin-right: 10px;
-}
-.tick p {
-  margin-bottom: 5px;
-}
-.cards img {
-  height: 200px;
-}
-.btn.btn-search {
-  background: #2ecab6 !important;
-  border-radius: 0;
-  color: white;
-}
-.dropdown {
+/*.dropdown {
     position: relative;
     display: inline-block;
 }
@@ -80,16 +36,6 @@ body {
   word-break: keep-all;
 }
 
-.scrolling-wrapper {
-  white-space: nowrap;
-  overflow: auto;
-  overflow-y: hidden;
-  width: 1000px;
-  height: 190px;
-}
-.card {
-  display: inline-block;
-}
 .login a:hover{
   text-decoration: underline;
   background-color: white !important;
@@ -100,48 +46,6 @@ body {
 }
 .choose a:hover{
   background-color: #2ecab6;
-}
-@media (min-width: 580px) {
-  .mob {
-    display: none;
-  }
-  .h {
-    display: none;
-  }
-}
-@media (max-width: 580px) {
-  .mob1 {
-    display: none;
-  }
-  .g {
-    display: none;
-  }
-  .responsive {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-footer {
-  color: #fff;
-  bottom: 0;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 620px) {
-  .a1 {
-    height: 270px;
-  }
-}
-@media (max-width: 432px) {
-  .a1 {
-    height: 300px;
-    padding-top: 90px;
-  }
 }
 
 .dropbtn {
@@ -186,182 +90,8 @@ footer a {
     background-color: #3e8e41;
 }
 /*Left Sidebar Start*/
-/*.sortc{
-  font-size: 18px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
-.checkc{
-  float: right;
-  margin-top: 8px;
-  margin-right: 15px;
-  margin-left: 15px;
+/*.
 
-}
-.check{
-  margin-right: 15px; 
-  margin-top: 14px; 
-  float: right;
-}
-.sidebar
-{
-  width:270px;
-  left:0;
-  background: white;
-  margin-left: 15px;
- margin-top: 0;
-
-}
-.sidebar .text{
-  color: black;
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: 100px;
-}
-.sortby, 
-.filters{
-  border: none !important; 
-  /*text-decoration: none !important;*/
-  /*color: white !important;
-
-  margin: 15px;
-}
-
-/*.collapse,.checkboxc{
-color: black;
-  font-size:20px;
-
-}*/
-
-/*.sorting{
-  background-color: #2ecab6 !important;
-  height: 50px;
-
-}
-.sorting a:hover{
-  text-decoration: underline;
-
-}
-
-.sidebar .text1{
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 65px;
-  letter-spacing: 1px;
-}
-nav ul
-{
-  background: white;
-  color: black;
- /* height: 100%*/
- /* width: 100%;
-  list-style: none;
-}
-nav ul li{
-  line-height: 60px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-left: 30px;
-}
-nav ul li a{
-  position: relative;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  padding-left: 10px;
-  font-weight: 500;
-  display: block;
-  width: 100%;
-  border-left: 3px solid transparent;
-}
-nav ul li a
-{
-  background: white;
-}
-nav ul ul
-{
-  position: static;
-  display: none;
-}
-
-nav ul .cat-show.show
-{
-  display: block;
-}
-nav ul .bhk-show.show1
-{
-  display: block;
-}
-nav ul .pg-show.show2
-{
-  display: block;
-}
-nav ul .floor-show.show3
-{
-  display: block;
-}
-nav ul .fur-show.show4
-{
-  display: block;
-}
-nav ul .pro-show.show5
-{
-  display: block;
-}
-nav ul ul li
-{
-  line-height: 42px;
-  border-bottom: none;
-
-}
- 
-nav ul ul li a
-{
-  font-size: 17px;
-  color: #2ecab6;
-  padding-left: 80px;
-  
-}
-
-nav ul li.active ul li a
-{
-  color: #2ecab6;
-  background: white;
-  border-left-color: transparent;
-}
-nav ul li a:hover
-{
-  background: #d5f6f2!important;
-  color: #17c3ad !important;
-  
-}
-.pro-show li:hover,
-.fur-show li:hover,
-.floor-show li:hover,
-.pg-show li:hover,
-.bhk-show li:hover,
-.cat-show
- li:hover,
-.checkboxc > label:hover
-{
-  background: #d5f6f2!important;
-  color: #17c3ad !important;
-
-}
-nav ul li a span{
-  position: absolute;
-  top:50%;
-  right:20px;
-  
-  transform: translateY(-50%);
-  font-size: 22px;
-  transition: transform 0.4s;
-}
-
-nav ul li a span.rotate{
-  transform: translateY(-50%) rotate(-180deg);
-  
-}
 /*Left Sidebar End*/
 
 /*.main > div{
@@ -624,9 +354,7 @@ html{
       font-size: 10px;
       padding-top: 17px!important;
    padding-bottom: 18px!important;
-  }
-  
-  
+  } 
 }
 @media (max-width: 386px)and (min-width: 381px)  {
    .dropdown{
@@ -639,10 +367,199 @@ html{
   }
 }
 
+/*---------------------------left part start---------------------------------------------*/
+.sidebar ul,.rside ul 
+{
+  list-style: none;
 
-/*---------------------------last part start---------------------------------------------*/
+}
+.sidebar ul li{
+  line-height: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-left: 10px;
+}
+.sidebar ul li a{
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+.sidebar ul li a
+{
+  background: white;
+}
+.sidebar ul ul
+{
+  position: static;
+  display: none;
+}
 
-footer {
+.sidebar ul .cat-show.show,.sidebar ul .bhk-show.show1,.sidebar ul .pg-show.show2,
+.sidebar ul .floor-show.show3,.sidebar ul .fur-show.show4,.sidebar ul .pro-show.show5
+{
+  display: block;
+}
+.sidebar ul ul li
+{
+  line-height: 42px;
+  border-bottom: none;
+
+}
+ 
+.sidebar ul ul li a
+{
+  font-size: 17px;
+  color: #2ecab6;
+  padding-left: 80px; 
+}
+.sidebar ul li.active ul li a
+{
+  color: #2ecab6;
+  background: white;
+  border-left-color: transparent;
+}
+.sidebar ul li a:hover
+{
+  background: #d5f6f2!important;
+  color: #17c3ad !important;
+  
+}
+.pro-show li:hover,
+.fur-show li:hover,
+.floor-show li:hover,
+.pg-show li:hover,
+.bhk-show li:hover,
+.cat-show
+ li:hover,
+.checkboxc > label:hover
+{
+  background: #d5f6f2!important;
+  color: #17c3ad !important;
+
+}
+.sidebar ul li a span{
+  position: absolute;
+  top:50%;
+  right:20px;
+  
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+
+.sidebar ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+  
+}
+.sortc{
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.checkc{
+  float: right;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+.check{
+  margin-right: 15px; 
+  margin-top: 14px; 
+  float: right;
+}
+.sidebar .text{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 100px;
+}
+.sortby, 
+.filters{
+  border: none !important; 
+color: white !important;
+  
+}
+
+/*.collapse,.checkboxc{
+color: black;
+  font-size:20px;
+
+}*/
+
+.sorting{
+  background-color: #2ecab6 !important;
+  height: 50px;
+}
+.sorting a:hover{
+  text-decoration: underline;
+}
+
+.sidebar .text1{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1px;
+}
+/*---------------------------left part end---------------------------------------------*/
+/*---------------------------middle part start---------------------------------------------*/
+/*---------------------------middle part end---------------------------------------------*/
+/*---------------------------right part start---------------------------------------------*/
+.col .features li .ion-checkmark{
+    color: black;
+}
+.title {
+/*  position: relative;*/
+  top: 0;
+
+  font-weight: 800;
+  padding: 5px 0px;
+  margin:0;
+  /*display: inline-block;*/
+  background-color:#2ecab6;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.features {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style:  none;
+  font-size: 1em;
+
+}
+.features li {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 5%;
+  font-weight: bold;
+}
+ .features li:nth-child(even) {
+  /*background: rgba(0, 0, 0, 0.08);*/
+}
+.features i {
+  margin-right: 8px;
+  opacity: 0.4;
+}
+ .row .col .features li {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media only screen and (max-width: 767px) {
+.features {
+    margin-top: 0;
+  }
+}
+/*---------------------------right part end---------------------------------------------*/
+/*---------------------------footer start---------------------------------------------*/
+
+footer{
   color: #fff;
 }
 footer a {
@@ -678,7 +595,7 @@ footer a {
 .mobview{
   display: none;
 }
-/*---------------------------last part end---------------------------------------------*/
+/*---------------------------footer end---------------------------------------------*/
 /*---------------------------mob view part start---------------------------------------------*/
 #myNav {
   height: 100%;
