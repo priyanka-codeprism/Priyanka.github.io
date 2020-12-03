@@ -18,8 +18,8 @@
       <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
       <script src="js/homepage.js"></script>
       <script src="js/validate.js"></script>
 
@@ -82,7 +82,7 @@
                 <div  class="modal-body">
                   <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
                    <h2 class="signup-txt  text-center mt-2 mb-2"style="color:#ff5257">Sign Up To Create Account</h2>
-                     <legend class="text-center"style="font-size: 18px;">Already have an account ?<a href=""> Login now</a></legend>
+                        <legend class="text-center"style="font-size: 18px;">Already have an account ?<span id="loginpbtn" class="loginbtn"style="cursor: pointer;color:blue;"> Login now</span> </legend>
                    <div class="container mt-4">
                    
                     <form class="form-horizontal" action="" method="POST" id="myform1">
@@ -160,11 +160,9 @@
                                 </div>
                               </div>
                                                               
-                             <a style="float: right;"><input type="button" value="Create account" class=".submit-btn btn btn-success"id="submit-btn" name=""></a>
+                             <!--<a style="float: right;"><input type="button" value="Create account" class=".submit-btn btn btn-success"id="submit-btn" name=""></a>-->
+                             <button class="submit-btn btn btn-success" id="signupbtn" data-toogle="modal" >Create account</button>
                              
-                             <div class=" mt-4">
-                              Your account has successfully created
-                            </div>
                         </fieldset>
                      </form>
                     </div><!--container div end-->
@@ -174,6 +172,23 @@
     </div>  <!-- modal end-->
 
 <!--------------------------signup modal page 2 end---------------------------------------->
+<!--------------------------registration  successful modal start------------------------>
+<div class="modal fade" id="rgstrsuccesfulModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
+                  <div>
+            <h2 class="text-center">Your account has successfully created</h2>
+            <div style="margin-left: 150px;">
+              <img src="images/tick1.gif" style="width:100px;height:100px"></div><br>
+                    <div class="text-center" style="font-size: 20px;color:blue"><a>click here to login</a></div>
+                  </div>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!--------------------------registrationsuccessful modal end---------------------------->
 <!--------------------------login modal start---------------------------------------->
 <div class="modal fade" id="LoginModal">
       <div class="modal-dialog modal-dialog-centered">
@@ -181,9 +196,9 @@
                 <div class="modal-body">
                   <button type="button" class="close" data-dismiss="modal">&times;</button><br>
                     <h2 class="login-text text-center"> Login</h2>
-                    <!--<form class="form-container login-form" id="regForm">      
+                       <form class="form-container login-form" id="loginForm">      
                     <div class="form-group">
-                      <label>Student Id</label>
+                      <label>Your Mobile Number</label>
                       <input type="text" class="form-control" id="stdid" placeholder="Student ID" required >
                     </div>
                     <div class="form-group">
@@ -195,13 +210,13 @@
                       <label class="form-check-label" for="exampleCheck1">remember me</label>
                     </div>
                     <div class="text-center">
-                    <button id="stdlogibtn" onclick="validateStudent()" type="submit" class="loginbtn " >Submit</button><br><br>
-                    <div class="invaliddata">
+                    <button id="logibtn" onclick="validateStudent()" type="submit" class="loginbtn " >Submit</button><br><br>
+                    <div class="invaliddata" style="display: none;">
                        id or password is incorrect,please try again later
                     </div></div>
                     <div id="signupbtn" class="signupbtn"style="cursor: pointer;float: left;color:blue;">signup</div>
                     <span><a data-toggle="modal" href="#stdrgstrsuccesfulModal" style="float: right;">Forgot Password</a></span>
-                    </form>-->
+                    </form>
                 </div>
             </div>   
         </div>     
@@ -1067,17 +1082,12 @@ $('.popup').on('touchstart click', function(e){
     var popup = document.getElementById("myPopup");
               popup.classList.toggle("show");
  });
-            // function myFunction() {
-            //   var popup = document.getElementById("myPopup");
-            //   popup.classList.toggle("show");
-            // }
+            
 });
 
 </script>
     
-    
-     
-  
+       
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

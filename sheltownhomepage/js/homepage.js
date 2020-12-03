@@ -38,14 +38,15 @@ var showChar = 100;
 	$("#SignupModal2").modal("show");		    
   });
   //hide signuppage1 modal and display login modal;
-  $("#LoginModal").click(function(e){
-  	e.preventDefault();
-    $("#SignupModal").modal("hide");
-	$("#LoginModal").modal("show");		    
+  $("#signupbtn").click(function(){
+  	//e.preventDefault();
+    $("#SignupModal2").modal("hide");
+	$("#rgstrsuccesfulModal").modal("show");		    
   });
 
+
   // Custom method to validate username
-  var form = $("#myform");
+  
 			$.validator.addMethod("usernameRegex", function(value, element) {
 				return this.optional(element) || /^[a-zA-Z0-9]*$/i.test(value);
 			}, "Username must contain only letters, numbers");
