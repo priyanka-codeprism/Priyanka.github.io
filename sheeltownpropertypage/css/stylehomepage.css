@@ -516,8 +516,6 @@ color: black;
 }
 .title {
 /*  position: relative;*/
-  top: 0;
-
   font-weight: 800;
   padding: 5px 0px;
   margin:0;
@@ -525,16 +523,8 @@ color: black;
   background-color:#2ecab6;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 20px;
-  padding-left: 20px;
-}
-.features {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  list-style:  none;
-  font-size: 1em;
-
+  font-size: 18px;
+  
 }
 .features li {
   border-top: 1px solid #d2d7e2;
