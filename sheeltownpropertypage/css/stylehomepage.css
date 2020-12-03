@@ -13,28 +13,6 @@ body {
     display: inline-block;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.img {
-  width: 6vh;
-  height: auto;
-}
-.size {
-  font-size: 14px;
-}
-.img1 {
-  width: 3vh;
-  height: 3vh;
-  margin: 0 25px;
-}
-.size1 {
-  font-size: 7px;
-  word-break: keep-all;
-}
 
 .login a:hover{
   text-decoration: underline;
@@ -89,10 +67,6 @@ body {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-/*Left Sidebar Start*/
-/*.
-
-/*Left Sidebar End*/
 
 /*.main > div{
   align-items: center;
@@ -125,34 +99,6 @@ font-size: 16px;
 /*Right Sidebar*/
 /*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
-
-ul {
-  list-style: none;
-}
-ul.breadcrumb {
-  padding: 10px 10px;
-  list-style: none;
-  background-color: #eee;
-  /*float:left;*/
-  /*margin: 5px;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 15px;
-}
-ul.breadcrumb li + li:before {
-  padding: 5px;
-  color: black;
-  content: " > ";
-}
-ul.breadcrumb li a {
-  color: #23b6ae;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
 .generalcard{
   margin: 5px 0px;
   padding: 10px 10px;
@@ -170,80 +116,7 @@ ul.breadcrumb li a:hover {
   padding: 10px;
 }
 /**/
-/*.generalcard p, {
-  margin-bottom: 0;
-  text-align: right;
-  margin-top: -25px;
-}
-.generalcard p a {
-  text-decoration: none;
-
-}
-
-.neg a:hover{
-  text-decoration: underline;
- 
-
-
-}
-.fa-map-marker-alt {
-  color: #2ecab6;
-  font-size: 20px;
-  margin-right: 5px;
-}
-
-.fa-heart{
-  color: red;
-  float: right;
-}
-
-.fa-info-circle{
-  float:right;
-  color: #2ecab6 !important;
-  margin: 5px;
-  font-size: 20px;
-}
-
-.btn-info {
-  background-color: #2ecab6 !important;
-}
-.carousel {
-  width: 340px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.carousel-control-next {
-  right: 5px;
-}
-
-.dropdown-container1,.dropdown-container3,.dropdown-container5,.dropdown-container7{
-  float: left;
-  margin-left: 10px;
-}
-
-.dropdown-container2,.dropdown-container4,.dropdown-container6,.dropdown-container8{
-  float:left;
-  margin-left: 10px;
-}
-
-
-
-.generalcard,{
-  font-size: 15px;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /*padding: 2px 30px 2px 2px;*/
-    /* border:solid;*/
-    /*text-decoration: none;
-    background:#f1f3f6;
-     margin: 10px;
-     padding: 2px;
-}
-
+/*
 /*.lower2{
   float: right;
 }*/
@@ -475,6 +348,76 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+.generalcard p, {
+  margin-bottom: 0;
+  text-align: right;
+  margin-top: -25px;
+}
+.generalcard p a {
+  text-decoration: none;
+
+}
+.neg a:hover{
+  text-decoration: underline;
+}
+.fa-map-marker-alt {
+  color: #2ecab6;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.fa-heart{
+  color: red;
+  float: right;
+}
+
+.fa-info-circle{
+  float:right;
+  color: #2ecab6 !important;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.btn-info {
+  background-color: #2ecab6 !important;
+}
+.carousel {
+  width: 340px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.carousel-control-next {
+  right: 5px;
+}
+
+.dropdown-container1,.dropdown-container3,.dropdown-container5,.dropdown-container7{
+  float: left;
+  margin-left: 10px;
+}
+
+.dropdown-container2,.dropdown-container4,.dropdown-container6,.dropdown-container8{
+  float:left;
+  margin-left: 10px;
+}
+
+
+
+.generalcard,{
+  font-size: 15px;
+}
+
+/*select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*padding: 2px 30px 2px 2px;*/
+    /* border:solid;*/
+    /*text-decoration: none;
+    background:#f1f3f6;
+     margin: 10px;
+     padding: 2px;
+}*/
+
 /*---------------------------middle part end---------------------------------------------*/
 /*---------------------------right part start---------------------------------------------*/
 .col .features li .ion-checkmark{
