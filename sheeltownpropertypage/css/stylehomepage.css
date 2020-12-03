@@ -126,53 +126,6 @@ font-size: 16px;
 /*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 
-.col .features li .ion-checkmark{
-    color: black;
-}
-.title {
-/*  position: relative;*/
-  /*top: 0;
-
-  font-weight: 800;
-  padding: 5px 0px;
-  margin:0;
-  /*display: inline-block;*/
-  /*background-color:#2ecab6;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 20px;
-  padding-left: 20px;
-}
-.features {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  list-style:  none;
-  font-size: 1em;
-
-}
-.features li {
-  border-top: 1px solid #d2d7e2;
-  padding: 10px 5%;
-  font-weight: bold;
-}
- .features li:nth-child(even) {
-  background: rgba(0, 0, 0, 0.08);
-}
-.features i {
-  margin-right: 8px;
-  opacity: 0.4;
-}
-
- .row .col .features li {
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-}
-@media only screen and (max-width: 767px) {
-.features {
-    margin-top: 0;
-  }
-}
-
 ul {
   list-style: none;
 }
@@ -297,18 +250,7 @@ select {
 /*.lower, .lower2{
   float: left;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "ITC Officina Sans Std Book";
-}
-body {
-  background: #f1f3f6; 
-}
-html{
-  scroll-behavior: smooth;
-}
+
 /*--------------------------navbar------------------------------------------*/
 .navbar-brand{
   font-size: 20px;
@@ -509,6 +451,30 @@ color: black;
 }
 /*---------------------------left part end---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: #eee;
+  /*float:left;*/
+  /*margin: 5px;*/
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+}
+ul.breadcrumb li + li:before {
+  padding: 5px;
+  color: black;
+  content: " > ";
+}
+ul.breadcrumb li a {
+  color: #23b6ae;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 /*---------------------------middle part end---------------------------------------------*/
 /*---------------------------right part start---------------------------------------------*/
 .col .features li .ion-checkmark{
