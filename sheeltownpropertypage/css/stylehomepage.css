@@ -162,14 +162,14 @@ font-size: 16px;
    .navbar-brand p{
   font-size: 12px;  
 }
-  input[type="search"]{
+  /*input[type="search"]{
     font-size: 10px;
   }
   .btn.btn-search{
       font-size: 10px;
       padding-top: 17px!important;
    padding-bottom: 18px!important;
-  } 
+  } */
 }
 @media (max-width: 386px)and (min-width: 381px)  {
    .dropdown{
