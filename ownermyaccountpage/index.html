@@ -30,7 +30,61 @@
   
 </div>
 <!----------------------mmobile view---------------------------------------------------->
+<div class="mobview">
+<div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+       <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
+        fa-user-circle" aria-hidden="true"></i><span class="ll">Basic Profile</span></a>
+
+        <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i ><span class="ll">Your Payments</span></a >
+
+        <a class="nav-link" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-file-import" aria-hidden="true"></i ><span class="ll">Bookings Received</span></a >
+        <div>
+          <a class="nav-link" data-toggle="collapse" data-target="#demo"
+            ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i
+            ><span class="ll">Your Properties</span></a >
+          <div id="demo" class="collapse">
+            <a id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent" role="tab" aria-controls="v-pills-gift" aria-selected="false" >
+              <div class="ll">Rent(0)</div>
+            </a>
+            <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab"
+             aria-controls="v-pills-coupons" aria-selected="false" >
+              <div class="ll">Flatmates(0)</div>
+            </a>
+            <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+              <div class="ll">Sale(0)</div>
+            </a>
+            <a id="v-pills-pg-tab" data-toggle="pill" href="#v-pills-pg" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+              <div class="ll">PG(0)</div>
+            </a>
+            <a id="v-pills-commercialrent-tab" data-toggle="pill" href="#v-pills-commercialrent"role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+              <div class="ll">Commercial Rent(0)</div>
+            </a>
+            <a id="v-pills-commercial-tab" data-toggle="pill" href="#v-pills-commercial" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+              <div class="ll">Commercial Buy(0)</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="addNewProperty.html">
+        <div class="btn btn-success mt-2"style="width: 100%;">Add New Property</div>
+      </a>
+
+      <a><button class="btn btn-success mt-2"style="width: 100%;">Sign Out</button></a>
+    </div>
+  </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+</script>
 
  <!---------------------------------mobile view end-------------------------- -->
      <!-------------------desktop view----------------------->
@@ -38,7 +92,7 @@
        <div class="container-fluid">
             <div class="row py-3 px-5">
  <!---------------------------------left side-------------------------- -->
-                <div class="col-lg-3 col-md-4 col-sm-3 ">
+                <div class="col-lg-3 col-md-4 col-sm-12 ">
                   <div class="left">
                     <div class="icon"style="background: white;">
                       <div class="">
@@ -57,45 +111,38 @@
                         <a class="nav-link bookingsr box" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x fas fa-file-import " aria-hidden="true"></i><span class="list">Bookings Received</span></a>
 
-                        <a class="nav-link disabled  payments box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span
-                            class="list">Your Properties</span></a>
-                        
-                        <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab"
-                          aria-controls="v-pills-transactions" aria-selected="false">
-                          <div class="sublist"></div>
+                        <div>
+                        <a class="nav-link payments box" data-toggle="collapse" data-target="#demo"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">Your Properties</span></a>
+                        <div id="demo" class="collapse">
+                          <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
+                         <div class="sublist"></div>
                         </a>
-                        <a id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent" role="tab"
-                            aria-controls="v-pills-gift" aria-selected="false">
-                          <div class="sublist">Rent(0)</div>
-                        </a>
-                        <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab"
-                              aria-controls="v-pills-coupons" aria-selected="false">
-                          <div class="sublist">Flatmates(0)</div>
-                        </a>
-                        <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons"
-                          aria-selected="false">
-                          <div class="sublist">Sale(0)</div>
-                        </a>
-                        <a id="v-pills-pg-tab" data-toggle="pill" href="#v-pills-pg" role="tab" aria-controls="v-pills-coupons"
-                          aria-selected="false">
-                          <div class="sublist">PG(0)</div>
-                        </a>
-                        <a id="v-pills-commercialrent-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons"
-                          aria-selected="false">
-                          <div class="sublist">Commercial Rent(0)</div>
-                        </a>
-                        <a id="v-pills-commercial-tab" data-toggle="pill" href="#v-pills-commercial" role="tab" aria-controls="v-pills-coupons"
-                          aria-selected="false">
-                          <div class="sublist">Commercial Buy(0)</div>
-                        </a>
-                        
-                        
-                        <div style="background: white; height:  20px;"></div>
+                    <a id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent" role="tab" aria-controls="v-pills-gift" aria-selected="false">
+                      <div class="sublist">Rent(0)</div>
+                    </a>
+                    <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
+                      <div class="sublist">Flatmates(0)</div>
+                    </a>
+                    <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
+                      <div class="sublist">Sale(0)</div>
+                    </a>
+                    <a id="v-pills-pg-tab" data-toggle="pill" href="#v-pills-pg" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+                      <div class="sublist">PG(0)</div>
+                    </a>
+                    <a id="v-pills-commercialrent-tab" data-toggle="pill"href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+                      <div class="sublist">Commercial Rent(0)</div>
+                    </a>
+                    <a id="v-pills-commercial-tab" data-toggle="pill" href="#v-pills-commercial" role="tab"aria-controls="v-pills-coupons" aria-selected="false" >
+                      <div class="sublist">Commercial Buy(0)</div>
+                    </a>
 
+                    <div style="background: white; height: 20px"></div>
+                  </div>
+                </div><!--collapse end--->
                                                                    
                     </div>
-                    <div><a href="addNewProperty.html"><div class="btn btn-success mt-2">Add New Property</div></a></div>
-                    <div><a><button class="btn btn-success mt-2">Sign Out</button></a></div>
+                    <div ><a href="addNewProperty.html"><div class="btn btn-success mt-2" style="width: 100%;">Add New Property</div></a></div>
+                    <div><a href=""><button class="btn btn-success mt-2 "style="width: 100%;">Sign Out</button></a></div>
                  </div>
                 </div>
    <!---------------------------------- rigghhttside --------------------------------------------- -->        
@@ -139,7 +186,7 @@
                                 <input type="checkbox" class="form-check-input" id="check3">
                                 <label class="form-check-label" for="exampleCheck1">Get updates on <span><i class="fab fa-whatsapp"></i></span>WhatsApp</label>
                               </div> 
-                             <div><button class="submit-btn btn btn-success" id="signupbtn" data-toogle="modal" >Update</button></div>
+                             <div class="d-flex justify-content-center"><button class="submit-btn btn btn-success px-5" id="">Update</button></div>
                              
                         </fieldset>
                      </form>
