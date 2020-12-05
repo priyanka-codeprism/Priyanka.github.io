@@ -68,7 +68,7 @@
  <!---------------------------------mobile view end-------------------------- -->
 
 <!-------------------desktop view----------------------->
-<section class="deskview" style="margin-top: 50px">
+<section class="deskview" style="margin-top: 60px">
     <div class="container-fluid">
         <div class="row py-3 px-1">
             <!---------------------------------left side-------------------------- -->
@@ -91,15 +91,15 @@
                             aria-selected="false"><i class="fa fa-city mr-3" aria-hidden="true"></i><span
                                 class="list">Rental Details</span></a>
                                 
-                                <a class="nav-link bookingsr box" id="v-pills-Gallery-tab" data-toggle="pill" href="#v-pills-Gallery" role="tab"
+                         <a class="nav-link bookingsr box" id="v-pills-Gallery-tab" data-toggle="pill" href="#v-pills-Gallery" role="tab"
                                     aria-controls="v-pills-bookings" aria-selected="false"><i class="fa fa-images mr-3"
                                         aria-hidden="true"></i><span class="list">Gallery</span></a>
 
-                                        <a class="nav-link bookingsr box" id="v-pills-Amenities-tab" data-toggle="pill" href="#v-pills-Amenities" role="tab"
+                        <a class="nav-link bookingsr box" id="v-pills-Amenities-tab" data-toggle="pill" href="#v-pills-Amenities" role="tab"
                                             aria-controls="v-pills-bookings" aria-selected="false"><i class="fa fa-tv mr-3"
                                                 aria-hidden="true"></i><span class="list">Amenities</span></a>
 
-                                                <a class="nav-link bookingsr box" id="v-pills-Schedule-tab" data-toggle="pill" href="#v-pills-Schedule" role="tab"
+                         <a class="nav-link bookingsr box" id="v-pills-Schedule-tab" data-toggle="pill" href="#v-pills-Schedule" role="tab"
                                                     aria-controls="v-pills-bookings" aria-selected="false"><i class="fa fa-calendar-alt mr-3"
                                                         aria-hidden="true"></i><span class="list">Schedule</span></a>
                                                         
@@ -121,6 +121,8 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Property details</a></li>
                 </ul>
             </div>
@@ -163,6 +165,8 @@
                                         <option value="">2</option>
                                         <option  value="">3</option>
                                         <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
                                        
                                     </select>
                                 </div>
@@ -187,15 +191,22 @@
                                         <option value="">2</option>
                                         <option Value="">3</option>
                                         <option  value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Property Size:</label>
-                                    <i class="fa fa-ruler-combined" aria-hidden="true"></i>
+                                    <!--<i class="fa fa-ruler-combined" aria-hidden="true"></i>-->
+                                    <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-ruler-combined" aria-hidden="true"></i></div>
+                                    </div>
                                     <input type="text" class="form-control" name="fname" id="fname" placeholder="0"
-                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                    onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputPassword4">Facing:</label>
@@ -224,6 +235,7 @@
                                         <option  value="">2 BHK</option>
                                         <option  value="">3 BHK</option>
                                         <option value="">4 BHK</option>
+                                        <option value="">5 BHK</option>
                                     
                                     </select>
                                 </div>
@@ -284,6 +296,8 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Locality Details</a></li>
                 </ul>
             </div>
@@ -324,14 +338,18 @@
                             </div>
                         </fieldset>
                     </form>
-                    <form class="form-horizontal" action="" method="POST" id="myform">
+                    <form class="form-horizontal" action="" method="POST" id="myformss">
                         <fieldset id="persional_information" class="">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Street Area:</label>
-                                    <i class="fas fa-road" aria-hidden="true"></i>
-                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Street/Area"
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text"><i class="fas fa-road" aria-hidden="true"></i></div>
+                                        </div>
+                                       <input type="text" class="form-control" name="fname" id="fname" placeholder="Street/Area"
                                         onkeypress="return /[a-z]/i.test(event.key)" required />
+                                    </div>
                                 </div>
                                 <div class="form-group col-md-6">
                                     
@@ -358,6 +376,8 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Rental Details</a></li>
                 </ul>
             </div>
@@ -365,7 +385,7 @@
                 <div class="info">
                     <legend class="signup-legend">Provide Rental Details About your Property.</legend>
                     <hr />
-                    <form class="form-horizontal" action="" method="POST" id="myform">
+                    <form class="form-horizontal" action="" method="POST" id="myform2">
                         <fieldset id="persional_information" class="">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -447,32 +467,32 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">is_meals_included:</label>
+                                    <label for="inputEmail4">Is_meals_included:</label>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                 </div>
                                 <div class="form-group col-md-6">
-                                <label for="inputEmail4">owner_stays:</label>
+                                <label for="inputEmail4">Owner_stays:</label>
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">smoking_drinking_allowed:</label>
+                                    <label for="inputEmail4">Smoking_drinking_allowed:</label>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                     
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">visitor_allowed:</label>
+                                    <label for="inputEmail4">Visitor_allowed:</label>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">electricity_included:</label>
+                                    <label for="inputEmail4">Electricity_included:</label>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">non_veg_allowed:</label>
+                                    <label for="inputEmail4">Non_veg_allowed:</label>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                 </div>
                             </div>
@@ -504,11 +524,57 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Gallery</a></li>
                 </ul>
             </div>
+            <div class="bprofile">
+                <legend class="signup-legend">Uploads Your Property Picture </legend><hr/>
+                <div class="m-5 py-3 px-2" style="background: #2ECAB6;">
+                    
+                    <form>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div>
+                        </form>
+                </div><hr/>
+                <div class="text-center mt-2 mb-4">
+                    <h5 style="color: red;">We also can upload photos on your behalf</h5>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5><span><i class="fab fa-whatsapp mx-2"style="color:#2ECAB6"></i></span>+91-7428-770-297</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5><span><i class="far fa-envelope mx-2" style="color:#2ECAB6"></i></span>info@sheltown.com</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-center">
+                    <button class="btn btn-secondary  mx-1">Back </button>
+                    <button class="btn btn-success mx-1">Save And Continue </button>
+                </div>
+
+            </div>
             
         </div>
+        <script>
+
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
         <!-------------------rigghhttside for Gallery section end--------------- -->
         <!-------------rigghhttside for Amenities section----------------------- -->
         <div class="tab-pane fade" id="v-pills-Amenities" role="tabpanel" aria-labelledby="v-pills-Amenities-tab">
@@ -516,6 +582,8 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Amenities</a></li>
                 </ul>
             </div>
@@ -526,17 +594,26 @@
                     <form class="form-horizontal" action="" method="POST" id="myform">
                         <fieldset id="persional_information" class="">
                             <div class="form-row">
-                                <div class="form-group col-md-4">
+                                <div class="form-group  col-md-4">
                                     <label for="inputEmail4">Bathrooms:</label>
+                                   <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-bath" aria-hidden="true"></i></div>
+                                    </div>
                                     <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
                                         onkeypress="return /[a-z]/i.test(event.key)" required>
                                         <option value="">Choose--</option>
                                         <option value="">Yes</option>
                                         <option value="">No</option>
                                     </select>
+                                </div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputPassword4">Balcony:</label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-person-booth" aria-hidden="true"></i></div>
+                                    </div>
                                     <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
                                         onkeypress="return /[a-z]/i.test(event.key)" required>
                                         <option value="">Choose--</option>
@@ -544,19 +621,29 @@
                                         <option value="">No</option>
                                     </select>
                                 </div>
+                                </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputPassword4">Water Supply:</label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-water" aria-hidden="true"></i></div>
+                                    </div>
                                     <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
                                         onkeypress="return /[a-z]/i.test(event.key)" required>
                                         <option value="">Choose--</option>
                                         <option value="">Yes</option>
                                         <option value="">No</option>
                                     </select>
+                                </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="inputEmail4">Gym:</label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fas fa-dumbbell" aria-hidden="true"></i></div>
+                                    </div>
                                     <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
                                         onkeypress="return /[a-z]/i.test(event.key)" required>
                                         <option value="">Choose--</option>
@@ -564,22 +651,27 @@
                                         <option value="">No</option>
                                     </select>
                                 </div>
+                                </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputEmail4">Gated Security:</label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                                    </div>
                                     <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
                                         onkeypress="return /[a-z]/i.test(event.key)" required>
                                         <option value="">Choose--</option>
                                         <option value="">Yes</option>
                                         <option value="">No</option>
                                     </select>
-            
+                                   </div>
                                 </div>
                                 <div class="form-group col-md-4">
                                 
                                 </div>
                             </div>
                             <hr/>
-<legend class="signup-legend">Select the Available Amenities</legend>
+                       <h5 class="mb-4"><b>Select the Available Amenities</b></h5>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -715,6 +807,8 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
+                    <li><a href="#">Add New Property</a></li>
+                    <li><a href="#">Listing Property</a></li>
                     <li><a href="#">Schedule</a></li>
                 </ul>
             </div>
@@ -988,11 +1082,7 @@
               >
                 <i class="fab fa-instagram white-text mr-4"> </i>
               </a>
-              <a href="#" class="to-top"
-                ><i
-                  class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"
-                ></i
-              ></a>
+              
             </div>
             <!-- Grid column -->
           </div>
