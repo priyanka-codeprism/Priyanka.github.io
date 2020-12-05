@@ -11,6 +11,7 @@
     <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
     <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="ownermyaccount.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -470,33 +471,33 @@
                                 <div class="form-group col-md-6">
 
                                     <label for="vehicle1"> Rental Agreement is mandatory</label> 
-                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">  <span><b>YES</b></span>         
+                                 <input type="checkbox"class="check" id="vehicle1" name="vehicle1" value="Bike" onclick="myFunction()">  <span class="spanc"><b>YES</b></span>         
                                 </div>
                             </div>
                             <div class="form-row spans">
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Opposite gendor visitors allowed ?</label>
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><span><b>YES</b></span>
+                                    <label for="inputEmail4">Opposite gender visitors allowed ?</label>
+                                    <input type="checkbox" class="check" id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()"><span class="spanc"><b>YES</b></span>
                                 </div>
                                
                                 <div class="form-group col-md-6">
                                 <label for="inputEmail4">Owner stays at Property ?</label>
                                 
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <span><b>YES</b></span>
+                                <input type="checkbox"class="check"  id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()">
+                                <span class="spanc"><b>YES</b></span>
                                 </div>
                             </div>
                             <div class="form-row spans">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Smoking and drinking allowed ?</label>
                                     
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><span><b>YES</b></span>
+                                    <input type="checkbox"class="check" id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()"><span class="spanc"><b>YES</b></span>
                                     
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Electricity is included ?</label>
                                     
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><span><b>YES</b></span>
+                                    <input type="checkbox" class="check" id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()"><span class="spanc"><b>YES</b></span>
                                 </div>
                                 
                             </div>
@@ -504,12 +505,12 @@
                                  <div class="form-group col-md-6">
                                     <label for="inputEmail4">Meals are included in Rent ?</label>
                                     
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><span><b>YES</b></span>
+                                    <input type="checkbox" class="check"id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()"><span class="spanc"><b>YES</b></span>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Non-veg is allowed ?</label>
                                     
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><span><b>YES</b></span>
+                                    <input type="checkbox" class="check"id="vehicle1" name="vehicle1" value="Bike"onclick="myFunction()"><span class="spanc"><b>YES</b></span>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -533,6 +534,33 @@
             </div>
             
         </div>
+        <script>
+            //$(document).ready(function(){
+               // $(".spanc").hide();
+                   /* $(".check").click(function () {
+            if ($(this).is(":checked")) {
+                $(".spanc").show();
+            } else {
+                $(".spanc").hide();
+            }
+
+        });*/ 
+        
+           // })
+           function myFunction() {
+  // Get the checkbox
+              var checkBox = document.querySelector(".check");
+              // Get the output text
+              var text = document.querySelector(".spanc");
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+        </script>
         <!-------------------rigghhttside for Rental Details section end--------------- -->
         <!-------------rigghhttside for Gallery section----------------------- -->
         <div class="tab-pane fade" id="v-pills-Gallery" role="tabpanel" aria-labelledby="v-pills-Gallery-tab">
