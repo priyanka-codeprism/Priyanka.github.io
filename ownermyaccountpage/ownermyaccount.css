@@ -205,7 +205,8 @@ body {
 
 .fa-credit-card,.fa-user-circle,.fa-file-import,.fa-th-list,
 .fa-home,.fa-map-marker-alt,.fa-city,.fa-images,.fa-tv,.fa-calendar-alt,.fa-phone-slash,
-.fa-user-check,.fa-piggy-bank,.fa-user-shield,.fa-tachometer-alt,.fa-sign-out-alt,.fa-list,.fa-life-ring {
+.fa-user-check,.fa-piggy-bank,.fa-user-shield,.fa-tachometer-alt,.fa-sign-out-alt,
+.fa-list,.fa-life-ring,.fa-clock {
   color: #2ecab6;
   margin-right: 15px;
 }
@@ -299,10 +300,14 @@ input[type="email"] {
 }
 
 /*---------rental --------*/
-.spans span{
-  font-size: 16px;
-  margin-left: 5px;
+#myCheck:checked + #area{
+  display: inline!important;
+  margin-left: 2px;
 }
+
+#area{
+font-size: 14px;
+  }
 
 
 /*--------------------------------right side end------------------------------------------------*/
