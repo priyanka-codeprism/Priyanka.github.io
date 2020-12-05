@@ -276,7 +276,7 @@ ul.breadcrumb li a:hover {
 /*--------------------------Basic Profile  ----------------------------------*/
 
 #myform input[type="text"],
-input[type="email"] {
+#myform input[type="email"] {
   padding: 8px 15px;
   border: 1px solid #ccc;
   border-radius: 0px;
