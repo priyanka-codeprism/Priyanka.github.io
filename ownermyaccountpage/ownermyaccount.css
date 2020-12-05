@@ -38,6 +38,11 @@ body {
 .menulines {
   display: none;
 }
+.fa-arrow-left{
+  font-size: 20px;
+  color: #2ECAB6;
+ padding-top: -5px!important;
+}
 .mobview {
   display: none!important;
 }
@@ -184,6 +189,9 @@ body {
   color: #2ecab6;
   margin-right: 15px;
 }
+.fa-handshake,.fa-hand-holding-heart{
+  color: #2ecab6;
+}
 .fa-whatsapp{
   color: green;
   margin:0 5px;
@@ -205,6 +213,10 @@ body {
 .sublist:hover {
   background: #f2fffc;
   color: #069784;
+}
+.signout:hover{
+  background: red!important;
+  color: white;
 }
 
 /*------------------------------left side end-------------------------------------------------*/
@@ -254,6 +266,16 @@ input[type="email"] {
   background-color: #eceff1;
   font-size: 16px;
   letter-spacing: 1px;
+}
+/*----------------------------Transactions-----------------*/
+.redText {
+  background-color: red;
+}
+.greenText {
+  background-color: #0f0;
+}
+.yellowText {
+  background-color: yellow;
 }
 
 

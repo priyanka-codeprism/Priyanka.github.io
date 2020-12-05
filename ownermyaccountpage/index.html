@@ -14,7 +14,10 @@
 <body> 
 <div class="header">          
 <nav class="navbar  navbar-light fixed-top "style="background-color: #fff;">
- <div><a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><p>Live Like You Own It</p></a></div>
+ <div>
+  <a class=" pl-0  mr-2" href="#" style="padding-top: -10px!important;"><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i></a>
+  <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><p>Live Like You Own It</p></a>
+</div>
   <div class="menu">
     <ul class=""> 
       <li class="nav-item mr-4">
@@ -46,25 +49,15 @@
             ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i
             ><span class="ll">My Properties Listed</span></a >
           <div id="demo" class="collapse">
-            <a id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent" role="tab" aria-controls="v-pills-gift" aria-selected="false" >
-              <div class="ll">Rent(0)</div>
-            </a>
+            
             <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab"
              aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Flatmates(0)</div>
+              <div class="ll">Residental Rent Listings</div>
             </a>
             <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Sale(0)</div>
+              <div class="ll">Commercial Rent Listings</div>
             </a>
-            <a id="v-pills-pg-tab" data-toggle="pill" href="#v-pills-pg" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">PG(0)</div>
-            </a>
-            <a id="v-pills-commercialrent-tab" data-toggle="pill" href="#v-pills-commercialrent"role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Commercial Rent(0)</div>
-            </a>
-            <a id="v-pills-commercial-tab" data-toggle="pill" href="#v-pills-commercial" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Commercial Buy(0)</div>
-            </a>
+            
           </div>
         </div>
       </div>
@@ -73,7 +66,7 @@
         <div class="btn btn-success mt-2"style="width: 100%;">Add New Property</div>
       </a>
 
-      <a><button class="btn btn-success mt-2"style="width: 100%;">Sign Out</button></a>
+      <a><button class="btn btn-success mt-2 signout"style="width: 100%;">Sign Out</button></a>
     </div>
   </div>
     <script>
@@ -117,24 +110,13 @@
                           <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
                          <div class="sublist"></div>
                         </a>
-                    <a id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent" role="tab" aria-controls="v-pills-gift" aria-selected="false">
-                      <div class="sublist">Rent(0)</div>
-                    </a>
                     <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
-                      <div class="sublist">Flatmates(0)</div>
+                      <div class="sublist">Residental Rent Listings</div>
                     </a>
                     <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
-                      <div class="sublist">Sale(0)</div>
+                      <div class="sublist">Commercial Rent Listings</div>
                     </a>
-                    <a id="v-pills-pg-tab" data-toggle="pill" href="#v-pills-pg" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-                      <div class="sublist">PG(0)</div>
-                    </a>
-                    <a id="v-pills-commercialrent-tab" data-toggle="pill"href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-                      <div class="sublist">Commercial Rent(0)</div>
-                    </a>
-                    <a id="v-pills-commercial-tab" data-toggle="pill" href="#v-pills-commercial" role="tab"aria-controls="v-pills-coupons" aria-selected="false" >
-                      <div class="sublist">Commercial Buy(0)</div>
-                    </a>
+                    
 
                     <div style="background: white; height: 20px"></div>
                   </div>
@@ -142,7 +124,7 @@
                                                                    
                     </div>
                     <div ><a href="addNewProperty.html"><div class="btn btn-success mt-2" style="width: 100%;">Add New Property</div></a></div>
-                    <div><a href=""><button class="btn btn-success mt-2 "style="width: 100%;">Sign Out</button></a></div>
+                    <div><a href=""><button class="btn btn-success mt-2 signout"style="width: 100%;">Sign Out</button></a></div>
                  </div>
                 </div>
    <!---------------------------------- rigghhttside --------------------------------------------- -->        
@@ -203,34 +185,101 @@
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#">Your Payments</a></li>
+                        <li><a href="#">All Transaction</a></li>
                         
                       </ul>
                     </div>
-                  <div class="payment" >
-                    <legend class="signup-legend">Your Payments</legend><hr>
-                    <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Paid For</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Payment Method</th>
-                            <th scope="col">Amount paid</th>
-                            <th scope="col">ID</th>
-                            <th scope="col">Status</th>
-                          </tr>
-                        </thead>
-                        
-                      </table>
-                    </div>
-                  </div>
+                  <div class="alltransaction">
+                      <legend class="signup-legend">Transaction
+                        </legend><hr>
+                      <div class="d1">
+                        <div class="row">
+                          <div class="col-5">
+                              <div class="dropdownbox">
+                                <label></label>
+                                 <select name="" id="">
+                                    <option value="">All Transaction</option>
+                                    <option value="">Pending</option>
+                                    <option value="">Cancelled</option>
+                                    <option value="">Confirmed</option>
+                                    <option value="">Refund</option>
+                                    <option value="">Coupons</option>
+                                    <option value="">Vouchers</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-2">
+                            <h6>Amount</h6>
+                          </div> 
+                          <div class="col-2">
+                            <h6>Status</h6>
+                          </div>
+                          <div class="col-3">
+                            <h6>Comments</h6>
+                          </div> 
+                        </div> 
+                       </div><hr>
+                       <div class="d2">
+                         <div class="row">
+                          <div class="col-5">
+                            <div class="d21">
+                              <p class="dp1">Paid for booking at (property name)</p>
+                              <p class="dp2">4 March 2020, 9:51 pm</p>
+                              <p class="dp3">Booking Id: property01</p>
+                           </div>
+                          </div>
+                          <div class="col-2">
+                            <div>₹6,000</div>
+                          </div> 
+                          <div class="col-2">
+                            <div class="dropdown-container">
+                              <label></label>
+                              <select id="mySelect" class="greenText" onchange="this.className=this.options[this.selectedIndex].className">
+                                <option class="greenText" value="" selected>Success</option>
+                                <option class="yellowText" value="">Pending</option>
+                                <option class="redText" value="">Failed</option>
+                              </select>
+                            </div>
+                             <div></div>
+                          </div>
+                          <div class="col-3">
+                            <div>BankTxn ID 123456</div>
+                          </div> 
+                          </div> 
+                       </div><hr>
+                       <div class="d3">
+                         <div class="row text-center">
+                          <div class="col-4">
+                            <div>
+                              <i class="fas fa-hand-holding-heart"></i>
+                               <h4>24x7 help</h4>
+                               <p>Have a query and need help ?<br/><a href="">Click here</a></p>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div>
+                              <i class="far fa-handshake"></i>
+                               <h4>Sheltie's Trust</h4>
+                               <p>Your Money is always in your hands.All returns come with no question asked gurantee.</p>
+                            </div>
+                            
+                          </div> 
+                          <div class="col-4">
+                             <div>
+                              <i class="fas fa-user-shield"></i>
+                               <h4>Ultimate Privacy</h4>
+                               <p>We work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
+                             </div>
+                          </div>
+                          </div> 
+                       </div>
+                     </div>
                   </div>
 
 
  <!-------------------rigghhttside for your payments section end---------------------------- -->
 
-   <!-------------rigghhttside for Verify yourself section----------------------- -->
+   <!-------------rigghhttside for booking received section----------------------- -->
                   <div class="tab-pane fade" id="v-pills-bookings" role="tabpanel" aria-labelledby="v-pills-verify-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -243,11 +292,11 @@
                   <legend class="signup-legend">Bookings Received</legend>
                 
                     <hr />
-                    <legend class="signup-legend">Previous Bookings</legend>
+                    <h5 class="signup-legend">We only take online bookings for verified properties <span style="color: grey;">i.e Sheltie's Shelter</span></h5>
                 
                 </div>
               </div>
-   <!-------------------rigghhttside for Verify yourself section end--------------- -->
+   <!-------------------rigghhttside for booking received section end--------------- -->
 
 <!---------------------------------rigghhttside for Rent section------------------------------------------------- -->
                   <div class="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
@@ -268,58 +317,7 @@
 
 
 
-                  <!---------------------------------rigghhttside for Flatmates section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-flatmates" role="tabpanel" aria-labelledby="v-pills-flatmates-tab">
-                    <div>
-                      <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My Properties</a></li>
-                        <li><a href="#">Flatmates</a></li>
-                     
-                      </ul>
-                    </div>
-                    <legend class="signup-legend">Your Properties</legend>
-                    <hr />
-                    <h5>No Flatmates Properties listed by you yet!</h5>
-
-                  </div>
-                  <!---------------------------------rigghhttside for Flatmates section end------------------------------------------------- -->
-
-                  <!---------------------------------rigghhttside for Sale section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-sale" role="tabpanel" aria-labelledby="v-pills-coupons-sale">
-                    <div>
-                      <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My properties</a></li>
-                       
-                        <li><a href="#">Sale</a></li>
-                      </ul>
-                    </div>
-                    <legend class="signup-legend">Your Properties</legend>
-                    <hr />
-                    <h5>No Sale Properties listed by you yet!</h5>
-                  
-                  </div>
-                  <!---------------------------------rigghhttside for Sale section end------------------------------------------------- -->
-
-
-                  <!---------------------------------rigghhttside for PG section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-pg" role="tabpanel" aria-labelledby="v-pills-pg-tab">
-                    <div>
-                      <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My Properties</a></li>
-                        
-                        <li><a href="#">PG</a></li>
-                      </ul>
-                    </div>
-                    <legend class="signup-legend">Your Properties</legend>
-                    <hr />
-                    <h5>No PG Properties listed by you yet!</h5>
-                  
-                  </div>
-                  <!---------------------------------rigghhttside for PG section end------------------------------------------------- -->
-
+                 
 
                   <!---------------------------------rigghhttside for Commercial Rent section------------------------------------------------- -->
                   <div class="tab-pane fade" id="v-pills-commercialrent" role="tabpanel" aria-labelledby="v-pills-cmmercialrent-tab">
