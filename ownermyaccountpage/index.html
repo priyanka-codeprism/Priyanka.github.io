@@ -41,13 +41,16 @@
        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">My Profile</span></a>
 
+        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
+        fa-user-circle" aria-hidden="true"></i><span class="ll">Collect Rent</span></a>
+
         <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">24/7 Assistance</span></a>
 
         <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i ><span class="ll">All Transactions</span></a >
 
         <a class="nav-link" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-file-import" aria-hidden="true"></i ><span class="ll">Bookings Received</span></a >
-        <div style="cursor: poiner;">
+        <div style="cursor: pointsser;">
           <a class="nav-link" data-toggle="collapse" data-target="#demo"
             ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i
             ><span class="ll">My Properties Listed</span></a >
@@ -101,6 +104,9 @@
                       <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">My Profile</span></a>
 
+                        <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab"
+                        aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">Collect Rent</span></a>
+
                         <a class="nav-link box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-clock" aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
     
                         <a class="nav-link payments box" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab"
@@ -112,17 +118,15 @@
                         <div>
                         <a class="nav-link payments box" data-toggle="collapse" data-target="#demo"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">My Properties Listed</span></a>
                         <div id="demo" class="collapse">
-                          <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
+                          <!--<a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
                          <div class="sublist"></div>
-                        </a>
+                        </a>-->
                     <a id="v-pills-Residental-tab" data-toggle="pill" href="#v-pills-Residentalrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
                       <div class="sublist">Residental Rent Listings</div>
                     </a>
                     <a id="v-pills-Commercial-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
                       <div class="sublist">Commercial Rent Listings</div>
                     </a>
-                    
-
                     <div style="background: white; height: 20px"></div>
                   </div>
                 </div><!--collapse end--->
@@ -252,6 +256,153 @@
 
 <!------------------------edit profile  modal start------------------------------------->
 
+<!-----------rigghhttside for collect  Rent section-------------------------- -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-Rent"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-rent-tab"
+                >
+                  <div>
+                    <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Properties</a></li>
+
+                      <li><a href="#">Collect Rent</a></li>
+                    </ul>
+                  </div>
+                  <legend class="signup-legend">Tenant's Information</legend>
+                  <hr />
+                  <div class="bprofile">
+                    <div class="info">
+                      
+                      <form
+                        class="form-horizontal"
+                        action=""
+                        method="POST"
+                        id="myform"
+                      >
+                        <fieldset id="persional_information" class="">
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Name:</label>
+                              <div class="input-group mb-2">
+                                
+                               
+                                <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name"
+                                  onkeypress="return /[a-z]/i.test(event.key)" required />
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">Contact No.:</label>
+                              <div class="input-group mb-2">
+                                <input type="text" class="form-control" name="fname" id="fname" placeholder="Contact No."
+                                  onkeypress="return /[a-z]/i.test(event.key)" required />
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">Email(Optional):</label>
+                              <div class="input-group mb-2">
+                                <input type="email" class="form-control" name="fname" id="fname" placeholder="Email ID"
+                                  onkeypress="return /[a-z]/i.test(event.key)" required />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Month:</label>
+                              <div class="input-group mb-2">
+                                
+                                <input type="date" class="form-control" name="fname" id="fname" 
+                                  onkeypress="return /[a-z]/i.test(event.key)" required />
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Collect In:</label>
+                              <div class="input-group mb-2">
+                               
+                                <select
+                                  name=""
+                                  id=""
+                                  class="form-control"
+                                  style="padding: 5px"
+                                  placeholder="Last Name"
+                                  onkeypress="return /[a-z]/i.test(event.key)"
+                                  required
+                                >
+                                  <option value="">Choose--</option>
+                                  <option value="">Cash</option>
+                                  <option value="">Online</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">UPI ID(Optional):</label>
+                              <div class="input-group mb-2">
+                                <input type="email" class="form-control" name="fname" id="fname" placeholder="UPI ID"
+                                  onkeypress="return /[a-z]/i.test(event.key)" required />
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                          
+                              <label for="inputEmail4"> Monthely Rent:</label>
+                              <input type="text" class="form-control" name="fname" id="fname" placeholder="0.00" value="₹"
+                                onkeypress="return /[a-z]/i.test(event.key)" required />
+                            </div>
+                            <div class="form-group col-md-4">
+                            
+                              <label for="inputEmail4">Electricity Charge:</label>
+                              <input type="text" class="form-control" name="fname" id="fname" placeholder="0.00" value="₹"
+                                onkeypress="return /[a-z]/i.test(event.key)" required />
+                            </div>
+                            <div class="form-group col-md-4">
+                            
+                              <label for="inputEmail4">Water Charge:</label>
+                              <input type="text" class="form-control" name="fname" id="fname" placeholder="0.00" value="₹"
+                                onkeypress="return /[a-z]/i.test(event.key)" required />
+                            </div>
+                            
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                          
+                              <label for="inputEmail4">Any Other Charges (Optional):</label>
+                              <input type="text" class="form-control" name="fname" id="fname" placeholder="0.00" value="₹"
+                                onkeypress="return /[a-z]/i.test(event.key)" required />
+                            </div>
+                            <div class="form-group col-md-4">
+                          
+                              <label for="inputEmail4">Due Date:</label>
+                              <input type="date" class="form-control" name="fname" id="fname" placeholder="0.00" value="₹"
+                                onkeypress="return /[a-z]/i.test(event.key)" required />
+                            </div>
+                            <div class="form-group col-md-4">
+                          
+                              
+                            </div>
+                          
+                          </div>
+                         
+                          </div>
+
+                          <div class="mt-4 d-flex justify-content-center">
+                            
+                            <button class="btn btn-success mx-1">
+                              Send Remainder
+                            </button>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!---------------------------------rigghhttside for  collect  Rent section end------------------------------------------------- -->
+
 <!-----------------------rigghhttside for 24/7 Assistance section--------------------- -->
                   <div class="tab-pane fade" id="v-pills-assistance" role="tabpanel" aria-labelledby="v-pills-assistance-tab">
                     <div>
@@ -261,11 +412,87 @@
                         <li><a href="#">24/7 Assistance</a></li>
                       </ul>
                     </div>
+                     <legend class="signup-legend">24/7 Assistance</legend>
+                    <hr>
+                    <div class="d1">
+                      <div class="row">
+                        <div class="col-8">
+                          <div>
+                            <label style="font-size: 18px;">Issue:</label>
+                            <div style='width:500px'>
+                              <textarea class="form-control" name="" id="" cols="50" style='width: 100%;'></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          
+                        </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="d1">
+                      <div class="row">
+                        <div class="col-8">
+                          <div>
+                            <label style="font-size: 18px;">Specify Concerns:</label>
+                            <div style='width:500px'>
+                              <textarea class="form-control" name="" id="" cols="50" style='width: 100%;'></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <br/>
+                      <div>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email Id"
+                          style="background-color: white; width: 50%;">
+
+                          <button class="btn bg-warning b" style="display: inline;">Attach Image</button>
+                          <p style="display: inline;">(Optional)</p>
+                        <br/><hr>
+                        <div class="center">
+                          <button style="display: block;" type="button" class="btn btn-info">Submit Concern</button>
+                        </div>
+                       
+                        
+                    </div>
+                    <hr/>
+                    <div class="d3">
+                      <div class="row text-center">
+                        <div class="col-4">
+                          <div>
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h4>24x7 help</h4>
+                            <p>Have a query and need help ? <br /><a href="">Click here</a></p>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div>
+                            <i class="far fa-handshake-o"></i>
+                            <h4>Sheltie's Trust</h4>
+                            <p>Your Money is always in your hands. All returns come with no question asked gurantee.</p>
+                          </div>
+                    
+                        </div>
+                        <div class="col-4">
+                          <div>
+                            <i class="fas fa-user-shield"></i>
+                            <h4>Ultimate Privacy</h4>
+                            <p>We work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
                      
                   </div>
  <!-----------------rigghhttside for 24/7 Assistance section end------------------- -->
         
-  <!------------------rigghhttside for Profile information section-------------------- -->
+  <!------------------rigghhttside for transaction information section-------------------- -->
                   <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -281,27 +508,27 @@
                       <div class="d1">
                         <div class="row">
                           <div class="col-5">
-                              <div class="dropdownbox">
+                              <div>
                                 <label></label>
-                                 <select name="" id="">
-                                    <option value="">All Transaction</option>
-                                    <option value="">Pending</option>
-                                    <option value="">Cancelled</option>
-                                    <option value="">Confirmed</option>
-                                    <option value="">Refund</option>
-                                    <option value="">Coupons</option>
-                                    <option value="">Vouchers</option>
+                                 <select name="" id="" style="font-weight: bolder; padding: 5px;">
+                                    <option style="font-weight: bolder" value="">All Transaction</option>
+                                    <option style="font-weight: bolder" value="">Pending</option>
+                                    <option style="font-weight: bolder" value="">Cancelled</option>
+                                    <option style="font-weight: bolder" value="">Confirmed</option>
+                                    <option style="font-weight: bolder" value="">Refund</option>
+                                    <option style="font-weight: bolder" value="">Coupons</option>
+                                    <option style="font-weight: bolder" value="">Vouchers</option>
                                   </select>
                               </div>
                           </div>
                           <div class="col-2">
-                            <h6>Amount</h6>
+                            <h6><b>Amount</b></h6>
                           </div> 
                           <div class="col-2">
-                            <h6>Status</h6>
+                            <h6><b>Status</b></h6>
                           </div>
                           <div class="col-3">
-                            <h6>Comments</h6>
+                            <h6><b>Comments</b></h6>
                           </div> 
                         </div> 
                        </div><hr>
@@ -320,11 +547,12 @@
                           <div class="col-2">
                             <div class="dropdown-container">
                               <label></label>
-                              <select id="mySelect" class="greenText" onchange="this.className=this.options[this.selectedIndex].className">
-                                <option class="greenText" value="" selected>Success</option>
-                                <option class="yellowText" value="">Pending</option>
-                                <option class="redText" value="">Failed</option>
+                              <select onchange="this.className=this.options[this.selectedIndex].className" class="greenText" style="padding: 5px;">
+                              <option class="greenText" value="" selected>Success</option>
+                              <option class="yellowText" value="">Pending</option>
+                              <option class="redText" value="">Failed</option>
                               </select>
+                            
                             </div>
                              <div></div>
                           </div>
@@ -339,14 +567,14 @@
                             <div>
                               <i class="fas fa-hand-holding-heart"></i>
                                <h4>24x7 help</h4>
-                               <p>Have a query and need help ?<br/><a href="">Click here</a></p>
+                               <p>Have a query and need help ? <br/><a href="">Click here</a></p>
                             </div>
                           </div>
                           <div class="col-4">
                             <div>
-                              <i class="far fa-handshake"></i>
+                              <i class="far fa-handshake-o"></i>
                                <h4>Sheltie's Trust</h4>
-                               <p>Your Money is always in your hands.All returns come with no question asked gurantee.</p>
+                               <p>Your Money is always in your hands. All returns come with no question asked gurantee.</p>
                             </div>
                             
                           </div> 
@@ -363,7 +591,7 @@
                   </div>
 
 
- <!-------------------rigghhttside for your payments section end---------------------------- -->
+ <!-------------------rigghhttside for transaction section end---------------------------- -->
 
    <!-------------rigghhttside for booking received section----------------------- -->
                   <div class="tab-pane fade" id="v-pills-bookings" role="tabpanel" aria-labelledby="v-pills-verify-tab">
