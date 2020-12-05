@@ -278,6 +278,11 @@ input[type="email"] {
   background-color: yellow;
 }
 
+/*---------rental --------*/
+.spans span{
+  font-size: 16px;
+  margin-left: 5px;
+}
 
 
 /*--------------------------------right side end------------------------------------------------*/
