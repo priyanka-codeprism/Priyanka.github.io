@@ -78,6 +78,15 @@ body {
 .row{
   padding: 15px 0px!important;
 }
+.small{
+  display: flex;
+  flex-direction: row!important;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.right{
+  margin-top: 10px;
+}
 }
   /*---------------------------sidenav-------------------------*/
 .sidebar {
@@ -242,15 +251,7 @@ input[type="email"] {
   font-size: 16px;
   letter-spacing: 1px;
 }
-.small{
-  display: flex;
-  flex-direction: row!important;
-  justify-content: space-around;
-  font-size: 16px;
-}
-.right{
-  margin-top: 10px;
-}
+
 
 /*--------------------------------right side end------------------------------------------------*/
 footer {
