@@ -44,17 +44,17 @@
         <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i ><span class="ll">All Transactions</span></a >
 
         <a class="nav-link" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-file-import" aria-hidden="true"></i ><span class="ll">Bookings Received</span></a >
-        <div>
+        <div style="cursor: poiner;">
           <a class="nav-link" data-toggle="collapse" data-target="#demo"
             ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i
             ><span class="ll">My Properties Listed</span></a >
           <div id="demo" class="collapse">
             
-            <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab"
+            <a id="v-pills-Residental-tab" data-toggle="pill" href="#v-pills-Residentalrent" role="tab"
              aria-controls="v-pills-coupons" aria-selected="false" >
               <div class="ll">Residental Rent Listings</div>
             </a>
-            <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
+            <a id="v-pills-Commercial-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
               <div class="ll">Commercial Rent Listings</div>
             </a>
             
@@ -110,10 +110,10 @@
                           <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
                          <div class="sublist"></div>
                         </a>
-                    <a id="v-pills-flatmates-tab" data-toggle="pill" href="#v-pills-flatmates" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
+                    <a id="v-pills-Residental-tab" data-toggle="pill" href="#v-pills-Residentalrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
                       <div class="sublist">Residental Rent Listings</div>
                     </a>
-                    <a id="v-pills-sale-tab" data-toggle="pill" href="#v-pills-sale" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
+                    <a id="v-pills-Commercial-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
                       <div class="sublist">Commercial Rent Listings</div>
                     </a>
                     
@@ -141,11 +141,24 @@
                         
                         <div class="bprofile">
                            <div class="info">
-                            <legend class="signup-legend">Edit Your Profile
+                            <legend class="signup-legend"> Your Profile 
+                              <span  class="ml-4"style="font-size: 18px;"><a href="#edit"data-toggle="modal"><i class="fas fa-pencil-alt"></i>Edit</a></span>
                             </legend><hr>
                            <form class="form-horizontal" action="" method="POST" id="myform">
                        <fieldset id="persional_information" class="">
-                            
+                             <div class="form-row">
+                               <div class="form-group  col-md-6">
+                                    <label for="inputEmail4">I am : </label>
+                      
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">Property Owner</option>
+                                        <option value="">Managers</option>
+                                        <option value="">Agent</option>
+                                    </select>
+                                
+                                </div>
+                             </div>
                              <div class="form-row">
                                 <div class="form-group col-md-6">
                                   <label for="inputEmail4">First Name</label>
@@ -156,14 +169,38 @@
                                   <input type="text" class="form-control" name="lname"id="lname" placeholder="Last Name"onkeypress="return /[a-z]/i.test(event.key)"required>
                                 </div>
                               </div>
-                              <div class="form-group ">
+                              <div class="form-row">
+                              <div class="form-group col-md-6">
                               <label for="">Email</label>
                               <input type="email" class="form-control"name="email" id="email" placeholder="Email" required>
                             </div>
-                            <div class="form-group ">
-                              <label for="">Phone Number</label>
+                            <div class="form-group col-md-6">
+                              <label for="">Phone No</label>
                               <input type="text" class="form-control"name="phno" id="phno" placeholder="Phone  no." required>
                             </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="">Alternate Phone No</label>
+                              <input type="text" class="form-control"name="phno" id="phno" placeholder="Phone  no." required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="">Verify Your Identity</label> 
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                  </div>
+                                  <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                      aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                  </div>
+                                </div>
+                        </div>
+                            
+                          </div>
+
                               <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="check3">
                                 <label class="form-check-label" for="exampleCheck1">Get updates on <span><i class="fab fa-whatsapp"></i></span>WhatsApp</label>
@@ -177,7 +214,38 @@
                    </div>
                </div>
 
-     
+     <!------------------------edit profile  modal start------------------------------------->
+                  <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Edit Profile</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="First name"><br>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last name"><br>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;">
+                            <input type="text" name="phno" class="form-control" id="phno" placeholder="Contact No."><br/>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
+                          </div>
+                        </div>
+                        
+                      <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
+                        <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
+                        <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
+                        <button type="button" class="btn btn-info">Save changes</button>
+                      
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+<!------------------------edit profile  modal start------------------------------------->
         
   <!------------------rigghhttside for Profile information section-------------------- -->
                   <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -298,14 +366,14 @@
               </div>
    <!-------------------rigghhttside for booking received section end--------------- -->
 
-<!---------------------------------rigghhttside for Rent section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
+<!-------------------rigghhttside for residental Rent section----------------------- -->
+                  <div class="tab-pane fade" id="v-pills-Residentalrent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">My Properties</a></li>
                         
-                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Residential Rent</a></li>
                       </ul>
                     </div>
                     <legend class="signup-legend">Your Properties</legend>
@@ -313,13 +381,8 @@
                     <h5>No Rent Properties listed by you yet!</h5>
                     
                   </div>
-                  <!---------------------------------rigghhttside for Rent section end------------------------------------------------- -->
-
-
-
-                 
-
-                  <!---------------------------------rigghhttside for Commercial Rent section------------------------------------------------- -->
+ <!-----------------rigghhttside for residental Rent section end----------------- -->
+<!-----------rigghhttside for Commercial Rent section----------------- -->
                   <div class="tab-pane fade" id="v-pills-commercialrent" role="tabpanel" aria-labelledby="v-pills-cmmercialrent-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -334,25 +397,7 @@
                     <h5>No Commercial Rent Properties listed by you yet!</h5>
                   
                   </div>
-                  <!---------------------------------rigghhttside for Commercial Rent section end------------------------------------------------- -->
-
-
-                  <!---------------------------------rigghhttside for Commercial Buy section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-commercial" role="tabpanel" aria-labelledby="v-pills-commercial-tab">
-                    <div>
-                      <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My properties</a></li>
-                        
-                        <li><a href="#">Commercial Buy</a></li>
-                      </ul>
-                    </div>
-                    <legend class="signup-legend">Your Properties</legend>
-                    <hr />
-                    <h5>No Commercial Buy Properties listed by you yet!</h5>
-                  
-                  </div>
-                  <!---------------------------------rigghhttside for Commercial Buy section end------------------------------------------------- -->
+ <!----------------rigghhttside for Commercial Rent section end------------ -->
 
 
 </div><!--tab content end--->

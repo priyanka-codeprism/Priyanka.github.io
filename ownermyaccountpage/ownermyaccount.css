@@ -26,7 +26,7 @@ body {
 }
  .nav-link{
   font-weight: bold!important
- 
+
 }
 .blink{
   width:50px;
@@ -200,19 +200,19 @@ body {
 }
 .box .list {
   opacity: 0.7;
-  font-size: 18px;
+  font-size: 16px!important;
 }
 
 .fa-credit-card,.fa-user-circle,.fa-file-import,.fa-th-list,
 .fa-home,.fa-map-marker-alt,.fa-city,.fa-images,.fa-tv,.fa-calendar-alt,.fa-phone-slash,
-.fa-user-check,.fa-piggy-bank,.fa-user-shield,.fa-tachometer-alt,.fa-sign-out-alt,.fa-list {
+.fa-user-check,.fa-piggy-bank,.fa-user-shield,.fa-tachometer-alt,.fa-sign-out-alt,.fa-list,.fa-life-ring {
   color: #2ecab6;
   margin-right: 15px;
 }
 .fa-handshake,.fa-hand-holding-heart{
   color: #2ecab6;
 }
-.fa-whatsapp{
+.fa-whatsapp,.fa-pencil-alt{
   color: green;
   margin:0 5px;
 }
