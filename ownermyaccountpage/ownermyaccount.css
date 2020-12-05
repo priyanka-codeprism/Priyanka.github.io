@@ -87,6 +87,10 @@ body {
 .right{
   margin-top: 10px;
 }
+.middle legend{
+  font-size: 18px;
+  font-weight: bold;
+}
 }
   /*---------------------------sidenav-------------------------*/
 .sidebar {
@@ -251,6 +255,7 @@ input[type="email"] {
   font-size: 16px;
   letter-spacing: 1px;
 }
+
 
 
 /*--------------------------------right side end------------------------------------------------*/
