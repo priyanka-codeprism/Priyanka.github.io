@@ -44,8 +44,8 @@
         <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">Collect Rent</span></a>
 
-        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
-        fa-user-circle" aria-hidden="true"></i><span class="ll">24/7 Assistance</span></a>
+        <a class="nav-link" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-assistance" aria-selected="false" ><i class="fa-1x fas
+        fa-clock" aria-hidden="true"></i><span class="ll">24/7 Assistance</span></a>
 
         <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i ><span class="ll">All Transactions</span></a >
 
@@ -107,16 +107,16 @@
                         <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">Collect Rent</span></a>
 
-                        <a class="nav-link box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-clock" aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
+                        <a class="nav-link box" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-assistance" aria-selected="false" ><i class="fa-1x fas fa-clock" aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
     
                         <a class="nav-link payments box" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab"
-                        aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i><span class="list">All Transactions</span></a>
+                        aria-controls="v-pills-payments" aria-selected="false"><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i><span class="list">All Transactions</span></a>
 
                         <a class="nav-link bookingsr box" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x fas fa-file-import " aria-hidden="true"></i><span class="list">Bookings Received</span></a>
 
                         <div>
-                        <a class="nav-link payments box" data-toggle="collapse" data-target="#demo"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">My Properties Listed</span></a>
+                        <a class="nav-link payments box" data-toggle="collapse" data-target="#demo"><i class="fa-1x fas fa-th-list" aria-hidden="true"></i><span class="list">My Properties Listed</span></a>
                         <div id="demo" class="collapse">
                           <!--<a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
                          <div class="sublist"></div>
@@ -145,7 +145,7 @@
                         <ul class="breadcrumb">
                           <li><a href="#">Home</a></li>
                           <li><a href="#">My Account</a></li>
-                          <li><a href="#">Basic Profile</a></li>
+                          <li><a href="#">My Profile</a></li>
                         </ul>
                         
                         <div class="bprofile">
@@ -238,7 +238,7 @@
                           <div class="form-group col-md-12">
                             <input type="text" class="form-control" id="inputPassword4" placeholder="First name"><br>
                             <input type="text" class="form-control" id="inputPassword4" placeholder="Last name"><br>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;"><br/>
                             <input type="text" name="phno" class="form-control" id="phno" placeholder="Contact No."><br/>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
                           </div>
@@ -246,7 +246,7 @@
                         
                       <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
                         <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
-                        <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
+                        <span aria-hidden="true" style="font-size: 20px;color: #007bff;cursor: pointer;">Resend OTP</span>
                         <button type="button" class="btn btn-info">Save changes</button>
                       
                       </div>
@@ -399,9 +399,9 @@
                       </form>
                     </div>
                   </div>
-                </div>
+                
 
-                <!---------------------------------rigghhttside for  collect  Rent section end------------------------------------------------- -->
+  <!---------------------------------rigghhttside for  collect  Rent section end------------------------------------------------- -->
 
 <!-----------------------rigghhttside for 24/7 Assistance section--------------------- -->
                   <div class="tab-pane fade" id="v-pills-assistance" role="tabpanel" aria-labelledby="v-pills-assistance-tab">
@@ -619,7 +619,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">My Properties</a></li>
                         
-                        <li><a href="#">Residential Rent</a></li>
+                        <li><a href="#">Residental Rent Listings</a></li>
                       </ul>
                     </div>
                     <legend class="signup-legend">Your Properties</legend>
@@ -634,7 +634,7 @@
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">My properties</a></li>
-                        <li><a href="#">Commercial Rent</a></li>
+                        <li><a href="#">Commercial Rent Listings</a></li>
                        
                       </ul>
                     </div>
