@@ -47,11 +47,10 @@
        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">My Profile</span></a>
 
-        <a class="nav-link" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
-        fa-user-circle" aria-hidden="true"></i><span class="ll">Verify Yourself</span></a>
+        <a class="nav-link" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas
+        fa-user-check" aria-hidden="true"></i><span class="ll">Verify Yourself</span></a>
 
-        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
-        fa-user-circle" aria-hidden="true"></i><span class="ll">Collect Rent</span></a>
+        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fas fa-money-check-alt"></i><span class="ll">Collect Rent</span></a>
 
         <a class="nav-link" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-assistance" aria-selected="false" ><i class="fa-1x fas
         fa-clock" aria-hidden="true"></i><span class="ll">24/7 Assistance</span></a>
@@ -105,10 +104,10 @@
                       <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">My Profile</span></a>
 
-                        <a class="nav-link box" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far fa-user-circle" aria-hidden="true"></i><span class="list">Verify Yourself</span></a>
+                        <a class="nav-link box" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-user-check" aria-hidden="true"></i><span class="list">Verify Yourself</span></a>
 
                         <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab"
-                        aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">Collect Rent</span></a>
+                        aria-controls="v-pills-bookings" aria-selected="false"><i class="fas fa-money-check-alt"></i><span class="list">Collect Rent</span></a>
 
                         <a class="nav-link box" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab" aria-controls="v-pills-assistance" aria-selected="false" ><i class="fa-1x fas fa-clock" aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
     
@@ -427,10 +426,10 @@
                     <div class="d1">
                       <div class="row">
                         <div class="col-8">
-                          <div>
+                          <div class="form-group">
                             <label style="font-size: 18px;">Issue:</label>
-                            <div style='width:500px'>
-                              <textarea class="form-control" name="" id="" cols="50" style='width: 100%;'></textarea>
+                            <div style=''>
+                              <textarea class="form-control" name="" id=""  ></textarea>
                             </div>
                           </div>
                         </div>
@@ -443,10 +442,10 @@
                     <div class="d1">
                       <div class="row">
                         <div class="col-8">
-                          <div>
+                          <div class="form-group">
                             <label style="font-size: 18px;">Specify Concerns:</label>
-                            <div style='width:500px'>
-                              <textarea class="form-control" name="" id="" cols="50" style='width: 100%;'></textarea>
+                            <div style=''>
+                              <textarea class="form-control" name="" id=""  ></textarea>
                             </div>
                           </div>
                         </div>
@@ -516,7 +515,8 @@
                       <legend class="signup-legend">Transaction
                         </legend><hr>
                         <h5 style="color:red;">This function only works for verified properties i.e <b>Sheltie's Shelter.</b> </h5><hr>
-                      <div class="d1">
+                        <!-------desktop  view------->
+                     <div class="desk"> <div class="d1">
                         <div class="row">
                           <div class="col-5">
                               <div>
@@ -571,7 +571,64 @@
                             <div>BankTxn ID 123456</div>
                           </div> 
                           </div> 
-                       </div><hr>
+                       </div><hr></div>
+                       <!-------desk  view end------>
+                       <!-------mob  view start------>
+                       <div class="mob">
+                         <div>
+          <label></label>
+          <select
+            style="font-weight: bolder; padding: 5px" name="" id="" style="padding: 5px" >
+            <option style="font-weight: bolder; padding: 5px" value="">
+              All Transaction
+            </option>
+            <option style="font-weight: bolder" value="">Pending</option>
+            <option style="font-weight: bolder" value="">Cancelled</option>
+            <option style="font-weight: bolder" value="">Confirmed</option>
+            <option style="font-weight: bolder" value="">Refund</option>
+            <option style="font-weight: bolder" value="">Coupons</option>
+            <option style="font-weight: bolder" value="">Vouchers</option>
+          </select>
+        </div>
+        <div class="card mt-2">
+          <div class="card-body px-1 py-1">
+            <div class="row py-0" style="padding: 0!important">
+              <div class="col-8">
+                <div style="font-weight: bold">Paid for booking at</div>
+                <div style="font-weight: bold">(property name)</div>
+              </div>
+              <div class="col-4 text-right">
+                <div>₹6,000</div>
+              </div>
+            </div>
+            <div class="row py-0"style="padding: 0!important">
+              <div class="col-8 pt-1">
+                <div>4 March 2020, 9:51 pm</div>
+              </div>
+              <div class="col-4 text-right pt-1 mt-1">
+                <div class="dropdown-container">
+                  <select
+                    onchange="this.className=this.options[this.selectedIndex].className"
+                    class="greenText"
+                    style="padding: 2px"
+                  >
+                    <option class="greenText" value="" selected>Success</option>
+                    <option class="yellowText" value="">Pending</option>
+                    <option class="redText" value="">Failed</option>
+                  </select>
+                </div>
+              </div>
+             
+              <div class="col-12 pt-3" style="display: block">
+                <div style="color: grey">Booking Id: property01</div>
+                <div style="color: grey">BankTxn ID 123456</div>
+              </div>
+            
+            </div>
+          </div>
+        </div><!--card end--->
+                       </div>
+                       <!-------mob  view end------>
                        <div class="d3">
                          <div class="row text-center">
                           <div class="col-4">

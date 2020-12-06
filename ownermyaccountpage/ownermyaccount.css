@@ -101,7 +101,8 @@ font-size: 30px;
     display: none!important;
   }
   .fa-credit-card,.fa-user-circle,.fa-file-import,.fa-th-list,
-   .fa-home,.fa-map-marker-alt,.fa-city,.fa-images,.fa-tv,.fa-calendar-alt{
+   .fa-home,.fa-map-marker-alt,.fa-city,.fa-images,.fa-tv,.fa-calendar-alt,
+   .fa-clock,.fa-user-check,.fa-money-check-alt{
   color: black!important;
   margin-right: 15px;
   font-size: initial !important;
@@ -121,6 +122,15 @@ font-size: 30px;
 .middle legend{
   font-size: 18px;
   font-weight: bold;
+}
+.small p{
+  font-size: 12px;
+}
+.imgtxt h5{
+  font-size: 16px;
+}
+.custom-file-label{
+  font-size: 14px!important;
 }
 }
   /*---------------------------sidenav-------------------------*/
@@ -220,11 +230,11 @@ font-size: 30px;
 .fa-credit-card,.fa-user-circle,.fa-file-import,.fa-th-list,
 .fa-home,.fa-map-marker-alt,.fa-city,.fa-images,.fa-tv,.fa-calendar-alt,.fa-phone-slash,
 .fa-user-check,.fa-piggy-bank,.fa-user-shield,.fa-tachometer-alt,.fa-sign-out-alt,
-.fa-list,.fa-life-ring,.fa-clock {
+.fa-list,.fa-life-ring,.fa-clock,.fa-user-check,.fa-money-check-alt {
   color: #2ecab6;
   margin-right: 15px;
 }
-.fa-handshake,.fa-hand-holding-heart{
+.fa-handshake,.fa-hand-holding-heart,.fa-handshake-o{
   color: #2ecab6;
 }
 .fa-whatsapp,.fa-pencil-alt{
@@ -337,6 +347,23 @@ font-size: 14px;
 /* for IE10 */
 .dropdown-container select::-ms-expand {
   display: none;
+}
+.mob{
+  display: none;
+}
+@media (max-width: 576px){
+.mob{
+  display: block;
+}
+.desk{
+  display: none;
+}
+.d3 h4{
+  font-size: 18px;
+}
+.d3 p{
+  font-size: 14px;
+}
 }
 
 /*--------------------------------right side end------------------------------------------------*/
