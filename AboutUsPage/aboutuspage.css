@@ -22,8 +22,19 @@ html{
 	 padding: 50px 30px;
 }
 .fa-angle-right{
-	font-size: 20px;
+	font-size: 30px;
 	color: red;
+	margin: auto;
+	
+}
+@media (max-width: 576px) {
+  .images img{
+  	width:100%;
+  	height: auto;
+  }
+  .images h5{
+  	font-size: 16px;
+  }
 }
 /*--------------------top part end------------------------*/
 footer {

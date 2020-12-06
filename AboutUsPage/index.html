@@ -27,15 +27,15 @@
   </div>
   <div class="aboutus">
      <div class="text-center p-5">
-       <h3><b>ABOUT US</b></h3>
-       <p>Sheltown, a Made In India startup, One of its kind, All-Of-Home Services Provider, at one platform, today is India's leading chain of rental properties, homes, and spaces.</p>
+       <h3 class=""><b>ABOUT US</b></h3><hr style="width: 20%;margin: auto;">
+       <p class="mt-3">Sheltown, a Made In India startup, One of its kind, All-Of-Home Services Provider, at one platform, today is India's leading chain of rental properties, homes, and spaces.</p>
        <p>Sheltown is committed to building a network where we could serve you regarding all your needs of having a shelter where you could Live Like You Own It, without paying for any brokerage or commission.Authenticity, Honest concerns for Customer’s Privacy and Safety, having these as our core values; are closely interwoven into the fiber of our efforts to match your requirements of a property where you want to live.We help you to Find Your Match, Book Rental Homes, PGs, Flats & Apartments of choice across 10 Indian cities.We assist with - Move-in, Personalised services, & Other Premium Plans. We are with you whenever you are in need! Our service starts with the moment you contact us, to the day you move into your new home and beyond.</p>
      </div>
      <div class="text-center ">
        <h4><b>Finding a home has never been this easier!</b></h4>
        <p style="color: red;font-weight: bolder;font-size: 18px;">No Brokerage Guarantee</p>
-       <div class="images d-flex flex-row justify-content-around align-items-center">
-             <div class="img1 px-5">
+       <div class="images  px-5 d-flex flex-row justify-content-center ">
+             <div class="img1 ">
               <img src="images/a-2.jpg" style="height: 100px;">
               <h5>Choose location you want to live.</h5>
             </div>
@@ -214,7 +214,7 @@
                         <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
                             <i class="fab fa-instagram white-text mr-4"> </i>
                         </a>
-                        <a href="#" class=" to-top"><i class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"></i></a>
+                        
                     </div>
                     <!-- Grid column -->
         
@@ -227,63 +227,7 @@
 </footer>
 <!-------------------------footer end------------------------------------------------->
 
-<script>
-  setInterval(function(){
-  document.querySelector("#blink").style="visibility:hidden";
-  },1000);
-  setInterval(function(){
-  document.querySelector("#blink").style="visibility:visible";
-  },1100);
-  setInterval(function(){
-  document.querySelector("#blinks").style="visibility:hidden";
-  },1000);
-  setInterval(function(){
-  document.querySelector("#blinks").style="visibility:visible";
-  },1100);
 
-  const totop=document.querySelector(".to-top i");
-  window.addEventListener("scroll",()=>{
-    if (window.pageYOffset>100) {
-      totop.classList.add("active");
-    }else{
-      totop.classList.remove("active");
-    }
-  })
-</script>
-<script>
-$(document).ready(function() {
- $('.owl-carousel').owlCarousel({
-  
-    loop:true,
-    margin:20,
-   nav:true,
-    autoplay:true, 
-    autoplayTimeout:2000,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true
-        }
-    }
-});
-
-$('.popup').on('touchstart click', function(e){ 
-    e.preventDefault();
-    var popup = document.getElementById("myPopup");
-              popup.classList.toggle("show");
- });
-            
-});
-
-</script>
     
        
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
