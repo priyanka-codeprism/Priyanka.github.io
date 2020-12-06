@@ -17,7 +17,7 @@
   <body>
     <div class="header">          
 <nav class="navbar  navbar-light fixed-top "style="background-color: #fff;">
- <div><a class=" pl-0  mr-2" href="#" style="padding-top: -10px!important;"><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i></a>
+ <div><a class="arrow pl-0  mr-2" href="addNewProperty.html" style="padding-top: -10px!important;">&larr;</a>
     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><p>Live Like You Own It</p></a></div>
   <div class="menu">
     <ul class=""> 
@@ -560,7 +560,7 @@
                             <input type="file" class="custom-file-input" id="customFile"accept="image/gif, image/jpeg, image/png"onchange="readURL(this);" >
                             <label class="custom-file-label" for="customFile">Choose file</label>
                           </div>
-                          <img id="blah" src="#" alt="your image" />
+                          <!---<img id="blah" src="#" alt="your image" />-->
                           
                         </form>
                 </div><hr/>
@@ -583,7 +583,7 @@
           var fileName = $(this).val().split("\\").pop();
           $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
         });*/
-        $(document).ready(function(){
+        /*$(document).ready(function(){
               function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -597,7 +597,7 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
-});
+});*/
 
 
     </script>

@@ -63,6 +63,12 @@ body {
   color: #2ECAB6;
  padding-top: -5px!important;
 }
+.arrow{
+font-size: 30px;
+  color: #2ECAB6;
+  font-weight: bold;
+  text-decoration: none!important; 
+}
 .mobview {
   display: none!important;
 }
