@@ -9,7 +9,7 @@ body {
 }
 /*------------------------------------header section----------------------------------------*/
 header {
-  height: 9vh;
+  height: 8.4vh;
   width: 100%;
 }
 .navbar {
@@ -47,9 +47,6 @@ header {
   display: none;
 }
 @media (max-width: 770px) {
-  header {
-  width: 100%;
-}
   .navbar {
     padding: 0px 25px;
   }
@@ -189,11 +186,11 @@ header {
   background: #fff;
   margin: 1px 0px 0px 0px;
 }
-.left a {
+.float-left a {
   text-decoration: none;
   color: black;
 }
-.left a:hover {
+.float-left a:hover {
   color: #069784;
 }
 .box .list {
@@ -210,7 +207,10 @@ header {
 .fa-power-off,
 .fa-credit-card,
 .fa-bell,
-.fa-heart,.fa-handshake,.fa-user-shield,.fa-hand-holding-heart {
+.fa-hand-holding-heart,
+.fa-handshake-o,
+.fa-user-shield,
+.fa-heart {
   color: #2ecab6;
   margin-right: 15px;
 }
@@ -255,7 +255,7 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
-.bookings,.ratings {
+.bookings {
   margin: 10px 0px;
   padding: 10px 10px;
   border: 1px solid grey;
@@ -304,7 +304,7 @@ ul.breadcrumb li a:hover {
 .btn-info {
   background-color: #2ecab6 !important;
 }
-.bookings .carousel {
+.carousel {
   width: 290px;
 }
 .carousel-control-next {
@@ -318,8 +318,10 @@ ul.breadcrumb li a:hover {
   color: green;
   text-decoration: underline;
 }
+
+/*--------------------------------Star rating css-----------------------------*/
 .rate {
- float: left;
+  float: left;
   height: 46px;
   padding: 0 10px;
 }
@@ -353,13 +355,38 @@ ul.breadcrumb li a:hover {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
-.modalf p{
+
+.rates {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rates:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rates:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rates:not(:checked) > label:before {
+  content: "★ ";
+}
+.rates > input:checked ~ label {
+  color: #ffc700;
+}
+.modalf p {
   font-size: 12px;
 }
 /*--------------------------------verify yourself section-----------------------------*/
 .verification {
   margin: 10px 0px;
-  padding: 20px 10px;
+  padding: 20px 0px;
 }
 .verification div {
   margin: 20px 0px;
@@ -417,6 +444,7 @@ input[type="email"] {
   border-radius: 0px;
   margin-bottom: 20px;
   margin-top: 2px;
+
   box-sizing: border-box;
   color: #2c3e50;
   background-color: #eceff1;
@@ -441,6 +469,7 @@ input[type="email"] {
 }
 
 /*----------------------------Transactions-----------------*/
+
 .redText {
   background-color: red;
 }
@@ -450,41 +479,23 @@ input[type="email"] {
 .yellowText {
   background-color: yellow;
 }
+.blueText {
+  background-color: rgb(14, 68, 247);
+}
+
 /*---------------my review and ratings------------------------------------*/
 
 .images img {
   height: 250px !important;
   padding: 10px;
- }
- .rates {
- float: left;
-  height: 46px;
-  padding: 0 10px;
-}
-.rates:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
-}
-.rates:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
-}
-.rates:not(:checked) > label:before {
-  content: "★ ";
-}
-.rates > input:checked ~ label {
-  color: #ffc700;
-}
-.assistances {
-  margin: 10px 0px;
-  padding: 20px 10px;
 }
 
+/*---------------24*7 assistance------------------------------------*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*--------------------------------right side end------------------------------------------------*/
 footer {
@@ -502,8 +513,13 @@ footer a {
     padding-top: 20px;
   }
 }
+@media (max-width: 1322px) {
+  .ready {
+    padding: 0 0 0 0 !important;
+  }
+}
 @media (max-width: 1098px) and (min-width: 770px) {
-  .bookings .carousel{
+  .carousel {
     width: 200px;
   }
   .pp1 {

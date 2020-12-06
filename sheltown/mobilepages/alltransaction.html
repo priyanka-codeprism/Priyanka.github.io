@@ -22,15 +22,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     />
     <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/all.css"
+      href="../fontawesome-free-5.13.0-web/fontawesome/css/all.css"
       rel="stylesheet"
     />
     <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
+      href="../fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
-    <link href="css/stylemyAccount.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/myaccount.js"></script>
+    <link href="../css/stylemyAccount.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/myaccount.js"></script>
 
     <style type="text/css">
       @media (max-width: 770px) {
@@ -53,7 +53,7 @@
     <header>
       <nav class="navbar fixed-top">
         <div class="logo">
-          <a href="index.html"
+          <a href="../index.html"
             ><i
               class="fas fa-arrow-left"
               style="font-size: 24px; padding: 0 20px 10px 0"
@@ -72,7 +72,7 @@
       <div>
         <ul class="breadcrumb">
           <li><a href="#">Home</a></li>
-          <li><a href="index.html">My Account</a></li>
+          <li><a href="../index.html">My Account</a></li>
           <li><a href="#">Payments</a></li>
           <li><a href="#">All Transactions</a></li>
         </ul>
@@ -80,16 +80,20 @@
       <div class="alltransaction">
         <legend class="signup-legend">Transaction</legend>
         <hr />
-        <div class="dropdownbox">
+        <br />
+        <div>
           <label></label>
-          <select name="" id="">
-            <option value="">All Transaction</option>
-            <option value="">Pending</option>
-            <option value="">Cancelled</option>
-            <option value="">Conformed</option>
-            <option value="">Refund</option>
-            <option value="">Coupons</option>
-            <option value="">Vouchers</option>
+          <select
+            style="font-weight: bolder; padding: 5px" name="" id="" style="padding: 5px" >
+            <option style="font-weight: bolder; padding: 5px" value="">
+              All Transaction
+            </option>
+            <option style="font-weight: bolder" value="">Pending</option>
+            <option style="font-weight: bolder" value="">Cancelled</option>
+            <option style="font-weight: bolder" value="">Confirmed</option>
+            <option style="font-weight: bolder" value="">Refund</option>
+            <option style="font-weight: bolder" value="">Coupons</option>
+            <option style="font-weight: bolder" value="">Vouchers</option>
           </select>
         </div>
         <div class="card">
@@ -109,7 +113,11 @@
               </div>
               <div class="col-4 text-right pt-1">
                 <div class="dropdown-container">
-                  <select id="mySelect" class="greenText">
+                  <select
+                    onchange="this.className=this.options[this.selectedIndex].className"
+                    class="greenText"
+                    style="padding: 5px"
+                  >
                     <option class="greenText" value="" selected>Success</option>
                     <option class="yellowText" value="">Pending</option>
                     <option class="redText" value="">Failed</option>
@@ -122,11 +130,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div><!--card end--->
       </div>
     </div>
     <!---------------------------------mobile view end-------------------------- -->
-    <script src="./js/color.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
