@@ -21,11 +21,17 @@
   <div class="menu">
     <ul class=""> 
       <li class="nav-item mr-4">
-        <p class="nav-link pt-3" href="#" >Adarsh Kumar</p>
+        <div class=" dropdown mt-3"style="margin-left: 0px!important">
+
+                  <button type="button" class="btn btn-info dropdown-toggle"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" class="plan">Sheltie's Plan</button>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 60px !important;">
+                      <a class="dropdown-item" href="#">Option A</a>
+                      <a class="dropdown-item" href="#">Option B</a>
+                      <a class="dropdown-item" href="#">Option C</a>
+                      
+                  </div></div>
       </li> 
-      <li class="nav-item mr-4">
-        <p class="nav-link pt-3" href="#" >7644080506</p>
-      </li>  
+        
     </ul>
   </div>
   <div class="menulines" onclick="openNav()">&#9776;</div>
@@ -41,6 +47,9 @@
        <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">My Profile</span></a>
 
+        <a class="nav-link" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
+        fa-user-circle" aria-hidden="true"></i><span class="ll">Verify Yourself</span></a>
+
         <a class="nav-link" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far
         fa-user-circle" aria-hidden="true"></i><span class="ll">Collect Rent</span></a>
 
@@ -50,22 +59,9 @@
         <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i ><span class="ll">All Transactions</span></a >
 
         <a class="nav-link" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x fas fa-file-import" aria-hidden="true"></i ><span class="ll">Bookings Received</span></a >
-        <div style="cursor: pointer;">
-          <a class="nav-link" data-toggle="collapse" data-target="#demo"
-            ><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i
-            ><span class="ll">My Properties Listed</span></a >
-          <div id="demo" class="collapse">
-            
-            <a id="v-pills-Residental-tab" data-toggle="pill" href="#v-pills-Residentalrent" role="tab"
-             aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Residental Rent Listings</div>
-            </a>
-            <a id="v-pills-Commercial-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false" >
-              <div class="ll">Commercial Rent Listings</div>
-            </a>
-            
-          </div>
-        </div>
+
+        <a class="nav-link" id="v-pills-properties-tab" data-toggle="pill" href="#v-pills-properties" role="tab" aria-controls="v-pills-properties" aria-selected="false" ><i class="fa-1x fas fa-th-list" aria-hidden="true"></i ><span class="ll">My Properties Listed</span></a >
+        
       </div>
 
       <a href="addNewProperty.html">
@@ -87,22 +83,29 @@
 
  <!---------------------------------mobile view end-------------------------- -->
      <!-------------------desktop view----------------------->
-     <section class="deskview"style="margin-top: 50px;">
+     <section class="deskview"style="margin-top: 60px;">
        <div class="container-fluid">
             <div class="row py-3 px-5">
  <!---------------------------------left side-------------------------- -->
                 <div class="col-lg-3 col-md-4 col-sm-12 ">
                   <div class="left">
-                    <div class="icon"style="background: white;">
-                      <div class="">
-                        <h5 class="text-center">Manage Your Account</h5>
-                       </div>
+                    <div class="icon">
+                      <div class="row">
+                        <div class="col-3">
+                           <i class="fa-3x fas fa-user-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-9">
+                            <span style="font-size: 16px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Adarsh Kumar</span><br><span>7644080506</span>
+                        </div>
+                    </div>
                     </div>
         
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                       
                       <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-bprofile" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">My Profile</span></a>
+
+                        <a class="nav-link box" id="v-pills-verification-tab" data-toggle="pill" href="#v-pills-verification" role="tab" aria-controls="v-pills-bookings" aria-selected="false" ><i class="fa-1x far fa-user-circle" aria-hidden="true"></i><span class="list">Verify Yourself</span></a>
 
                         <a class="nav-link bsprofile box" id="v-pills-bprofile-tab" data-toggle="pill" href="#v-pills-Rent" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x far fa-user-circle " aria-hidden="true"></i><span class="list">Collect Rent</span></a>
@@ -115,21 +118,9 @@
                         <a class="nav-link bookingsr box" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x fas fa-file-import " aria-hidden="true"></i><span class="list">Bookings Received</span></a>
 
-                        <div>
-                        <a class="nav-link payments box" data-toggle="collapse" data-target="#demo"><i class="fa-1x fas fa-th-list" aria-hidden="true"></i><span class="list">My Properties Listed</span></a>
-                        <div id="demo" class="collapse">
-                          <!--<a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab" aria-controls="v-pills-transactions" aria-selected="false">
-                         <div class="sublist"></div>
-                        </a>-->
-                    <a id="v-pills-Residental-tab" data-toggle="pill" href="#v-pills-Residentalrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
-                      <div class="sublist">Residental Rent Listings</div>
-                    </a>
-                    <a id="v-pills-Commercial-tab" data-toggle="pill" href="#v-pills-commercialrent" role="tab" aria-controls="v-pills-coupons" aria-selected="false">
-                      <div class="sublist">Commercial Rent Listings</div>
-                    </a>
-                    <div style="background: white; height: 20px"></div>
-                  </div>
-                </div><!--collapse end--->
+                        <a class="nav-link box" id="v-pills-properties-tab" data-toggle="pill" href="#v-pills-properties" role="tab" aria-controls="v-pills-properties" aria-selected="false" ><i class="fa-1x fas fa-th-list" aria-hidden="true"></i ><span class="list">My Properties Listed</span></a >
+
+                        
                                                                    
                     </div>
                     <div ><a href="addNewProperty.html"><div class="btn btn-success mt-2" style="width: 100%;">Add New Property</div></a></div>
@@ -194,19 +185,7 @@
                               <label for="">Alternate Phone No</label>
                               <input type="text" class="form-control"name="phno" id="phno" placeholder="Phone  no." required>
                             </div>
-                            <div class="form-group col-md-6">
-                              <label for="">Verify Your Identity</label> 
-                              <div class="input-group">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                                  </div>
-                                  <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                      aria-describedby="inputGroupFileAddon01">
-                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                  </div>
-                                </div>
-                        </div>
+                            
                             
                           </div>
 
@@ -214,7 +193,6 @@
                                 <input type="checkbox" class="form-check-input" id="check3">
                                 <label class="form-check-label" for="exampleCheck1">Get updates on <span><i class="fab fa-whatsapp"></i></span>WhatsApp</label>
                               </div> 
-                             <div class="d-flex justify-content-center"><button class="submit-btn btn btn-success px-5" id="">Update</button></div>
                              
                         </fieldset>
                      </form>
@@ -255,6 +233,38 @@
                   </div>
 
 <!------------------------edit profile  modal start------------------------------------->
+
+<!---------------------------------rigghhttside for Verify yourself section------------------------------------------------- -->
+                  <div class="tab-pane fade" id="v-pills-verification" role="tabpanel" aria-labelledby="v-pills-verify-tab">
+                    <div>
+                      <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Verify Yourself</a></li>
+                      </ul>
+                    </div>
+                <div class="verification">
+                  <div>
+                    <!--<h3>Verify yourself</h3><div style="margin: 0 80px;">&</div><p class="p1">Get best offers Available</p>-->
+                    <legend class="p2">Verify your identity</legend><hr>
+                  </div>  
+                    <div class="dropdown-container">
+                      <label>Verification Status:</label>
+                    <select name="cars" id="cars" style="padding: 5px;">
+                      <option value="none">Verification pending</option>
+                      <option value="none">Verification Successful</option>
+                    </select></div>
+                  
+                  <div class="buttons mt-4 mb-2">
+                    
+                    <button class="btn bg-warning b "style="color: white!important;">Select Files</button>
+                    <button class="btn bg-success b "style="color: white!important;">Submit</button>
+                  </div>
+                  <p class="p3">(Valid IDs: Adharcard, PAN, Driving Licence, Passport, or any other ID with name and photo) </p>
+                  
+                
+                </div></div>
+                  <!---------------------------------rigghhttside for Verify yourself section end------------------------------------------------- -->
 
 <!-----------rigghhttside for collect  Rent section-------------------------- -->
                 <div
@@ -301,7 +311,7 @@
                               </div>
                             </div>
                             <div class="form-group col-md-4">
-                              <label for="inputPassword4">Email(Optional):</label>
+                              <label for="inputPassword4">Email (Optional):</label>
                               <div class="input-group mb-2">
                                 <input type="email" class="form-control" name="fname" id="fname" placeholder="Email ID"
                                   onkeypress="return /[a-z]/i.test(event.key)" required />
@@ -337,7 +347,7 @@
                               </div>
                             </div>
                             <div class="form-group col-md-4">
-                              <label for="inputPassword4">UPI ID(Optional):</label>
+                              <label for="inputPassword4">UPI ID (Optional):</label>
                               <div class="input-group mb-2">
                                 <input type="email" class="form-control" name="fname" id="fname" placeholder="UPI ID"
                                   onkeypress="return /[a-z]/i.test(event.key)" required />
@@ -392,7 +402,7 @@
                           <div class="mt-4 d-flex justify-content-center">
                             
                             <button class="btn btn-success mx-1">
-                              Send Remainder
+                              Send Reminder To Tenant
                             </button>
                           </div>
                         </fieldset>
@@ -450,7 +460,7 @@
                         <input type="email" name="email" class="form-control" id="email" placeholder="Email Id"
                           style="background-color: white; width: 50%;">
 
-                          <button class="btn bg-warning b" style="display: inline;">Attach Image</button>
+                          <button class="btn bg-warning b mt-2" style="display: inline;">Attach Image</button>
                           <p style="display: inline;">(Optional)</p>
                         <br/><hr>
                         <div class="center">
@@ -505,6 +515,7 @@
                   <div class="alltransaction">
                       <legend class="signup-legend">Transaction
                         </legend><hr>
+                        <h5 style="color:red;">This function only works for verified properties i.e <b>Sheltie's Shelter.</b> </h5><hr>
                       <div class="d1">
                         <div class="row">
                           <div class="col-5">
@@ -536,7 +547,7 @@
                          <div class="row">
                           <div class="col-5">
                             <div class="d21">
-                              <p class="dp1">Paid for booking at (property name)</p>
+                              <p class="dp1">Received for booking at (property name)</p>
                               <p class="dp2">4 March 2020, 9:51 pm</p>
                               <p class="dp3">Booking Id: property01</p>
                            </div>
@@ -606,44 +617,30 @@
                   <legend class="signup-legend">Bookings Received</legend>
                 
                     <hr />
-                    <h5 class="signup-legend">We only take online bookings for verified properties <span style="color: grey;">i.e Sheltie's Shelter</span></h5>
+                    <h5 class="signup-legend">We only take online bookings for verified properties <span style="color: #2ECAB6;">i.e Sheltie's Shelter</span></h5>
                 
                 </div>
               </div>
    <!-------------------rigghhttside for booking received section end--------------- -->
 
-<!-------------------rigghhttside for residental Rent section----------------------- -->
-                  <div class="tab-pane fade" id="v-pills-Residentalrent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
+
+<!-----------rigghhttside for My Properties section----------------- -->
+                  <div class="tab-pane fade" id="v-pills-properties" role="tabpanel" aria-labelledby="v-pills-verify-tab">
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">My Properties</a></li>
-                        
-                        <li><a href="#">Residental Rent Listings</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">My Properties Listed</a></li>
                       </ul>
                     </div>
-                    <legend class="signup-legend">Your Properties</legend>
-                    <hr/>
-                    <h5>No Rent Properties listed by you yet!</h5>
-                    
-                  </div>
- <!-----------------rigghhttside for residental Rent section end----------------- -->
-<!-----------rigghhttside for Commercial Rent section----------------- -->
-                  <div class="tab-pane fade" id="v-pills-commercialrent" role="tabpanel" aria-labelledby="v-pills-cmmercialrent-tab">
-                    <div>
-                      <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My properties</a></li>
-                        <li><a href="#">Commercial Rent Listings</a></li>
-                       
-                      </ul>
-                    </div>
-                    <legend class="signup-legend">Your Properties</legend>
+                <div class="booking">
+                  <legend class="signup-legend">My Properties Listed</legend>
+                
                     <hr />
-                    <h5>No Commercial Rent Properties listed by you yet!</h5>
-                  
-                  </div>
- <!----------------rigghhttside for Commercial Rent section end------------ -->
+                
+                </div>
+              </div>
+ <!----------------rigghhttside for My Properties section end------------ -->
 
 
 </div><!--tab content end--->

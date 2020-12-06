@@ -22,11 +22,8 @@
   <div class="menu">
     <ul class=""> 
       <li class="nav-item mr-4">
-        <p class="nav-link pt-3" href="#" >Adarsh Kumar</p>
+        <p class="nav-link pt-3" href="#" ></p>
       </li> 
-      <li class="nav-item mr-4">
-        <p class="nav-link pt-3" href="#" >7644080506</p>
-      </li>  
     </ul>
   </div>
   <div class="menulines" onclick="openNav()">&#9776;</div>
@@ -74,7 +71,17 @@
         <div class="row py-3 px-1">
             <!---------------------------------left side-------------------------- -->
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="left">  
+                <div class="left"> 
+                <div class="icon">
+                      <div class="row">
+                        <div class="col-3">
+                           <i class="fa-3x fas fa-user-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-9">
+                            <span style="font-size: 16px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Adarsh Kumar</span><br><span>7644080506</span>
+                        </div>
+                    </div>
+                    </div> 
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                         <a class="nav-link bsprofile box" id="v-pills-Property-tab" data-toggle="pill"
@@ -515,12 +522,7 @@
                                     <input type="checkbox" class="check"id="myCheck" name="vehicle1" value="Bike"><span class="row"id="area"style="display:none;font:weight:bold;">YES</span> 
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Property Description</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                    </div>
-                            </div>
+                            
 
                             <div class="d-flex justify-content-center mt-4">
                                 <button class="submit-btn btn btn-secondary mx-1" id="signupbtn" data-toogle="modal">
@@ -555,9 +557,11 @@
                     
                     <form>
                           <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
+                            <input type="file" class="custom-file-input" id="customFile"accept="image/gif, image/jpeg, image/png"onchange="readURL(this);" >
                             <label class="custom-file-label" for="customFile">Choose file</label>
                           </div>
+                          <img id="blah" src="#" alt="your image" />
+                          
                         </form>
                 </div><hr/>
                 <div class="text-center mt-2 ">
@@ -573,13 +577,30 @@
             </div>
             
         </div>
-        <!--<script>
+        <script>
 
         /*$(".custom-file-input").on("change", function() {
           var fileName = $(this).val().split("\\").pop();
           $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
         });*/
-    </script>-->
+        $(document).ready(function(){
+              function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+});
+
+
+    </script>
         <!-------------------rigghhttside for Gallery section end--------------- -->
         <!-------------rigghhttside for Amenities section----------------------- -->
         <div class="tab-pane fade" id="v-pills-Amenities" role="tabpanel" aria-labelledby="v-pills-Amenities-tab">
@@ -781,23 +802,16 @@
                                 <div class="form-group col-md-4">
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                     <label for="vehicle1">Visitor Parking</label>
-                            
-                            
                                 </div>
                                 <div class="form-group col-md-4">
-                                    
                             
                                 </div>
-                            </div>
-                           
-            
+                            </div>    
                             <div class="d-flex justify-content-center">
-                                <button class="submit-btn btn btn-secondary mx-1" id="signupbtn" data-toggle="modal" data-target="#list">
-                                    Finish Listing
+                                <button class="submit-btn btn btn-success mx-1" id="signupbtn" data-toggle="modal" data-target="#list">
+                                    Submit Listing
                                 </button>
-                                <button class="submit-btn btn btn-success mx-1" id="signupbtn" data-toogle="modal">
-                                    Post Ad
-                                </button>
+                                
                             </div>
                         </fieldset>
                     </form>
@@ -812,7 +826,7 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
                     <div>
-                        <h4 class="text-center">Your property has been successfully listed</h4>
+                        <h4 class="text-center">Your property has been successfully listed.</h4>
                         <div class="d-flex justify-content-center" >
                             <img src="images/tick1.gif" style="width:70px;height:70px"></div><br>
                     </div>
