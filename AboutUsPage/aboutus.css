@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ITC Officina Sans Std Book";
+}
+body {
+  background: #f1f3f6;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*---------------------top part---------------------------- */
+.section1,.top {
+  width: 100%;
+}
+.section1{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/town1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.top {
+  background: #2ecab6;
+  clip-path: ellipse(75% 100% at 45% -10%);
+  /*clip-path: circle(100% at 50% -20%);*/
+  color: black;
+  padding: 30px 30px 50px 30px;
+}
+.fa-angle-right {
+  font-size: 30px;
+  color: red;
+  margin: auto;
+}
+.images img{
+  
+}
+
+@media (max-width: 576px) {
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+  .images h6 {
+    font-size: 15px;
+  }
+  .top h2{
+    font-size: 20px;
+  }
+}
+/*--------------------top part end------------------------*/
+
+/*------------------------all media queries-----------------------------*/
+
+@media (max-width: 741px) and (min-width: 576px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+@media (max-width: 386px) and (min-width: 381px) {
+  
+}
+
+/*-----------------------1st part end------------------------------------------->*/
+/*--------------------.100% safety &why sheltown part start-------------------------*/
+
+.icon-content,
+.card-title {
+  font-size: 18px;
+}
+.img1 {
+  width: 25%;
+  height: auto;
+}
+
+.scrolling-wrapper {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  width: 1000px;
+  height: 190px;
+}
+.cf.card {
+  width: 100%;
+}
+@media (min-width: 580px) {
+  .h {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .mob1 {
+    display: none;
+  }
+  .g {
+    display: none;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .img1,
+  .center {
+    width: auto !important;
+    height: 5vh !important;
+  }
+  .cardss p,
+  .safety p {
+    font-size: 12px !important;
+  }
+}
+
+/*---------------------------------------why sheltown part end---------------------------------------*/
+
+/*-------------------------hear from customer-------------------------------------*/
+.item .card {
+  border-radius: 100px 0px 100px 0px;
+  padding: 10%;
+  height: 400px;
+}
+.imgarea {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.text i {
+  color: limegreen;
+}
+.text hr {
+  background-color: #ff5257;
+}
+.owl-dot.active span {
+  background: #ff5257 !important;
+}
+.owl-nav span {
+  display: none;
+}
+.morecontent span {
+  display: none;
+}
+
+/*---------------------------contact us part start--------------------------*/
+/****************************Button**************************/
+
+.btn {
+  color: #2ecab6;
+  font-weight: bold;
+  border: 2px solid #1f6d62;
+  font-size: 20px;
+}
+.hvr-right {
+  display: inline-block;
+  vertical-align: middle;
+  transition-duration: 0.5s;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0);
+  position: relative;
+  transition-property: color;
+}
+.hvr-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2ecab6;
+  transition-timing-function: ease-out;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.hvr-right:hover,
+.hvr-right:focus,
+.hvr-right:active {
+  color: #000;
+}
+.hvr-right:hover:before,
+.hvr-right:focus:before,
+.hvr-right:active:before {
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transform: scaleX(1);
+}
+input[type="text"],input[type="email"]{
+  border: none!important;
+  
+  border-radius: 0!important;
+  border-bottom: 1px solid #ccc!important;
+}
+
+/*---------------------------contact us end---------------------------------------------*/
+/*---------------------------last part start---------------------------------------------*/
+.fa-handshake,
+.fa-user-shield,
+.fa-hand-holding-heart {
+  color: #2ecab6;
+  font-size: 20px;
+}
+
+footer {
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.teal.accent-3 {
+  background-color: #1de9b6 !important;
+}
+.footer-links a:hover {
+  font-weight: bold !important;
+  text-decoration: underline;
+  color: white;
+}
+.to-top i {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 25px;
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.to-top i.active {
+  bottom: 25px;
+  pointer-events: auto;
+  opacity: 1;
+}
+/*---------------------------last part end---------------------------------------------*/
+
