@@ -64,7 +64,11 @@ html {
 
 /*-----------------------1st part end------------------------------------------->*/
 /*--------------------.100% safety &why sheltown part start-------------------------*/
-
+@media (min-width: 580px){
+.h{
+  display: none;
+}
+}
 .icon-content,
 .card-title {
   font-size: 18px;
