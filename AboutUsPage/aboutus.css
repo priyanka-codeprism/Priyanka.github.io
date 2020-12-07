@@ -83,7 +83,7 @@ html {
   width: 100%;
 }
 .section1{
-  padding-top: 10vh;
+  padding-top: 9vh;
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/town1.png");
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ html {
 }
 /*--------------------top part end------------------------*/
 /*------------our service part start------------------*/
-.img1 {
+/*.img1 {
   width: 70%;
   height: auto;
 }
@@ -128,11 +128,68 @@ html {
   width: 100%;
   height: auto;
 }
+}*/
+.cf h5{
+  font-weight: bold;
 }
 
 
 
 /*---------------our service part end------------------*/
+/*-------------------------our team--------------*/
+.item .box{
+  position: relative;
+  padding: 80px 40px 40px;
+  transition: 0.5s;
+  text-align: center;
+  background-color: #fff;
+ }
+ .item .box:hover{
+  background-color: #ff0057;
+ }
+ /*.item .box p{
+  margin:0px;
+  padding: 0px;
+  transition: 0.5s;
+ }*/
+ .item .box h3{
+  margin: 20px 0 0;
+  padding: 0px;
+  transition: 0.5s;
+  color:#ff0057;
+  font-size:18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+
+ }
+ /*.item .box h3 span{
+  font-weight: 600;
+  font-size: 14px;
+  color:#c5c5c5;
+  transition: 0.5s;
+ }*/
+ .item .box:hover p, .item .box:hover h3, .item .box:hover span{
+  color:#fff;
+ }
+ .item .box .imgbox{
+  position: absolute;
+   top:-60px;
+   left: 50%;
+   transform: translate( -50%, 50%);
+  width:120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+
+ }
+ /*.imgbox img{
+  
+  height: 100px; 
+  width: auto;
+  border-radius: 50%;
+ }*/
+/*-------------our team end----------------------*/
 /*---------------our family part start------------------*/
 .icon-content,
 .card-title {
@@ -179,7 +236,7 @@ html {
 
 
 /*-------------------------hear from customer-------------------------------------*/
-.item .card {
+/*.item .card {
   border-radius: 100px 0px 100px 0px;
   padding: 10%;
   height: 400px;
@@ -196,7 +253,7 @@ html {
 }
 .text hr {
   background-color: #ff5257;
-}
+}*/
 .owl-dot.active span {
   background: #ff5257 !important;
 }
