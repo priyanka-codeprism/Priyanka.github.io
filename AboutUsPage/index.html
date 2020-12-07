@@ -18,6 +18,54 @@
     <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   </head>
   <body>
+    <div class="header">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top "style="background-color: #fff;">
+ <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><p>Live Like You Own It</p></a>
+ <div  class="navbar-brand  py-0"style="font-size: 16px;">
+  <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fas fa-map-marker-alt"></i>Choose City
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Bangalore</a>
+          <a class="dropdown-item" href="#">Bhopal</a>
+          <a class="dropdown-item" href="#">Delhi</a>
+          <a class="dropdown-item" href="#">Ghaziabad</a>
+          <a class="dropdown-item" href="#">GurGaon</a>
+          <a class="dropdown-item" href="#">Indore</a>
+          <a class="dropdown-item" href="#">jaipur</a>
+          <a class="dropdown-item" href="#">Kota</a>
+          <a class="dropdown-item" href="#">Noida</a>
+          <a class="dropdown-item" href="#">pune</a>
+        </div>
+      </div>
+    </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item mr-4">
+        <div class="blink "id="blink">Hurry</div>
+        <a class="nav-link " href="#" style="padding-top: 0px;">Refer & Earn </a>
+      </li>
+      <li class="nav-item mr-4">
+        <div class="blink bl" id="blinks">Free</div>
+        <a class="nav-link " href="#"style="padding-top: 0px;" >List Your Property</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign up </a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign in </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</div><!--header end---------->
     <!-----------------------top and about us section start ----------------------->
     <div class="section1" >
       <div class="top text-center">
@@ -177,6 +225,96 @@
 
 
    <!-------------------------Our Team part start----------------------->
+   <section class="mx-3 px-5 py-5"style="background-color: #fff;">
+     <div >
+        <h3 class="text-center font-weight-bold" style="text-shadow: 5px 5px 10px #2ecab6;color:black;">
+          Our Team
+        </h3>
+        <br/>
+      </div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/naman.jpg">
+        </div>
+        <p>“Every one of your marketing claims should be supported by evidence”</p>
+        <h3>Naman</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/anshal.jpg">
+        </div>
+        <p>We2 are proud tto apply this company for our project</p>
+        <h3>Anshal</h3>
+      </div>
+    </div>
+   
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/jennifer.jpg">
+        </div>
+        <p>Proud to be your customer. I rally like it</p>
+        <h3>Jennifer</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/anwesha.jpg">
+        </div>
+        <p>Great Support provided by company, really its so amazing</p>
+        <h3>Anwesha</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/shridhi.jpg">
+        </div>
+        <p>I personally like the services and the customer support of this compnay</p>
+        <h3>Shridhi</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/shivam.jpg">
+        </div><p>We6 are proud tto apply this company for our project</p>
+        <h3>Shivam</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/afreen.jpg">
+        </div>
+        <p>We8 are proud tto apply this company for our project</p>
+        <h3>Afreen</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/sruthi.jpg">
+        </div><p>We9 are proud tto apply this company for our project</p>
+        <h3>Sruthi</h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box">
+        <div class="imgbox">
+          <img src="images/customer12.jpg">
+        </div>
+        <p>We10 are proud tto apply this company for our project</p>
+        <h3>Someone Famous<br><span>Engneer</span></h3>
+      </div>
+    </div>  
+</div>
+   </section>
     
     <!-------------------------Our Team part end---------------------------------------> 
     <!-------------------------our family start------------------------------------------------->
@@ -603,8 +741,47 @@
       </div>
     </footer>
     <!-------------------------footer end------------------------------------------------->
-    
+    <script>
+  setInterval(function(){
+  document.querySelector("#blink").style="visibility:hidden";
+  },1000);
+  setInterval(function(){
+  document.querySelector("#blink").style="visibility:visible";
+  },1100);
+  setInterval(function(){
+  document.querySelector("#blinks").style="visibility:hidden";
+  },1000);
+  setInterval(function(){
+  document.querySelector("#blinks").style="visibility:visible";
+  },1100);
 
+</script>
+<script>
+$(document).ready(function() {
+ $('.owl-carousel').owlCarousel({
+  stagePadding: 50,
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true, 
+    autoplayTimeout:1000,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true
+        }
+    }
+})
+});
+</script>
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

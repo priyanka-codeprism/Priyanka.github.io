@@ -10,11 +10,80 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.navbar-brand{
+  font-size: 20px;
+  margin-top: 5px!important;
+  margin-bottom: -10px!important
+}
+.navbar-brand p{
+  font-size: 14px;
+  margin-top: -10px;
+}
+.nav-item a,.navbar-brand{
+  color: #2ECAB6!important;
+}
+ .nav-link{
+  font-weight: bold!important
+}
+.blink{
+  width:50px;
+  height: 20px;
+  background: red;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: -12px!important;
+  margin-left:50px;
+}
+.bl{
+  margin-left:80px;
+}
+@media (max-width: 992px) {
+  .blink{
+    margin-top: 15px!important;
+  }
+}
+@media (max-width: 576px){
+ 
+  .navbar-brand{
+    padding-left: 0!important;
+  }
+  .dropdown{
+    margin-left: -20px!important
+  }
+  .navbar-brand{
+  font-size: 18px;
+      }
+   .navbar-brand p{
+  font-size: 12px;  
+}
+.tick p,.a2 p,.last p{  
+    font-size: 14px;
+  }
+  
+}
+@media (max-width: 386px)and (min-width: 381px)  {
+  .img1 {
+       width: auto;
+       height: 3vh;
+    }
+   .dropdown{
+    margin-left: -25px!important
+  }
+}
+@media (max-width: 381px){
+  .dropdown{
+    margin-left: -35px!important
+  }
+}
 /*---------------------top part---------------------------- */
 .section1,.top {
   width: 100%;
 }
 .section1{
+  padding-top: 10vh;
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/town1.png");
     background-repeat: no-repeat;
