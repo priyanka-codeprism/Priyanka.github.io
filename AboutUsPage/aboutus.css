@@ -49,33 +49,25 @@ html {
   }
 }
 /*--------------------top part end------------------------*/
+/*------------our service part start------------------*/
+.img1 {
+  width: 70%;
+  height: auto;
+}
+@media (max-width: 577px){
+ .img1 {
+  width: 100%;
+  height: auto;
+}
+}
 
-/*------------------------all media queries-----------------------------*/
 
-@media (max-width: 741px) and (min-width: 576px) {
-  
-}
-@media (max-width: 576px) {
-  
-}
-@media (max-width: 386px) and (min-width: 381px) {
-  
-}
 
-/*-----------------------1st part end------------------------------------------->*/
-/*--------------------.100% safety &why sheltown part start-------------------------*/
-@media (min-width: 580px){
-.h{
-  display: none;
-}
-}
+/*---------------our service part end------------------*/
+/*---------------our family part start------------------*/
 .icon-content,
 .card-title {
   font-size: 18px;
-}
-.img1 {
-  width: 25%;
-  height: auto;
 }
 
 .scrolling-wrapper {
@@ -85,9 +77,12 @@ html {
   width: 1000px;
   height: 190px;
 }
-.cf.card {
-  width: 100%;
+.g .card{
+  background: #444;
+  color: white;
+  border:none!important;
 }
+
 @media (min-width: 580px) {
   .h {
     display: none;
@@ -104,18 +99,15 @@ html {
     width: 100%;
     height: auto;
   }
-  .img1,
-  .center {
-    width: auto !important;
-    height: 5vh !important;
-  }
-  .cardss p,
-  .safety p {
+  
+  .cardss p
+  {
     font-size: 12px !important;
   }
 }
+/*---------------our family part end------------------*/
 
-/*---------------------------------------why sheltown part end---------------------------------------*/
+
 
 /*-------------------------hear from customer-------------------------------------*/
 .item .card {
@@ -192,10 +184,11 @@ html {
 }
 input[type="text"],input[type="email"]{
   border: none!important;
-  
+  outline: none!important; 
   border-radius: 0!important;
   border-bottom: 1px solid #ccc!important;
 }
+
 
 /*---------------------------contact us end---------------------------------------------*/
 /*---------------------------last part start---------------------------------------------*/
