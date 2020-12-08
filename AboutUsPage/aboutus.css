@@ -90,7 +90,7 @@ html {
     background-size: 100% 100%;
 }
 .top {
-  background: #2ecab6;
+  background: linear-gradient(to right, #1eebc9 4%, #2ecab6 100%);
   clip-path: ellipse(75% 100% at 45% -10%);
   /*clip-path: circle(100% at 50% -20%);*/
   color: black;
@@ -119,16 +119,17 @@ html {
 }
 /*--------------------top part end------------------------*/
 /*------------our service part start------------------*/
-/*.img1 {
-  width: 70%;
+.img1 {
+  width: 30%;
   height: auto;
+  margin: auto;
 }
 @media (max-width: 577px){
  .img1 {
-  width: 100%;
-  height: auto;
+ /*width: 100%;
+  height: auto;*/
 }
-}*/
+}
 .cf h5{
   font-weight: bold;
 }
@@ -138,6 +139,8 @@ html {
 }
 .cf .card{
   margin-bottom: 5px;
+  
+  
 }
 
 
