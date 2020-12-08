@@ -132,7 +132,13 @@ html {
 .cf h5{
   font-weight: bold;
 }
-
+ .cf .card p{
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.cf .card{
+  margin-bottom: 5px;
+}
 
 
 /*---------------our service part end------------------*/
