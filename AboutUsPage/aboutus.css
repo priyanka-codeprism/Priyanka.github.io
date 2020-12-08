@@ -10,74 +10,71 @@ body {
 html {
   /*scroll-behavior: smooth;*/
 }
-
-.navbar-brand{
+.navbar-brand {
   font-size: 20px;
-  margin-top: 5px!important;
-  margin-bottom: -10px!important
+  margin-top: 5px !important;
+  margin-bottom: -10px !important;
 }
-.navbar-brand p{
+.navbar-brand p {
   font-size: 14px;
   margin-top: -10px;
 }
-.nav-item a,.navbar-brand{
-  color: #2ECAB6!important;
+.nav-item a,
+.navbar-brand {
+  color: #2ecab6 !important;
 }
- .nav-link{
-  font-weight: bold!important
+.nav-link {
+  font-weight: bold !important;
 }
-.blink{
-  width:50px;
+.blink {
+  width: 50px;
   height: 20px;
   background: red;
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
   color: white;
-  margin-top: -12px!important;
-  margin-left:50px;
+  margin-top: -12px !important;
+  margin-left: 50px;
 }
-.bl{
-  margin-left:80px;
+.bl {
+  margin-left: 80px;
 }
 @media (max-width: 992px) {
-  .blink{
-    margin-top: 15px!important;
+  .blink {
+    margin-top: 15px !important;
   }
 }
-@media (max-width: 576px){
- 
-  .navbar-brand{
-    padding-left: 0!important;
+@media (max-width: 576px) {
+  .navbar-brand {
+    padding-left: 0 !important;
   }
-  
-  /*.navbar-brand{
-  font-size: 18px;
-      }
-   .navbar-brand p{
-  font-size: 12px;  
-}*/
 
-  
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-brand p {
+    font-size: 12px;
+  }
 }
-@media (max-width: 386px)and (min-width: 381px)  {
+@media (max-width: 386px) and (min-width: 381px) {
   .img1 {
-       width: auto;
-       height: 3vh;
-    }
-   
+    width: auto;
+    height: 3vh;
+  }
 }
 
 /*---------------------top part---------------------------- */
-.section1,.top {
+.section1,
+.top {
   width: 100%;
 }
-.section1{
+.section1 {
   padding-top: 9vh;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/town1.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .top {
   background: linear-gradient(to right, #1eebc9 4%, #2ecab6 100%);
@@ -91,8 +88,7 @@ html {
   color: red;
   margin: auto;
 }
-.images img{
-  
+.images img {
 }
 
 @media (max-width: 576px) {
@@ -103,10 +99,10 @@ html {
   .images h6 {
     font-size: 15px;
   }
-  .top h2{
+  .top h2 {
     font-size: 20px;
   }
-  .section1{
+  .section1 {
     padding-top: 8vh;
   }
 }
@@ -117,62 +113,59 @@ html {
   width: 30%;
   height: auto;
   margin: auto;
-  
 }
 
-@media (max-width: 577px){
- .img1 {
- /*width: 100%;
+@media (max-width: 577px) {
+  .img1 {
+    /*width: 100%;
   height: auto;*/
- 
+  }
 }
-}
-.cf h5{
+.cf h5 {
   font-weight: bold;
 }
- .cf .card p{
-  margin-top: 0!important;
-  margin-bottom: 0!important;
+.cf .card p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
-.cf .card{
+.cf .card {
   margin-bottom: 5px;
   border: none;
   background: none;
-  transition: all 1.5s ease; 
+  transition: all 1.5s ease;
 }
 .cf .card:hover {
   transform: scale(1.2);
 }
 
-
-
 /*---------------our service part end------------------*/
 /*-------------------------our team--------------*/
 
- .imgarea{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto;
-    }
-    .imgarea img{
-      width: 100%;
-      height: 100%;
-    }
-  .item .card{
-    padding: 10% 5%;
-  } 
-  .item .card h3{
-    color: #ff0057;
-  } 
-  .text h3{
-    color: black!important;
-  }
+.imgarea {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.imgarea img {
+  width: 100%;
+  height: 100%;
+}
+.item .card {
+  padding: 10% 5%;
+}
+.item .card h3 {
+  color: #ff0057;
+}
+.text h3 {
+  color: black !important;
+}
 .item .card:hover {
   background-color: #ff0057;
 }
-.item .card:hover p,.item .card:hover h3 {
+.item .card:hover p,
+.item .card:hover h3 {
   color: #fff;
 }
 /*-------------our team end----------------------*/
@@ -189,18 +182,17 @@ html {
   width: 1000px;
   height: 190px;
 }
-.g .card{
+.g .card {
   background: #444;
   color: white;
-  border:none!important;
+  border: none !important;
   margin-bottom: 5px;
- 
 }
-.h .card{
- 
- background: #444;
+.h .card {
+  height: 440px;
+  background: #444;
   color: white;
-  border:none!important;
+  border: none !important;
   border-radius: 0;
 }
 
@@ -220,15 +212,12 @@ html {
     width: 100%;
     height: auto;
   }
-  
-  .cardss p
-  {
+
+  .cardss p {
     font-size: 12px !important;
   }
 }
 /*---------------our family part end------------------*/
-
-
 
 /*-------------------------hear from customer-------------------------------------*/
 /*.item .card {
@@ -303,13 +292,13 @@ html {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transform: scaleX(1);
 }
-input[type="text"],input[type="email"]{
-  border: none!important;
-  outline: none!important; 
-  border-radius: 0!important;
-  border-bottom: 1px solid #ccc!important;
+input[type="text"],
+input[type="email"] {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ccc !important;
 }
-
 
 /*---------------------------contact us end---------------------------------------------*/
 /*---------------------------last part start---------------------------------------------*/
@@ -354,4 +343,3 @@ footer a {
   opacity: 1;
 }
 /*---------------------------last part end---------------------------------------------*/
-
