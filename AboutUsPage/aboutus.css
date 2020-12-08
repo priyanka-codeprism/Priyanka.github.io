@@ -139,7 +139,8 @@ html {
 }
 .cf .card{
   margin-bottom: 5px;
-  
+  border: none;
+  background: none;
   
 }
 
