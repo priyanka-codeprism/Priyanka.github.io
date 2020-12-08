@@ -148,53 +148,57 @@ html {
 
 /*---------------our service part end------------------*/
 /*-------------------------our team--------------*/
-.item .box{
+.item .box {
   position: relative;
   padding: 80px 40px 40px;
   transition: 0.5s;
   text-align: center;
   background-color: #fff;
- }
- .item .box:hover{
+}
+.item .box:hover {
   background-color: #ff0057;
- }
- /*.item .box p{
+}
+/*.item .box p{
   margin:0px;
   padding: 0px;
   transition: 0.5s;
  }*/
- .item .box h3{
+.item .box h3 {
   margin: 20px 0 0;
   padding: 0px;
   transition: 0.5s;
-  color:#ff0057;
-  font-size:18px;
+  color: #ff0057;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-
- }
- /*.item .box h3 span{
+}
+/*.item .box h3 span{
   font-weight: 600;
   font-size: 14px;
   color:#c5c5c5;
   transition: 0.5s;
  }*/
- .item .box:hover p, .item .box:hover h3, .item .box:hover span{
-  color:#fff;
- }
- .item .box .imgbox{
+.item .box:hover p,
+.item .box:hover h3,
+.item .box:hover span {
+  color: #fff;
+}
+.item .box .imgbox {
   position: absolute;
-   top:-60px;
-   left: 50%;
-   transform: translate( -50%, 50%);
-  width:120px;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
-
- }
- /*.imgbox img{
+}
+.imgbox {
+  padding-top: -20px;
+  margin-top: 20px;
+}
+/*.imgbox img{
   
   height: 100px; 
   width: auto;
