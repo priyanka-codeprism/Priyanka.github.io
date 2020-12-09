@@ -49,13 +49,13 @@ html {
   .navbar-brand {
     padding-left: 0 !important;
   }
-
+  /*
   .navbar-brand {
     font-size: 18px;
   }
   .navbar-brand p {
     font-size: 12px;
-  }
+  }*/
 }
 @media (max-width: 386px) and (min-width: 381px) {
   .img1 {
@@ -189,7 +189,6 @@ html {
   margin-bottom: 5px;
 }
 .h .card {
-  
   background: #444;
   color: white;
   border: none !important;
