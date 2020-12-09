@@ -73,7 +73,6 @@ width: 100%;
     url("img2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: center;
     background-attachment: fixed;
     animation: background 10s alternate infinite;
 }
@@ -89,38 +88,52 @@ input[type="email"] {
   border-bottom: 1px solid black;
   
 }
+label{
+ margin-bottom: 0;
+ font-size: 18px; 
+}
+.btn1,.apply{
+  border-radius: 50px;
+  background: none!important;
+  outline: #2ecab6!important;
+  color: #fff;
+}
+.btn1:hover{
+  background: white!important;
+  color: #2ecab6!important;
+}
 
 @keyframes background{
   0%, 100%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
     url("img2.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    
     background-attachment: fixed;
   }
   25%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
     url("img3.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    
     background-attachment: fixed;
   }
  50%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
     url("img4.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    
     background-attachment: fixed;
   }
   75%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
     url("img5.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+   
     background-attachment: fixed;
   }
 }
@@ -131,6 +144,10 @@ input[type="email"] {
     url("img2.jpeg");
     color: white;
 }
+}
+/*--------------------featured jobs section----------------*/
+.fjob .card{
+  margin-bottom: 5px;
 }
 
 /*---------------------------last part start---------------------------------------------*/
