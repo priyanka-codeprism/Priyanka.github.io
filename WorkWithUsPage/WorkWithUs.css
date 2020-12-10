@@ -86,7 +86,7 @@ input[type="email"] {
   border: none;
   outline: none !important;
   border-radius: 0px !important;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   
 }
 label{
