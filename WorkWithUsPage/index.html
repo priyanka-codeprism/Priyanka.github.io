@@ -70,19 +70,40 @@
              <div class="form-row mt-5">
                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12 ">
                   <label for="inputEmail4">Your Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="">
                 </div>
               </div>
-            <button class="btn btn-danger submit" type="submit">Sign Up For Job Alerts</button>
+            <button class="btn btn-danger submit btn1 px-3" type="submit">Sign Up For Job Alerts</button>
          </form>
-           <button class="btn btn-success my-4 px-4 btn1 " >Help</button>
-           <button class="btn btn-success  my-4 px-4 btn1" >Apply Now</button>
+           <button class="btn btn-success my-4 px-4 btn1 " data-toggle="modal" data-target="#helpModal">Help</button>
+           <!--<button class="btn btn-success  my-4 px-4 btn1" >Apply Now</button>-->
           </div>
          </div>
      </div>
      </div>
     </section>
 
+ <!-----------------------help modal  start----------------------->
+ <div class="modal fade" id="helpModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <h3 class="modal-title"style="color:#2ecab6;">Contact Us</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body ">
+                 <div>Join Our Team - You can reach out to HR for any help.</div>
+            </div>
+            <div class=" py-3 px-3">
+                <button class="btn btn-info ">Contact HR At<i class="fas fa-phone-alt ml-2"></i></button>
+                <button class="btn btn-success ">Chat With Us<i class="fab fa-whatsapp ml-2"></i></button>
+            </div>
+            </div>   
+        </div>     
+    </div>
+  <!-----------------------help modal  end----------------------->
     <!-----------------------top  section  end----------------------->
     <!-----------------------job  section  start----------------------->
     <section class="p-lg-5 p-md-5 p-sm-3 p-2"style="background: white;">
@@ -91,7 +112,7 @@
                 <h3 class=" text-center"style="color: #2ecab6;"><b>Featured Jobs</b></h3>
                 <hr style="background: red;width: 20%; margin: auto;">
             </div>
-            <div class="row">
+            <div class="row" id="r1">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="card">
                         <div class="card-header">
