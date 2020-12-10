@@ -65,6 +65,7 @@ html {
 }
 /*--------section 1----------*/
 .section1{
+  color: white;
   margin-top: 9vh;
   padding-top: 5vh;
   /*min-height: 80vh;*/
@@ -92,16 +93,17 @@ label{
  margin-bottom: 0;
  font-size: 18px; 
 }
-.btn1,.apply{
+.btn1{
   border-radius: 50px;
   background: none!important;
-  outline: #2ecab6!important;
+  border: 1px solid #fff!important;
   color: #fff;
 }
 .btn1:hover{
   background: white!important;
   color: #2ecab6!important;
 }
+
 
 @keyframes background{
   0%, 100%{
@@ -149,7 +151,16 @@ label{
 .fjob .card{
   margin-bottom: 5px;
 }
-
+.fa-map-marker-alt,.fa-black-tie,.fa-calendar-alt{
+  color: #2ecab6;
+}
+.card-header{
+  color: #2ecab6;
+  font-size: 20px;
+}
+.apply{
+  background: #2ecab6!important;
+}
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
 .fa-user-shield,

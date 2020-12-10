@@ -61,9 +61,9 @@
     <!-----------------------top  start ----------------------->
     <section class="section1 pb-4">
      <div class="job container-fluid">
-        <div class="row d-flex align-items-center content">
-          <div class="col-lg-6 col-md-8 col-sm-12 col-12 pl-lg-5 pl-md-5 px-sm-3 px-5 text-center text-md-left">
-         <h1>Sign Up For Job Alerts!</h1>
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-12 col-12 pl-lg-5 pl-md-5 pl-lg-5 px-sm-3 px-5 text-center text-md-left">
+         <h1 ><b>Sign Up For Job Alerts!</b></h1>
          <p style="color: #fff;">Not  ready to apply? Take just a minute to sign up for job alerts</p>
          <form>
              <div class="form-row mt-5">
@@ -72,7 +72,7 @@
                   <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                 </div>
               </div>
-            <button class="btn btn-warning" type="submit">Sign Up For Job Alerts</button>
+            <button class="btn btn-danger submit" type="submit">Sign Up For Job Alerts</button>
          </form>
            <button class="btn btn-success my-4 px-4 btn1 " >Help</button>
            <button class="btn btn-success  my-4 px-4 btn1" >Apply Now</button>
@@ -96,10 +96,10 @@
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i> All India</p>
-                            <p>Duties and Responsibilities: Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i>Relevant experience: Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i>Deadline to apply : Aug.11.2021, 7:10 p.m.</p>
-                            <button class="btn btn-success">Apply Now</button>
+                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience: </b>Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply :</b>Aug.11.2021, 7:10 p.m.</p>
+                            <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -110,10 +110,10 @@
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p>Duties and Responsibilities: Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i>Relevant experience: Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i>Deadline to apply : Aug.11.2021, 7:10 p.m.</p>
-                            <button class="btn btn-success">Apply Now</button>
+                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -124,10 +124,10 @@
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p>Duties and Responsibilities: Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i>Relevant experience: Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i>Deadline to apply : Aug.11.2021, 7:10 p.m.</p>
-                            <button class="btn btn-success">Apply Now</button>
+                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -135,6 +135,42 @@
             
         </div>
     </section>
+    <!---------------------Apply now modal------------------------>
+<div class="modal fade" id="ResumeModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <h3 class="modal-title"style="color:#2ecab6;">Attach Your Resume</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body">
+                 <form class="form-container login-form" id="loginForm">      
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile"accept=".pdf,.doc">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                    <div class="d-flex justify-content-center mt-5"><button class="btn btn-success">Submit</button></div>
+                    
+                    </form>
+                </div>
+            </div>   
+        </div>     
+    </div>
+    <script>
+// Add the following code if you want the name of the file appear on select
+$(function(){
+
+
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+})
+</script>
+
+    <!---------------------Apply now modal end------------------------>
     <!-----------------------job  section  end----------------------->
 
 <!-------------------------last part start------------------------------------------------->
@@ -310,7 +346,7 @@
                 </div>
                 <!-- Grid row-->
             </div>
-        </div>
+        </div>-->
     </footer>
     <!-------------------------footer end------------------------------------------------->
     <script>
