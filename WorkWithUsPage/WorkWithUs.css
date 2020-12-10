@@ -71,7 +71,7 @@ html {
   /*min-height: 80vh;*/
 width: 100%;
  background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
-    url("img2.jpeg");
+    url("images/img2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -109,7 +109,7 @@ label{
 @keyframes background{
   0%, 100%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
-    url("img2.jpeg");
+    url("images/img2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -117,7 +117,7 @@ label{
   }
   25%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
-    url("img3.jpg");
+    url("images/img3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -125,7 +125,7 @@ label{
   }
  50%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
-    url("img4.jpg");
+    url("images/img4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -133,7 +133,7 @@ label{
   }
   75%{
      background: linear-gradient(76.34deg,#2ecab6 52.45%,rgba(196, 196, 196, 0)52.49%),
-    url("img5.jpg");
+    url("images/img5.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
    
@@ -144,7 +144,7 @@ label{
  .section1{
   animation: none;
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img2.jpeg");
+    url("images/img2.jpeg");
     color: white;
 }
 }
@@ -160,6 +160,13 @@ label{
   font-size: 20px;
 }
 .apply{
+  background: #2ecab6!important;
+}
+.page-link{
+  color: #2ecab6!important;
+}
+.page-item.active .page-link{
+  color: #fff!important;
   background: #2ecab6!important;
 }
 /*---------------------------last part start---------------------------------------------*/
