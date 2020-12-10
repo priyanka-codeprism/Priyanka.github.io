@@ -63,13 +63,13 @@
          <h1 ><b>Sign Up For Job Alerts!</b></h1>
          <p style="color: #fff;font-size: 17px;">Not  ready to apply? Take just a minute to sign up for job alerts</p>
          <form>
-             <div class="form-row mt-5">
+             <div class="form-row mt-5 ">
                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12 ">
                   <label for="inputEmail4">Your Email</label>
                   <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="">
                 </div>
               </div>
-            <button class="btn btn-danger submit btn1 px-3" type="submit">Sign Up For Job Alerts</button>
+            <button class="btn btn-danger submit btn1 px-3" type="submit" data-toggle="modal"data-target="#suscribeModal">Sign Up For Job Alerts</button>
          </form>
            <button class="btn btn-success my-4 px-4 btn1 " data-toggle="modal" data-target="#helpModal">Help</button>
            <!--<button class="btn btn-success  my-4 px-4 btn1" >Apply Now</button>-->
@@ -100,6 +100,24 @@
         </div>     
     </div>
   <!-----------------------help modal  end----------------------->
+  <!-----------------------succesfully subcribed modal  start----------------------->
+  <div class="modal fade" id="suscribeModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <h3 class="modal-title"style="color:#2ecab6;"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body ">
+                 <div class=" text-center mb-5 text-success"><h5>Successfully subscribed to our Jobsletter</h5></div>
+            </div>
+            
+            </div>   
+        </div>     
+    </div>
+  <!-----------------------succesfully subcribed modal  end----------------------->
     <!-----------------------top  section  end----------------------->
     <!-----------------------job  section  start----------------------->
     <section class="p-lg-5 p-md-5 p-sm-3 p-2"style="background: white;">
@@ -109,73 +127,118 @@
                 <hr style="background: red;width: 20%; margin: auto;">
             </div>
             <div class="row" id="page">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 list-group pr-0">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12  list-group px-1">
                     <div class="card">
                         <div class="card-header">
                                 Business Development Intern
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i> All India</p>
-                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience: </b>Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply :</b>Aug.11.2021, 7:10 p.m.</p>
+                            <p class="more"><b>Roles and Responsibilities:</b>
+                            <br>- Responsible for Approaching Our Potential Partners.<br><br>
+                            - Lead, design, develop, test, release and maintain components of Zenoti s IT and Security Infrastructure.<br><br>
+                            - Develops IT AWS and Azure architectural designs that includes - IaaS, Networking, SIEM, SOC, etc..<br><br>
+                           - Be part of a young and vibrant team of smart and highly motivated IT engineers, building and maintaining world-class IT Security Infrastructure and delight user experience.<br><br>
+                            - Collaborate across team globally to understand pain points and come up with innovative solutions.<br><br>
+                            - Be responsible for defining and managing policies and processes for better compliance and monitoring.<br><br>
+                            - Be ready to unlearn and learn per the changing IT and security landscape.  
+                           </p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Who can apply: </b>Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Last date to receive applications:</b> Aug.11.2021, 7:10 p.m.</p>
                             <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
+                            <div style="color:red;font-size: 15px;">*Login is required</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 pr-0 list-group">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 px-1  list-group">
                     <div class="card">
                         <div class="card-header">
                                 Business Development Intern
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <p class="more"><b>Roles and Responsibilities:</b>
+                            <br>- Responsible for Approaching Our Potential Partners.<br><br>
+                            - Lead, design, develop, test, release and maintain components of Zenoti s IT and Security Infrastructure.<br><br>
+                            - Develops IT AWS and Azure architectural designs that includes - IaaS, Networking, SIEM, SOC, etc..<br><br>
+                           - Be part of a young and vibrant team of smart and highly motivated IT engineers, building and maintaining world-class IT Security Infrastructure and delight user experience.<br><br>
+                            - Collaborate across team globally to understand pain points and come up with innovative solutions.<br><br>
+                            - Be responsible for defining and managing policies and processes for better compliance and monitoring.<br><br>
+                            - Be ready to unlearn and learn per the changing IT and security landscape.  
+                           </p>
+                           <p><i class="fab fa-black-tie mr-2"></i><b>Who can apply: </b>Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Last date to receive applications: </b>Aug.11.2021, 7:10 p.m.</p>
                             <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
+                            <div style="color:red;font-size: 15px;">*Login is required</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 pr-0 list-group">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 px-1  list-group">
                     <div class="card">
                         <div class="card-header">
                                 Business Development Intern
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <p class="more"><b>Roles and Responsibilities:</b>
+                            <br>- Responsible for Approaching Our Potential Partners.<br><br>
+                            - Lead, design, develop, test, release and maintain components of Zenoti s IT and Security Infrastructure.<br><br>
+                            - Develops IT AWS and Azure architectural designs that includes - IaaS, Networking, SIEM, SOC, etc..<br><br>
+                           - Be part of a young and vibrant team of smart and highly motivated IT engineers, building and maintaining world-class IT Security Infrastructure and delight user experience.<br><br>
+                            - Collaborate across team globally to understand pain points and come up with innovative solutions.<br><br>
+                            - Be responsible for defining and managing policies and processes for better compliance and monitoring.<br><br>
+                            - Be ready to unlearn and learn per the changing IT and security landscape.  
+                           </p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Who can apply:</b> Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Last date to receive applications: </b>Aug.11.2021, 7:10 p.m.</p>
                             <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
+                            <div style="color:red;font-size: 15px;">*Login is required</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 pr-0 list-group">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 px-1  list-group">
                     <div class="card">
                         <div class="card-header">
                                 Marketing Intern
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <p class="more"><b>Roles and Responsibilities:</b>
+                            <br>- Responsible for Approaching Our Potential Partners.<br><br>
+                            - Lead, design, develop, test, release and maintain components of Zenoti s IT and Security Infrastructure.<br><br>
+                            - Develops IT AWS and Azure architectural designs that includes - IaaS, Networking, SIEM, SOC, etc..<br><br>
+                           - Be part of a young and vibrant team of smart and highly motivated IT engineers, building and maintaining world-class IT Security Infrastructure and delight user experience.<br><br>
+                            - Collaborate across team globally to understand pain points and come up with innovative solutions.<br><br>
+                            - Be responsible for defining and managing policies and processes for better compliance and monitoring.<br><br>
+                            - Be ready to unlearn and learn per the changing IT and security landscape.  
+                           </p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Who can apply:</b> Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Last date to receive applications: </b>Aug.11.2021, 7:10 p.m.</p>
                             <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
+                            <div style="color:red;font-size: 15px;">*Login is required</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 pr-0 list-group">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 px-1  list-group">
                     <div class="card">
                         <div class="card-header">
                                 Business Development Intern
                         </div>
                         <div class="card-body">
                             <p><i class="fas fa-map-marker-alt mr-2"></i>All India</p>
-                            <p><b>Duties and Responsibilities:</b> Responsible for Approaching Our Potential Partners</p>
-                            <p><i class="fab fa-black-tie mr-2"></i><b>Relevant experience:</b> Fresher may apply</p>
-                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Deadline to apply : </b>Aug.11.2021, 7:10 p.m.</p>
+                            <p class="more"><b>Roles and Responsibilities:</b>
+                            <br>- Responsible for Approaching Our Potential Partners.<br><br>
+                            - Lead, design, develop, test, release and maintain components of Zenoti s IT and Security Infrastructure.<br><br>
+                            - Develops IT AWS and Azure architectural designs that includes - IaaS, Networking, SIEM, SOC, etc..<br><br>
+                           - Be part of a young and vibrant team of smart and highly motivated IT engineers, building and maintaining world-class IT Security Infrastructure and delight user experience.<br><br>
+                            - Collaborate across team globally to understand pain points and come up with innovative solutions.<br><br>
+                            - Be responsible for defining and managing policies and processes for better compliance and monitoring.<br><br>
+                            - Be ready to unlearn and learn per the changing IT and security landscape.  
+                           </p>
+                            <p><i class="fab fa-black-tie mr-2"></i><b>Who can apply:</b> Fresher may apply</p>
+                            <p><i class="fas fa-calendar-alt mr-2"></i><b>Last date to receive applications: </b>Aug.11.2021, 7:10 p.m.</p>
                             <button class="btn btn-success apply"data-toggle="modal"data-target="#ResumeModal">Apply Now</button>
+                            <div style="color:red;font-size: 15px;">*Login is required</div>
                         </div>
                     </div>
                 </div>
@@ -195,18 +258,30 @@
       <div class="modal-dialog modal-dialog-centered">
            <div class="modal-content">
              <div class="modal-header" style="border: none!important;">
-                    <h3 class="modal-title"style="color:#2ecab6;">Attach Your Resume</h3>
+                    <h3 class="modal-title"style="color:#2ecab6;"></h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
              </div>
               <div class="modal-body">
-                 <form class="form-container login-form" id="loginForm">      
+                 <form class="form-container login-form" id="loginForm"> 
+                     <div class="form-group">     
+                        <input type="text" class="form-control" id="fname" placeholder="First Name">
+                      </div> 
+                      <div class="form-group">   
+                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                      </div>  
+                      <div class="form-group">    
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>  
+                      <div class="form-group">     
+                        <input type="text" class="form-control" id="phno" placeholder="Phone">
+                      </div>      
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile"accept=".pdf,.doc">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
+                        <input type="file" class="custom-file-input" id="customFile"accept=".pdf,.doc,.docx">
+                        <label class="custom-file-label" for="customFile">Upload Resume</label>
                       </div>
-                    <div class="d-flex justify-content-center mt-5"><button class="btn btn-success">Submit</button></div>
+                    <div class="d-flex justify-content-center mt-5"><button class="btn btn-success"id="submitresume">Submit</button></div>
                     
                     </form>
                 </div>
@@ -222,10 +297,33 @@ $(".custom-file-input").on("change", function() {
   $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 });
 
+$("#submitresume").click(function(){
+  $("#ResumeModal").modal("hide");
+  $("#submitModal").modal("show");
+
+});
+
 })
 </script>
 
     <!---------------------Apply now modal end------------------------>
+    <!-----------------------succesfully submit modal  start----------------------->
+  <div class="modal fade" id="submitModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body ">
+                 <div class="text-center mb-5 text-success"><h5>Successfully submited your details</h5></div>
+            </div>
+            
+            </div>   
+        </div>     
+    </div>
+  <!-----------------------succesfully submit modal  end----------------------->
     <!-----------------------job  section  end----------------------->
 
 <!-------------------------last part start------------------------------------------------->

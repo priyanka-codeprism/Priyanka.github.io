@@ -1,6 +1,4 @@
 $(function(){
-
-
 var numberOfItems = $('#page .list-group').length; // Get total number of the items that should be paginated
 var limitPerPage = 3; // Limit of items per each page
 $('#page .list-group:gt(' + (limitPerPage - 1) + ')').hide(); // Hide all items over page limits (e.g., 5th item, 6th item, etc.)
@@ -13,7 +11,7 @@ for (var i = 2; i <= totalPages; i++) {
 }
 
 // Add next button after all the page numbers  
-$(".pagination").append("<li id='next-page page-item'><a class='page-link' href='javascript:void(0)' aria-label=Next><span aria-hidden=true>Next</span></a></li>");
+$(".pagination").append("<li id='next-page 'class='page-item'><a class='page-link' href='javascript:void(0)' aria-label=Next><span aria-hidden=true>Next</span></a></li>");
 
 // Function that displays new items based on page number that was clicked
 $(".pagination li.current-page").on("click", function() {
@@ -76,4 +74,35 @@ $("#previous-page").on("click", function() {
     $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active'); // Make new page number the 'active' page
   }
 });
+
+
+//read more part
+var showChar = 200;
+  var ellipsestext = "...";
+  var moretext = "more";
+  var lesstext = "less";
+  $('.more').each(function() {
+    var content = $(this).html();
+    if(content.length > showChar) {
+      var c = content.substr(0, showChar);
+      var h = content.substr(showChar, content.length - showChar);
+
+      var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+      $(this).html(html);
+    }
+  });
+  $(".morelink").click(function(){
+    if($(this).hasClass("less")) {
+      $(this).removeClass("less");
+      $(this).html(moretext);
+    } else {
+      $(this).addClass("less");
+      $(this).html(lesstext);
+    }
+    $(this).parent().prev().toggle();
+    $(this).prev().toggle();
+    return false;
+  });
+
 });
