@@ -151,6 +151,7 @@ label{
 /*--------------------featured jobs section----------------*/
 .fjob .card{
   margin-bottom: 5px;
+  width: 100%;
 }
 .fa-map-marker-alt,.fa-black-tie,.fa-calendar-alt{
   color: #2ecab6;
