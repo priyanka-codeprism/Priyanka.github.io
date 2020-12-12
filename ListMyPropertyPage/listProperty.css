@@ -72,7 +72,7 @@ padding-top: 10vh;
 .wrapper1 {
   display: flex;
   flex-direction: row;
-  width: 296vw;
+  width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   
@@ -99,14 +99,14 @@ padding-top: 10vh;
   .scroll-wrapper::-webkit-scrollbar{
     display: none;
 }
-.s1{
+.s1{ 
   background: url(images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
 }
 .s2{
-  background: url(images/bg8.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(images/bg8.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
