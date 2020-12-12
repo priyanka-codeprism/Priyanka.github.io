@@ -84,10 +84,10 @@ padding-top: 10vh;
 }
 .slide{
  height: 100vh;
- width: 98.75vw;
+ width: 100vw;
 }
 .scroll-wrapper {
-  height: 98.75vw;
+  height: 100vw;
  width: 100vh;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
