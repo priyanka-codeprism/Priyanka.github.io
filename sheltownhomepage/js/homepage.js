@@ -37,13 +37,18 @@ var showChar = 100;
     $("#SignupModal").modal("hide");
 	$("#SignupModal2").modal("show");		    
   });
-  //hide signuppage1 modal and display login modal;
+  //hide signuppage1 modal and display registersuccessful modal;
   $("#signupbtn").click(function(){
   	//e.preventDefault();
     $("#SignupModal2").modal("hide");
 	$("#rgstrsuccesfulModal").modal("show");		    
   });
-
+  //hide signuppage1 modal and display login modal;
+$("#loginbtn").click(function(){
+  	//e.preventDefault();
+    $("#SignupModal").modal("hide");
+	$("#LoginModal").modal("show");		    
+  });
 
   // Custom method to validate username
   
