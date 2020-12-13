@@ -56,7 +56,7 @@ html {
   /*width: 300vw;*/
 }
 .slide{
-  height: 98vh;
+  height: 95vh;
   width: 100vw;
   padding: 100px 50px;
 }
@@ -105,6 +105,9 @@ html {
 /*--------ssection 3------------*/
 .s7{
   background: linear-gradient(to right, #2ecab6 32%, #3cb0e2 100%);
+}
+.s8{
+  background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
 }
 
 /*---------------------------last part start---------------------------------------------*/
