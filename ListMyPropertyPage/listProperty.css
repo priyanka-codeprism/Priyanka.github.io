@@ -13,7 +13,7 @@ body {
 }
 html {
   /*scroll-behavior: smooth;*/
-  overflow-y: scroll!important;
+ height: 100%;
 }
 .navbar-brand {
   font-size: 20px;
@@ -60,36 +60,38 @@ html {
 /*-------------------------section 1 start---------------------------------*/
 }
 .wrapper {
-  display: flex;
-  
-  width: 300vw;
-  /*transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  overflow-x: hidden;
- scrollbar-width:none;
-  -ms-overflow-style:none;*/
+   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   
 }
 .slide{
- height: 98vh;
- width: 100vw;
+ height: 100vh;
  padding: 50px;
+  width: calc(100% / 3);
+  /*width: 100vw;*/
+  position: relative;
+  float: left;
 }
-.scroll-wrapper {
-  /*height: 100vw;
- width: 100vh;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
- scrollbar-width:none;
-  -ms-overflow-style: none;*/
+.slides{
+ height: 100vh;
+ padding: 50px;
+  width: calc(100% / 4);
+  /*width: 100vw;*/
+  position: relative;
+  float: left;
 }
-  /*.scroll-wrapper::-webkit-scrollbar{
-    display: none;
-}*/
+.sections {
+  width: 300vw;
+  height: 100vh;
+}
+.sections1 {
+  width: 400vw;
+  height: 100vh;
+}
+
 .s1{ 
-  background: url(images/bg1.jpg);
+  background: url(images/bg11.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
@@ -101,12 +103,48 @@ html {
   color: white;
 }
 .s3{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(images/bg6.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(images/bg13.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
 }
+.s1 p,.s2 p,.s3 p,.s5 p,.s6 p,.s7 p{
+   margin-bottom: 0!important;
+}
+@media (max-width: 605px) {
+  .slides,.slide{
+    padding: 100px 10px!important;
+  }
+  .s1 h1,.s2 h1,.s3 h1,.s5 h1,.s6 h1,.s7 h1{
+  font-size: 30px!important;
+  }
+  .s1 p,.s2 p,.s3 p,.s5 p,.s7 p{
+    font-size: 20px;
+    
+  }
 
+}
+/*---------------section 2-----------*/
+.s4{
+   /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
+   background: url(images/bg17.png);
+   background-size: 100% 100%;
+
+}
+.s5{
+  background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);
+}
+/*---------------------------------------ssection 3------------*/
+
+.s7{
+  background: linear-gradient(to right, #2ecab6 32%, #3cb0e2 100%);
+}
+.s8{
+  background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+}
+.rbtn{
+  color: red; border-radius: 50px;border: 1px solid white;background: white;
+}
 
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
