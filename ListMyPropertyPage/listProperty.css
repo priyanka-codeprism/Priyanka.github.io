@@ -67,7 +67,7 @@ html {
 }
 .slide{
  height: 100vh;
- padding: 50px;
+ padding: 100px 50px;
   width: calc(100% / 3);
   /*width: 100vw;*/
   position: relative;
@@ -75,7 +75,7 @@ html {
 }
 .slides{
  height: 100vh;
- padding: 50px;
+ padding:100px 50px;
   width: calc(100% / 4);
   /*width: 100vw;*/
   position: relative;
