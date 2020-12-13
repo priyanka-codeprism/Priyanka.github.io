@@ -52,13 +52,6 @@ html {
 }
 
 /*-------------------------section 1 start---------------------------------*/
-.wrapper{
- display: flex;
-  width: 300vw;
-}
-.section1{
-
-}
 .slide{
   height: 100vh;
   width: 100vw;
@@ -71,9 +64,6 @@ html {
 }
 .scroll-wrapper{
   
-}
-  .scroll-wrapper::-webkit-scrollbar{
-    display: none;
 }
   .s1{ 
   background: url(images/bg11.jpg);
@@ -97,22 +87,30 @@ html {
    margin-bottom: 0!important;
 }
 @media (max-width: 605px) {
-  .s1,.s2,.s3,{
+  .s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8{
     padding: 100px 10px!important;
   }
-  .s1 h1,.s2 h1,.s3 h1,.s5 h1,.6 h1,.s7 h1{
+  .s1 h1,.s2 h1,.s3 h1,.s5 h1,.s6 h1,.s7 h1{
   font-size: 30px!important;
   }
   .s1 p,.s2 p,.s3 p,.s5 p,.s7 p{
     font-size: 20px;
     
   }
+  .s8,.s7{
+   height: 120vh;
+   
 }
+
+}
+.owl-nav span{
+    display: none;
+   }
+   .owl-dots{
+    margin-top: 0;
+   }
 /*-----------------------section 2  start----------------------------------*/
-.scroll-wrapper1,{
- 
-  
-}
+
 .s4{
    /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
    background: url(images/bg17.png);
@@ -123,14 +121,15 @@ html {
   background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);
 }
 /*---------------------------------------ssection 3------------*/
-.scroll-wrapper2{
-  
-}
+
 .s7{
   background: linear-gradient(to right, #2ecab6 32%, #3cb0e2 100%);
 }
 .s8{
   background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+}
+.rbtn{
+  color: red; border-radius: 50px;border: 1px solid white;background: white;
 }
 
 /*---------------------------last part start---------------------------------------------*/
