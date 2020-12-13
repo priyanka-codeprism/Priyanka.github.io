@@ -15,6 +15,7 @@
     <link href="listMyProperty.css" rel="stylesheet" />
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/owl.theme.green.css" rel="stylesheet" />
+
     <script defer src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" ></script>
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -497,7 +498,7 @@ $(document).ready(function() {
  $('.owl-carousel').owlCarousel({
   
     loop:true,
-    margin:0,
+    margin:20,
    nav:true,
     autoplay:false, 
     autoplayTimeout:2000,
@@ -516,15 +517,6 @@ $(document).ready(function() {
         }
     }
 });
- $('.owl-carousel').on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        $('.owl-carousel').trigger('next.owl');
-    } else {
-        $('.owl-carousel').trigger('prev.owl');
-    }
-    e.preventDefault();
-});
-            
 });
 
 </script>
