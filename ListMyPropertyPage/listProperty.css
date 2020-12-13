@@ -9,9 +9,11 @@ body {
   /*overflow-x: hidden;
  scrollbar-width:none;
   -ms-overflow-style:none;*/
+  overflow-y: scroll!important;
 }
 html {
   /*scroll-behavior: smooth;*/
+  overflow-y: scroll!important;
 }
 .navbar-brand {
   font-size: 20px;
