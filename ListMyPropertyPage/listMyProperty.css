@@ -98,8 +98,13 @@ html {
 }
 /*-----------------------section 2  start----------------------------------*/
 .s4{
-   background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+   /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
+   background: url(images/bg17.png);
    background-size: 100% 100%;
+}
+/*--------ssection 3------------*/
+.s7{
+  background: linear-gradient(to right, #2ecab6 32%, #3cb0e2 100%);
 }
 
 /*---------------------------last part start---------------------------------------------*/
