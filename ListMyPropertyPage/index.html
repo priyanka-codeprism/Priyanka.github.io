@@ -18,10 +18,10 @@
     <script defer src="js/owl.carousel.min.js"></script>
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css" integrity="sha512-W9OWS8dgpQBw5Hb+tbMto1BMsHvYOXT/AFBGvASCPUJleaEdpOAN5lzgj9RrTbo3YrlR+m9xdOBccp8F+SFyQg==" crossorigin="anonymous" />-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css" />-->
     <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js" ></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js" ></script>-->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js" integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>-->
@@ -69,7 +69,8 @@
         <!--header end---------->
     <!-----------------------  section1 start ----------------------->
     <section class="section1 scroll-wrapper"id="scroll-wrapper" > 
-       <div class="wrapper d-flex">
+       <div class="wrapper owl-carousel owl-theme">
+        <div class="item">
          <div class="slide s1 bg-primary"style="padding:100px 50px;">
            <div class="ss1">
                   <h1 style="font-size: 45px;">A Home Is More Of love</h1>
@@ -80,6 +81,8 @@
                 </div>
               </div>
          </div>
+       </div>
+       <div class="item">
          <div class="slide s2 bg-secondary">
            <div class="container-fluid">
                       <div class=" d1 mx-auto">
@@ -95,49 +98,54 @@
                   
               </div>
          </div>
+       </div>
+       <div class="item">
          <div class="slide s3 bg-danger"style="">
-           <div class="container-fluid">
-                  <div class="">
-                      <div class=""style="font-size: 45px;">
-                          <h1 class="pt-5">Your Privacy<br>Our Privacy</h1>
-                      </div>
-                      <div class=" " style="font-size: 28px;position: relative;bottom: 0!important;right: 0;height: 100%; ">
+           <div class="d-flex justify-content-between ">
+                <div class=""style="font-size: 45px;">
+                   <h1 class="pt-5">Your Privacy<br>Our Privacy</h1>
+                </div>
+                 <div class="align-items-bottom  " style="font-size: 28px;padding-top: 40vh;">
                           <p>No Spam Calls</p>
                           <p>No Fake Tenants/Owners</p>
                           <p>No Interuption</p>
                           <p>Policy to every property listed</p>
                           <p>Every Identify Verified</p>
-                      </div>
-                  </div>
-              </div>
+                 </div>
+            </div>
          </div>
+       </div>
        </div>
     </section>
 
     <!----------------------- section 1 end----------------------->  
     <!----------------------- section2 start ----------------------->
-    <section class="section2 scroll-wrapper" >
-       <div class="wrapper d-flex">
+    <section class="section2 scroll-wrapper1" >
+       <div class="wrapper1 owl-carousel owl-theme">
+         <div class="item">
          <div class="slide s4 bg-warning"style="padding: 50px;">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <div class="col-md-6"style="font-size:40px;">
-                              <p>Laissez-Faire Policy</p>
+                      <div class="">
+                          <div class=""style="font-size:40px;">
+                              <h1>Laissez-Faire Policy</h1>
                           </div>
-                          <div class="col-md-6"style="font-size: 28px;">
-                              <p>We neverinmade in your personal space</p>
-                              <p>Live & Let Live</p>
+                          <div class=""style="font-size: 28px;">
+                              <p>We never inmade in your personal space</p>
+                              <div class="d-flex justify-content-center"><img src="images/bg16.png"style="width: 300px;height: 300px;border-radius: 50%;"></div>
+                              <p class="text-right"style="font-size: 40px;"><i>Live & Let Live</i></p>
                               
                           </div>
                       </div>
-                  </div> 
+                   
          </div>
-         <div class="slide s5 bg-success"style="padding: 50px;">
+       </div>
+       <div class="item">
+         <div class="slide s5 "style="padding: 50px;background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);">
            <div class="container-fluid">
-                  <div class="">
-                      <div class=""style="font-size: 40px;">
-                          <p>Best in class</p>
-                      </div>
+                  <div class="row">
+                      <div class="col-md-6 col-12"style="font-size: 40px;">
+                      <div style="border-radius:  ">
+                          <h1 style="color:#F51C47;font-weight:bolder;">Best in class</h1>
+                      
                       <div class=""style="font-size: 28px">
                           <p>No Brokerage</p>
                           <p>No Limit On Access</p>
@@ -145,9 +153,18 @@
                           <p>Premium properties </p>
                           <p>Best Price</p>
                       </div>
+                    </div>
+                      </div>
+                      <div class="col-md-6 col-12"style="font-size: 40px;">    
+                      <div class=""style="padding-bottom: 20px;">
+                          <img src="images/bg14.png"  style="width: 100%;height: auto;padding-top: 0;">
+                      </div>
+                      </div>
                   </div>
               </div>
          </div>
+       </div>
+       <div class="item">
          <div class="slide s6 bg-info"style="padding: 50px;">
            <div class="container-fluid">
                   <div class="row">
@@ -171,12 +188,14 @@
               </div>
          </div>
        </div>
+       </div>
     </section>
 
     <!----------------------- section 2 end----------------------->  
     <!----------------------- section3 start ----------------------->
-    <section class="section3 bg-danger scroll-wrapper" >
-      <div class="wrapper d-flex" style="width: 400vw;">
+    <section class="section3  scroll-wrapper2" >
+      <div class="wrapper2 owl-carousel owl-theme" style="">
+        <div class="item">
          <div class="slide s7 bg-danger"style="padding: 50px;">
            <div class="container-fluid">
                   <div class="row">
@@ -199,6 +218,8 @@
                   </div>
               </div>
          </div>
+       </div>
+       <div class="item">
          <div class="slide s8 bg-secondary"style="padding: 50px;">
            <div>
                <h1>Refer & Earn</h1>
@@ -218,6 +239,8 @@
              </div>
 
          </div>
+       </div>
+       <div class="item">
          <div class="slide s9 bg-warning"style="padding: 50px;">
            <div>
                   <form>
@@ -253,9 +276,12 @@
                   </form>
               </div>
          </div>
+       </div>
+       <div class="item">
          <div class="slide s10 bg-info"style="padding: 50px;">
            fggggggggggg
          </div>
+       </div>
        </div>
     </section>
 
@@ -452,6 +478,34 @@
         }, 1100);
 
     </script>
+    <script>
+$(document).ready(function() {
+ $('.owl-carousel').owlCarousel({
+  
+    loop:true,
+    margin:0,
+   nav:true,
+    autoplay:false, 
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true
+        }
+    }
+});
+            
+});
+
+</script>
     <script type="text/javascript"src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

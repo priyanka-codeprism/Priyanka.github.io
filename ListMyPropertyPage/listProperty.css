@@ -55,12 +55,7 @@ html {
     padding-left: 0 !important;
   }
 }
-@media (max-width: 386px) and (min-width: 381px) {
-  .img1 {
-    width: auto;
-    height: 3vh;
-  }
-}
+
 
 /*-------------------------section 1 start---------------------------------*/
 }
@@ -76,7 +71,7 @@ html {
   
 }
 .slide{
- height: 100vh;
+ height: 98vh;
  width: 100vw;
  padding: 50px;
 }

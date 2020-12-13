@@ -52,28 +52,17 @@ html {
 }
 
 /*-------------------------section 1 start---------------------------------*/
-.wrapper{
-  width: 300vw;
-  overflow-x: auto;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
+.wrapper,.wrapper1,.wrapper2{
+  /*width: 300vw;*/
 }
 .slide{
-  height: 100vh;
+  height: 98vh;
   width: 100vw;
   padding: 100px 50px;
 }
-.scroll-wrapper {
-  height: 100vw;
- width: 100vh;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
+.scroll-wrapper,.scroll-wrapper1,.scroll-wrapper2 {
+  
 }
-/*.scroll-wrapper::-webkit-scrollbar{
-    width: 0;
-}*/
   .s1{ 
   background: url(images/bg11.jpg);
   background-repeat: no-repeat;
@@ -92,19 +81,26 @@ html {
   background-size: 100% 100%;
   color: white;
 }
+.s1 p,.s2 p,.s3 p,.s5 p{
+   margin-bottom: 0!important;
+}
 @media (max-width: 605px) {
   .s1,.s2,.s3{
     padding: 100px 10px!important;
   }
-  .s1 h1,.s2 h1,.s3 h1{
+  .s1 h1,.s2 h1,.s3 h1,.s5 h1{
   font-size: 30px!important;
   }
-  .s1 p,.s2 p,.s3 p{
+  .s1 p,.s2 p,.s3 p,.s5 p{
     font-size: 20px;
-    margin-bottom: 0!important;
+    
   }
 }
-
+/*-----------------------section 2  start----------------------------------*/
+.s4{
+   background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+   background-size: 100% 100%;
+}
 
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
