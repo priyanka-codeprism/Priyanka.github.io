@@ -1,7 +1,7 @@
 
 $(function () {
 TweenLite.defaultEase = Linear.easeNone;
-const content = document.querySelectorAll(".content");
+//const content = document.querySelectorAll(".content");
 const controller = new ScrollMagic.Controller();
 
 const t1 = new TimelineMax();
