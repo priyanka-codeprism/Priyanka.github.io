@@ -16,6 +16,7 @@
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/owl.theme.green.css" rel="stylesheet" />
     <script defer src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" ></script>
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css" />-->
@@ -204,7 +205,7 @@
                           <p>[list Your Property]</p>
                           <div style="font-size: 16px;color: red;">Login requird</div>
                       </div>
-                      <div class="col-md-6 px-lg-5 px-md-4 px-sm-2 px-0"style="font-size: 28px">
+                      <div class="col-md-6 px-lg-5 px-md-4 px-sm-2 px-2"style="font-size: 28px">
                         <div class="d-flex justify-content-center"style="background: white;padding: 70px 20px;border-radius: 10px;color: #2ecab6; ">
                           <div>
                           <p><i class="fas fa-check mr-2"></i>Verified Tenants</p>
@@ -514,6 +515,14 @@ $(document).ready(function() {
             nav:true
         }
     }
+});
+ $('.owl-carousel').on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        $('.owl-carousel').trigger('next.owl');
+    } else {
+        $('.owl-carousel').trigger('prev.owl');
+    }
+    e.preventDefault();
 });
             
 });
