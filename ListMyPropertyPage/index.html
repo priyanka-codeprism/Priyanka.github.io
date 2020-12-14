@@ -338,8 +338,9 @@
          <div class="slide s8 ">
            <div class="text-center"style="color: white;">
                <h1 class="text-center"style="font-weight: bolder;">Refer & Earn</h1>
-                <p style="font-size: 18px;">Refer a house Owners/Tenant to earn ₹2000 sheltie's card for every referal</p>
-                <div class="px-5 mx-5 d-flex justify-content-center ss8">
+               <hr class="bg-warning"style="width: 20%;margin: auto;background: white;">
+                <p class=""style="font-size: 18px;">Refer a house Owners/Tenant to earn ₹2000 sheltie's card for every referal</p>
+                <div class="px-lg-5 px-md-5 px-sm-3 px-1 mx-lg-5 mx-md-5 mx-sm-2 mx-0 d-flex justify-content-center ss8">
                     <div class="text-center mx-2">
                       <div><img src="images/owner.png"></div>
                       <button class="px-4 py-1 rbtn"style=" "data-toggle="modal" data-target="#OwnerDetailsModal">Refer an owner</button>
@@ -353,24 +354,25 @@
                       <button class="px-4 py-1 rbtn"data-toggle="modal" data-target="#ReferLoaneeModal">Refer a Loanee</button>
                     </div>
                 </div>
-            </div><hr style="background: white;">
-            <div class="mx-lg-5 mx-md-5 mx-sm-2 mx-0 mt-3"style=" ">
+            </div>
+            <!--<hr style="background: white;height: 1px;">-->
+            <div class="mx-lg-5 mx-md-5 mx-sm-2 mx-0 mt-3"style="background: white; outline: 1px solid white;box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2); ">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-md-8 col-12 pt-5 d-flex allign-item-center">
-                    <div>
-                        <h2>Earn upto ₹2000</h2>
+                  <div class="col-md-8 col-sm-12 col-12 py-lg-5 py-md-5 py-sm-3 py-2 d-flex allign-item-center">
+                    <div class="px-2">
+                        <h2 style="color:#0c8cac;"><b>Earn upto <span class="text-warning">₹2000</span></b></h2>
+                        <div style="font-size: 18px;">
                         <p>Refer a freind/colleague who need any financial assistance i.e Loan(personal, home, property etc.), credit cards</p>
-
-                         <p>We will pay you flat 0.50% of whatever loan amount will be disburse for your referal.</p>
+                         <p>We will pay you flat 0.50% of whatever loan amount will be disburse for your referal.</p></div>
                       </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-sm-12 col-12 si8">
                   <div><img src="images/img3.png"style="width: auto;height: 200px;"></div>
                 </div>
                 </div>
              </div>
-             </div> <hr style="background: white;">  
+             </div>  
                   
          </div>
           
@@ -427,7 +429,7 @@
                           </div>
                                                             
                              <div class="d-flex justify-content-center">
-                              <button class="submit-btn btn btn-success px-3" id="submitbtn" data-toogle="modal" >Submit</button>
+                              <button class="submit-btn btn btn-success px-3" id="ownersubmitbtn" data-toogle="modal" >Submit</button>
                             </div>
                         </fieldset>
                      </form>
@@ -502,7 +504,7 @@
                               </div>
                               </div>                          
                              <div class="d-flex justify-content-center">
-                              <button class="submit-btn btn btn-success px-3" id="submitbtn" data-toogle="modal" >Submit</button>
+                              <button class="submit-btn btn btn-success px-3" id="submitbtn" >Submit</button>
                             </div>
                         </fieldset>
                      </form>
@@ -512,6 +514,59 @@
         </div><!-- modal-dialog end-->
     </div>  <!-- modal end-->
     <!-----------------------------refer loanee modal end ---->
+    <!-----------------------succesfully subcribed modal  start----------------------->
+  <div class="modal fade" id="ownersubmitModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <h3 class="modal-title"style="color:#2ecab6;"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body ">
+                 <div class=" text-center mb-5 text-success"><h5>Successfully submitted. </h5></div>
+            </div>
+            
+            </div>   
+        </div>     
+    </div>
+  <!-----------------------succesfully subcribed modal  end----------------------->
+  <!-----------------------succesfully subcribed modal  start----------------------->
+  <div class="modal fade" id="loaneesubmitModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header" style="border: none!important;">
+                    <h3 class="modal-title"style="color:#2ecab6;"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+             </div>
+              <div class="modal-body ">
+                 <div class=" text-center mb-5 text-success"><h5>Successfully submitted.</h5></div>
+            </div>
+            
+            </div>   
+        </div>     
+    </div>
+  <!-----------------------succesfully subcribed modal  end----------------------->
+
+  <script >
+      $(function () {
+       $("#submitbtn").click(function(e){
+            e.preventDefault();
+          $("#ReferLoaneeModal").modal("hide");
+          $("#loaneesubmitModal").modal("show");
+
+        });
+       $("#ownersubmitbtn").click(function(e){
+            e.preventDefault();
+          $("#OwnerDetailsModal").modal("hide");
+          $("#ownersubmitModal").modal("show");
+
+        });
+     });
+   </script>
 
     <!----------------------- section 3 end----------------------->  
 
@@ -715,7 +770,7 @@
     </script>
     <script >
       $(function () {
-       $('[data-toggle="tooltip"]').tooltip()
+       $('[data-toggle="tooltip"]').tooltip();
      })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
