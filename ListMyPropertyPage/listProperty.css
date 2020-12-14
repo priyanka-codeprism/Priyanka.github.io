@@ -126,21 +126,25 @@ html {
 
 }
 .s5{
-  /*background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);*/
-  background: white;
+ /*background: linear-gradient(to top left, #f91f8c 36%, #ffffff 0%);*/
+ background: linear-gradient(to top left, #b60707 36%, #ffffff 0%);
 }
 .header1 { 
             position: sticky; 
             top:0; 
             background: #fff;
         } 
+        .ss5 i{
+          color: #045de9;
+        }
 /*---------------------------------------ssection 3------------*/
 
 .s7{
   background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
 }
 .s8{
-  /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
+  /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+  90% 50% 0% 50% / 0% 50% 90% 50% */
  background-color: #045de9;
 background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
