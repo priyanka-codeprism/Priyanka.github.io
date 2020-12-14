@@ -59,7 +59,9 @@ html {
 
 /*-------------------------section 1 start---------------------------------*/
 
-
+.slide0{
+  height: 100vh;width: 100%;
+}
 .wrapper {
    width: 100%;
   height: 100vh;
@@ -69,42 +71,33 @@ html {
 .slide{
  height: 100vh;
  padding: 100px 50px;
-  width: calc(100% / 3);
+  width: calc(100% /2);
+ 
   /*width: 100vw;*/
   position: relative;
   float: left;
 }
-.slides{
- height: 100vh;
- padding:100px 50px;
-  width: calc(100% / 4);
-  /*width: 100vw;*/
-  position: relative;
-  float: left;
-}
+
 .sections {
-  width: 300%;
-  height: 100vh;
-}
-.sections1 {
-  width: 400%;
+  width: 200%;
   height: 100vh;
 }
 
 .s1{ 
-  background: url(images/bg11.jpg);
+  /*background: linear-gradient(rgba(47,14,97,0.9),rgba(247,11,54,0.3)),url(images/bg11.jpg);*/
+  background: linear-gradient(rgba(47,14,97,0.9),rgba(247,11,54,0.3)),url(images/bg11.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
 }
 .s2{
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(images/bg8.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/bg8.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
 }
 .s3{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(images/bg13.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/bg13.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
@@ -113,7 +106,7 @@ html {
    margin-bottom: 0!important;
 }
 @media (max-width: 605px) {
-  .slides,.slide{
+  .s1,.s2,.s3,.s5,.s6,.s8{
     padding: 100px 10px!important;
   }
   .s1 h1,.s2 h1,.s3 h1,.s5 h1,.s6 h1,.s7 h1{
@@ -133,21 +126,46 @@ html {
 
 }
 .s5{
-  background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);
+  /*background: linear-gradient(to right, #ccceff 0%, #6dc1d0 100%);*/
+  background: white;
 }
+.header1 { 
+            position: sticky; 
+            top:0; 
+            background: #fff;
+        } 
 /*---------------------------------------ssection 3------------*/
 
 .s7{
-  background: linear-gradient(to right, #2ecab6 32%, #3cb0e2 100%);
+  background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
 }
 .s8{
-  background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
+  /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
+ background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 .rbtn{
   color: red; border-radius: 50px;border: 1px solid white;background: white;
+  box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
 }
-@media (max-width: 576px) {
- 
+.ss8 img{
+  width:60px;
+  height: 60px;
+
+}
+.icn i{
+  color:#ab217f;
+}
+@media (max-width: 768px) {
+ .s7  h1{
+    font-size: 30px!important;
+ }
+ .s7 p{
+  font-size: 20px!important;
+ }
+ .s7{
+  padding: 30px 10px 20px 10px!important;
+ }
 }
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
