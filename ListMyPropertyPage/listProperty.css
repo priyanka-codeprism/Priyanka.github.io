@@ -160,6 +160,13 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
 .icn i{
   color:#ab217f;
 }
+.modal h2{
+ font-weight: bold;
+ background: linear-gradient(to top left, #ff0000 49%, #1d64e7 30%);
+  /*background:linear-gradient(#ff0000 , #cd0eb7 );*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (max-width: 768px) {
  .s7  h1{
     font-size: 30px!important;
