@@ -118,6 +118,9 @@ html {
   }
 
 }
+.s2i i{
+  font-size: 18px!important;
+}
 /*---------------section 2-----------*/
 .s4{
    /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);*/
@@ -136,6 +139,8 @@ html {
         } 
         .ss5 i{
           color: #045de9;
+          font-size: 20px;
+
         }
 /*---------------------------------------ssection 3------------*/
 
@@ -159,13 +164,11 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
 }
 .icn i{
   color:#ab217f;
+  font-size: 20px;
 }
 .modal h2{
- font-weight: bold;
- background: linear-gradient(to top left, #ff0000 49%, #1d64e7 30%);
-  /*background:linear-gradient(#ff0000 , #cd0eb7 );*/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+ color: #072db6;
 }
 @media (max-width: 768px) {
  .s7  h1{
@@ -177,6 +180,10 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
  .s7{
   padding: 30px 10px 20px 10px!important;
  }
+ .ss7 img{
+  display: none;
+ }
+
 }
 @media (max-width: 576px) {
  .rbtn{
@@ -196,6 +203,7 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
   height: 120px!important;
   width: auto!important;
  }
+
  
 }
 /*---------------------------last part start---------------------------------------------*/

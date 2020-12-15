@@ -53,15 +53,13 @@ html {
 }
 
 .ul1 a{
-  color: white!important;
+  color: limegreen!important;
 }
-.card p{
-  font-size: 18px;
-}
+
 .card-header{
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: #072db6;
 }
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
