@@ -53,13 +53,17 @@ html {
 }
 
 .ul1 a{
-  color: limegreen!important;
+  color: green!important;
 }
 
 .card-header{
   font-size: 20px;
   font-weight: bold;
   color: #072db6;
+}
+.nav-pills a.active {
+  background-color: limegreen ;
+  color: white !important;
 }
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
@@ -84,22 +88,5 @@ footer a {
   text-decoration: underline;
   color: white;
 }
-.to-top i {
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  right: 10px;
-  bottom: 25px;
-  color: #fff;
-  font-size: 25px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-.to-top i.active {
-  bottom: 25px;
-  pointer-events: auto;
-  opacity: 1;
-}
+
 /*---------------------------last part end---------------------------------------------*/
