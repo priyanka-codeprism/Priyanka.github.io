@@ -213,6 +213,32 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
   height: 120px!important;
   width: auto!important;
  }
+ .s1{ 
+  
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/1stslide.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+.s2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/2ndslide.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+.s5{
+ 
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/4thslide.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+.s7{
+ 
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/6thslide.jpg);
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
  
 }
