@@ -135,8 +135,12 @@ html {
 .header1 { 
             position: sticky; 
             top:0; 
-            background: #fff;
+            background: #2ecab6;
+            text-align: center;
         } 
+        .tb .fa-check{
+          color: #fff;
+        }
         .ss5 i{
           color: #045de9;
           font-size: 20px;
