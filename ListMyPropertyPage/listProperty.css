@@ -213,6 +213,12 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
   height: 120px!important;
   width: auto!important;
  }
+ .refer h2{
+  font-size: 25px!important;
+ }
+ .sr{
+  font-size:20px!important; 
+ }
  .s1{ 
   
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/1stslide.jpg);
