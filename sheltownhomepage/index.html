@@ -133,10 +133,12 @@
                                 <div class="containers mb-3 ">
                                   <label for="contact" class="fieldlabels">Enter OTP</label> 
                                   <div class="inputb">
-                                  <input type="text" name="phno" id="phno" value="" maxlength="1" />
-                                  <input type="text" name="phno" id="phno" value="" maxlength="1" />
-                                  <input type="text" name="phno" id="phno" value="" maxlength="1" />
-                                  <input type="text" name="phno" id="phno" value="" maxlength="1" /></div>
+                                  <input type="text" name="phno" id="o1" value="" maxlength="1" onkeyup="clickEvent(this,'o2')" />
+                                  <input type="text" name="phno" id="o2" value="" maxlength="1"
+                                  onkeyup="clickEvent(this,'o3')" />
+                                  <input type="text" name="phno" id="o3" value="" maxlength="1"
+                                  onkeyup="clickEvent(this,'o4')" />
+                                  <input type="text" name="phno" id="o4" value="" maxlength="1" /></div>
                                  </div>
                                 <div class="d-inline"><button class="btn btn-info"id="verifytotpbtn" >verify OTP</button>
                                 <button class="btn btn-success">Resend OTP</button></div>
@@ -149,6 +151,13 @@
             </div><!-- modal-content end-->
         </div><!-- modal-dialog end-->
     </div>  <!-- modal end-->
+    <script >
+      function clickEvent(first,last){
+       if(first.value.length){
+         document.querySelector("#last").focus();
+       }
+      }
+    </script>
 <!--------------------------signup modal page1end---------------------------------------->
 <!--------------------------signup modal page 2 start---------------------------------------->
 <div class="modal fade" id="SignupModal2">

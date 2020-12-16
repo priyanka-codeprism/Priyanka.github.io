@@ -59,6 +59,10 @@ $("#sbtn").click(function(){
     $("#SignupModal").modal("show");
 	$("#LoginModal").modal("hide");		    
   });
+//
+
+
+
   // Custom method to validate username
   
 			$.validator.addMethod("usernameRegex", function(value, element) {
