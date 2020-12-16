@@ -27,9 +27,16 @@ var showChar = 100;
     return false;
   });
  //display otp div
+ /*setTimeout(function() {
+    $('#myModal').modal();
+}, 2000);*/
+
+
   $("#sendOtpbtn").click(function(e){
   	e.preventDefault();
-     $("#otp").css("display", "block");			    
+  	setTimeout(function() {
+     $("#otp").css("display", "block");	
+     }, 5000);		    
   });
   //hide signuppage1 modal and display signuppage2 modal;
   $("#verifytotpbtn").click(function(e){
