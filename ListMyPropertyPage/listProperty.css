@@ -192,42 +192,23 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
 .desktopview{
   display: none;
 }
-/*.s1{ 
-  
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/1stslide.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: white;
-}
-.s2{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/2ndslide.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: white;
-}
-.s4{
- 
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/d4th.jpg);
-  background-repeat: no-repeat;
-  background-size:100% 100%;
-  color: white;
-}
-.s5{
- 
-   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/6thslide.jpg);
-   background-repeat: no-repeat;
-  background-size: 100% 100%;
-}*/
+
 .s1{
     padding: 100px 10px!important;
   }
   .s2,.s3,.s4,.s6,.s7{
     padding: 50px 10px!important;
   }
-  .s1 h1,.s2 h1,.s3 h1,.s4 h1,.s6 h1,.s7 h1,.s8 h1{
+  .s2 h1,.s3 h1,.s4 h1,.s6 h1,.s7 h1,.s8 h1{
   font-size: 30px!important;
   }
-  .s1 p,.s2 p,.s3 p,.s4 p,.s7 p{
+  .s1 h1{
+    font-size: 32px!important;
+  }
+  .s1 p{
+    font-size: 18px;
+  }
+  .s2 p,.s3 p,.s4 p,.s7 p{
     font-size: 20px;
     
   }
