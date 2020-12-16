@@ -46,6 +46,12 @@ html{
   }
 }
 /*-----------------------navbar end------------------------------------------->*/
+
+.inputb input[type=text]{
+   width:15%!important;
+   border: none;
+   border-bottom: 1px solid black;
+  }
 /*-----------------------1st part start------------------------------------------->*/
 .a1{
 	background: #2ECAB6;

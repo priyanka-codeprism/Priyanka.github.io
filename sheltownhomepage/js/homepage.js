@@ -27,10 +27,6 @@ var showChar = 100;
     return false;
   });
  //display otp div
- /*setTimeout(function() {
-    $('#myModal').modal();
-}, 2000);*/
-
 
   $("#sendOtpbtn").click(function(e){
   	e.preventDefault();
