@@ -6,10 +6,7 @@
 }
 body {
   background: #f1f3f6;
-  /*overflow-x: hidden;
- scrollbar-width:none;
-  -ms-overflow-style:none;*/
-  overflow-y: scroll!important;
+  
 }
 html {
   /*scroll-behavior: smooth;*/
@@ -54,11 +51,14 @@ html {
   .navbar-brand {
     padding-left: 0 !important;
   }
+
 }
 
-
-/*-------------------------section 1 start---------------------------------*/
-
+/*-------------------------desktop view---------------------------------*/
+/*-------------------------section 0&1 start---------------------------------*/
+.mobview{
+  display: none;
+}
 .slide0{
   height: 100vh;width: 100%;
 }
@@ -72,8 +72,6 @@ html {
  height: 100vh;
  padding: 100px 50px;
   width: calc(100% /2);
- 
-  /*width: 100vw;*/
   position: relative;
   float: left;
 }
@@ -93,75 +91,60 @@ html {
 .s2{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/d2nd.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
 }
 .s3{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/bg13.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
 }
-.s1 p,.s2 p,.s3 p,.s5 p,.s6 p,.s7 p{
+.s1 p,.s2 p,.s3 p,.s4 p,.s7 p,.s5 p{
    margin-bottom: 0!important;
 }
-@media (max-width: 605px) {
-  .s1,.s2,.s3,.s5,.s6,.s8{
-    padding: 100px 10px!important;
-  }
-  .s1 h1,.s2 h1,.s3 h1,.s5 h1,.s6 h1,.s7 h1,.s8 h1{
-  font-size: 30px!important;
-  }
-  .s1 p,.s2 p,.s3 p,.s5 p,.s7 p{
-    font-size: 20px;
-    
-  }
 
-}
 .s2i i{
   font-size: 18px!important;
 }
 /*---------------section 2-----------*/
 
-.s5{
+.s4{
  /*background: linear-gradient(to top left, #f91f8c 36%, #ffffff 0%);*/
  /*background: linear-gradient(to top left, #b60707 36%, #ffffff 0%);*/
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/d4th.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
 }
-.header1 { 
-            position: sticky; 
-            top:0; 
-            background: #2ecab6;
-            text-align: center;
-        } 
-        .tb .fa-check{
-          color: #fff;
-        }
-        .ss5 i{
-          color: #fff;
-          font-size: 20px;
+.s5{
+ 
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/d6th.jpg);
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.header1{ 
+    position: sticky; 
+    top:0; 
+    background: #2ecab6;
+    text-align: center;
+} 
+.tb .fa-check{
+    color: #fff;
+}
+ .ss5 i{
+      color: #fff;
+      font-size: 20px;
 
         }
 /*---------------------------------------ssection 3------------*/
 
-.s7{
- 
-   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/d6th.jpg);
-   background-repeat: no-repeat;
-  background-size: cover;
-}
-.s8{
+.s6{
   /*background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
   90% 50% 0% 50% / 0% 50% 90% 50% 
    background: linear-gradient(to right, #eb2300 0%, #ab217f 100%);
    border-radius: 60% 0% 60% 0% / 60% 66% 60% 100%;color: #000;box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);*/
- 
 background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
- 
-
 }
 .rbtn{
   color: #045de9; border-radius: 50px;border: 1px solid white;background: white;
@@ -181,18 +164,7 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
  color: #072db6;
 }
 @media (max-width: 768px) {
- .s7  h1{
-    font-size: 30px!important;
- }
- .s7 p{
-  font-size: 20px!important;
- }
- .s7{
-  padding: 30px 10px 20px 10px!important;
- }
- .ss7 img{
-  display: none;
- }
+ 
 
 }
 @media (max-width: 576px) {
@@ -203,10 +175,8 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
   /*display: flex;
   justify-content: space-between!important;*/
  }
- .ss8 img{
-  display: none;
- }
- .s8 p{
+ 
+ .s6 p{
   font-size: 16px!important;
  }
  .si8 img{
@@ -219,7 +189,18 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
  .sr{
   font-size:20px!important; 
  }
- .s1{ 
+ 
+ 
+}
+/*-------------------------mob view start---------------------------------*/
+@media (max-width: 768px){
+  .mobview{
+  display: block;
+}
+.desktopview{
+  display: none;
+}
+/*.s1{ 
   
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/1stslide.jpg);
   background-repeat: no-repeat;
@@ -232,21 +213,45 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
   background-size: 100% 100%;
   color: white;
 }
-.s5{
+.s4{
  
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/4thslide.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/d4th.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:100% 100%;
   color: white;
 }
-.s7{
+.s5{
  
    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/6thslide.jpg);
    background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+}*/
+.s1{
+    padding: 100px 10px!important;
+  }
+  .s2,.s3,.s4,.s6,.s7{
+    padding: 50px 10px!important;
+  }
+  .s1 h1,.s2 h1,.s3 h1,.s4 h1,.s6 h1,.s7 h1,.s8 h1{
+  font-size: 30px!important;
+  }
+  .s1 p,.s2 p,.s3 p,.s4 p,.s7 p{
+    font-size: 20px;
+    
+  }
+  .s5  h1{
+    font-size: 30px!important;
+ }
+ .s5 p{
+  font-size: 20px!important;
+ }
+ .s5{
+  padding: 30px 10px 20px 10px!important;
+ }
+ .ss7 img{
+  display: none;
+ }
 
- 
 }
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
