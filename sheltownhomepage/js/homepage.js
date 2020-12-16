@@ -42,7 +42,8 @@ var showChar = 100;
   $("#verifytotpbtn").click(function(e){
   	e.preventDefault();
     $("#SignupModal").modal("hide");
-	$("#SignupModal2").modal("show");		    
+	$("#SignupModal2").modal("show");
+	$("#otp").css("display", "none");			    
   });
   //hide signuppage1 modal and display registersuccessful modal;
   $("#signupbtn").click(function(){
