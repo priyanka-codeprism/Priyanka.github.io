@@ -59,6 +59,9 @@ html {
 .mobview{
   display: none;
 }
+.desktopview{
+  display: block;
+}
 .slide0{
   height: 100vh;width: 100%;
 }
