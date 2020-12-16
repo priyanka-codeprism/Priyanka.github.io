@@ -199,8 +199,11 @@ background: linear-gradient(to bottom, #072db6 0%, #0c8cac 95%);
 .s1{
     padding: 100px 10px!important;
   }
-  .s2,.s3,.s4,.s6,.s7{
+  .s2,.s3,.s4,.s6{
     padding: 50px 10px!important;
+  }
+  .s7{
+    padding: 20px 10px 0px 10px!important; 
   }
   .s2 h1,.s3 h1,.s4 h1,.s6 h1,.s7 h1,.s8 h1{
   font-size: 30px!important;
