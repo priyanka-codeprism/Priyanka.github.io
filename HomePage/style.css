@@ -167,6 +167,9 @@ a {
 .header2{
     display: none;
 }
+.sidenav{
+    display: none;
+}
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
   .left,.right{
@@ -202,6 +205,7 @@ a {
     font-size: 12px;
 }
  .sidenav {
+    display: block;
   height: 100%;
   width: 0;
   position: fixed;
@@ -214,6 +218,7 @@ a {
   padding-top: 20px;
   color: #fff;
   font-size: 18px;
+
 }
 
 .menu a {
