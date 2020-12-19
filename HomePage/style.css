@@ -173,6 +173,12 @@ a {
 .mfooter{
     display:block;
 }
+.mfooter a{
+    font-size: 12px;
+}
+.mfooter ul{
+    margin-bottom: 0!important
+}
 .mfooter .navbar{
     position: fixed;bottom: 0;
     transition: all 0.5s;
@@ -188,6 +194,9 @@ a {
     border-bottom: 1px solid white!important;
     padding:10px; 
     display: flex;
+}
+.n1 .nav-item a:hover{
+    background: blue!important;
 }
 .n1 i{
    margin-right: 10px;
