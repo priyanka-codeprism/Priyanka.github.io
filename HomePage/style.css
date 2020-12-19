@@ -184,4 +184,13 @@ a {
     border: 1px solid white;
     font-size: 12px;
 }
+.n1 .nav-item a{
+    border-bottom: 1px solid white!important;
+    padding:10px; 
+    display: flex;
+}
+.n1 i{
+   margin-right: 10px;
+    }
+
 }
