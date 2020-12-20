@@ -81,9 +81,9 @@
   <div class="header header2" style="margin-bottom: 4.8rem;">
     <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
   <div style="width: 60%;"class="d-flex">
-    <div class="d-flex justify-content-center align-items-center"onclick="openNav()">
+    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
       <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
-    </div>
+    </div>-->
      <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -149,7 +149,17 @@ function closeNav() {
                   <tr>
                     <th colspan="3" >
                       <div class="d-flex justify-content-between">
-                    <span class="px-2 py-1"style="border:1px solid black;">Title of exam</span>
+                    <span >
+                      <select class="px-3 py-1">
+                        <option>Class Test</option>
+                        <option>Monthly Test</option>
+                        <option>Quarterly Test</option>
+                        <option>Surprise Test</option>
+                        <option>semestar End Term</option>
+                        <option>Yearly Exam</option>
+                        
+                      </select>
+                    </span>
                     <span>
                       <select class="px-3 py-1">
                         <option>Class-I</option>
@@ -218,9 +228,10 @@ function closeNav() {
                     <th colspan="6" >
                       <div class="d-flex justify-content-between">
                           <span>My Result</span>
-                          <div>
-                          <span class="px-2 py-1 mr-2"style="border:1px solid black;"> Name </span>
-                          <span> <img src="images/boy.png" class="rounded-circle"style="width: 50px;height: auto;background: #fff;"> </span></div>
+                          <div class="text-center">   
+                          <span> <img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;"> </span>
+                          <div class="px-2 py-1 "style="font-size: 14px!important;"> Priyanka Pradhan </div>
+                        </div>
                       </div>
                    </th>
                   </tr>
@@ -239,6 +250,7 @@ function closeNav() {
                   <tr style="background: ">
                     <th colspan="6">
                       <div class="d-flex justify-content-between">
+                        <div>
                         <span>
                           <select class="px-3 py-1">
                         <option>Class-I</option>
@@ -253,7 +265,8 @@ function closeNav() {
                         <option>Class-X</option>
                       </select>
                         </span>
-                        <span class="px-2 py-1 mr-2"style="border:1px solid black;">session(2012-15)</span>
+                        <div class="px-2 py-1 mr-2"style="font-size: 14px!important;">session(2012-15)</div>
+                      </div>
                         <span><button class="btn btn-warning">Print Marksheet</button> </span>
                       </div>
                       
