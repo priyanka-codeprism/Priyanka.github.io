@@ -41,7 +41,8 @@ a {
 .navbar-brand {
     font-size: 20px;
     margin-top: 5px!important;
-    margin-bottom: -10px!important
+    margin-bottom: -10px!important;
+    
 }
 
 .navbar-brand p {
@@ -88,16 +89,16 @@ a {
 }
 /*i {
    margin-left: 8px;
-
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
 /*left  cards*/
-.card{
+.card {
     margin: 10px;
-    background:#4C5352!important;
+    background: #111!important;
     color: white;
 }
+
 .dv{
     display: flex;
     flex-direction: row;
@@ -107,7 +108,14 @@ a {
     flex-direction: column;
 
 }
+.list >li {
+    margin: 10px;
+    color: white;
 
+}
+.view a:hover{
+    text-decoration: underline;
+}
 /*right cards*/
 .schedule{
     overflow-y: scroll;
@@ -126,7 +134,6 @@ a {
 .speak-loud:hover{
     background-color: #EBEBEB;
 }
-
 /* rounded card */
 .card{
     border-radius: 10px;
@@ -135,6 +142,7 @@ a {
 
 .sharebtm{
     font-weight: bold;
+    color: white !important;
 }
 .sharebtm:hover{
     text-decoration: none;
@@ -154,6 +162,91 @@ a {
     display: none;
 }
 /* card header bg remove */
+
+.schedule::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.schedule::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+.md-sec::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space for middle secction */
+}
+/* Modal start */
+
+
+/* Full-width input fields */
+input[type=password] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:#111;
+}
+.email{
+    width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #111;
+
+}
+.docs > input {
+    background: #111;
+ 
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Extra styles for the cancel button */
+.contibtn {
+  padding: 5px;
+}
+
+
+
+/* Add padding to container elements */
+.container {
+  padding: 5px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .google{
+    width: 100%;
+  }
+}
+
+.unique h5 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 10px 10px; 
+} 
+
+.unique span { 
+    background:#111; 
+    padding:5px 5px; 
+    color: #fff;
+}
+
+/* Modal end */
 
 .left,.right{
     display: block;
@@ -238,6 +331,10 @@ a {
   font-size: 36px;
   color: white;
  
+}
+.md-sec{
+  height: auto!important;
+  overflow: hidden;
 }
 
 }
