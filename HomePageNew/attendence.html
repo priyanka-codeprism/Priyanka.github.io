@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+  <title>Attendance Page</title>
+  <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="exam.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ITC Officina Sans Std Book";
+}
+
+body {
+    background: #111!important;
+ 
+}
+.navbar-brand {
+    font-size: 20px;
+    margin-top: 5px!important;
+    margin-bottom: -10px!important;
+    
+}
+
+.navbar-brand p {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.nav-item a,
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: bold!important
+}
+
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.other {
+    color: black;
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.btn.btn-search {
+    background: #fff!important;
+    border-radius: 0;
+    color: white;
+
+}
+.sr1 .fa-search{
+  color: black;
+}
+.fa-comment-dots{
+  color: white;
+  font-size: 20px;
+}
+.in{
+  border:none!important;
+  border-radius: 0;
+}
+
+
+/*-----------------------navbar end------------------------------------------->*/
+      body {
+ 
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  padding: 0;
+  padding-top: 5px ;
+}
+
+table tr {
+  background-color: #333;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th{
+    padding: .625em;
+    text-align: center;
+    background-color: #333;
+    color:rgb(54, 214, 54);
+
+}
+
+table td {
+  padding: .625em;
+  text-align: center;
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: none !important;
+  }
+   tbody{
+      border: none;
+  }
+  .mvhsub{
+      display: none;
+  }
+  table caption {
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+      border: none;
+    background:#121212;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+select{
+    padding:1px 10px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="header header1" style="margin-bottom: 4rem !important; ">
+    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+      <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse lateral-left" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item mr-4 ">
+            <a href="index.html"><div><i class="fa fa-home" aria-hidden="true"></i></div>
+            <div>Home</div></a> 
+           
+          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
+          <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
+          <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
+          <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
+          <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
+          <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+        </div>
+      </li>
+          <li class="nav-item mr-4">
+              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
+              <div>Campus</div></a>      
+          </li>
+          <li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+             <div>Internship</div></a>      
+          </li>
+          <li class="nav-item mr-4">
+            <a href=""><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
+              <div>Chat</div></a>      
+          </li>
+          <li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
+               <div>Notifications</div></a>      
+          </li>
+          <li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
+           <div>E-Learning</div></a>      
+          </li>
+          <li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
+              <div>Search</div></a>      
+          </li>
+
+       
+          
+       
+        </ul>
+
+      </div>
+
+    </nav>
+  </div><br>
+
+
+
+  <!--header end---------->
+  <!----------------------mob header---------------------------------->
+  <div class="header header2" style="margin-bottom: 4.8rem;">
+    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+  <div style=";"class="d-flex">
+     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+    </div>
+  
+        <div class=" input-group form-container"style="width:40%">
+          <span class="input-group-btn sr1">
+                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
+                    class="fas fa-search mr-1"></i></button>
+          </span>
+              <input class="form-control in" type="search" placeholder="Search"
+                aria-label="Search" autocomplete="off">
+            </div>
+      
+        <div>
+            <a href=""><div><i class="fas fa-comment-dots"></i></div>
+              </a> 
+              </div>     
+          
+</nav>
+</div>
+<div id="mySidenav" class="sidenav ">
+  <div>
+  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
+    <div style="color: white;font-size: 22px;">Account Information</div>
+    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+  </div>
+  <div class="text-left p-4"style="border-bottom: 1px solid white;">
+    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
+    <div>Priyanka</div>
+    <div>Grade-8th</div>
+    <div>Delhi Public School</div>
+    <div>city, state, country</div>
+  </div>
+  
+</div>
+  <div class="menu1 p-4">
+    <div class="">@Priyanka_2480</div>
+    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
+  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
+  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
+</div>
+</div>
+  <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  <!-- attendence start -->
+  <div class="container-fluid">
+      <div class="container text-center">
+        <label for="sem"><h3 class="text-light">Select Semester:</h3></label>
+        <select id="size_select" style="background-color: #121212; color: #f8f8f8;" >
+            <option value="option1">1</option>
+            <option value="option2">2</option>
+            <option value="option3">3</option>
+            <option value="option4">4</option>
+            <option value="option5">5</option>
+            <option value="option6">6</option>
+          </select>
+      </div>
+      <!--Size dropdown content-->
+      <div id="option1" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-1</h4>
+            </div>
+            <table class="table table-bordered">
+              <caption>Extra attendence:</caption>
+              <caption>Attendence deduction as penalty:</caption>
+              <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th   style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td data-label="Subject">English</td>
+                  <td data-label="Total no. of lectures">10</td>
+                  <td data-label="No. of lectures attended">8</td>
+                  <td data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+      <div id="option2" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-2</h4>
+            </div>
+            <table class="table table-bordered">
+                <caption>Extra attendence:</caption>
+                <caption>Attendence deduction as penalty:</caption>
+                <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th  style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td data-label="Subject">English</td>
+                  <td data-label="Total no. of lectures">10</td>
+                  <td data-label="No. of lectures attended">8</td>
+                  <td data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+      <div id="option3" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-3</h4>
+            </div>
+            <table class="table table-bordered">
+                <caption>Extra attendence:</caption>
+                <caption>Attendence deduction as penalty:</caption>
+                <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th  style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td data-label="Subject">English</td>
+                  <td data-label="Total no. of lectures">10</td>
+                  <td data-label="No. of lectures attended">8</td>
+                  <td data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+      <div id="option4" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-4</h4>
+            </div>
+            <table class="table table-bordered">
+                <caption>Extra attendence:</caption>
+                <caption>Attendence deduction as penalty:</caption>
+                <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th  style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+      <div id="option5" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-5</h4>
+            </div>
+            <table class="table table-bordered">
+                <caption>Extra attendence:</caption>
+                <caption>Attendence deduction as penalty:</caption>
+                <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th  style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+      <div id="option6" class="size_chart">
+        <div class="container">
+            <div class="headeratt">
+                <h4 class="text-light">Attendence of Semester-6</h4>
+            </div>
+            <table class="table table-bordered">
+                <caption>Extra attendence:</caption>
+                <caption>Attendence deduction as penalty:</caption>
+                <caption>Final Attendence:</caption>
+              <thead>
+                <tr>
+                  <th  style="width:3.5rem;" scope="col">S.No</th>
+                  <th  scope="col">Subject</th>
+                  <th  scope="col">Total no. of lectures</th>
+                  <th  scope="col">No. of lectures attended</th>
+                  <th  scope="col">Attendence(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  data-label="S.No">1</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">2</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td data-label="S.No">3</td>
+                  <td data-label="Subject">English</td>
+                  <td data-label="Total no. of lectures">10</td>
+                  <td data-label="No. of lectures attended">8</td>
+                  <td data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">4</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">5</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">6</td>
+                  <td  data-label="Subject">English</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">20</td>
+                </tr>
+              </tbody>
+            </table>
+      
+        </div>
+      </div>
+  </div>
+
+   <!-- attendence end -->
+
+<!-------footer for mob view start------------>
+<div class="mfooter">
+  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
+    <ul class=" d-flex justify-content-between "style="width: 100%;">
+          <li class="nav-item mx-2 text-center">
+            <a href="">
+              <div><i class="fa fa-home" aria-hidden="true"></i></div>
+              
+            </a> 
+           
+          </li>
+          <li class="nav-item mx-2 text-center">
+            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+            </a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+             <a href=""class="plus">
+              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
+              </a> 
+                
+          </li>
+           <li class="nav-item mx-2 text-center">
+            <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
+              </a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
+           </div>      
+          </li>
+
+
+
+        </ul>
+  </nav>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="index.js"></script>
+<script>
+    $(document).ready(function(){
+
+//hides dropdown content
+$(".size_chart").hide();
+
+//unhides first option content
+$("#option1").show();
+
+//listen to dropdown for change
+$("#size_select").change(function(){
+  //rehide content on change
+  $('.size_chart').hide();
+  //unhides current item
+  $('#'+$(this).val()).show();
+});
+
+});
+</script>
+</body>
+</html>
