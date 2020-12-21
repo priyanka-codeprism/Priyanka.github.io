@@ -60,9 +60,21 @@ a {
 }
 
 .btn.btn-search {
-    background: #2ECAB6!important;
+    background: #fff!important;
     border-radius: 0;
     color: white;
+
+}
+.fa-search{
+  color: black;
+}
+.fa-comment-dots{
+  color: white;
+  font-size: 20px;
+}
+.in{
+  border:none!important;
+  border-radius: 0;
 }
 
 .login a:hover {
