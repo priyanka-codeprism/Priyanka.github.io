@@ -222,9 +222,9 @@ a.morelink {
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
-.far{
+/*.far{
   margin: 3px !important;
-}
+}*/
 /* Modal start */
 
 
