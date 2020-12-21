@@ -168,6 +168,9 @@ a {
     
     border: 0.5px solid #444;
 }
+.card a i{
+  font-size: 22px;
+}
 .cards .card-body{
   padding: 5px 3px!important;
 }
@@ -216,6 +219,7 @@ a.morelink {
 }
 .fa-ellipsis-h{
   color: white;
+  font-size: initial!important;
 }
 /* card header bg remove */
 
