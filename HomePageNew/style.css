@@ -136,6 +136,12 @@ a {
 }
 .viewall{
   color: #1DA1F2;
+  /*color: #007bff;*/
+}
+.docs button{
+  border: 1px solid #1DA1F2!important;
+  border-radius: 5px;
+  color: #1DA1F2;
 }
 
 /*---------------------------right cards------------------------------------*/
@@ -193,7 +199,7 @@ a:visited {
     color: #1DA1F2;
 }
 a {
-    color: #0254EB
+    color: #0254EB;
 }
 
 a.morelink {
@@ -207,6 +213,9 @@ a.morelink {
     
     background-color: #f0f0f0;
     margin: 10px;
+}
+.fa-ellipsis-h{
+  color: white;
 }
 /* card header bg remove */
 
@@ -386,6 +395,13 @@ button:hover {
 .md-sec{
   height: auto!important;
   overflow: hidden;
+}
+.card {
+    margin: 5px;
+   
+}
+.md-sec{
+  margin-bottom: 9vh;
 }
 
 }
