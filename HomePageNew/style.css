@@ -144,7 +144,11 @@ a {
   color: #1DA1F2;
 }
 
-/*---------------------------right cards------------------------------------*/
+/*---------------------------middle cards------------------------------------*/
+.speak input[type=text]{
+  border: none;
+  outline: none;
+}
 .schedule{
     overflow-y: scroll;
     height: 350px;
