@@ -175,10 +175,10 @@ function closeNav() {
           <h5 class="card-header rounded-top "><i class="fas fa-filter mr-2"style="font-size: 14px;"></i>Filters</h5>
           <div class="card-body view schedule px-1">
            <div class="col-lg-12 col-md-12 col-sm-11 col-12 mx-auto my-2 srch">
-            <div>category</div>
+            <div class="my-1">Category</div>
             <div class="input-group form-container">
               
-              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="dropdownMenuLink"aria-haspopup="true" aria-expanded="false"  type="search" placeholder=""
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="category"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Marketing"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
                     <a class="dropdown-item" href="#">1</a>
@@ -188,10 +188,10 @@ function closeNav() {
             </div>
           </div>
            <div class="col-lg-12 col-md-12 col-sm-11 col-12 mx-auto my-2 srch">
-            <div>Location</div>
+            <div class="my-1">Location</div>
             <div class="input-group form-container">
               
-              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="dropdownMenuLink"aria-haspopup="true" aria-expanded="false"  type="search" placeholder=""
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Delhi"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
                     <a class="dropdown-item" href="#">1</a>
@@ -200,18 +200,35 @@ function closeNav() {
                   </div>
             </div>
           </div>
-            
+            <div class="switch">
+              <div class="custom-control custom-switch">
+                <label class="custom-control-label" for="customSwitch1">Work from home
+                  </label>
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  
+                </div>
+                <div class="custom-control custom-switch">
+                  <label class="custom-control-label" for="customSwitch2">Part-time</label>
+                  <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                  
+                </div>
+            </div>
             
           </div><!--card body end--->
           <div>
-          <div href="#" class="viewall  text-center"style="">or</div>
+          <div  class="viewall  text-center"style="">or</div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto my-0">
             <div class="card-header p-0"style="border: none;background: transparent;"><h5>Search<h5></div>
             <div class="py-2 srch">
             <div class=" input-group form-container">
               
-              <input class="form-control " type="search" placeholder="e.g MBA, design"
+              <input class="form-control dropdown-toggle"id="myInput"data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g MBA, design"
                 aria-label="Search" autocomplete="off">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #222;">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
               <span class="input-group-btn">
                 <button class="btn btn-outline-success btn-search" type="submit"><i
                     class="fas fa-search mr-1"style="color: black;"></i></button></span>
@@ -219,14 +236,40 @@ function closeNav() {
           </div>
           </div>
         </div>
-        </div>
-      </div>
+        </div><!----card end------->
+      </div><!---col 3 end------>
+
+
+<script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      $("#category").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      $("#location").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+</script>
   <!-- left side end -->
-  <!-- middle sec -->
+  <!------------------ right sec ----------------------------->
       <div class="col-lg-9 col-md-9 col-sm-12 col-12 px-0  md-sec" style="overflow-y: scroll;">
         
         
-        <!-- second card -->
+        <!-- -------------first card---------------- -->
         <div class="card shadow cards">
           <div class="card-body py-2 mx-0">
             <div class="px-5 py-3" >
@@ -235,7 +278,7 @@ function closeNav() {
                <h4>Operations</h4>
                <h5 style="color: grey;">Internshala</h5>
              </div>
-             <div class="logo"></div>
+             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
            </div>
            <div class="my-3">
              <i class="fas fa-home mr-2"></i>Work From Home
@@ -265,6 +308,7 @@ function closeNav() {
             </div>
           </div>
         </div>
+        <!------------------------second card--------------------------->
         <div class="card shadow cards">
           <div class="card-body py-2 mx-0">
             <div class="px-5 py-3" >
@@ -273,7 +317,7 @@ function closeNav() {
                <h4>Operations</h4>
                <h5 style="color: grey;">Internshala</h5>
              </div>
-             <div class="logo"></div>
+             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
            </div>
            <div class="my-3">
              <i class="fas fa-home mr-2"></i>Work From Home
@@ -313,7 +357,7 @@ function closeNav() {
                <h4>Operations</h4>
                <h5 style="color: grey;">Internshala</h5>
              </div>
-             <div class="logo"></div>
+             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
            </div>
            <div class="my-3">
              <i class="fas fa-home mr-2"></i>Work From Home
@@ -353,7 +397,7 @@ function closeNav() {
                <h4>Operations</h4>
                <h5 style="color: grey;">Internshala</h5>
              </div>
-             <div class="logo"></div>
+             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
            </div>
            <div class="my-3">
              <i class="fas fa-home mr-2"></i>Work From Home
