@@ -170,6 +170,9 @@ a {
 .srch .btn.btn-search{
   background: #1DA1F2!important;
 }
+.dropdown-menu a{
+  color: white;
+}
 
 /* rounded card */
 .card{
