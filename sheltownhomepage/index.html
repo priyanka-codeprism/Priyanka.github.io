@@ -113,9 +113,9 @@
                   <div class="form-group">
                     <label>Enter phone number to continue sign Up </label>
                     <div class="input-group mb-2 mr-sm-2">
-                      <div class="input-group-prepend">
+                      <span class="input-group-prepend">
                         <div class="input-group-text"><i class="india flag"></i></div>
-                      </div>
+                      </span>
                       <input type="text" name="phno" class="form-control" id="phno" placeholder="" value="+91" />
                     </div>
 
@@ -321,8 +321,13 @@
         <div>
           <div class="col-lg-11 col-md-11 col-sm-11 col-12 mx-auto my-0">
             <div class=" input-group form-container">
-              <input class="form-control " type="search" placeholder="Search Locality Where You Want To Live...."
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="dropdownMenuLink"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="Search Locality Where You Want To Live...."
                 aria-label="Search" autocomplete="off">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
               <span class="input-group-btn">
                 <button class="btn btn-outline-success btn-search" type="submit"><i
                     class="fas fa-search mr-1"></i>Search</button></span>

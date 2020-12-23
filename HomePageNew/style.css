@@ -405,8 +405,7 @@ button:hover {
   overflow: hidden;
 }
 .card {
-    margin: 5px;
-   
+    margin: 5px 0px; 
 }
 .md-sec{
   margin-bottom: 9vh;
