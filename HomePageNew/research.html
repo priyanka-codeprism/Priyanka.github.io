@@ -78,6 +78,8 @@ body {
 .sub > input{
   height: 6vh;
    width: 300px;
+   background-color: #333;
+
    
 
 }
@@ -91,28 +93,49 @@ select {
 select::-ms-expand {
     display: none;
 }
+
 .status > li {
   margin: 10px;
 }
-.card-body{
-   background: #111!important;
+.card-body, .card-header{
+   background: #333!important;
 
+}
+.card-header{
+  color: rgb(54, 214, 54) !important;
 }
 .card-text{
   color: white !important;
 }
 select{
   border: none;
-  background-color: #111;
+  background-color: #333;
+  
+}
+.fa-user-circle {
+  color: white !important;
+}
+input[type=text]{
+  background-color: #333;
+ 
   color: white;
+}
+.history::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
 }
 
     
   </style>
 </head>
 <body>
-  <div class="header header1" style="margin-bottom: 4.8rem; ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+ <div class="header header1" style="margin-bottom: 2rem !important; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -131,7 +154,7 @@ select{
           </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Academics
         </a>
         <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
@@ -141,28 +164,46 @@ select{
           <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
           <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
           <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+               </div>
+      </li>
+         <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Campus
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+          <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
+          <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
+          <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
+          <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
         </div>
       </li>
-          <li class="nav-item mr-4">
-              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
-              <div>Campus</div></a>      
-          </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
              <div>Internship</div></a>      
           </li>
           <li class="nav-item mr-4">
-            <a href=""><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
+            <a href="chat.html"><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
               <div>Chat</div></a>      
           </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
                <div>Notifications</div></a>      
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
-           <div>E-Learning</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          E-Learning
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+ 
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
               <div>Search</div></a>      
@@ -172,11 +213,7 @@ select{
       </div>
 
     </nav>
-  </div><br>
-  <br>
-
-
-
+  </div><br><br>
 
 
 
@@ -237,8 +274,16 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
+  <div class="">
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            
+        </ul>
+    </div>
 <div class="container-fluid">
-  <h3 style="color: white; margin-left: 25px">Research</h3>
+
   <div class="row">
   <div class="col mb-3 ">
     <div class="card ">
@@ -272,8 +317,8 @@ function closeNav() {
           <input  type="text">
         </div>
       </div>
-      <h5 class="card-header">History</h5>
-      <div class="card-body " style="overflow-y: scroll; height: 12vh;">
+      <!-- <h5 class="card-header">History</h5>
+      <div class="card-body history " style="overflow-y: scroll; height: 12vh;">
         <ul class="card-text" style="font-size: 18px;margin-left: 15px">
           <li>Review Submission on 22/03/2022</li>
            <li>Review Submission on 15/09/2022</li>
@@ -282,7 +327,7 @@ function closeNav() {
            <li>Review Submission on 15/09/2022</li>
            <li>Review Submission on 30/10/2022</li>
         </ul>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -295,7 +340,7 @@ function closeNav() {
         <div class="row sub"><input type="text" name="" placeholder="Data Type for Research"></div>
         <div class="row sub"><input type="text" name="" placeholder="Time Duration of Research"></div>
         <div class="row sub"><input class="text-light" type="file" name="" placeholder="Add a File"></div>
-        <button type="button" class="btn btn-outline-warning btn-lg btn-block">Submit for Review</button>
+        <button type="button" class="btn btn-outline-success btn-lg btn-block">Submit for Review</button>
         </div>  
         
       </div>
@@ -325,11 +370,12 @@ function closeNav() {
              <option value="#">Declined</option>
            </select>
          </div>
+
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
           <select>
-            <option value="#">Declined</option>
+            <option value="#" id="declined">Declined</option>
              <option value="#">Rejected</option>
              <option value="#">Approved</option>
              <option value="#">Pending</option>
@@ -371,7 +417,7 @@ function closeNav() {
          <div class="row d-flex justify-content-between text-center">
           <label for="" class="text-white"> Special title treatment</label>
           <span class="pl-lg-3 px-2 text-white">30/10/2022</span>
-          <select>
+          <select class="declined">
             <option value="#">Declined</option>
              <option value="#">Rejected</option>
              <option value="#">Approved</option>

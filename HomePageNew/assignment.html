@@ -4,127 +4,23 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>Research</title>
+  <title>Assignment</title>
   <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-  <link href="exam.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
   <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
   <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="assignment.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "ITC Officina Sans Std Book";
-}
-
-body {
-    background: #111!important;
- 
-}
-.navbar-brand {
-    font-size: 20px;
-    margin-top: 5px!important;
-    margin-bottom: -10px!important;
-    
-}
-
-.navbar-brand p {
-    font-size: 14px;
-    margin-top: -10px;
-}
-
-.nav-item a,
-.navbar-brand {
-    color: white !important;
-}
-
-.nav-link {
-    font-weight: bold!important
-}
-
-
-.dropdown-toggle::after {
-    content: none;
-}
-
-.other {
-    color: black;
-}
-.nav-item{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-
-
-/*-----------------------navbar end------------------------------------------->*/
-
-.row{
-  margin: 10px;
-}
-
-
-.list > li {
-  margin: 10px;
-}
-.sub > input{
-  height: 6vh;
-   width: 300px;
-   
-
-}
-select {
-    /* for Firefox */
-    -moz-appearance: none;
-    /* for Safari, Chrome, Opera */
-    -webkit-appearance: none;
-}
-
-select::-ms-expand {
-    display: none;
-}
-.status > li {
-  margin: 10px;
-}
-.card-body{
-   background: #111!important;
-
-}
-.card-text{
-  color: white !important;
-}
-/*@media (max-width: 320px) {
-  .res{
-    margin-top: 10px;
-  }
-  .sta{
-    margin-top: 10px;
-  }
-  .mvs > li{
-    font-size: smaller;
-
-  }
-
-
-
-}
-
-
-*/
-    
-  </style>
 </head>
 <body>
-  <div class="header header1" style="margin-bottom: 4rem !important; ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
+  <div class="header header1" style="margin-bottom: 4.8rem; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -143,73 +39,96 @@ select::-ms-expand {
           </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Academics
+            <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Academics
+            </a>
+            <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
+              <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
+              <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
+              <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
+              <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
+              <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+         
+            </div>
+          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Campus
         </a>
         <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
-          <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
-          <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
-          <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
-          <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
-          <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+          <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
+          <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
+          <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
+          <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
         </div>
       </li>
-          <li class="nav-item mr-4">
-              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
-              <div>Campus</div></a>      
-          </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
              <div>Internship</div></a>      
           </li>
           <li class="nav-item mr-4">
-            <a href=""><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
+            <a href="chat.html"><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
               <div>Chat</div></a>      
           </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
                <div>Notifications</div></a>      
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
-           <div>E-Learning</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          E-Learning
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+ 
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
               <div>Search</div></a>      
           </li>
+          
+
         </ul>
 
       </div>
 
     </nav>
-  </div><br>
-  
-
-
-
+  </div>
 
 
 
   <!--header end---------->
   <!----------------------mob header---------------------------------->
   <div class="header header2" style="margin-bottom: 4.8rem;">
-    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
-  <div style="width: 60%;"class="d-flex">
-    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
-      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
-    </div>-->
-     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
+  <div style=";"class="d-flex">
+     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  <div>
-    <ul><li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
-              </a>      
-          </li></ul>
-  </div>
+  
+        <div class=" input-group form-container"style="width:40%">
+          <span class="input-group-btn sr1">
+                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
+                    class="fas fa-search mr-1"></i></button>
+          </span>
+              <input class="form-control in" type="search" placeholder="Search"
+                aria-label="Search" autocomplete="off">
+            </div>
+      
+        <div>
+            <a href=""><div><i class="fas fa-comment-dots"></i></div>
+              </a> 
+              </div>     
+          
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -249,196 +168,159 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
-<div class="container-fluid">
-  <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-    <h3 class="card-header">Assignments</h3>
-    <div class="card-body view" style=" overflow-y: scroll";>
-       <h4><u> Upcoming</h4></u>
-       <div class="table-responsive">          
-  <table class="table table-borderless">
-    <tbody>
-<tr>
-<td scope="col">
-      <ul class="card-text list" style="list-style: none;">
-         <li style="font-weight: bold;">
-
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="display: inline; margin-top: 6.5px; ">
-        <label class="form-check-label" for="exampleCheck1">Due on</label>
-         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; ">
-          <p>     <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111;">
-            <p style="margin-left: 200px; margin-top: -20px ">
-            <a href="" data-toggle="modal" data-target="#exampleModal">See Details</a></p>        </li>
-          </th>
-<td scope="col">
-           <select name="cars" id="cars" style="background-color: #111; color: #fff; border: none; margin-top: 25px;">
-  <option value="due">Due</option>
-  <option value="completed">Completed</option>
-  <option value="submit">Submitted on</option>
-</select><br>
-<input type="text" value="20 Jan, 4pm"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-
-</td>
-</tr>
-
-<tr>
-<td scope="col">
-      <ul class="card-text list" style="list-style: none;">
-         <li style="font-weight: bold;">
-
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="display: inline; margin-top: 6.5px; ">
-        <label class="form-check-label" for="exampleCheck1">Due on</label>
-         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; ">
-          <p>     <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111;">
-            <p style="margin-left: 200px; margin-top: -20px ">
-            <a href="" data-toggle="modal" data-target="#exampleModal">See Details</a></p>        </li>
-          </td>
-<td scope="col">
-           <select name="cars" id="cars" style="background-color: #111; color: #fff; border: none;margin-top: 25px;">
-  <option value="due">Due</option>
-  <option value="completed">Completed</option>
-  <option value="submit">Submitted on</option>
-</select><br>
-<input type="text" value="20 Jan, 4pm"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-
-</td>
-</tr>
-
-<tr>
-<td scope="col">
-      <ul class="card-text list" style="list-style: none;">
-         <li style="font-weight: bold;">
-
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="display: inline; margin-top: 6.5px; ">
-        <label class="form-check-label" for="exampleCheck1">Due on</label>
-         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; ">
-          <p>     <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111;">
-            <p style="margin-left: 200px; margin-top: -20px ">
-            <a href="" data-toggle="modal" data-target="#exampleModal">See Details</a></p>        </li>
-          </td>
-<td scope="col">
-           <select name="cars" id="cars" style="background-color: #111; color: #fff; border: none; margin-top: 25px;">
-  <option value="due">Due</option>
-  <option value="completed">Done </option>
-  <option value="submit">Submitted Late</option>
-</select><br>
-<input type="text" value="20 Jan, 4pm"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-</td>
-</tr>
-        <tr>
-<td scope="col">
-      <ul class="card-text list" style="list-style: none;">
-         <li style="font-weight: bold;">
-
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="display: inline; margin-top: 6.5px; ">
-        <label class="form-check-label" for="exampleCheck1">Due on</label>
-         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; ">
-          <p>     <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111;">
-            <p style="margin-left: 200px; margin-top: -20px ">
-            <a href="" data-toggle="modal" data-target="#exampleModal">See Details</a></p>        </li>
-          </td>
-<td scope="col">
-           <select name="cars" id="cars" style="background-color: #111; color: #fff; border: none; margin-top: 25px;">
-  <option value="due">Due</option>
-  <option value="completed">Completed</option>
-  <option value="submit">Submitted on</option>
-</select><br>
-<input type="text" value="20 Jan, 4pm"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-
-</td>
-</tr>
-
-          </tbody>
-          </table>       
-             </li>
+  <!-------------------------------- table start ------------------------------->
+  <section>
+    <div class="">
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Assignment</a></li>
+            
+        </ul>
     </div>
-  </div>
-</div>
-</div>
-<style >
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-
-</style>
-
-
-
-
-<div class="sjds" style="float: right; width: 50%">
-  <div class="work" style="width: 100%;">
-  <div class="card shadow " ><br><br><br>
-  <u>  <h5 class="card-header">Work</h5></u>
-    <div class="card-body view">
-      <div style="border: none;">
-      <button type="button" class="btn btn-secondary" style="width: 100%">Add or Create Assignment</button><br>
-    </div>
-    <div>
-<br>
-<center><button type="button" class="btn btn-secondary" style="width: 50%">Submit</button></center><br>
-    </div>
-
-    </div>
-  </div>
-
+    
+    <div class="tables"style="color: #fff!important;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-12 col-sm-12 ">
+            <div>
+              <h3 class=" pb-3 px-lg-5 px-md-5 px-sm-3 px-2"style="color: white;"><b>Due Assignment</b></h3>
+            </div>
+            <div>
+            <div class="table-responsive">
+            <table class="table  table-bordered "style="color: #fff">
+               <thead class="">
+                  <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Last Date</th>
+                    <th scope="col">Turned In</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DBMS<br>
+                    <a href="" data-toggle="modal" data-target="#myModal" style="font-size: 14px;">  [Details] </a>
+                    </td>
+                    <td>12 December 2020</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>C++<br>
+                    <a href="" data-toggle="modal" data-target="#myModal">  [Details] </a></td>
+                    <td>12 March 2020</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Python<br>
+                    <a href="" data-toggle="modal" data-target="#myModal">  [Details] </a></td>
+                    <td>5 October 2020</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>OS</td>
+                    <td>12 Januaray 2021</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>DBMS</td>
+                    <td>12 December 2020</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>C++</td>
+                    <td>12 March 2020</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Python</td>
+                    <td>5 October 2020</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>OS</td>
+                    <td>12 Januaray 2021</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>DBMS</td>
+                    <td>12 December 2020</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>C++</td>
+                    <td>12 March 2020</td>
+                    <td>Yes</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-6 col-12 col-sm-12 my-lg-0 my-md-0 my-sm-2 my-2 ">
+            <div>
+              <h3 class=" pb-3 px-lg-5 px-md-5 px-sm-3 px-2"style="color: white;"><b>Submit Assignment</b></h3>
+              <div class="assignmentform py-3"style="background: #222;border: 2px solid #555; ">
+              <form class="col-md-12">
+            <div class="container form-group">
+              
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Your Name" />
+            </div>
+            <div class="container form-group">
+             
+              <input style="display: inline;" type="text" name="password" id="password" class="form-control" id="phno"placeholder="Enrollment Number">
+              
+            </div>
+            <div class="container form-group">
+              <input type="text" class="form-control" id="" placeholder="Subject Code"/>
+            </div>
+            <div class="container form-group">
+              
+              <input style="display: inline;" type="text" name="password" id="password" class="form-control" id="phno"placeholder="Branch">
+            </div>
+            <div class="container form-group">
+             
+              <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;"> 
+                  <option selected>Semestar</option>  
+                  <option value="0">1st</option>
+                  <option value="1">2nd</option>
+                  <option value="2">3rd</option>
+                  <option value="3">4th</option>
+                  <option value="1">5th</option>
+                  <option value="2">6th</option>
+                  
+              </select>
+            </div>
+              <div class="container form-group">
+                
+                <input type="file" class="form-control-file" id="">
+              </div>
+              <div class="text-center">Or</div>
+              <div class="container form-group">
+              
+              <input type="text" class="form-control" id="" placeholder="Add Link"/>
+            </div>
+              <div style=" text-align: center;">
+                <button type="button" class="btn btn-outline-success btn-lg " href="#" data-dismiss="modal" aria-label="Close">
+                  Submit
+                </button>
+              </div>
+              
+            </form>
+          </div>
+           
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-      
-<!-- container end -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title" id="exampleModalLabel" style="display: inline; font-size: 17px;"><b>Assignment Details</b></p>
-       <p style="margin-left: 260px;"> <a href="">Print</a></p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" style="background-color: #111; color: #fff;">
-        
-        Due on
-         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
-          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; display: inline;">
-          <input type="text" value="Subject Name"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;">
-          <p>   <b>  <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111; display: inline;"></b>
-            <input type="text" value="Class"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;">
-            <p>
-Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
-
-
-
-
-            </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
+  </section>
+  <!-------------------------------- table end ------------------------------->
+  
 <!-------footer for mob view start------------>
 <div class="mfooter">
-  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
+  <nav class="navbar navbar-light  "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
           <li class="nav-item mx-2 text-center">
             <a href="">
@@ -473,8 +355,60 @@ Paragraphs are the building blocks of papers. Many students define paragraphs in
 </div>
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title" id="exampleModalLabel" style="display: inline; font-size: 17px;"><b>Assignment Details</b></p>
+       <p style="margin-left: 260px;"> <a href="">Print</a></p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #111; color: #fff;">
+        <b>  <input type="text" value="Title of the Assignment"  disabled="true" style=" color: #111; border: none; font-weight: bold; margin-top: -10px;color: #fff; background-color: #111; display: inline;font-size: 20px;"></b>
+            <input type="text" value="Class"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;"><br>
+
+
+
+        Due on
+         <input type="text" value="20 Jan 2022"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111;">
+          <input type="text" value="Monday"  disabled="true" style=" color: #fff; border: none; font-weight: bold; width: 6rem; background-color: #111; display: inline;">
+          <input type="text" value="Subject Name"  disabled="true" style=" border: none; font-weight: bold; display: inline; width: 6rem; color: #fff; background-color: #111; float: right;">
+            <br><br>
+            <p>
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+
+
+
+
+            </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.bottom = "0";
+  } else {
+    document.getElementById("navbar1").style.bottom = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>-->
+<!-------footer for mob view end------------>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="index.js"></script>
+
 </body>
 </html>

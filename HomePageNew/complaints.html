@@ -4,7 +4,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>Study Material</title>
+  <title>Complaints</title>
   <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
@@ -61,51 +61,67 @@ body {
 .nav-item{
     display: flex;
     flex-direction: column;
-    margin:5px;
+    margin: 5px;
 }
-.btn.btn-search {
-    background: #fff!important;
-    border-radius: 0;
-    color: white;
+
+
+/*-----------------------navbar end------------------------------------------->*/
+.card{
+  background-color: #222;
+}  
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+.status > li {
+  margin: 10px;
+}
+.card-body, .card-header{
+   background: #333!important;
 
 }
-.sr1 .fa-search{
-  color: black;
-}
-.fa-comment-dots{
-  color: white;
-  font-size: 20px;
-}
-.in{
-  border:none!important;
-  border-radius: 0;
-}
-.card
-{
-  background-color: #222222;
-  border:#111111;
-}
-body{
-  background-color: #111111 !important;
-}
-table tr{
-  background-color: #222222;
-}
-table th{
-  background-color: #222222;
-}
-.thead th{
+.card-header{
   color: rgb(54, 214, 54) !important;
-  background-color: #2222
-
+}
+.card-text{
+  color: white !important;
 }
 
+.history::-webkit-scrollbar {
+    width: 0.3em;
+}
 
-</style>
+.history::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+option{
+  color: white;
+  background-color: #222;
+}
+.form-control{
+  background-color: #333;
+  width: 100%;
+  height: 40px;
+
+}
+.form-control:focus{
+  background-color: #333;
+}
+
+  </style>
+
 
 </head>
-<body> 
-    <div class="header header1" style="margin-bottom: 2rem !important; ">
+<body>
+ <div class="header header1" style="margin-bottom: 2rem !important; ">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -135,10 +151,9 @@ table th{
           <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
           <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
           <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
-         
-        </div>
+               </div>
       </li>
-          <li class="nav-item dropdown " >
+         <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
         <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Campus
@@ -191,28 +206,22 @@ table th{
 
   <!--header end---------->
   <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 2rem;">
-    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
-  <div style=";"class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+  <div class="header header2" style="margin-bottom: 4.8rem;">
+    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+  <div style="width: 60%;"class="d-flex">
+    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
+      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
+    </div>-->
+     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
-                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
-                    class="fas fa-search mr-1"></i></button>
-          </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
-            </div>
-      
-        <div>
-            <a href=""><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
+  <div>
+    <ul><li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
+              </a>      
+          </li></ul>
+  </div>
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -255,96 +264,72 @@ function closeNav() {
   <div class="">
         <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Study Material</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Complaints</a></li>
             
         </ul>
     </div>
-    <div class="container-fluid">
-        <table class="table table-dark table-bordered text-center ">
-          <thead>
-            
-            
-            <tr>
-              <th style="color: rgb(54, 214, 54) !important;">S.N.</th>
-              <th style="color: rgb(54, 214, 54) !important;">Subject</th>
-              <th style="color: rgb(54, 214, 54) !important;">Title</th>
-              <th class="select"><select class="bg-dark" style="color: rgb(54, 214, 54) !important;"><option style="color: rgb(54, 214, 54) !important;">Lecture Notes</option>
-                <option style="color: rgb(54, 214, 54) !important;">Sample Paper</option>
-                <option style="color: rgb(54, 214, 54) !important;">Article</option>
-                <option style="color: rgb(54, 214, 54) !important;">Case Study</option>
-                <option style="color: rgb(54, 214, 54) !important;">Project Study</option>
-              </select></th>
-             
-              <th style="color: rgb(54, 214, 54) !important;">Faculty <i class="fas fa-sort-amount-down-alt"></i></th>
-                            <th style="color: rgb(54, 214, 54) !important;"> Uploaded on<input type="date" class="bg-dark" style="color: rgb(54, 214, 54) !important; "></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Mr. Narendra Sharma</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>2</td>
-              <td>Science</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>3</td>
-              <td>Science</td>
-              <td>Core Study on Science</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>4</td>
-              <td>Social Science</td>
-              <td>Core Study on Social Science</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>History</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Mr.Rajat</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-                    
-                    </tbody>
-         </table>
+<div class="container-fluid">
 
-          </div>
-       
-  
-  <!-------footer for mob view start------------>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card" >
+      <div class="card-body"><br>
+        <textarea class="form-control" rows="1" id="subject" placeholder="Subject"></textarea><br>
+        <textarea class="form-control" rows="3" id="comment" placeholder="Write Comment..."></textarea><br>
+        <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1" >
+      <option>Send To Director</option>
+      <option>Send To Principal</option>
+      <option>Send To Faculty</option>
+
+    </select>
+  </div>
+        <button type="button" class="btn btn-outline-success btn-lg" style="float: right; margin: 10px">Send</button>
+
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        <h4>History</h4>
+        <div class="card-body history " style="overflow-y: scroll; height: 40vh;">
+        <ul class="card-text" style="font-size: 20px;margin-left: 15px; list-style-type: circle;">
+          <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 - Director <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+           <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 - Principal <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+          <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 -Faculty <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+          <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 - Director <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+          <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 - Principal  <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+          <li style="font-weight: bold;">Complaints - 25 <sup>th</sup> March 2020 - Director <br>
+            <li style="list-style: none;">
+            <h6>With supporting text below as a natural lead-in to additional content.</h6>
+          </li></li>
+        </ul>
+      </div><br>
+        
+      </div>
+</div>
+</div>   
+</div>
+<!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
@@ -381,10 +366,8 @@ function closeNav() {
 </div>
 
 
-<!-------footer for mob view end------------>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>

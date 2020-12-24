@@ -12,7 +12,7 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"
             rel="stylesheet" type="text/css" />
-            <link href="exam.css" rel="stylesheet" />
+        <link href="exam.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
         <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
         <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
@@ -23,356 +23,430 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "ITC Officina Sans Std Book";
-}
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "ITC Officina Sans Std Book";
+            }
 
-body {
-    background: #111!important;
- 
-}
-.navbar-brand {
-    font-size: 20px;
-    margin-top: 5px!important;
-    margin-bottom: -10px!important;
-    
-}
+            body {
+                background: #111 !important;
 
-.navbar-brand p {
-    font-size: 14px;
-    margin-top: -10px;
-}
+            }
 
-.nav-item a,
-.navbar-brand {
-    color: white !important;
-}
+            .navbar-brand {
+                font-size: 20px;
+                margin-top: 5px !important;
+                margin-bottom: -10px !important;
 
-.nav-link {
-    font-weight: bold!important
-}
+            }
 
+            .navbar-brand p {
+                font-size: 14px;
+                margin-top: -10px;
+            }
 
-.dropdown-toggle::after {
-    content: none;
-}
+            .nav-item a,
+            .navbar-brand {
+                color: white !important;
+            }
 
-.other {
-    color: black;
-}
-.nav-item{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-.btn.btn-search {
-    background: #fff!important;
-    border-radius: 0;
-    color: white;
-
-}
-.sr1 .fa-search{
-  color: black;
-}
-.fa-comment-dots{
-  color: white;
-  font-size: 20px;
-}
-.in{
-  border:none!important;
-  border-radius: 0;
-}
+            .nav-link {
+                font-weight: bold !important
+            }
 
 
+            .dropdown-toggle::after {
+                content: none;
+            }
 
-/*-----------------------navbar end------------------------------------------->*/
+            .other {
+                color: black;
+            }
 
-    
-  </style>
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+            }
+
+            .btn.btn-search {
+                background: #fff !important;
+                border-radius: 0;
+                color: white;
+
+            }
+
+            .sr1 .fa-search {
+                color: black;
+            }
+
+            .fa-comment-dots {
+                color: white;
+                font-size: 20px;
+            }
+
+            .in {
+                border: none !important;
+                border-radius: 0;
+            }
+
+
+
+            /*-----------------------navbar end------------------------------------------->*/
+        </style>
     </head>
 
 <body>
-    <div class="header header1" style="margin-bottom: 4rem !important ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: #111;">
-      <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
-        <p>Live Like You Own It</p>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse lateral-left" id="navbarSupportedContent">
-        
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item mr-4 ">
-            <a href="index.html"><div><i class="fa fa-home" aria-hidden="true"></i></div>
-            <div>Home</div></a> 
-           
-          </li>
-          <li class="nav-item dropdown " >
-            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Academics
+    <div class="header header1" style="margin-bottom: 2rem !important; ">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1"
+            style="background-color: #111;border-bottom: 1px solid #444;">
+            <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+                <p>Live Like You Own It</p>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse lateral-left" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item mr-4 ">
+                        <a href="index.html">
+                            <div><i class="fa fa-home" aria-hidden="true"></i></div>
+                            <div>Home</div>
+                        </a>
+    
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="">
+                            <div><i class="fa fa-book" aria-hidden="true"></i>
+                        </a>
+                        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
+                            <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
+                            <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
+                            <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
+                            <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
+                            <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Campus
         </a>
         <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
-          <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
-          <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
-          <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
-          <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
-          <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+          <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
+          <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
+          <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
+          <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
         </div>
       </li>
-          <li class="nav-item mr-4">
-              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
-              <div>Campus</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
-             <div>Internship</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
-              <div>Chat</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
-               <div>Notifications</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
-           <div>E-Learning</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
-              <div>Search</div></a>      
-          </li>
-        </ul>
-
-      </div>
-
-    </nav>
-  </div><br>
-  
-
-
-
-
-
-
-  <!--header end---------->
-  <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 4.8rem;">
-    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
-  <div style=";"class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
-        <p>Live Like You Own It</p>
-      </a>
-    </div>
-  
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
-                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
-                    class="fas fa-search mr-1"></i></button>
-          </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
+                    <li class="nav-item mr-4">
+                        <a href="">
+                            <div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                            <div>Internship</div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="chat.html">
+                            <div><i class="fas fa-commenting" aria-hidden="true"></i></div>
+                            <div>Chat</div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="">
+                            <div><i class="fa fa-bell" aria-hidden="true"></i></div>
+                            <div>Notifications</div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          E-Learning
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+ 
+        </div>
+      </li>
+                    <li class="nav-item mr-4">
+                        <a href="">
+                            <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                            <div>Search</div>
+                        </a>
+                    </li>
+                </ul>
+    
             </div>
-      
+    
+        </nav>
+    </div><br><br>
+    
+    
+    
+    <!--header end---------->
+    <!----------------------mob header---------------------------------->
+    <div class="header header2" style="margin-bottom: 4.8rem;">
+        <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+            <div style=";" class="d-flex">
+                <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+                    <p>Live Like You Own It</p>
+                </a>
+            </div>
+
+            <div class=" input-group form-container" style="width:40%">
+                <span class="input-group-btn sr1">
+                    <button class="btn  btn-search pr-1 pl-2" type="submit"><i class="fas fa-search mr-1"></i></button>
+                </span>
+                <input class="form-control in" type="search" placeholder="Search" aria-label="Search"
+                    autocomplete="off">
+            </div>
+
+            <div>
+                <a href="">
+                    <div><i class="fas fa-comment-dots"></i></div>
+                </a>
+            </div>
+
+        </nav>
+    </div>
+    <div id="mySidenav" class="sidenav ">
         <div>
-            <a href=""><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
-</nav>
-</div>
-<div id="mySidenav" class="sidenav ">
-  <div>
-  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
-    <div style="color: white;font-size: 22px;">Account Information</div>
-    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
-  </div>
-  <div class="text-left p-4"style="border-bottom: 1px solid white;">
-    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
-    <div>Priyanka</div>
-    <div>Grade-8th</div>
-    <div>Delhi Public School</div>
-    <div>city, state, country</div>
-  </div>
-  
-</div>
-  <div class="menu1 p-4">
-    <div class="">@Priyanka_2480</div>
-    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
-  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
-  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
-  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
-  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
-  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
-  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
-  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
-</div>
-</div>
-  <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+            <div class="d-flex justify-content-between align-items-center  close1 px-3"
+                style="border-bottom: 1px solid white;">
+                <div style="color: white;font-size: 22px;">Account Information</div>
+                <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+            </div>
+            <div class="text-left p-4" style="border-bottom: 1px solid white;">
+                <img src="images/boy.png" style="width: 20%;height: auto;background: #fff;" class="rounded-circle">
+                <div>Priyanka</div>
+                <div>Grade-8th</div>
+                <div>Delhi Public School</div>
+                <div>city, state, country</div>
+            </div>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-  <!----------------------mob header end---------------------------------->
-<h5 style="color: #fff; margin: 10px 0; padding: 10px; text-align: center;background-color: rgb(27, 27, 27);" >Time Table</h5>
-<table border="5" cellspacing="0" align="center" style="color: #fff; margin-left: auto;
-  margin-right: auto;">
-    <!--<caption>Timetable</caption>-->
-    <tr>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            Day/Period
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            8:00-9:00
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            9:00-10:00
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            10:00-11:00
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            11:00-12:00
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            12:00-12:30
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            12:30-1:30
-        </td>
-        <td align="center" height="50" width="100" style="padding: 10px;">
-            1:30-2:30
-        </td>
-        
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Monday</b>
-        </td>
-        <td colspan="2" align="center" height="50">OOPS Lab</td>
-        <td align="center" height="50">OOPS</td>
-        <td align="center" height="50">AM</td>
-        <td rowspan="6" align="center" height="50">
-            <h2>L<br>U<br>N<br>C<br>H</h2>
-        </td>
-        
-        <td align="center" height="50">COA</td>
-        <td align="center" height="50">DBMS</td>
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Tuesday</b>
-        </td>
-        <td colspan="2" align="center" height="50">COMM SYS Lab</td>
-        <td align="center" height="50">AM</td>
-        <td align="center" height="50">DBMS</td>
-        
-        
-        <td align="center" height="50">COMM SYS</td>
-        <td align="center" height="50">OOPS</td>
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Wednesday</b>
-        </td>
-        <td align="center" height="50">TOC</td>
-        <td align="center" height="50">COA</td>
-        <td align="center" height="50">TOC</td>
-        <td align="center" height="50">COA</td>
-        
-        
-        <td colspan="2" align="center" height="50">AM Lab</td>
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Thursday</b>
-        </td>
-    <td align="center" height="50">DBMS</td>
-    <td align="center" height="50">COMM SYS</td>
-    <td align="center" height="50">TOC</td>
-    <td align="center" height="50">OOPS</td>
-    
-    
-    <td colspan="2" align="center" height="50">DBMS Lab</td>
-    </tr>
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Friday</b>
-        </td>
-        <td colspan="2" align="center" height="50">COA Lab</td>
-        
-        <td align="center" height="50">COA</td>
-        <td align="center" height="50">AM</td>
-        
-        
-        <td align="center" height="50">TOC</td>
-        <td align="center" height="50">COMM SYS</td>
-    </tr>
-    <tr>
-        <td align="center" height="50">
-            <b>Saturday</b>
-        </td>
-        <td align="center" height="50">AM</td>
-        <td align="center" height="50">COMM SYS</td>
-        <td align="center" height="50">DBMS</td>
-        <td align="center" height="50">TOC</td>
-        
-        
-        <td colspan="2" align="center" height="50">NONE</td>
-    </tr>
-</table>
-<!-------footer for mob view start------------>
-<div class="mfooter">
-  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
-    <ul class=" d-flex justify-content-between "style="width: 100%;">
-          <li class="nav-item mx-2 text-center">
-            <a href="">
-              <div><i class="fa fa-home" aria-hidden="true"></i></div>
-              
-            </a> 
-           
-          </li>
-          <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
-            </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <a href=""class="plus">
-              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
-              </a> 
-                
-          </li>
-           <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
-              </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
-           </div>      
-          </li>
+        </div>
+        <div class="menu1 p-4">
+            <div class="">@Priyanka_2480</div>
+            <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span>
+            </div>
+            <div class="menu"><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
+                <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+                <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+                <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+                <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+                <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+                <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
 
-
-
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!----------------------mob header end---------------------------------->
+    <div class="">
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Time-Table</a></li>
+            
         </ul>
-  </nav>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+    <h3 style=" color: #fff;  font-weight: 500; line-height: 1.2;font-size: 1.75rem; padding: 10px;margin-left: 30px">Time
+        Table Of</h3><h6><span>
+                <select id="size_select" style="background-color: #111111; color: #f8f8f8;font-weight: bold; font-size: 20px;margin-top: 13px; margin-left: 3px" >
+            <option value="option1">Pre-Nursery</option>
+            <option value="option2">Nursery</option>
+            <option value="option3">LKG</option>
+            <option value="option4">UKG</option>
+            <option value="option6">Class-I</option>
+            <option value="option7">Class-II</option>
+            <option value="option8">Class-III</option>
+            <option value="option9">Class-IV</option>
+            <option value="option10">Class-V</option>
+            <option value="option11">Class-VI</option>
+            <option value="option12">Class-VII</option>
+            <option value="option13">Class-VIII</option>
+            <option value="option14">Class-IX</option>
+            <option value="option15">Class-X</option>
+            <option value="option16">Class-XI</option>
+            <option value="option17">Class-XII</option>
+          </select>
+            </span></h6></div>
+        <div style="color: #fff; margin-left: 40px;">
+            <h5>Week Of Year : <strong>12</strong> </h5>
+            <h5>Start Date : <strong>01/01/2021<strong></strong> </h5>
+            <h5>End Date : <strong>01/12/2021</strong> </h5>
+            
+        </div>
+        <div style="overflow-x:auto;margin-bottom: 60px;">
+    <table border="5" cellspacing="0" align="center" style="color: #fff; margin-left: auto;width: 95%;
+  margin-right: auto;">
+        <!--<caption>Timetable</caption>-->
+        <tr>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+               <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Day/Period</b> 
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">8:00-9:00</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">9:00-10:00</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">10:00-11:00</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">11:00-12:00</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">12:00-12:30</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">12:30-1:30</b>
+            </td>
+            <td align="center" height="50" width="100" style="padding: 10px; background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">1:30-2:30</b>
+            </td>
 
-    </html>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px; ">Monday</b>
+            </td>
+            <td colspan="2" align="center" height="50" style="background-color: #333;">OOPS Lab</td>
+            <td align="center" height="50" style="background-color: #333;">OOPS</td>
+            <td align="center" height="50" style="background-color: #333;">AM</td>
+            <td rowspan="6" align="center" height="50" style="background-color: #333;">
+                <h2>L<br>U<br>N<br>C<br>H</h2>
+            </td>
+
+            <td align="center" height="50" style="background-color: #333;">COA</td>
+            <td align="center" height="50" style="background-color: #333;">DBMS</td>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Tuesday</b>
+            </td>
+            <td colspan="2" align="center" height="50" style="background-color: #333;">COMM SYS Lab</td>
+            <td align="center" height="50" style="background-color: #333;">AM</td>
+            <td align="center" height="50" style="background-color: #333;">DBMS</td>
+
+
+            <td align="center" height="50" style="background-color: #333;">COMM SYS</td>
+            <td align="center" height="50" style="background-color: #333;">OOPS</td>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Wednesday</b>
+            </td>
+            <td align="center" height="50" style="background-color: #333;">TOC</td>
+            <td align="center" height="50" style="background-color: #333;">COA</td>
+            <td align="center" height="50" style="background-color: #333;">TOC</td>
+            <td align="center" height="50" style="background-color: #333;">COA</td>
+
+
+            <td colspan="2" align="center" height="50" style="background-color: #333;">AM Lab</td>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Thursday</b>
+            </td>
+            <td align="center" height="50" style="background-color: #333;">DBMS</td>
+            <td align="center" height="50" style="background-color: #333;">COMM SYS</td>
+            <td align="center" height="50" style="background-color: #333;">TOC</td>
+            <td align="center" height="50" style="background-color: #333;">OOPS</td>
+
+
+            <td colspan="2" align="center" height="50" style="background-color: #333;">DBMS Lab</td>
+        </tr>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Friday</b>
+            </td>
+            <td colspan="2" align="center" height="50" style="background-color: #333;">COA Lab</td>
+
+            <td align="center" height="50" style="background-color: #333;">COA</td>
+            <td align="center" height="50" style="background-color: #333;">AM</td>
+
+
+            <td align="center" height="50" style="background-color: #333;">TOC</td>
+            <td align="center" height="50" style="background-color: #333;">COMM SYS</td>
+        </tr>
+        <tr>
+            <td align="center" height="50" style="background-color: #333;">
+                <b style="color: rgb(54, 214, 54); font-weight: bolder;font-size: 18px;">Saturday</b>
+            </td>
+            <td align="center" height="50" style="background-color: #333;">AM</td>
+            <td align="center" height="50" style="background-color: #333;">COMM SYS</td>
+            <td align="center" height="50" style="background-color: #333;">DBMS</td>
+            <td align="center" height="50" style="background-color: #333;">TOC</td>
+
+
+            <td colspan="2" align="center" height="50" style="background-color: #333;">NONE</td>
+        </tr>
+    </table>
+    </div>
+    <!-------footer for mob view start------------>
+    <div class="mfooter">
+        <nav class="navbar navbar-light  bg-dark" id="navbar1" style="color: white!important;">
+            <ul class=" d-flex justify-content-between " style="width: 100%;">
+                <li class="nav-item mx-2 text-center">
+                    <a href="">
+                        <div><i class="fa fa-home" aria-hidden="true"></i></div>
+
+                    </a>
+
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href="" class="plus">
+                        <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
+                    </a>
+
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"
+                            style="width: 30px;height: auto;background: #fff;">
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

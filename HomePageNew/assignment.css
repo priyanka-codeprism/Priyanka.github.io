@@ -85,11 +85,7 @@ a {
     content: none;
 }
 
-.fa-map-marker-alt {
-   /* color: #2ecab6;*/
-    font-size: 20px;
-    margin-right: 5px;
-}
+
 
 .other {
     color: black;
@@ -152,12 +148,15 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+.assignmentform input[type=text]{
+  background: #222;
+  border: 2px solid #555!important;
+  color: white;
+}
 
 /*---------------table end----------------*/
 
-.left,.right{
-    display: block;
-  }
+
   .mfooter{
     display:none;
 }
@@ -172,12 +171,7 @@ ul.breadcrumb li a:hover {
 }
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
-  .left,.right{
-    display: none;
-  }
-  .c1{
-    display: none;
-  }
+  
 .header1{
     display: none;
 }

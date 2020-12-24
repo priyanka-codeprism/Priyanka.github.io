@@ -4,7 +4,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>Study Material</title>
+  <title>Reccomendation Badges</title>
   <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
@@ -61,51 +61,22 @@ body {
 .nav-item{
     display: flex;
     flex-direction: column;
-    margin:5px;
+    margin: 5px;
 }
-.btn.btn-search {
-    background: #fff!important;
-    border-radius: 0;
-    color: white;
 
-}
-.sr1 .fa-search{
-  color: black;
-}
-.fa-comment-dots{
-  color: white;
+
+/*-----------------------navbar end------------------------------------------->*/
+
+th{
   font-size: 20px;
 }
-.in{
-  border:none!important;
-  border-radius: 0;
-}
-.card
-{
-  background-color: #222222;
-  border:#111111;
-}
-body{
-  background-color: #111111 !important;
-}
-table tr{
-  background-color: #222222;
-}
-table th{
-  background-color: #222222;
-}
-.thead th{
-  color: rgb(54, 214, 54) !important;
-  background-color: #2222
-
-}
 
 
-</style>
-
+    
+  </style>
 </head>
-<body> 
-    <div class="header header1" style="margin-bottom: 2rem !important; ">
+<body>
+ <div class="header header1" style="margin-bottom: 2rem !important; ">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
@@ -135,10 +106,9 @@ table th{
           <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
           <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
           <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
-         
-        </div>
+               </div>
       </li>
-          <li class="nav-item dropdown " >
+         <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
         <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Campus
@@ -191,28 +161,22 @@ table th{
 
   <!--header end---------->
   <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 2rem;">
-    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
-  <div style=";"class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+  <div class="header header2" style="margin-bottom: 4.8rem;">
+    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
+  <div style="width: 60%;"class="d-flex">
+    <!--<div class="d-flex justify-content-center align-items-center"onclick="openNav()">
+      <img src="images/boy.png"style="width:40px;height:auto;background:#fff;"class="rounded-circle">
+    </div>-->
+     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
-                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
-                    class="fas fa-search mr-1"></i></button>
-          </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
-            </div>
-      
-        <div>
-            <a href=""><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
+  <div>
+    <ul><li class="nav-item mr-4">
+            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
+              </a>      
+          </li></ul>
+  </div>
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -255,96 +219,110 @@ function closeNav() {
   <div class="">
         <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Study Material</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Recommendation Badges</a></li>
             
         </ul>
     </div>
-    <div class="container-fluid">
-        <table class="table table-dark table-bordered text-center ">
+<div class="container-fluid">
+
+
+    <div class="row">
+
+        
+        <table class="table table-dark table-bordered text-center mx-3">
           <thead>
             
             
             <tr>
-              <th style="color: rgb(54, 214, 54) !important;">S.N.</th>
-              <th style="color: rgb(54, 214, 54) !important;">Subject</th>
-              <th style="color: rgb(54, 214, 54) !important;">Title</th>
-              <th class="select"><select class="bg-dark" style="color: rgb(54, 214, 54) !important;"><option style="color: rgb(54, 214, 54) !important;">Lecture Notes</option>
-                <option style="color: rgb(54, 214, 54) !important;">Sample Paper</option>
-                <option style="color: rgb(54, 214, 54) !important;">Article</option>
-                <option style="color: rgb(54, 214, 54) !important;">Case Study</option>
-                <option style="color: rgb(54, 214, 54) !important;">Project Study</option>
-              </select></th>
-             
-              <th style="color: rgb(54, 214, 54) !important;">Faculty <i class="fas fa-sort-amount-down-alt"></i></th>
-                            <th style="color: rgb(54, 214, 54) !important;"> Uploaded on<input type="date" class="bg-dark" style="color: rgb(54, 214, 54) !important; "></th>
+              <th style="color: rgb(54, 214, 54) !important;">From</th>
+              <th style="color: rgb(54, 214, 54) !important;">Designation</th>
+              <th style="color: rgb(54, 214, 54) !important;">Dated</th>
+              <th style="color: rgb(54, 214, 54) !important;">Skills</th>
+              <th style="color: rgb(54, 214, 54) !important;">Stars</th>
+
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Mr. Narendra Sharma</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>2</td>
-              <td>Science</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>3</td>
-              <td>Science</td>
-              <td>Core Study on Science</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
-            </tr>
-              <tr>
-              <td>4</td>
-              <td>Social Science</td>
-              <td>Core Study on Social Science</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
+              <td>Tanya Pawar</td>
+              <td>Headmistress</td>
+              <td>15 <sup>th</sup> January 2020</td>
+              <td>Math</td>
+              <td>⭐⭐⭐</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>Sahil Kumar</td>
+              <td>Drawing Teacher</td>
+              <td>20 <sup>th</sup> January 2020</td>
+              <td>Painting</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Sahil Desai</td>
+              <td>Drawing Teacher</td>
+              <td>25 <sup>th</sup> March 2020</td>
+              <td>Drawing</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            
+            <tr>
+              <td>Arya Soni</td>
+              <td>Assistant Teacher</td>
+              <td>10 <sup>th</sup> June 2020</td>
+              <td>English</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Aman Mehta</td>
+              <td>Assistant Teacher</td>
+              <td>20 <sup>th</sup> July 2020</td>
               <td>History</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Mr.Rajat</td>
-              <td>12-12-20 at 12:30 P.M.</td>
+              <td>⭐⭐⭐⭐</td>
             </tr>
             <tr>
-              <td>6</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
+              <td>Ravi Shah</td>
+              <td>Computer Teacher</td>
+              <td>12 <sup>th</sup> August 2020</td>
+              <td>Computer Science/td>
+              <td>⭐⭐⭐</td>
             </tr>
             <tr>
-              <td>7</td>
-              <td>English</td>
-              <td>Core Study on Aidi</td>
-              <td>Lecture Notes</td>
-              <td>Ds.Monse</td>
-              <td>12-12-20 at 12:30 P.M.</td>
+              <td>Krutika Shetty</td>
+              <td>Drawing Teacher</td>
+              <td>20 <sup>th</sup> September 2020</td>
+              <td>Arts & Craft</td>
+              <td>⭐⭐⭐⭐</td>
             </tr>
+            <tr>
+              <td>Neha Desai</td>
+              <td>Assistant Teacher</td>
+              <td>19 <sup>th</sup> October 2020</td>
+              <td>General Knowledge</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Suresh Kumar</td>
+              <td>Assistant Teacher</td>
+              <td>23 <sup>th</sup> October 2020</td>
+              <td>EVS</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Sahil Parmar</td>
+              <td>Assistant Teacher</td>
+              <td>15 <sup>th</sup> November 2020</td>
+              <td>Music</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            
                     
-                    </tbody>
+          </tbody>
          </table>
-
           </div>
-       
-  
-  <!-------footer for mob view start------------>
+    
+</div>
+<!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
@@ -381,10 +359,8 @@ function closeNav() {
 </div>
 
 
-<!-------footer for mob view end------------>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
