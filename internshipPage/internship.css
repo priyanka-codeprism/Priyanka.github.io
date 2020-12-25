@@ -363,6 +363,9 @@ a.morelink {
     overflow-y: hidden;
     height: 100%;
 }
+.dropdown-menu a{
+  color: white!important;
+}
 
 }
 @media screen and (max-height: 450px) {

@@ -193,9 +193,9 @@ function closeNav1() {
               <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="category"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Marketing"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
-                    <a class="dropdown-item" href="#">1</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">Accounts</a>
+                    <a class="dropdown-item" href="#">Web Development</a>
+                    <a class="dropdown-item" href="#">Analytics</a>
                   </div>
             </div>
           </div>
@@ -206,9 +206,9 @@ function closeNav1() {
               <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Delhi"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
-                    <a class="dropdown-item" href="#">1</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">Delhi</a>
+                    <a class="dropdown-item" href="#">Mumbai</a>
+                    <a class="dropdown-item" href="#">Agra</a>
                   </div>
             </div>
           </div>
@@ -335,6 +335,37 @@ function closeNav1() {
           format: "dd M yyyy"
 
     });
+
+      //for mob
+      $("#myInput1").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      $("#category1").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      $("#location1").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu a").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      $('#picker1').datepicker({
+          autoclose: true, 
+          todayHighlight: true,
+          format: "dd M yyyy"
+
+    });
+
+
     });
 </script>
   <!-- left side end -->
@@ -359,12 +390,12 @@ function closeNav1() {
             <div class="my-1">Category</div>
             <div class="input-group form-container">
               
-              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="category"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Marketing"
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="category1"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Marketing"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
-                    <a class="dropdown-item" href="#">1</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">Accounts</a>
+                    <a class="dropdown-item" href="#">Web Development</a>
+                    <a class="dropdown-item" href="#">Analytics</a>
                   </div>
             </div>
           </div>
@@ -372,12 +403,12 @@ function closeNav1() {
             <div class="my-1">Location</div>
             <div class="input-group form-container">
               
-              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Delhi"
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location1"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g Delhi"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
-                    <a class="dropdown-item" href="#">1</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">Delhi</a>
+                    <a class="dropdown-item" href="#">Mumbai</a>
+                    <a class="dropdown-item" href="#">Agra</a>
                   </div>
             </div>
           </div>
@@ -411,7 +442,7 @@ function closeNav1() {
             <div class="my-1">Starting from (or after)</div>
             <div class="input-group form-container">
               
-              <input class="form-control " id="picker" type="text" placeholder="Choose Date"
+              <input class="form-control " id="picker1" type="text" placeholder="Choose Date"
                 data-date-format="mm/dd/yyyy">
                 
             </div>
@@ -421,7 +452,7 @@ function closeNav1() {
             <div class="my-1">Max. duration (months)</div>
             <div class="input-group form-container">
               
-              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="Choose Duration"
+              <input class="form-control dropdown-toggle"data-toggle="dropdown"role="button" id="location1"aria-haspopup="true" aria-expanded="false"  type="search" placeholder="Choose Duration"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #333;color: white!important;">
                     <a class="dropdown-item" href="#">1 month</a>
@@ -457,7 +488,7 @@ function closeNav1() {
             <div class="py-2 srch">
             <div class=" input-group form-container">
               
-              <input class="form-control dropdown-toggle"id="myInput"data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g MBA, design"
+              <input class="form-control dropdown-toggle"id="myInput1"data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"  type="search" placeholder="e.g MBA, design"
                 aria-label="Search" autocomplete="off">
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="width: 100%;background: #222;">
                     <a class="dropdown-item" href="#">Action</a>
