@@ -161,7 +161,7 @@ a {
   border-radius: 50px;
   border: 1px solid #555;
 }
-.srch input[type=search]{
+.srch input[type=search], .srch input[type=text]{
   background: #333;
   border-radius: 0;
  border: 1px solid #333;
@@ -238,6 +238,18 @@ a.morelink {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
 
+.page-link{
+  color: #fff!important;
+   background: #111!important;
+}
+.page-item.active .page-link{
+  color: #fff!important;
+  background: #1DA1F2!important;
+}
+.page-item{
+  background: #111!important;
+}
+
 .left,.right{
     display: block;
   }
@@ -251,8 +263,11 @@ a.morelink {
 .header2{
     display: none;
 }
-.sidenav{
+.sidenav,.sidenav1{
     display: none;
+}
+.mobfilter{
+  display: none;
 }
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
@@ -288,7 +303,7 @@ a.morelink {
     border: 1px solid white;
     font-size: 13px;
 }
- .sidenav {
+ .sidenav, .sidenav1{
     display: block;
   height: 100%;
   width: 0;
@@ -323,6 +338,13 @@ a.morelink {
   color: white;
  
 }
+.sidenav1 .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 .md-sec{
   height: auto!important;
   overflow: hidden;
@@ -333,6 +355,13 @@ a.morelink {
 }
 .md-sec{
   margin-bottom: 9vh;
+}
+.mobfilter{
+  display: block;
+}
+.schedule{
+    overflow-y: hidden;
+    height: 100%;
 }
 
 }
