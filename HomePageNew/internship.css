@@ -112,6 +112,7 @@ max-height: 280px;
 overflow-y: scroll;*/
 background: #111;
 min-width: 280px;
+border: 1px solid #444;
 }
 .section1 img{
 width: 50px;
@@ -180,7 +181,7 @@ outline: none;
 }
 .schedule{
   overflow-y: scroll;
-  height: 50vh;
+  height: 60vh;
 }
 .schedule::-webkit-scrollbar {
   width: 0.3em;
@@ -403,10 +404,7 @@ display: block;
   overflow-y: hidden;
   height: 100%;
 }
-.dropdown-menu{
-  background: #111!important;
-  border:1px solid #444;
-}
+
 .dropdown-menu a{
 color: white!important;
 }

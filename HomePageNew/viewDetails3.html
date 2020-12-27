@@ -4,284 +4,38 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>Notification Page</title>
+  <title>View Details Page</title>
   <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.css"  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css"  />
   <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
   <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
+  <link href="internship.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="fontawesome-free-5.13.0-web/fontawesome/js/all.js"></script>
-  <script src="fontawesome-free-5.13.0-web/fontawesome/js/all.min.js"></script>
-
-
-
+  <script type="text/javascript"src="paginations.js"></script>
   <style>
-    
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "ITC Officina Sans Std Book";
-}
+    .dd i{
+      font-size: 16px!important;
+    }
+    .share .dropdown-menu{
+      min-width: auto!important;
+    }
+    .list p{
+      margin: 0!important;
+    }
+    .perk{
+      background: #333;
+      border-radius: 50px;
 
-body {
- 
-    background: #222!important;
- 
-}
-body::-webkit-scrollbar {
-    width: 0.4em;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color:rgb(155, 148, 148);
-  border-radius: 5px;
-  border: none;
-}
-
-.tab-content::-webkit-scrollbar {
-    width: 0.4em;
-    height: 0.4em;
-    background-color:white;
-    border-radius: 5px;
-}
-.tab-content::-webkit-scrollbar-thumb {
-  background-color:rgb(155, 148, 148);
-  border-radius: 5px;
-  border: none;
-}
-input[type=checkbox],
-a {
-    cursor: pointer;
-}
-
-
-/*--------------------------navbar------------------------------------------*/
-
-.navbar-brand {
-    font-size: 20px;
-    margin-top: 5px!important;
-    margin-bottom: -10px!important;
-    
-}
-
-.navbar-brand p {
-    font-size: 14px;
-    margin-top: -10px;
-}
-
-.nav-item a,
-.navbar-brand {
-    color: white !important;
-}
-
-.nav-link {
-    font-weight: bold!important
-}
-
-.btn.btn-search {
-    background: #fff!important;
-    border-radius: 0;
-    color: white;
-
-}
-.sr1 .fa-search{
-  color: black;
-}
-.fa-comment-dots{
-  color: white;
-  font-size: 20px;
-}
-.in{
-  border:none!important;
-  border-radius: 0;
-}
-
-
-.login a:hover {
-    text-decoration: underline;
-}
-
-.dropdown-toggle::after {
-    content: none;
-}
-
-.fa-map-marker-alt {
-   /* color: #2ecab6;*/
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-.other {
-    color: black;
-}
-.nav-item{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-.left,.right{
-    display: block;
-  }
-  .mfooter{
-    display:none;
-}
-.header1{
-    display: block;
-
-}
-.header2{
-    display: none;
-}
-.sidenav{
-    display: none;
-}
-/*--------------------media query for mob view--------------------*/
-@media (max-width: 768px) {
-  .left,.right{
-    display: none;
-  }
-  .c1{
-    display: none;
-  }
-.header1{
-    display: none;
-}
-.header2{
-    display: block;
-}
-.mfooter{
-    display:block;
-}
-.mfooter a{
-    font-size: 21px;
-}
-.mfooter ul{
-    margin-bottom: 0!important
-}
-.mfooter .navbar{
-    position: fixed;bottom: 0;
-    transition: all 0.5s;
-    width: 100%;
-}
-.plus i{
-    border-radius: 50%;
-    color: white;
-    border: 1px solid white;
-    font-size: 13px;
-}
- .sidenav {
-    display: block;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1032;
-  bottom: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 20px;
-  color: #fff;
-  font-size: 18px;
-
-}
-
-.menu a {
- padding: 10px 0px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-  
-}
-.menu i{
-    font-size: 16px;
-}
-
-.sidenav .closebtn { 
-  font-size: 36px;
-  color: white;
- 
-}
-
-
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.dropdown-menu{
- /* min-height: 280px;
-  max-height: 280px;
-  overflow-y: scroll;*/
-  min-width: 280px;
-
-}
-.section1 .dropdown-item{
-  color: #fff!important;
-}
-.section1 img{
-  width: 50px;
-  height: auto;
-  border-radius: 50%;
-  background: #fff;
-  
-}
-.notification img{
-  width: 50px;
-  height: auto;
-  background: white;
-  border-radius: 50%;
-}
-.lists {
-    color: white;
-    padding: 10px;
-}
-hr{
-  background: #666;
-  margin: 0;
-}
-.notify-img{
-  display: flex;
-  
-  align-items: center;
-}
-ul.breadcrumb {
-  padding: 0px 16px;
-  list-style: none;
-  background-color: #222;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-  color:rgb(54, 214, 54) !important;
-}
-ul.breadcrumb li + li:before {
-  padding: 5px;
-  color:white;
-  content: ">";
-}
-ul.breadcrumb li a {
-  color:rgb(54, 214, 54) !important;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-
-/*-----------------------navbar end------------------------------------------->*/
+    }
   </style>
 </head>
 <body>
@@ -347,79 +101,77 @@ ul.breadcrumb li a:hover {
         <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Notification
         </a>
-        <div class="dropdown-menu section1" aria-labelledby="navbarDropdown"style="background: #111;color: white">
+        <div class="dropdown-menu section1" aria-labelledby="navbarDropdown"style="background: #111;border:1px solid #444;">
           
-          <a class="dropdown-item" href=""  >
+          <a class="dropdown-item" href=""   >
              <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
-                    <img src="images/boy.png" alt="">
+                    <img src="images/boy.png" alt=""  >
                   </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-9">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
+                  <p    class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0"  >Added a new property</p>
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="request.html"  >
+          <a class="dropdown-item" href="request.html"   >
          <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
-                    <img src="images/boy.png" alt="">
+                    <img src="images/boy.png" alt=""  >
                   </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-9">
-                  <p   class="mb-0">Manasi Sherkhane </p>
-                  <p class="notify mt-0" >Added a new property</p>
+                  <p    class="mb-0">Manasi Sherkhane </p>
+                  <p class="notify mt-0"  >Added a new property</p>
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="badges.html"  >
+          <a class="dropdown-item" href="badges.html"   >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
-                    <img src="images/boy.png" alt="">
+                    <img src="images/boy.png" alt=""  >
                   </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-9">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
+                  <p    class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0"  >Added a new property</p>
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="feedback.html"  >
+          <a class="dropdown-item" href="feedback.html"   >
              <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
-                    <img src="images/boy.png" alt="">
+                    <img src="images/boy.png" alt=""  >
                   </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-9">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
+                  <p    class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0"  >Added a new property</p>
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="notice.html"  >
+          <a class="dropdown-item" href="notice.html"   >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
-                    <img src="images/boy.png" alt="">
+                    <img src="images/boy.png" alt=""  >
                   </div>
                 </div>
                 <div class="col-md-9 col-sm-9 col-9">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
+                  <p    class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0"  >Added a new property</p>
                 </div>
               </div>
           </a>
           
-          <a class="dropdown-item" href=""  >View All</a>
+          <a class="dropdown-item" href="notification.html" style="color:blue;">View All</a>
         </div>
       </li>
-
-          </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
         <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -439,7 +191,7 @@ ul.breadcrumb li a:hover {
       </div>
 
     </nav>
-  </div><br><br><br>
+  </div><br><br>
 
 
 
@@ -490,8 +242,7 @@ ul.breadcrumb li a:hover {
   <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
   <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
   <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
-  <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
-
+  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
   <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
   <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
   <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
@@ -505,118 +256,155 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+function openNav1() {
+  document.getElementById("mySidenav1").style.width = "100%";
+}
+
+function closeNav1() {
+  document.getElementById("mySidenav1").style.width = "0";
+}
 </script>
   <!----------------------mob header end---------------------------------->
   <!-- container -->
-  <section class="notification" style="margin-bottom: 10vh;">
-
+  <div class="container-fluid ">
     <div class="">
-        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Notification</a></li>
-          
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2 mb-0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Internship</a></li>
+          <li><a href="#">View Details</a></li>
             
         </ul>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
+    <div class="row px-lg-5 px-md-5 px-sm-3 px-1">
+    <!--- left side -->
+      
+  <!-- left side end -->
+  <!------------------ right section ----------------------------->
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-lg-5 px-md-4 px-sm-2 px-1  md-sec"id="page" style="overflow-y: scroll;">
+        
+        <!-- -------------first card---------------- -->
+        <div class="card shadow cards list-group">
+          <div class="card-body py-2 mx-0">
+            <div class="px-lg-5 px-md-4 px-sm-2 px-1 py-3" >
+           <div class="d-flex justify-content-between my-2">
+             <div>
+               <h4>Operations</h4>
+               <h5 style="color: grey;">Internshala</h5>
+             </div>
+             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
+           </div>
+           <div class="my-3">
+             <i class="fas fa-home mr-2"></i>Work From Home
+           </div>
+           <div class=" my-3">
+              <div class="row">
+             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+             <div >
+               <div style="color: grey;"><i class="far fa-play-circle mr-2"></i>START DATE</div>
+                 <div>Immediately</div>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+             <div>
+               <div style="color: grey;"><i class="fas fa-calendar-alt mr-2"></i>DURATION</div>
+                 <div>6 Months</div>
+             </div>
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+             <div>
+               <div style="color: grey;"><i class="fas fa-money-bill-wave mr-2"></i>STIPEND</div>
+                 <div>₹16667 /month</div>
+             </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+             <div>
+               <div style="color: grey;"><i class="far fa-hourglass mr-2"></i>APPLY BY</div>
+                 <div>31 Dec' 20</div>
+             </div>
+           </div>
+           </div><!----row end------>
+           </div>
+           <div class="d-flex justify-content-start my-3">
+             <div><span style="background: #333;border-radius: 50px;"class="py-1 px-4">Internship</span></div>
+             
+           </div>
+           <div class="d-flex justify-content-between my-3">
+             <div><span style=""class=""><i class="fas fa-users mr-2"></i>32 applicants
+             </span></div>
+             <div class="share">
+               <i class="fas fa-share-alt dropdown-toggle"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="background: #333;border-radius: 50%;padding: 10px;"></i>
+                <div class="dropdown-menu dd" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><i class="fab fa-linkedin-in mr-3"></i>Share On LinkedIn</a>
+                  <a class="dropdown-item" href="#"><i class="fab fa-facebook-f mr-3"></i>Share On Facebook</a>
+                  <a class="dropdown-item" href="#"><i class="fab fa-twitter mr-3"></i>Share On Twitter</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-link mr-3"></i>Copy Link</a>
                 </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
+            </div>
+           </div>
+           <hr style="background: #444;">
+           <div>
+             <div >
+               <h5>About Internshala</h5>
+               <a href="#">Website <i class="fas fa-external-link-alt ml-2"style="font-size: 14px;"></i></a>
+               <p style="color: grey;">
+                 Vamstar is a data science powered global B2B healthcare marketplace platform. The aggregate $2 trillion of demand for healthcare products and services using machine learning and providing real-time insights to buyers and suppliers to accelerate transactions.
+               </p>
+             </div>
+             <div >
+               <h5>About the work from home job/internship</h5>
+               <h6 style="color: grey;">Selected intern's day-to-day responsibilities include:</h6>
+               <div style="color: grey;" class="list">
+                  <p>1. Work on posting job requirements</p>
+                  <p>2. Work on screening applicants</p>
+                  <p>3. Manage the database on Excel</p>
+                  <p>4. Create PowerPoint slides</p>
+               
+             </div>
+             </div>
+             <div class="my-3" >
+               <h5>Who can apply</h5>
+               <h6 style="color: grey;">Only those candidates can apply who:</h6>
+               <div style="color: grey;" class="list">
+                  <p>1. are available for the work from home job/internship</p>
+                  <p>2. can start the work from home job/internship between 26th Dec'20 and 30th Jan'21</p>
+                  <p>3. are available for duration of 3 months</p>
+                  <p>4. have relevant skills and interests</p>
+               
+             </div>
+             </div>
+             <div class="" >
+               <h5>Perks</h5>
+               <div class="row text-center">
+                 <div class="col-md-3 col-9"><div class=" perk mr-2 py-1 px-4 my-1 ">Letter of recommendation</div> </div>
+                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">Flexible work hours</div> </div>
+                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">5 days a week</div> </div>
+               </div>
+             </div>
+             <div class="my-3" >
+               <h5>Number of openings</h5>
+               <div class="">1</div>
+             </div>
+             <div class="d-flex justify-content-center my-3">
+             <button class="btn btn-outline-success">Apply Now</button>
+             </div>
+           </div>
+          </div>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
+        <div class="card  p-5"style="background:#FFEBAE;border: 1px solid #FFEF85!important;color: #945E12!important; margin-bottom:9vh; ">
+          <div>
+            <h5><i class="fas fa-exclamation-circle mr-2"></i>Save yourself from fraud!</h5>
+            <p>If an employer asks you to pay any security deposit, registration fee, laptop fee, etc., do not pay and notify us immediately. Remember, Internshala doesn't charge a fee from the students to apply to a job or an internship & we don't allow other companies to do so either.</p>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Manasi Sherkhane </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
-        </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
-        </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
-        </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="lists" href=""  >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-3 px-3">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 px-0">
-                  <p   class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0" >Added a new property</p>
-                </div>
-              </div>
-          </div><hr>
-        </div>
-
-      </div><!--row end--->
-    </div>
-  </section>
+        
+      </div> <!-- right sec end -->
+      
+      </div> <!--Row end -->
      
-  
-<!-- container end -->
+
+    </div><!-- container end -->
 
 
 <!-------footer for mob view start------------>
@@ -625,7 +413,7 @@ function closeNav() {
   <nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
           <li class="nav-item mx-2 text-center">
-            <a href="index.html">
+            <a href="">
               <div><i class="fa fa-home" aria-hidden="true"></i></div>
               
             </a> 
@@ -655,7 +443,9 @@ function closeNav() {
         </ul>
   </nav>
 </div>
-
+<script>
+  $('#switch-modal').bootstrapSwitch();
+</script>
 
 <!-------footer for mob view end------------>
 
@@ -663,6 +453,8 @@ function closeNav() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.js" ></script>
 <script src="index.js"></script>
 
 </body>

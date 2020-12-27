@@ -21,7 +21,22 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script type="text/javascript"src="paginations.js"></script>
+  <style>
+    .dd i{
+      font-size: 16px!important;
+    }
+    .share .dropdown-menu{
+      min-width: auto!important;
+    }
+    .list p{
+      margin: 0!important;
+    }
+    .perk{
+      background: #333;
+      border-radius: 50px;
 
+    }
+  </style>
 </head>
 <body>
   <div class="header header1" style="margin-bottom: 2rem !important; ">
@@ -257,6 +272,7 @@ function closeNav1() {
         <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2 mb-0">
             <li><a href="#">Home</a></li>
             <li><a href="#">Internship</a></li>
+            <li><a href="#">View Details</a></li>
           
             
         </ul>
@@ -317,20 +333,72 @@ function closeNav1() {
            <div class="d-flex justify-content-between my-3">
              <div><span style=""class=""><i class="fas fa-users mr-2"></i>32 applicants
              </span></div>
-             <div>
+             <div class="share">
                <i class="fas fa-share-alt dropdown-toggle"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="background: #333;border-radius: 50%;padding: 10px;"></i>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#"><i class="fab fa-linkedin-in mr-2"></i>Share On LinkedIn</a>
-                  <a class="dropdown-item" href="#"><i class="fab fa-facebook-f mr-2"></i>Share On Facebook</a>
-                  <a class="dropdown-item" href="#"><i class="fab fa-twitter mr2"></i>Share On Twitter</a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-link mr-2"></i>Copy Link</a>
+                <div class="dropdown-menu dd" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><i class="fab fa-linkedin-in mr-3"></i>Share On LinkedIn</a>
+                  <a class="dropdown-item" href="#"><i class="fab fa-facebook-f mr-3"></i>Share On Facebook</a>
+                  <a class="dropdown-item" href="#"><i class="fab fa-twitter mr-3"></i>Share On Twitter</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-link mr-3"></i>Copy Link</a>
                 </div>
             </div>
            </div>
-            </div>
+           <hr style="background: #444;">
+           <div>
+             <div >
+               <h5>About Internshala</h5>
+               <a href="#">Website <i class="fas fa-external-link-alt ml-2"style="font-size: 14px;"></i></a>
+               <p style="color: grey;">
+                 Vamstar is a data science powered global B2B healthcare marketplace platform. The aggregate $2 trillion of demand for healthcare products and services using machine learning and providing real-time insights to buyers and suppliers to accelerate transactions.
+               </p>
+             </div>
+             <div >
+               <h5>About the work from home job/internship</h5>
+               <h6 style="color: grey;">Selected intern's day-to-day responsibilities include:</h6>
+               <div style="color: grey;" class="list">
+                  <p>1. Work on posting job requirements</p>
+                  <p>2. Work on screening applicants</p>
+                  <p>3. Manage the database on Excel</p>
+                  <p>4. Create PowerPoint slides</p>
+               
+             </div>
+             </div>
+             <div class="my-3" >
+               <h5>Who can apply</h5>
+               <h6 style="color: grey;">Only those candidates can apply who:</h6>
+               <div style="color: grey;" class="list">
+                  <p>1. are available for the work from home job/internship</p>
+                  <p>2. can start the work from home job/internship between 26th Dec'20 and 30th Jan'21</p>
+                  <p>3. are available for duration of 3 months</p>
+                  <p>4. have relevant skills and interests</p>
+               
+             </div>
+             </div>
+             <div class="" >
+               <h5>Perks</h5>
+               <div class="row text-center">
+                 <div class="col-md-3 col-9"><div class=" perk mr-2 py-1 px-4 my-1 ">Letter of recommendation</div> </div>
+                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">Flexible work hours</div> </div>
+                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">5 days a week</div> </div>
+               </div>
+             </div>
+             <div class="my-3" >
+               <h5>Number of openings</h5>
+               <div class="">1</div>
+             </div>
+             <div class="d-flex justify-content-center my-3">
+             <button class="btn btn-outline-success">Apply Now</button>
+             </div>
+           </div>
+          </div>
           </div>
         </div>
-        
+        <div class="card  p-5"style="background:#FFEBAE;border: 1px solid #FFEF85!important;color: #945E12!important; margin-bottom:9vh; ">
+          <div>
+            <h5><i class="fas fa-exclamation-circle mr-2"></i>Save yourself from fraud!</h5>
+            <p>If an employer asks you to pay any security deposit, registration fee, laptop fee, etc., do not pay and notify us immediately. Remember, Internshala doesn't charge a fee from the students to apply to a job or an internship & we don't allow other companies to do so either.</p>
+          </div>
+        </div>
         
       </div> <!-- right sec end -->
       
