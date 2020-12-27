@@ -1,0 +1,203 @@
+root{
+  font-size: 14px;
+  }
+  body{
+    background: #222;
+  }
+  .top-card{
+    margin-top: 5vh;
+  }
+  
+  #background{
+   background: #333;
+       height: 80vh;
+  }
+  
+  p{
+    padding: 0  ;
+    margin-bottom: 0 !important;
+  }
+  #leftside{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:80vh;	
+  }
+  
+  
+  #leftside a{
+    text-decoration: none;
+  
+  }
+  
+  
+  #leftside a :hover {
+    background-color: #EEEEEE;
+    color: #078898;
+  }
+  
+  
+  .rightside {
+    overflow-y:scroll;
+    height:80vh;	
+  }
+  
+  
+  .header{
+    background-color: rgb(209, 214, 214);
+    height:3em;
+  
+
+  }
+  
+  
+  .icons{
+    color: #004879;
+    margin-top: 2vh;
+  
+  }
+  
+  
+  .imgAvatar{
+     margin: 5px;
+     height:40px;
+     width:40px;
+  }
+  
+  .imgAttach{
+     height:5vh;
+     width:5vw;
+  }
+  
+  
+  .circle-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+  
+    background:#13ca13d2;
+    color: #fff;
+    font-size: 1em ;
+  }
+  
+  
+  .subtext{
+    font-size: 0.8em;
+  }
+  
+  
+  .reciever{
+    background-color: #f0f7fa;
+    padding: 0px 5px;
+
+    border-left: 5px groove #f0f7fa;
+  }
+  
+  .sender{
+    background-color: #F4DECB;
+    padding: 0px 5px;
+    border-right: 5px groove #F4DECB;
+  
+  }
+  
+  /*--------------------media query for mob view--------------------*/
+@media (max-width: 768px) {
+  .left,.right{
+    display: none;
+  }
+  .c1{
+    display: none;
+  }
+.header1{
+    display: none;
+}
+.header2{
+    display: block;
+}
+.mfooter{
+    display:block;
+}
+.mfooter a{
+    font-size: 21px;
+}
+.mfooter ul{
+    margin-bottom: 0!important
+}
+.mfooter .navbar{
+    position: fixed;bottom: 0;
+    transition: all 0.5s;
+    width: 100%;
+}
+.fa-plus {
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    font-size: 23px !important;
+    margin: 2px;
+}
+ .sidenav {
+    display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1032;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 18px;
+
+}
+
+.menu a {
+ padding: 10px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  
+}
+.menu i{
+    font-size: 16px;
+}
+
+.sidenav .closebtn { 
+  font-size: 36px;
+  color: white;
+ 
+}
+.md-sec{
+  height: auto!important;
+  overflow: hidden;
+}
+.card {
+    margin: 5px;
+   
+}
+.md-sec{
+  margin-bottom: 9vh;
+}
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.msg_send_btn {
+  background: #05728f /*none repeat scroll 0 0*/;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 33px;
+}

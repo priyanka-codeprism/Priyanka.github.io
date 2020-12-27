@@ -18,12 +18,41 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    ul {
+  list-style: none;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #222;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color:rgb(54, 214, 54) !important;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color:white;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color:rgb(54, 214, 54) !important;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+  </style>
   
 </head>
 <body>
   <div class="header header1" style="margin-bottom: 2rem !important; ">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
-      <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+      <a class="navbar-brand pl-4 py-0 " href="index.html"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
 
@@ -64,23 +93,99 @@
           <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
           <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
           <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
-          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="feedback.html" style="color: black !important;">Feedback</a>
           <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
           <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
           <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
         </div>
       </li>
           <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+            <a href="internship.html"><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
              <div>Internship</div></a>      
           </li>
           <li class="nav-item mr-4">
             <a href="chat.html"><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
               <div>Chat</div></a>      
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
-               <div>Notifications</div></a>      
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Notification
+        </a>
+        <div class="dropdown-menu section1" aria-labelledby="navbarDropdown"style="background: #111;border:1px solid #444;">
+          
+          <a class="dropdown-item" href=""  >
+             <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                  <div class="notify-img">
+                    <img src="images/boy.png" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9">
+                  <p   class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0" >Added a new property</p>
+                </div>
+              </div>
+          </a>
+          <a class="dropdown-item" href="request.html"  >
+         <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                  <div class="notify-img">
+                    <img src="images/boy.png" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9">
+                  <p   class="mb-0">Manasi Sherkhane </p>
+                  <p class="notify mt-0" >Added a new property</p>
+                </div>
+              </div>
+          </a>
+          <a class="dropdown-item" href="badges.html"  >
+          <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                  <div class="notify-img">
+                    <img src="images/boy.png" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9">
+                  <p   class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0" >Added a new property</p>
+                </div>
+              </div>
+          </a>
+          <a class="dropdown-item" href="feedback.html"  >
+             <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                  <div class="notify-img">
+                    <img src="images/boy.png" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9">
+                  <p   class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0" >Added a new property</p>
+                </div>
+              </div>
+          </a>
+          <a class="dropdown-item" href="notice.html"  >
+          <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                  <div class="notify-img">
+                    <img src="images/boy.png" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9">
+                  <p   class="mb-0">Sarath Pillai </p>
+                  <p class="notify mt-0" >Added a new property</p>
+                </div>
+              </div>
+          </a>
+          
+          <a class="dropdown-item" href="notification.html" style="color:blue;">View All</a>
+        </div>
+      </li>
+                   
+ 
+
           </li>
           <li class="nav-item dropdown " >
             <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
@@ -101,7 +206,7 @@
       </div>
 
     </nav>
-  </div><br><br>
+  </div><br><br><br>
 
 
 
@@ -125,7 +230,7 @@
             </div>
       
         <div>
-            <a href=""><div><i class="fas fa-comment-dots"></i></div>
+            <a href="chatm.html"><div><i class="fas fa-comment-dots"></i></div>
               </a> 
               </div>     
           
@@ -152,7 +257,8 @@
   <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
   <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
   <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
-  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+  <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+  
   <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
   <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
   <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
@@ -168,8 +274,16 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
+  <div class="">
+        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chats</a></li>
+          
+            
+        </ul>
+    </div>
 
-<div class="container-fluid" style="display: flex;flex-direction: row;justify-content: space-around; width: 96% !important">
+<div class="container-fluid  " style="display: flex;flex-direction: row;justify-content: space-around; width: 96% !important">
 
 <div class="messaging">
       <div class="inbox_msg row" >
@@ -190,10 +304,27 @@ function closeNav() {
             <div class="chat_list active_chat">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>
-                  <h6>25/12/2020</h6>
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+  
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
@@ -201,46 +332,183 @@ function closeNav() {
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>                  <h6>25/12/2020</h6>
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>                  <h6>25/12/2020</h6>
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>                  <h6>25/12/2020</h6>
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>                  <h6>25/12/2020</h6>
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
-            
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_ib">
-                  <h4>ABC Private Limited</h4>
-                  <h5>Web Development Internship</h5><br>
-                  <h6>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford...</h6>                  <h6>25/12/2020</h6>
+                  <div class="row ">
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+        
+  
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_ib">
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_ib">
+                  <div class="row ">
+        
+                    <div class="col-2">
+                      <i class="fas fa-user-circle fa-3x pl-0 mt-2" ></i>
+                    </div>
+  
+                    <div class="col-8">                          
+                      <p style="font-size: 15px;"> <strong style="font-size: 18px; color: white;font-weight: bold;">ABC Company</strong><br>
+                        <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p> 
+                        <span class="text subtext" style="color: white; font-weight: bold;"> 16:50</span>
+                        <br>
+                        <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                      </p>
+                    </div>
+  
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,7 +518,7 @@ function closeNav() {
         <div class="col mesgs  pt-0" style="width: 100%;">
           <div class="d-flex justify-content-between mx-2 mb-2 py-1  " style="border-bottom: solid  2px #333 !important; align-items: center !important;">
             <div class="recent_heading">
-              <div class="row" style="align-items: center;"> <img class="col-2 px-0" src="https://ptetutorials.com/images/user-profile.png" width="40"  alt="sunil"><span class="col" style="color: white;">ABC Private Limited<div class="row text-white  " style="padding-left: 15px; font-size: 0.9em;">Web developer Intern</div></span>
+              <div class="row" style="align-items: center;"> <img class="col-2 px-0" src="https://ptetutorials.com/images/user-profile.png" width="40"  alt="sunil"><span class="col" style="color: white;">ABC Private Limited</span>
               </div>
             </div>
 
@@ -356,12 +624,13 @@ function closeNav() {
      
       
     </div></div>
+   
     <!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
           <li class="nav-item mx-2 text-center">
-            <a href="">
+            <a href="index.html">
               <div><i class="fa fa-home" aria-hidden="true"></i></div>
               
             </a> 
@@ -378,7 +647,7 @@ function closeNav() {
                 
           </li>
            <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
+            <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
               </a>      
           </li>
           <li class="nav-item mx-2 text-center">

@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ITC Officina Sans Std Book";
+}
+
+body {
+
+  background: #222!important;
+
+}
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:rgb(155, 148, 148);
+border-radius: 5px;
+border: none;
+}
+
+.tab-content::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+  background-color:white;
+  border-radius: 5px;
+}
+.tab-content::-webkit-scrollbar-thumb {
+background-color:rgb(155, 148, 148);
+border-radius: 5px;
+border: none;
+}
+input[type=checkbox],
+a {
+  cursor: pointer;
+}
+
+
+/*--------------------------navbar------------------------------------------*/
+
+.navbar-brand {
+  font-size: 20px;
+  margin-top: 5px!important;
+  margin-bottom: -10px!important;
+  
+}
+
+.navbar-brand p {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.nav-item a,
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  font-weight: bold!important
+}
+
+.btn.btn-search {
+  background: #fff!important;
+  border-radius: 0;
+  color: white;
+
+}
+.sr1 .fa-search{
+color: black;
+}
+.fa-comment-dots{
+color: white;
+font-size: 20px;
+}
+.in{
+border:none!important;
+border-radius: 0;
+}
+
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.fa-map-marker-alt {
+ /* color: #2ecab6;*/
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.other {
+  color: black;
+}
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+/*i {
+ margin-left: 8px;
+}*/
+
+/*-----------------------navbar end------------------------------------------->*/
+.dropdown-menu{
+/* min-height: 280px;
+max-height: 280px;
+overflow-y: scroll;*/
+background: #111;
+min-width: 280px;
+}
+.section1 img{
+width: 50px;
+height: auto;
+border-radius: 50%;
+background: white;
+}
+
+.section1 .dropdown-item{
+color: #fff!important;
+}
+ul.breadcrumb {
+padding: 10px 16px;
+list-style: none;
+background-color: #222;
+}
+ul.breadcrumb li {
+display: inline;
+font-size: 18px;
+color:rgb(54, 214, 54) !important;
+}
+ul.breadcrumb li + li:before {
+padding: 5px;
+color:white;
+content: ">";
+}
+ul.breadcrumb li a {
+color:rgb(54, 214, 54) !important;
+text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+color: #01447e;
+text-decoration: underline;
+}
+/*----------------------left  cards-----------------------------------*/
+
+.card {
+  margin: 10px;
+  background: #111!important;
+  color: white;
+}
+
+.view a:hover{
+  text-decoration: underline;
+}
+.viewall{
+color: #1DA1F2;
+/*color: #007bff;*/
+}
+.docs button{
+border: 1px solid #1DA1F2!important;
+border-radius: 5px;
+color: #1DA1F2;
+}
+.card-header{
+color: #36D636;
+}
+.icons{
+display: flex; 
+justify-content: space-around;
+ align-items: center;
+}
+.speak input[type=text]{
+border: none;
+outline: none;
+}
+.schedule{
+  overflow-y: scroll;
+  height: 50vh;
+}
+.schedule::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.schedule::-webkit-scrollbar-thumb {
+background-color:rgb(155, 148, 148);
+border-radius: 5px;
+border: none;
+}
+
+.icons i{
+color: white;
+}
+.btns button{
+background: #111;
+color: white;
+border-radius: 50px;
+border: 1px solid #555;
+}
+.srch input[type=search], .srch input[type=text]{
+background: #333;
+border-radius: 0;
+border: 1px solid #333;
+
+}
+.srch .btn.btn-search{
+background: #1DA1F2!important;
+}
+.dropdown-menu a{
+color: white;
+}
+
+/* rounded card */
+.card{
+  border-radius: 10px;
+  
+  border: 0.5px solid #444;
+}
+.card a i{
+font-size: 22px;
+}
+.cards .card-body{
+padding: 5px 3px!important;
+}
+.sharebtm{
+  font-weight: bold;
+  color: white !important;
+}
+
+/* second card */
+.name{
+  font-size: large;
+  font-weight: bold;
+}
+.schl{
+  font-size: small;
+  font-weight: 500;
+  line-height: 1em;
+}
+/* see more */
+#text{
+  display: none;
+}
+a.morelink {
+color: #1DA1F2;
+}
+a:visited {
+  color: #1DA1F2;
+}
+a {
+  color: #0254EB;
+}
+
+a.morelink {
+  text-decoration:none;
+  outline: none;
+}
+.morecontent span {
+  display: none;
+}
+.comment {
+  
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+.fa-ellipsis-h{
+color: white;
+font-size: initial!important;
+}
+/* card header bg remove */
+
+
+.md-sec::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space for middle secction */
+}
+
+.page-link{
+color: #fff!important;
+ background: #111!important;
+}
+.page-item.active .page-link{
+color: #fff!important;
+background: #1DA1F2!important;
+}
+.page-item{
+background: #111!important;
+}
+
+.left,.right{
+  display: block;
+}
+.mfooter{
+  display:none;
+}
+.header1{
+  display: block;
+
+}
+.header2{
+  display: none;
+}
+.sidenav,.sidenav1{
+  display: none;
+}
+.mobfilter{
+display: none;
+}
+/*--------------------media query for mob view--------------------*/
+@media (max-width: 768px) {
+.left,.right{
+  display: none;
+}
+.c1{
+  display: none;
+}
+.header1{
+  display: none;
+}
+.header2{
+  display: block;
+}
+.mfooter{
+  display:block;
+}
+.mfooter a{
+  font-size: 21px;
+}
+.mfooter ul{
+  margin-bottom: 0!important
+}
+.mfooter .navbar{
+  position: fixed;bottom: 0;
+  transition: all 0.5s;
+  width: 100%;
+}
+.plus i{
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  font-size: 13px;
+}
+.sidenav, .sidenav1{
+  display: block;
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1032;
+bottom: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 20px;
+color: #fff;
+font-size: 18px;
+
+}
+
+.menu a {
+padding: 10px 0px;
+text-decoration: none;
+font-size: 18px;
+color: #fff;
+display: block;
+transition: 0.3s;
+
+}
+.menu i{
+  font-size: 16px;
+}
+
+.sidenav .closebtn { 
+font-size: 36px;
+color: white;
+
+}
+.sidenav1 .closebtn{
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+.md-sec{
+height: auto!important;
+overflow: hidden;
+}
+.card {
+  margin: 5px;
+ 
+}
+.md-sec{
+margin-bottom: 9vh;
+}
+.mobfilter{
+display: block;
+}
+.schedule{
+  overflow-y: hidden;
+  height: 100%;
+}
+.dropdown-menu{
+  background: #111!important;
+  border:1px solid #444;
+}
+.dropdown-menu a{
+color: white!important;
+}
+
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}

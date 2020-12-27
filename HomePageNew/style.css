@@ -435,3 +435,26 @@ button:hover {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/*-----------notification--------------------*/
+.dropdown-menu{
+ /* min-height: 280px;
+  max-height: 280px;
+  overflow-y: scroll;*/
+  min-width: 280px;
+}
+.section1 img{
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  background: white;
+}
+
+.section1 .dropdown-item{
+  color: #fff!important;
+}
+
+.section1 .dropdown-item:hover{
+  background-color: #555 !important;
+  color: black !important;
+}

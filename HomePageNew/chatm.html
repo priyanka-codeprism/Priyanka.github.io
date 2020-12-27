@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="Images/whats_icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Chat</title>
+    <!-- Bootstrap core CSS -->
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="chatm.css" rel="stylesheet" />
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body >
+  <!----------------------mob header---------------------------------->
+  <div class="header header2" style="margin-bottom: 2rem;">
+    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
+  <div class="d-flex">
+     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+    </div>
+  
+        <div class=" input-group form-container"style="width:40%">
+          <span class="input-group-btn sr1">
+                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
+                    class="fas fa-search mr-1"></i></button>
+          </span>
+              <input class="form-control in" type="search" placeholder="Search"
+                aria-label="Search" autocomplete="off">
+            </div>
+      
+        <div>
+            <a href="chatm.html"><div><i class="fas fa-comment-dots"></i></div>
+              </a> 
+              </div>     
+          
+</nav>
+</div>
+<div id="mySidenav" class="sidenav ">
+  <div>
+  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
+    <div style="color: white;font-size: 22px;">Account Information</div>
+    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+  </div>
+  <div class="text-left p-4"style="border-bottom: 1px solid white;">
+    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
+    <div>Priyanka</div>
+    <div>Grade-8th</div>
+    <div>Delhi Public School</div>
+    <div>city, state, country</div>
+  </div>
+  
+</div>
+  <div class="menu1 p-4">
+    <div class="">@Priyanka_2480</div>
+    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
+  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
+  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+  <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+  
+  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
+</div>
+</div>
+  <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <!----------------------mob header end---------------------------------->
+<section><!-- Section for Mobile Devices -->
+  <div class="container-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none " style="width: 1fr; background: #222;"><!--Container -->
+    <nav class="navbar navbar-expand-sm d-flex justify-content-between  sticky-top row" style="background-color: #333;">
+     <div> <a class="navbar-brand " href="#" >Chats</a></div>
+      <div class="dropdown">
+        <!-- <a class="" href="#" id="dropdownThreeDots" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+          <i class="fas fa-ellipsis-v icons " ></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownThreeDots">
+          <a class="dropdown-item" href="#">Visit Profile</a>
+          <a class="dropdown-item" href="#">Make Friend </a>
+          <a class="dropdown-item" href="#">Block</a>
+        </div> -->
+      </div>
+    </nav> <!--NAV ROW End-->
+
+
+    <div class="row " style="height: 100vh; overflow-y: scroll;">
+      <div class="col-12 px-0" >
+        <!-- Nav tabs -->
+       
+
+        <!-- Tab panes -->
+
+          
+
+          <div id="chats" class="container tab-pane active"><br>
+              <a href="singlemsg.html">
+                <div class="row border">
+        
+                  <div class="col-2">
+                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
+                  </div>
+
+                  <div class="col-8">                          
+                    <p> Abc Company <br>
+                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 16:50</span>
+                      <br>
+                      <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                    </p>
+                  </div>
+
+                </div>
+              </a>
+
+              <a href="singlemsg.html">
+                <div class="row border">
+        
+                  <div class="col-2">
+                     <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
+                   
+                  </div>
+
+                  <div class="col-8">                          
+                    <p> Abc Company <br>
+                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content. </span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 16:50</span>
+                      <br>
+                      <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                    </p>
+                  </div>
+
+                </div>
+              </a>
+              <a href="singlemsg.html">
+                <div class="row border">
+        
+                  <div class="col-2">
+                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
+                  </div>
+
+                  <div class="col-8">                          
+                    <p> Abc Company <br>
+                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 16:50</span>
+                      <br>
+                      <span class="d-none" style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                    </p>
+                  </div>
+
+                </div>
+              </a>
+
+              <a href="singlemsg.html">
+                <div class="row border">
+        
+                  <div class="col-2">
+                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
+                  </div>
+
+                  <div class="col-8">                          
+                    <p> Abc Company <br>
+                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 16:50</span>
+                      <br>
+                      <span class="d-none" style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                    </p>
+                  </div>
+
+                </div>
+              </a>
+          </div>
+
+         
+        </div>
+      </div> <!--col for Tabs End-->     
+    </div> <!--row for Tabs End-->    
+  </div> <!--Container End-->
+</section> <!-- End Section of Mobile Devices -->
+<!-------footer for mob view start------------>
+<div class="mfooter">
+  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
+    <ul class=" d-flex justify-content-between "style="width: 100%;">
+          <li class="nav-item mx-2 text-center">
+            <a href="">
+              <div><i class="fa fa-home" aria-hidden="true"></i></div>
+              
+            </a> 
+           
+          </li>
+          <li class="nav-item mx-2 text-center">
+            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+            </a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+            <!--  <a href=""class="plus">
+              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
+              </a>  -->
+              <i class="fa fa-plus mt-1" aria-hidden="true"></i>
+                
+          </li>
+           <li class="nav-item mx-2 text-center">
+            <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
+              </a>      
+          </li>
+          <li class="nav-item mx-2 text-center">
+             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
+           </div>      
+          </li>
+
+
+
+        </ul>
+  </nav>
+</div>
+
+
+
+              
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

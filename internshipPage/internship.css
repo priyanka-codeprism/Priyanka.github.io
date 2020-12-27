@@ -106,6 +106,47 @@ a {
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #222;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color:rgb(54, 214, 54) !important;
+}
+ul.breadcrumb li + li:before {
+  padding: 5px;
+  color:white;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color:rgb(54, 214, 54) !important;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.dropdown-menu{
+ /* min-height: 280px;
+  max-height: 280px;
+  overflow-y: scroll;*/
+  min-width: 280px;
+}
+.section1 img{
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  background: white;
+}
+
+.section1 .dropdown-item{
+  color: #fff!important;
+}
+
 /*----------------------left  cards-----------------------------------*/
 
 .card {
@@ -140,7 +181,7 @@ a {
 }
 .schedule{
     overflow-y: scroll;
-    height: 60vh;
+    height: 50vh;
 }
 .schedule::-webkit-scrollbar {
     width: 0.3em;
@@ -177,7 +218,7 @@ a {
 /* rounded card */
 .card{
     border-radius: 10px;
-    
+    font-weight: normal;
     border: 0.5px solid #444;
 }
 .card a i{
