@@ -124,6 +124,10 @@ background: white;
 .section1 .dropdown-item{
 color: #fff!important;
 }
+.section1 .dropdown-item:hover{
+  background-color: #555 !important;
+  color: black !important;
+}
 ul.breadcrumb {
 padding: 10px 16px;
 list-style: none;
