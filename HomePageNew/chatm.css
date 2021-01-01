@@ -87,16 +87,21 @@ root{
   
   
   .reciever{
-    background-color: #f0f7fa;
-    padding: 0px 5px;
+    background: rgb(177,192,197) none repeat scroll 0 0;
+    background: linear-gradient(0deg, rgba(177,192,197,0.4209033955379027) 0%, rgba(189,194,200,0.950315160243785) 100%);
+    color: white;
+    padding: 5px 5px;
 
-    border-left: 5px groove #f0f7fa;
+
   }
   
   .sender{
-    background-color: #F4DECB;
-    padding: 0px 5px;
-    border-right: 5px groove #F4DECB;
+    background: rgb(24,53,63) none repeat scroll 0 0;
+    background: linear-gradient(0deg, rgba(24,53,63,0.4209033955379027) 0%, rgba(27,115,225,0.950315160243785) 100%);
+    color: white;
+    
+    padding: 5px 5px;
+   
   
   }
   
@@ -108,34 +113,33 @@ root{
   .c1{
     display: none;
   }
-.header1{
+  .header1{
     display: none;
-}
-.header2{
+  }
+  .header2{
     display: block;
-}
-.mfooter{
+  }
+  .mfooter{
     display:block;
-}
-.mfooter a{
+  }
+  .mfooter a{
     font-size: 21px;
-}
-.mfooter ul{
+  }
+  .mfooter ul{
     margin-bottom: 0!important
-}
-.mfooter .navbar{
+  }
+  .mfooter .navbar{
     position: fixed;bottom: 0;
     transition: all 0.5s;
     width: 100%;
-}
-.fa-plus {
+  }
+  .plus i{
     border-radius: 50%;
     color: white;
     border: 1px solid white;
-    font-size: 23px !important;
-    margin: 2px;
-}
- .sidenav {
+    font-size: 13px;
+  }
+  .sidenav {
     display: block;
   height: 100%;
   width: 0;
@@ -149,55 +153,151 @@ root{
   padding-top: 20px;
   color: #fff;
   font-size: 18px;
-
-}
-
-.menu a {
- padding: 10px 0px;
+  
+  }
+  
+  .menu a {
+  padding: 10px 0px;
   text-decoration: none;
   font-size: 18px;
   color: #fff;
   display: block;
   transition: 0.3s;
   
-}
-.menu i{
+  }
+  .menu i{
     font-size: 16px;
-}
-
-.sidenav .closebtn { 
+  }
+  
+  .sidenav .closebtn { 
   font-size: 36px;
   color: white;
- 
-}
-.md-sec{
+  
+  }
+  .md-sec{
   height: auto!important;
   overflow: hidden;
-}
-.card {
+  }
+  .card {
     margin: 5px;
    
-}
-.md-sec{
+  }
+  .md-sec{
   margin-bottom: 9vh;
-}
-
-}
-@media screen and (max-height: 450px) {
+  }
+  
+  }
+  @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+  }
+  
+  .type_msg {position: relative;}
+  .msg_send_btn {
+    background: #05728f /*none repeat scroll 0 0*/;
+    border: none;
+    
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    
+    position: absolute;
+    right:0.5%;
+    top: 3%;
+    width: 4.1em;
+    height: 4.1em;
+    outline: none !important;
+  } 
+  .msg_send_btn>*{
+    font-size: large;
+  }
+  .msg_send_btn:hover{
+    background:green;
+  }
+  .msg_send_btn :focus{
+    border: none ;
+    outline: none !important;
+  }
 
-.msg_send_btn {
-  background: #05728f /*none repeat scroll 0 0*/;
-  border: medium none;
+  .write_msg{
+      color: white !important;
+      background: #111 !important;
+      border: none !important;
+      outline: none;
+      border-radius: 100px;
+      width: 100%;
+      padding: 10px 0;
+  }
+  .card{
+    background-color: #333;
+  }
+  .write_msg::placeholder{
+    text-indent: 15px;
+  }
+
+/* select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+} */
+.fa-plus{
   border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  top: 4px;
-  width: 33px;
+  color: white;
+  border: 1px solid white;
+  font-size: 23px;}
+
+.icons{
+  display: flex; 
+  justify-content: space-around;
+   align-items: center;
+  }
+  .speak input[type=text]{
+  border: none;
+  outline: none;
+  }
+  .schedule{
+    overflow-y: scroll;
+    height: 270px;
+  }
+  
+  /* post now border */
+  
+  /*.speak-loud{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 50px;
+    font-size: small;
+    font-weight: bold;
+  }*/
+  .hashtag:hover{
+  /* background: #1DA1F2; */
+  color: white!important;
+  }
+  .icons i{
+  color: white;
+  }
+  .btns button{
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+  }
+  .speak-loud:hover{
+    background-color: #EBEBEB;
+  }
+
+  .srch_bar {
+  display: inline;
+  text-align: right;
+  width: 60%; 
 }
+.srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:80%; padding:2px 0 4px 6px; background:none;}
+.srch_bar .input-group-addon button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+  color: #707070;
+  font-size: 18px;
+}
+.srch_bar .input-group-addon { margin: 0 0 0 -27px;}

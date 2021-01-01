@@ -1,190 +1,223 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <title>View Details Page</title>
-  <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.css"  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css"  />
-  <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
-  <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="internship.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script type="text/javascript"src="paginations.js"></script>
-  <style>
-    .dd i{
-      font-size: 16px!important;
-    }
-    .share .dropdown-menu{
-      min-width: auto!important;
-    }
-    .list p{
-      margin: 0!important;
-    }
-    .perk{
-      background: #333;
-      border-radius: 50px;
 
-    }
-  </style>
-</head>
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>View Details Page</title>
+    <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+      type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css" />
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="internship.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="paginations.js"></script>
+    <style>
+      .dd i {
+        font-size: 16px !important;
+      }
+
+      .share .dropdown-menu {
+        min-width: auto !important;
+      }
+
+      .list p {
+        margin: 0 !important;
+      }
+
+      .perk {
+        background: #333;
+        border-radius: 50px;
+
+      }
+    </style>
+  </head>
+
 <body>
   <div class="header header1" style="margin-bottom: 2rem !important; ">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1"
+      style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="index.html"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse lateral-left" id="navbarSupportedContent">
-        
+
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item mr-4 ">
-            <a href="index.html"><div><i class="fa fa-home" aria-hidden="true"></i></div>
-            <div>Home</div></a> 
-           
+            <a href="index.html">
+              <div><i class="fa fa-home" aria-hidden="true"></i></div>
+              <div>Home</div>
+            </a>
+
           </li>
-          <li class="nav-item dropdown " >
-            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Academics
-        </a>
-        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
-          <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
-          <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
-          <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
-          <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
-          <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
-   
-        </div>
-      </li>
-          <li class="nav-item dropdown " >
-            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Campus
-        </a>
-        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
-          <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
-          <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
-          <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
-          <a class="dropdown-item" href="feedback.html" style="color: black !important;">Feedback</a>
-          <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
-          <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
-          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
-        </div>
-      </li>
-          <li class="nav-item mr-4">
-            <a href="internship.html"><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
-             <div>Internship</div></a>      
+          <li class="nav-item dropdown ">
+            <a href="">
+              <div><i class="fa fa-book" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Academics
+            </a>
+            <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
+              <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
+              <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
+              <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
+              <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
+              <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="">
+              <div><i class="fa fa-building" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Campus
+            </a>
+            <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+              <a class="dropdown-item" href="fee.html" style="color: black !important;">Fee Details</a>
+              <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
+              <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
+              <a class="dropdown-item" href="feedback.html" style="color: black !important;">Feedback</a>
+              <a class="dropdown-item" href="notice.html" style="color: black !important;">Notice Board</a>
+              <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
+              <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
+            </div>
           </li>
           <li class="nav-item mr-4">
-            <a href="chat.html"><div><i class="fas fa-commenting" aria-hidden="true"></i></div>
-              <div>Chat</div></a>      
+            <a href="internship.html">
+              <div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+              <div>Internship</div>
+            </a>
           </li>
-          <li class="nav-item dropdown " >
-            <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Notification
-        </a>
-        <div class="dropdown-menu section1" aria-labelledby="navbarDropdown"style="background: #111;border:1px solid #444;">
-          
-          <a class="dropdown-item" href=""   >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt=""  >
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9">
-                  <p    class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0"  >Added a new property</p>
-                </div>
-              </div>
-          </a>
-          <a class="dropdown-item" href="request.html"   >
-         <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt=""  >
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9">
-                  <p    class="mb-0">Manasi Sherkhane </p>
-                  <p class="notify mt-0"  >Added a new property</p>
-                </div>
-              </div>
-          </a>
-          <a class="dropdown-item" href="badges.html"   >
-          <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt=""  >
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9">
-                  <p    class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0"  >Added a new property</p>
-                </div>
-              </div>
-          </a>
-          <a class="dropdown-item" href="feedback.html"   >
-             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt=""  >
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9">
-                  <p    class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0"  >Added a new property</p>
-                </div>
-              </div>
-          </a>
-          <a class="dropdown-item" href="notice.html"   >
-          <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-3 px-0">
-                  <div class="notify-img">
-                    <img src="images/boy.png" alt=""  >
-                  </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9">
-                  <p    class="mb-0">Sarath Pillai </p>
-                  <p class="notify mt-0"  >Added a new property</p>
-                </div>
-              </div>
-          </a>
-          
-          <a class="dropdown-item" href="notification.html" style="color:blue;">View All</a>
-        </div>
-      </li>
-          <li class="nav-item dropdown " >
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
-        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          E-Learning
-        </a>
-        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
- 
-        </div>
-      </li>
           <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
-              <div>Search</div></a>      
+            <a href="chat.html">
+              <div><i class="fas fa-commenting" aria-hidden="true"></i></div>
+              <div>Chat</div>
+            </a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="">
+              <div><i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Notification
+            </a>
+            <div class="dropdown-menu section1" aria-labelledby="navbarDropdown"
+              style="background: #111;border:1px solid #444;">
+
+              <a class="dropdown-item" href="">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                    <div class="notify-img">
+                      <img src="images/boy.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 col-9">
+                    <p class="mb-0">Sarath Pillai </p>
+                    <p class="notify mt-0">Added a new property</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="request.html">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                    <div class="notify-img">
+                      <img src="images/boy.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 col-9">
+                    <p class="mb-0">Manasi Sherkhane </p>
+                    <p class="notify mt-0">Added a new property</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="badges.html">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                    <div class="notify-img">
+                      <img src="images/boy.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 col-9">
+                    <p class="mb-0">Priyanka</p>
+                    <p class="notify mt-0">Added a new property</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="feedback.html">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                    <div class="notify-img">
+                      <img src="images/boy.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 col-9">
+                    <p class="mb-0">Arpit Somani</p>
+                    <p class="notify mt-0">Added a new property</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="notice.html">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3 px-0">
+                    <div class="notify-img">
+                      <img src="images/boy.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 col-9">
+                    <p class="mb-0">Sarath Pillai </p>
+                    <p class="notify mt-0">Added a new property</p>
+                  </div>
+                </div>
+              </a>
+
+              <a class="dropdown-item" href="notification.html" style="color:blue;">View All</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="">
+              <div><i class="fa fa-tablet" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              E-Learning
+            </a>
+            <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+
+            </div>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="">
+              <div><i class="fa fa-search" aria-hidden="true"></i></div>
+              <div>Search</div>
+            </a>
           </li>
         </ul>
 
@@ -198,264 +231,379 @@
   <!--header end---------->
   <!----------------------mob header---------------------------------->
   <div class="header header2" style="margin-bottom: 2rem;">
-    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
-  <div class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
-        <p>Live Like You Own It</p>
-      </a>
+    <nav class="navbar navbar-dark  justify-content-between fixed-top"
+      style="background-color: #111;border-bottom: 1px solid #444;">
+      <div class="d-flex">
+        <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+          <p>Live Like You Own It</p>
+        </a>
+      </div>
+
+      <div class=" input-group form-container" style="width:40%">
+        <span class="input-group-btn sr1">
+          <button class="btn  btn-search pr-1 pl-2" type="submit"><i class="fas fa-search mr-1"></i></button>
+        </span>
+        <input class="form-control in" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+      </div>
+
+      <div>
+        <a href="chatm.html">
+          <div><i class="fas fa-comment-dots"></i></div>
+        </a>
+      </div>
+
+    </nav>
+  </div>
+  <div id="mySidenav" class="sidenav ">
+    <div>
+      <div class="d-flex justify-content-between align-items-center  close1 px-3"
+        style="border-bottom: 1px solid white;">
+        <div style="color: white;font-size: 22px;">Account Information</div>
+        <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+      </div>
+      <div class="text-left p-4" style="border-bottom: 1px solid white;">
+        <img src="images/boy.png" style="width: 20%;height: auto;background: #fff;" class="rounded-circle">
+        <div>Priyanka</div>
+        <div>Grade-8th</div>
+        <div>Delhi Public School</div>
+        <div>city, state, country</div>
+      </div>
+
     </div>
+    <div class="menu1 p-4">
+      <div class="">@Priyanka_2480</div>
+      <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
+    <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
   
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
-                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
-                    class="fas fa-search mr-1"></i></button>
-          </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
-            </div>
-      
-        <div>
-            <a href="chatm.html"><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
-</nav>
-</div>
-<div id="mySidenav" class="sidenav ">
-  <div>
-  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
-    <div style="color: white;font-size: 22px;">Account Information</div>
-    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
-  </div>
-  <div class="text-left p-4"style="border-bottom: 1px solid white;">
-    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
-    <div>Priyanka</div>
-    <div>Grade-8th</div>
-    <div>Delhi Public School</div>
-    <div>city, state, country</div>
-  </div>
   
-</div>
-  <div class="menu1 p-4">
-    <div class="">@Priyanka_2480</div>
-    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
-  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
-  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
-  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
-  <a href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
-  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
-  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
-  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
-</div>
-</div>
+      <a class="acc" data-toggle="collapse" href="#academics"  aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+    <ul class="collapse" id="academics" style="list-style: none; margin-left: 30px;" >
+        <li><a href="attendence.html">Attendance</a></li>
+        <li><a href="time-table.html">Time-Table</a></li>
+        <li><a href="exam.html">Examination</a></li>
+        <li><a href="assignment.html">Assignment</a></li>
+        <li><a href="study.html">Study Material</a></li>
+        <li><a href="research.html">Research</a></li>
+      </ul>
+  
+  <a class="acc" data-toggle="collapse" href="#campus"  aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+    <ul class="collapse" id="campus" style="list-style: none; margin-left: 30px;" >
+        <li><a href="#">Classroom</a></li>
+        <li><a href="fee.html">Fee Details</a></li>
+        <li><a href="request.html">Raise A Request</a></li>
+        <li><a href="badges.html">Recommendation Badges</a></li>
+        <li><a href="notice.html">Notice Board</a></li>
+        <li><a href="complaints.html">Complaints</a></li>
+        <li><a href="#">Holidays</a></li>
+  
+      </ul>
+  
+    <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+    
+    <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+    <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+    <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
+  </div>
+  </div>
   <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
 
-function openNav1() {
-  document.getElementById("mySidenav1").style.width = "100%";
-}
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+    }
 
-function closeNav1() {
-  document.getElementById("mySidenav1").style.width = "0";
-}
-</script>
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+  </script>
   <!----------------------mob header end---------------------------------->
   <!-- container -->
   <div class="container-fluid ">
     <div class="">
-        <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2 mb-0">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Internship</a></li>
-          <li><a href="#">View Details</a></li>
-            
-        </ul>
+      <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2 mb-0">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Internship</a></li>
+        <li><a href="#">View Details</a></li>
+
+
+      </ul>
     </div>
     <div class="row px-lg-5 px-md-5 px-sm-3 px-1">
-    <!--- left side -->
-      
-  <!-- left side end -->
-  <!------------------ right section ----------------------------->
-      <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-lg-5 px-md-4 px-sm-2 px-1  md-sec"id="page" style="overflow-y: scroll;">
-        
+      <!--- left side -->
+
+      <!-- left side end -->
+      <!------------------ right section ----------------------------->
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-lg-5 px-md-4 px-sm-2 px-1  md-sec" id="page"
+        style="overflow-y: scroll;">
+
         <!-- -------------first card---------------- -->
         <div class="card shadow cards list-group">
           <div class="card-body py-2 mx-0">
-            <div class="px-lg-5 px-md-4 px-sm-2 px-1 py-3" >
-           <div class="d-flex justify-content-between my-2">
-             <div>
-               <h4>Operations</h4>
-               <h5 style="color: grey;">Internshala</h5>
-             </div>
-             <div class="logo"><img src="images/logo.jpeg"style="width: 100px;height: auto;"></div>
-           </div>
-           <div class="my-3">
-             <i class="fas fa-home mr-2"></i>Work From Home
-           </div>
-           <div class=" my-3">
-              <div class="row">
-             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-             <div >
-               <div style="color: grey;"><i class="far fa-play-circle mr-2"></i>START DATE</div>
-                 <div>Immediately</div>
-             </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-             <div>
-               <div style="color: grey;"><i class="fas fa-calendar-alt mr-2"></i>DURATION</div>
-                 <div>6 Months</div>
-             </div>
-             </div>
-             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-             <div>
-               <div style="color: grey;"><i class="fas fa-money-bill-wave mr-2"></i>STIPEND</div>
-                 <div>₹16667 /month</div>
-             </div>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-             <div>
-               <div style="color: grey;"><i class="far fa-hourglass mr-2"></i>APPLY BY</div>
-                 <div>31 Dec' 20</div>
-             </div>
-           </div>
-           </div><!----row end------>
-           </div>
-           <div class="d-flex justify-content-start my-3">
-             <div><span style="background: #333;border-radius: 50px;"class="py-1 px-4">Internship</span></div>
-             
-           </div>
-           <div class="d-flex justify-content-between my-3">
-             <div><span style=""class=""><i class="fas fa-users mr-2"></i>32 applicants
-             </span></div>
-             <div class="share">
-               <i class="fas fa-share-alt dropdown-toggle"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="background: #333;border-radius: 50%;padding: 10px;"></i>
-                <div class="dropdown-menu dd" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#"><i class="fab fa-linkedin-in mr-3"></i>Share On LinkedIn</a>
-                  <a class="dropdown-item" href="#"><i class="fab fa-facebook-f mr-3"></i>Share On Facebook</a>
-                  <a class="dropdown-item" href="#"><i class="fab fa-twitter mr-3"></i>Share On Twitter</a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-link mr-3"></i>Copy Link</a>
+            <div class="px-lg-5 px-md-4 px-sm-2 px-1 py-3">
+              <div class="d-flex justify-content-between my-2">
+                <div>
+                  <h4>Back End Web Development</h4>
+
                 </div>
+                <div class="logo"><img src="images/logo.jpeg" style="width: 100px;height: auto;"></div>
+              </div>
+              <div class="my-3">
+                <i class="fas fa-home mr-2"></i>Work From Home
+              </div>
+              <div class=" my-3">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div>
+                      <div style="color: grey;"><i class="far fa-play-circle mr-2"></i>START DATE</div>
+                      <div>Immediately</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div>
+                      <div style="color: grey;"><i class="fas fa-calendar-alt mr-2"></i>DURATION</div>
+                      <div>3 Months</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div>
+                      <div style="color: grey;"><i class="fas fa-money-bill-wave mr-2"></i>STIPEND</div>
+                      <div>₹2000 /month</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div>
+                      <div style="color: grey;"><i class="far fa-hourglass mr-2"></i>APPLY BY</div>
+                      <div>31 Dec' 20</div>
+                    </div>
+                  </div>
+                </div>
+                <!----row end------>
+              </div>
+              <div class="d-flex justify-content-start my-3">
+                <div><span style="background: #333;border-radius: 50px;" class="py-1 px-4">Internship</span></div>
+
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <div><span style="" class=""><i class="fas fa-users mr-2"></i>10 applicants
+                  </span></div>
+                <div class="share">
+                  <i class="fas fa-share-alt dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"
+                    style="background: #333;border-radius: 50%;padding: 10px;"></i>
+                  <div class="dropdown-menu dd" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#"><i class="fab fa-linkedin-in mr-3"></i>Share On LinkedIn</a>
+                    <a class="dropdown-item" href="#"><i class="fab fa-facebook-f mr-3"></i>Share On Facebook</a>
+                    <a class="dropdown-item" href="#"><i class="fab fa-twitter mr-3"></i>Share On Twitter</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-link mr-3"></i>Copy Link</a>
+                  </div>
+                </div>
+              </div>
+              <hr style="background: #444;">
+              <div>
+                <div>
+                  <h5>About Sheltown</h5>
+                  <a href="https://sheltown.in/YouOwnIt" target="_blank">Website <i
+                      class="fas fa-external-link-alt ml-2" style="font-size: 14px;"></i></a>
+                  <p style="color: grey;">
+                    Sheltown, a Made In India startup, One of its kind, All-Of-Home Services Provider, at one platform,
+                    today is India's
+                    leading chain of rental properties, homes, and spaces.
+                  </p>
+                </div>
+                <div>
+                  <h5>Your Working Tasks:</h5>
+                  <h6 style="color: grey;">Selected intern's day-to-day responsibilities include:</h6>
+                  <div style="color: grey;" class="list">
+                    <p>1. Work on posting job requirements</p>
+                    <p>2. Work on screening applicants</p>
+                    <p>3. Manage the database on Excel</p>
+                    <p>4. Create PowerPoint slides</p>
+
+                  </div>
+                </div>
+                <div class="my-3">
+                  <h5>Eligibility Criteria:</h5>
+                  <h6 style="color: grey;">Only those candidates can apply who:</h6>
+                  <div style="color: grey;" class="list">
+                    <p>1. are available for the work from home job/internship</p>
+                    <p>2. can start the work from home job/internship between 26th Dec'20 and 30th Jan'21</p>
+                    <p>3. are available for duration of 3 months</p>
+                    <p>4. have relevant skills and interests</p>
+
+                  </div>
+                </div>
+                <div class="">
+                  <h5>Perks</h5>
+                  <div class="row text-center">
+                    <div class="col-md-3 col-9">
+                      <div class=" perk mr-2 py-1 px-4 my-1 ">Letter of recommendation</div>
+                    </div>
+                    <div class="col-md-3 col-9">
+                      <div class="perk mr-2 py-1 px-4 my-1">Flexible work hours</div>
+                    </div>
+                    <div class="col-md-3 col-9">
+                      <div class="perk mr-2 py-1 px-4 my-1">5 days a week</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <h5>Total Number of openings</h5>
+                  <div class="">1</div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                  <button class="btn btn-outline-success">Apply Now</button>
+                </div>
+              </div>
             </div>
-           </div>
-           <hr style="background: #444;">
-           <div>
-             <div >
-               <h5>About Internshala</h5>
-               <a href="#">Website <i class="fas fa-external-link-alt ml-2"style="font-size: 14px;"></i></a>
-               <p style="color: grey;">
-                 Vamstar is a data science powered global B2B healthcare marketplace platform. The aggregate $2 trillion of demand for healthcare products and services using machine learning and providing real-time insights to buyers and suppliers to accelerate transactions.
-               </p>
-             </div>
-             <div >
-               <h5>About the work from home job/internship</h5>
-               <h6 style="color: grey;">Selected intern's day-to-day responsibilities include:</h6>
-               <div style="color: grey;" class="list">
-                  <p>1. Work on posting job requirements</p>
-                  <p>2. Work on screening applicants</p>
-                  <p>3. Manage the database on Excel</p>
-                  <p>4. Create PowerPoint slides</p>
-               
-             </div>
-             </div>
-             <div class="my-3" >
-               <h5>Who can apply</h5>
-               <h6 style="color: grey;">Only those candidates can apply who:</h6>
-               <div style="color: grey;" class="list">
-                  <p>1. are available for the work from home job/internship</p>
-                  <p>2. can start the work from home job/internship between 26th Dec'20 and 30th Jan'21</p>
-                  <p>3. are available for duration of 3 months</p>
-                  <p>4. have relevant skills and interests</p>
-               
-             </div>
-             </div>
-             <div class="" >
-               <h5>Perks</h5>
-               <div class="row text-center">
-                 <div class="col-md-3 col-9"><div class=" perk mr-2 py-1 px-4 my-1 ">Letter of recommendation</div> </div>
-                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">Flexible work hours</div> </div>
-                  <div class="col-md-3 col-9"><div class="perk mr-2 py-1 px-4 my-1">5 days a week</div> </div>
-               </div>
-             </div>
-             <div class="my-3" >
-               <h5>Number of openings</h5>
-               <div class="">1</div>
-             </div>
-             <div class="d-flex justify-content-center my-3">
-             <button class="btn btn-outline-success">Apply Now</button>
-             </div>
-           </div>
-          </div>
           </div>
         </div>
-        <div class="card  p-5"style="background:#FFEBAE;border: 1px solid #FFEF85!important;color: #945E12!important; margin-bottom:9vh; ">
+        <div class="card  p-5"
+          style="background:#FFEBAE;border: 1px solid #FFEF85!important;color: #945E12!important; margin-bottom:9vh; ">
           <div>
             <h5><i class="fas fa-exclamation-circle mr-2"></i>Save yourself from fraud!</h5>
-            <p>If an employer asks you to pay any security deposit, registration fee, laptop fee, etc., do not pay and notify us immediately. Remember, Internshala doesn't charge a fee from the students to apply to a job or an internship & we don't allow other companies to do so either.</p>
+            <p>If an employer asks you to pay any security deposit, registration fee, laptop fee, etc., do not pay and
+              notify us immediately. Remember, Internshala doesn't charge a fee from the students to apply to a job or
+              an internship & we don't allow other companies to do so either.</p>
           </div>
         </div>
-        
+
       </div> <!-- right sec end -->
-      
-      </div> <!--Row end -->
-     
 
-    </div><!-- container end -->
+    </div>
+    <!--Row end -->
 
 
-<!-------footer for mob view start------------>
-<!-------footer for mob view start------------>
-<div class="mfooter">
-  <nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
-    <ul class=" d-flex justify-content-between "style="width: 100%;">
-          <li class="nav-item mx-2 text-center">
-            <a href="">
-              <div><i class="fa fa-home" aria-hidden="true"></i></div>
-              
-            </a> 
-           
-          </li>
-          <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
-            </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <a href=""class="plus">
-              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
-              </a> 
-                
-          </li>
-           <li class="nav-item mx-2 text-center">
-            <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
-              </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
-           </div>      
-          </li>
+  </div><!-- container end -->
+
+
+ 
+  <!--------modal start------>
+  <div class="modal fade" id="postModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style="background: #111!important;color: white;border: 1px solid #ccc;">
+        <div class="modal-header">
+          <h4 class="modal-title">Create a post</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color: white;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class=""><img src="images/boy.png" style="width:50px;height:auto;background: white;"
+                class="rounded-circle"></span><span class="mx-3" style="font-size: 20px;">Priyanka</span>
+            <span class="mx-1"><select class="py-1 px-1" style="background: #111;color: white;border-radius: 50px;">
+                <option>Public</option>
+                <option>Classmates only</option>
+                <option>Campus only</option>
+              </select></span>
+          </div>
+          <div class="my-2">
+            <textarea class="form-control" id="textarea" rows="3" placeholder="What do you want to talk about"
+              style="background: transparent;border: none;color: white;"></textarea>
+          </div>
+          <div class="my-2">
+            <button style="color: #1DA1F2;font-size: 18px;" class="hashtag btn">Add Hashtag</button><span
+              style="color: grey;" class="mx-3">Help the right people see your post</span>
+          </div>
+          <div class="my-2 d-flex justify-content-between">
+            <div class="icons">
+              <a href=""><i class="fas fa-plus mx-2"></i></a>
+              <a href="" type="file"><i class="fas fa-image mx-2"></i></a>
+              <a href=""><i class="fab fa-youtube mx-2"></i></a>
+              <a href=""><i class="fas fa-file-alt mx-2"></i></a>
+
+            </div>
+            <div>
+              <button class="btn btn-outline-primary px-4" style="border-radius: 50px;">Post</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer p-0">
+          <div class="btns">
+            <button class="btn m-2">Celebrate an occasion</button>
+            <button class="btn m-2">Write a Petition</button>
+            <button class="btn m-2">Invite a Friend</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#post").click(function () {
+        $("#postModal").modal('show');
+
+        $('.hashtag').click(function () {
+          var areaValue = $('#textarea').val();
+          $('#textarea').val(areaValue + '#');
+        });
+
+
+      })
+    });
+  </script>
+  <!--------modal end------>
+
+  <!-------footer for mob view start------------>
+  <div class="mfooter">
+    <nav class="navbar navbar-light " id="navbar1" style="background-color: #111;border-top: 1px solid #444;">
+      <ul class=" d-flex justify-content-between " style="width: 100%;">
+        <li class="nav-item mx-2 text-center">
+          <a href="">
+            <div><i class="fa fa-home" aria-hidden="true"></i></div>
+
+          </a>
+
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a href="" class="plus" data-toggle="modal" data-target="#postModal">
+            <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
+          </a>
+
+        </li>
+
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"
+              style="width: 30px;height: auto;background: #fff;">
+          </div>
+        </li>
 
 
 
-        </ul>
-  </nav>
-</div>
-<script>
-  $('#switch-modal').bootstrapSwitch();
-</script>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    $('#switch-modal').bootstrapSwitch();
+  </script>
 
-<!-------footer for mob view end------------>
+  <!-------footer for mob view end------------>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.js" ></script>
-<script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.js"></script>
+  <script src="index.js"></script>
 
 </body>
+
 </html>

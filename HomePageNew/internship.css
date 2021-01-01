@@ -110,9 +110,10 @@ border-radius: 0;
 /* min-height: 280px;
 max-height: 280px;
 overflow-y: scroll;*/
-background: #111;
+background: white;
 min-width: 280px;
 border: 1px solid #444;
+color: black;
 }
 .section1 img{
 width: 50px;
@@ -418,3 +419,13 @@ color: white!important;
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
 }
+
+.dd{
+  background-color: #222;;
+}
+.btns button{
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+  }

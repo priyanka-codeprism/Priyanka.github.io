@@ -202,7 +202,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="request.html"  >
+          <a class="dropdown-item" href="notification.html"  >
          <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -215,7 +215,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="badges.html"  >
+          <a class="dropdown-item" href="notification.html"  >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -228,7 +228,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="feedback.html"  >
+          <a class="dropdown-item" href="notification.html"  >
              <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -241,7 +241,7 @@ input[type=text]{
                 </div>
               </div>
           </a>
-          <a class="dropdown-item" href="notice.html"  >
+          <a class="dropdown-item" href="notification.html"  >
           <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 px-0">
                   <div class="notify-img">
@@ -290,7 +290,7 @@ input[type=text]{
   <div class="header header2" style="margin-bottom: 2rem;">
     <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
   <div class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+     <a class="navbar-brand pl-0 py-0 " href="index.html"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
@@ -330,8 +330,30 @@ input[type=text]{
     <div class="">@Priyanka_2480</div>
     <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
   <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
-  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
-  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+
+
+  <a class="acc" data-toggle="collapse" href="#academics"  aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+  <ul class="collapse" id="academics" style="list-style: none; margin-left: 30px;" >
+      <li><a href="attendence.html">Attendance</a></li>
+      <li><a href="time-table.html">Time-Table</a></li>
+      <li><a href="exam.html">Examination</a></li>
+      <li><a href="assignment.html">Assignment</a></li>
+      <li><a href="study.html">Study Material</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+
+<a class="acc" data-toggle="collapse" href="#campus"  aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+  <ul class="collapse" id="campus" style="list-style: none; margin-left: 30px;" >
+      <li><a href="#">Classroom</a></li>
+      <li><a href="fee.html">Fee Details</a></li>
+      <li><a href="request.html">Raise A Request</a></li>
+      <li><a href="badges.html">Recommendation Badges</a></li>
+      <li><a href="notice.html">Notice Board</a></li>
+      <li><a href="complaints.html">Complaints</a></li>
+      <li><a href="#">Holidays</a></li>
+
+    </ul>
+
   <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
   
   <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
@@ -348,9 +370,26 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
   <!----------------------mob header end---------------------------------->
   <!----------------------mainbody---------------------------------->
-       <div class="">
+     
+    <!--=====================MOBILE VIEW FROM HERE=====================-->
+<style>
+    .mv{
+        display: none ;
+    }
+    @media (max-width: 600px){
+        .mv{
+            display: block !important;
+        }
+        .dv{
+            display: none !important;
+        }
+    }
+</style>
+<div style="margin-left: 30px;" class="">
         <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2" style="margin-left: -20px;">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Campus</a></li>
@@ -358,8 +397,131 @@ function closeNav() {
             
         </ul>
     </div>
+<div class="container-fluid mv">
+    <h3 class="ml-1" style="color: white;">Pay your fees online</h3>
 
-        <div class="container-fluid">
+    <div class="card mb-1" style="background-color:#222 ; color: #fff;">
+        <div class=" text-center" >
+          <label class="mb-0 py-2 " style="border:none; display: inline-block;font-size: 25px; color: white;  background-color: #222; " type="text" name="schoolname" id="schoolname" class="form-control" >DAV Public School , Delhi</label>
+      </div>
+  </div>
+  <div class="card px-0 pt-0" style="background-color: #222; color: #fff;padding: 25px;">
+    <div class="card-block p-0">
+
+ <form class="px-2" >
+  <label class="mb-0">Student details</label>
+<div class=" d-block">
+  <div class=" mb-1">
+    <input style="background-color: #222;" type="text" class="form-control" placeholder="First name">
+  </div>
+  <div class=" mb-2 ">
+    <input style="background-color: #222;" type="text" class="form-control" placeholder="Last name">
+  </div>
+  <div class="mb-2" >
+    <label class="mb-0" >Reg./Roll no</label>
+    <input style="background-color: #222; " type="text" class="form-control" placeholder="Reg./Roll no">
+  </div>
+  <div class="mb-2">
+    <label class="mb-0" >Class</label>
+  <select class="browser-default custom-select" style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                  <option value="0">1st</option>
+                  <option value="1">2nd</option>
+                  <option value="2">3rd</option>
+                  <option value="3">4th</option>
+                  <option value="1">5th</option>
+                  <option value="2">6th</option>
+                  
+     </select>   
+    </div>
+    <div class="mb-2" >
+        <label class="mb-0">Year</label>
+        <select  class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                        <option value="0">Pre-Nursery</option>
+                        <option value="1">Nursery</option>
+                        <option value="2">LKG</option>
+                        <option value="3">UKG</option>
+                        <option value="4">Class I</option>
+                        <option value="5">Class II</option>
+                        <option value="6">Class III</option>
+                        <option value="7">Class IV</option>
+                        <option value="8">Class V</option>
+                        <option value="9">Class VI</option>
+                        <option value="10">Class VII</option>
+                        <option value="11">Class VIII</option>
+                        <option value="12">Class IX</option>
+                        <option value="13">Class X</option>
+                        <option value="14">Class XI</option>
+                        <option value="15">Class XII</option>
+                    </select>   
+        </div>
+        <div class="mb-2" >
+            <label class="mb-0">Choose month</label>
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+            
+                        </select>    
+                   </div>
+                   <div class="">
+                    <input disabled="true" style="background-color: #222; color: #fff;"  type="text" name="amount" id="amount" class="form-control" placeholder="Amount"> 
+                      </div>
+                      <button type="button" class="btn btn-outline-success btn-block mt-2 " href="#" aria-label="submit">
+                        Pay Now
+                     </button>
+</div>
+</form>
+</div>
+</div>
+<h4 class="mt-3 mb-2" style="display: inline-block; color: rgb(54,214,54);" ><b>Other Fees</h4></b>
+<div class="card py-1 mb-4" style="background-color:#222 ;">
+    <form class="px-2" action="">
+        <div class="mb-2">
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                              <option value="0">Annual Charge</option>
+                              <option value="1">Exam Fee</option>
+                              <option value="2">Program Fee</option>
+                              <option value="3">Optional Subject</option>
+                              <option value="4">Activity Fees</option>
+                              <option value="5">Library</option>
+                              <option value="6">Gym</option>  
+                          </select>     
+         </div>
+         <div class=" mb-2">
+
+            <select class="browser-default custom-select"style="background: #222;border: 2px solid #555!important;color: #fff;"> 
+                              <option value="0">Status : Paid</option>
+                              <option value="1">Status : Due</option>
+                              <option value="2">Status : Fine</option>   
+                          </select>   
+         </div>
+         <div class="mb-2" >
+
+            <input disabled="true" style="background-color: #222; color: #fff; "  type="text" name="date" id="date" class="form-control" placeholder="Date and time"> 
+               </div>
+
+               <div class="mb-2" >
+                <button style="margin-bottom: 50px;" type="button" class="btn btn-outline-success  btn-block " href="#" aria-label="submit" >Pay Now
+                    </button>
+        </div>
+    </form>
+</div>
+</div>
+<!--==========MOBILE VIEW END HEREE====================-->
+<!--===================dv start here ===================-->
+
+<div class="container-fluid ">
+
+<div class="container-fluid dv">
           <h3 style="color: white; margin-left: 25px">Pay your fees online</h3>
           
 
@@ -493,56 +655,117 @@ function closeNav() {
                 </button>
                 </div>
   </div>
-  
-   
-
-
 </form>
 </div>
-
-  
+  </div>
 
   
 
 
 <!----------------------body end---------------------------------->
+       <!--------modal start------>
+        <div class="modal fade" id="postModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"style="background: #111!important;color: white;border: 1px solid #ccc;">
+        <div class="modal-header" >
+          <h4 class="modal-title">Create a post</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"style="color: white;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+             <div>
+               <span class=""><img src="images/boy.png"style="width:50px;height:auto;background: white;"class="rounded-circle"></span><span  class="mx-2"style="font-size: 18px;">Priyanka</span>
+               <span class="mx-1"><select class="py-1 px-1"style="background: #111;color: white;border-radius: 50px;">
+                 <option style="margin: 10px 0px;">Public</option>
+                 <option>Classmates only</option>
+                 <option>Campus only</option>
+               </select></span>
+             </div>
+             <div class="my-2">
+               <textarea class="form-control" id="textarea" rows="3"placeholder="What do you want to talk about"style="background: transparent;border: none;color: white;"></textarea>
+             </div>
+             <div class="my-2">
+               <button style="color: #1DA1F2;font-size: 18px;"class="hashtag btn">Add Hashtag</button><span style="color: grey;"class="mx-3">Help the right people see your post</span>
+             </div>
+             <div class="my-2 d-flex justify-content-between">
+               <div class="icons">
+                 <a href=""><i class="fas fa-plus mx-2"></i></a>
+                 <a href="" type="file"><i class="fas fa-image mx-2"></i></a>
+                 <a href=""><i class="fab fa-youtube mx-2"></i></a>
+                 <a href=""><i class="fas fa-file-alt mx-2"></i></a>
+                 
+               </div>
+               <div>
+                 <button class="btn btn-outline-primary px-4"style="border-radius: 50px;">Post</button>
+               </div>
+             </div>
+             </div>
+             <div class="modal-footer p-0">
+             <div class="btns">
+               <button class="btn m-2">Celebrate an occasion</button>
+               <button class="btn m-2">Write a Petition</button>
+               <button class="btn m-2">Invite a Friend</button>
+              
+             </div>
+             </div>
+        
+      </div>
+    </div>
+  </div>
+  <script >
+    $(document).ready(function(){
+  $("#post").click(function() {
+  $("#postModal").modal('show');
 
+  $('.hashtag').click(function () {
+            var areaValue = $('#textarea').val();
+        $('#textarea').val(areaValue + '#');
+        });
+
+  
+ })  
+});
+  </script>
+        <!--------modal end------>
 <!-------footer for mob view start------------>
 <div class="mfooter">
-  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
-    <ul class=" d-flex justify-content-between "style="width: 100%;">
-          <li class="nav-item mx-2 text-center">
-            <a href="index.html">
-              <div><i class="fa fa-home" aria-hidden="true"></i></div>
-              
+<nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
+  <ul class=" d-flex justify-content-between "style="width: 100%;">
+        <li class="nav-item mx-2 text-center">
+          <a href="index.html">
+            <div><i class="fa fa-home" aria-hidden="true"></i></div>
+            
+          </a> 
+         
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+          </a>      
+        </li>
+        <li class="nav-item mx-2 text-center">
+           <a href=""class="plus" data-toggle="modal" data-target="#postModal">
+            <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
             </a> 
-           
-          </li>
-          <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+              
+        </li>
+         <li class="nav-item mx-2 text-center">
+          <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
             </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <a href=""class="plus">
-              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
-              </a> 
-                
-          </li>
-           <li class="nav-item mx-2 text-center">
-            <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
-              </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
-           </div>      
-          </li>
+        </li>
+        <li class="nav-item mx-2 text-center">
+           <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
+         </div>      
+        </li>
 
 
 
-        </ul>
-  </nav>
+      </ul>
+</nav>
 </div>
 
+</script>
+<!-------footer for mob view end------------>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

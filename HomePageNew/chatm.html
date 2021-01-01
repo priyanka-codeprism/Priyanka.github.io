@@ -1,93 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="Images/whats_icon.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Images/whats_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
     <!-- Bootstrap core CSS -->
     <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
     <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="chatm.css" rel="stylesheet" />
- 
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body >
-  <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 2rem;">
-    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
-  <div class="d-flex">
-     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
+<body>
+    <!----------------------mob header---------------------------------->
+    <div class="header header2" style="margin-bottom: 2rem;">
+        <nav class="navbar navbar-dark  justify-content-between fixed-top" style="background-color: #111;border-bottom: 1px solid #444;">
+            <div class="d-flex">
+                <a class="navbar-brand pl-0 py-0 " href="index.html"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
-    </div>
-  
-        <div class=" input-group form-container"style="width:40%">
-          <span class="input-group-btn sr1">
+            </div>
+
+            <!-- <div class=" input-group form-container" style="width:40%">
+                <span class="input-group-btn sr1">
                 <button class="btn  btn-search pr-1 pl-2" type="submit"><i
                     class="fas fa-search mr-1"></i></button>
           </span>
-              <input class="form-control in" type="search" placeholder="Search"
-                aria-label="Search" autocomplete="off">
-            </div>
-      
-        <div>
-            <a href="chatm.html"><div><i class="fas fa-comment-dots"></i></div>
-              </a> 
-              </div>     
-          
-</nav>
-</div>
-<div id="mySidenav" class="sidenav ">
-  <div>
-  <div class="d-flex justify-content-between align-items-center  close1 px-3"style="border-bottom: 1px solid white;">
-    <div style="color: white;font-size: 22px;">Account Information</div>
-    <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
-  </div>
-  <div class="text-left p-4"style="border-bottom: 1px solid white;">
-    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
-    <div>Priyanka</div>
-    <div>Grade-8th</div>
-    <div>Delhi Public School</div>
-    <div>city, state, country</div>
-  </div>
-  
-</div>
-  <div class="menu1 p-4">
-    <div class="">@Priyanka_2480</div>
-    <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
-  <div class="menu" ><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
-  <a href="#"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
-  <a href="#"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
-  <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
-  
-  <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
-  <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
-  <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
-</div>
-</div>
-  <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+                <input class="form-control in" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+            </div> -->
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-  <!----------------------mob header end---------------------------------->
-<section><!-- Section for Mobile Devices -->
-  <div class="container-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none " style="width: 1fr; background: #222;"><!--Container -->
-    <nav class="navbar navbar-expand-sm d-flex justify-content-between  sticky-top row" style="background-color: #333;">
-     <div> <a class="navbar-brand " href="#" >Chats</a></div>
-      <div class="dropdown">
-        <!-- <a class="" href="#" id="dropdownThreeDots" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+            <div>
+                <a href="chatm.html">
+                    <div><i class="fas fa-comment-dots"></i></div>
+                </a>
+            </div>
+
+        </nav>
+    </div>
+    <div id="mySidenav" class="sidenav ">
+        <div>
+            <div class="d-flex justify-content-between align-items-center  close1 px-3" style="border-bottom: 1px solid white;">
+                <div style="color: white;font-size: 22px;">Account Information</div>
+                <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
+            </div>
+            <div class="text-left p-4" style="border-bottom: 1px solid white;">
+                <img src="images/boy.png" style="width: 20%;height: auto;background: #fff;" class="rounded-circle">
+                <div>Priyanka</div>
+                <div>Grade-8th</div>
+                <div>Delhi Public School</div>
+                <div>city, state, country</div>
+            </div>
+
+        </div>
+        <div class="menu1 p-4">
+            <div class="">@Priyanka_2480</div>
+            <div class=""><span><a href=""> 200 connections</a></span>&nbsp;<span><a href=""> 60 friends</a></span></div>
+            <div class="menu"><a href="#"><i class="fa fa-user-circle mr-2" aria-hidden="true "></i>Profile</a>
+
+
+                <a class="acc" data-toggle="collapse" href="#academics" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-book mr-2" aria-hidden="true" mr-2></i>Academics</a>
+                <ul class="collapse" id="academics" style="list-style: none; margin-left: 30px;">
+                    <li><a href="attendence.html">Attendance</a></li>
+                    <li><a href="time-table.html">Time-Table</a></li>
+                    <li><a href="exam.html">Examination</a></li>
+                    <li><a href="assignment.html">Assignment</a></li>
+                    <li><a href="study.html">Study Material</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+
+                <a class="acc" data-toggle="collapse" href="#campus" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-building mr-2" aria-hidden="true "></i>Campus</a>
+                <ul class="collapse" id="campus" style="list-style: none; margin-left: 30px;">
+                    <li><a href="#">Classroom</a></li>
+                    <li><a href="fee.html">Fee Details</a></li>
+                    <li><a href="request.html">Raise A Request</a></li>
+                    <li><a href="badges.html">Recommendation Badges</a></li>
+                    <li><a href="notice.html">Notice Board</a></li>
+                    <li><a href="complaints.html">Complaints</a></li>
+                    <li><a href="#">Holidays</a></li>
+
+                </ul>
+
+                <a href="internship.html"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>Internship</a>
+
+                <a href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Setting & Privacy</a>
+                <a href="#"><i class="fa fa-clock mr-2" aria-hidden="true"></i>24/7 Help</a>
+                <a href="#"><i class="fa fa-power-off mr-2" aria-hidden="true"></i>Logout</a></div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!----------------------mob header end---------------------------------->
+    <section>
+        <!-- Section for Mobile Devices -->
+        <div class="container-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none " style="width: 1fr; background: #222;">
+            <!--Container -->
+            <nav class="navbar navbar-expand-sm d-flex justify-content-between  sticky-top row" style="background-color: #333;">
+                <div> <a class="navbar-brand " href="#">Chats</a></div>
+                <div class="dropdown">
+                    <div class="srch_bar">
+                        <div class="stylish-input-group">
+                            <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for names.." title="Type in a name" style="color: #fff;">
+                            <span class="input-group-addon">
+        <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+        </span> </div>
+                    </div>
+                    <!-- <a class="" href="#" id="dropdownThreeDots" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
           <i class="fas fa-ellipsis-v icons " ></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownThreeDots">
@@ -95,172 +127,271 @@ function closeNav() {
           <a class="dropdown-item" href="#">Make Friend </a>
           <a class="dropdown-item" href="#">Block</a>
         </div> -->
-      </div>
-    </nav> <!--NAV ROW End-->
+                </div>
+            </nav>
+            <!--NAV ROW End-->
 
 
-    <div class="row " style="height: 100vh; overflow-y: scroll;">
-      <div class="col-12 px-0" >
-        <!-- Nav tabs -->
-       
+            <div class="row " style="height: 100vh; overflow-y: scroll;">
+                <div class="col-12 px-0">
+                    <!-- Nav tabs -->
 
-        <!-- Tab panes -->
 
-          
+                    <!-- Tab panes -->
 
-          <div id="chats" class="container tab-pane active"><br>
-              <a href="singlemsg.html">
-                <div class="row border">
-        
-                  <div class="col-2">
-                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
-                  </div>
 
-                  <div class="col-8">                          
-                    <p> Abc Company <br>
-                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
-                    </p>
-                  </div>
 
-                  <div class="col-2">
-                    <p> 
-                      <span class="text-muted subtext"> 16:50</span>
-                      <br>
-                      <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
-                    </p>
-                  </div>
+                    <div id="chats" class="container tab-pane active"><br>
+                        <ul id="myUL" style="padding: 0%;margin: 0%;">
+                            <li>
+                                <a href="singlemsg.html">
+                                    <div class="row border">
+
+                                        <div class="col-2">
+                                            <i class="fas fa-user-circle fa-2x pl-0 mt-2" style="color: white;"></i>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <p style="color: white; font-weight: bold; font-size: 18px;"> Abc Company <br>
+                                                <span class="text-muted subtext">With supporting text below as a natural...</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <p>
+                                                <span class="text subtext" style="color: white;
+                      font-weight: bold; "> 16:50</span>
+                                                <br>
+                                                <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="singlemsg.html">
+                                    <div class="row border">
+                                        <div class="col-2">
+                                            <i class="fas fa-user-circle fa-2x pl-0 mt-2" style="color: white;"></i>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <p style="color: white; font-weight: bold; font-size: 18px;">  CDE Company <br>
+                                                <span class="text-muted subtext">With supporting text below as a natural...</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <p>
+                                                <span class="text subtext" style="color: white;
+                      font-weight: bold; "> 16:50</span>
+                                                <br>
+                                                <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="singlemsg.html">
+                                    <div class="row border">
+
+                                        <div class="col-2">
+                                            <i class="fas fa-user-circle fa-2x pl-0 mt-2" style="color: white;"></i>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <p style="color: white; font-weight: bold; font-size: 18px;"> Sheltown Company <br>
+                                                <span class="text-muted subtext">With supporting text below as a natural...</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <p>
+                                                <span class="text subtext" style="color: white;
+                      font-weight: bold; "> 16:50</span>
+                                                <br>
+                                                <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+
+                                <a href="singlemsg.html">
+                                    <div class="row border">
+
+                                        <div class="col-2">
+                                            <i class="fas fa-user-circle fa-2x pl-0 mt-2" style="color: white;"></i>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <p style="color: white; font-weight: bold; font-size: 18px;"> Acc Company <br>
+                                                <span class="text-muted subtext">With supporting text below as a natural...</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <p>
+                                                <span class="text subtext" style="color: white;
+                      font-weight: bold; "> 16:50</span>
+                                                <br>
+                                                <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
 
                 </div>
-              </a>
-
-              <a href="singlemsg.html">
-                <div class="row border">
-        
-                  <div class="col-2">
-                     <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
-                   
-                  </div>
-
-                  <div class="col-8">                          
-                    <p> Abc Company <br>
-                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content. </span>
-                    </p>
-                  </div>
-
-                  <div class="col-2">
-                    <p> 
-                      <span class="text-muted subtext"> 16:50</span>
-                      <br>
-                      <span style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
-                    </p>
-                  </div>
-
-                </div>
-              </a>
-              <a href="singlemsg.html">
-                <div class="row border">
-        
-                  <div class="col-2">
-                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
-                  </div>
-
-                  <div class="col-8">                          
-                    <p> Abc Company <br>
-                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
-                    </p>
-                  </div>
-
-                  <div class="col-2">
-                    <p> 
-                      <span class="text-muted subtext"> 16:50</span>
-                      <br>
-                      <span class="d-none" style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
-                    </p>
-                  </div>
-
-                </div>
-              </a>
-
-              <a href="singlemsg.html">
-                <div class="row border">
-        
-                  <div class="col-2">
-                    <i class="fas fa-user-circle fa-2x pl-0 mt-2" ></i>
-                  </div>
-
-                  <div class="col-8">                          
-                    <p> Abc Company <br>
-                      <span class="text-muted subtext">With supporting text below as a natural lead-in to additional content.</span>
-                    </p>
-                  </div>
-
-                  <div class="col-2">
-                    <p> 
-                      <span class="text-muted subtext"> 16:50</span>
-                      <br>
-                      <span class="d-none" style="color:yellowgreen; font-size: 1.5em;font-weight: bolder;"> &nbsp;*&nbsp;</span>
-                    </p>
-                  </div>
-
-                </div>
-              </a>
-          </div>
-
-         
+            </div>
+            <script>
+                function Search() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+            <!--col for Tabs End-->
         </div>
-      </div> <!--col for Tabs End-->     
-    </div> <!--row for Tabs End-->    
-  </div> <!--Container End-->
-</section> <!-- End Section of Mobile Devices -->
-<!-------footer for mob view start------------>
-<div class="mfooter">
-  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
-    <ul class=" d-flex justify-content-between "style="width: 100%;">
-          <li class="nav-item mx-2 text-center">
-            <a href="">
-              <div><i class="fa fa-home" aria-hidden="true"></i></div>
-              
-            </a> 
-           
-          </li>
-          <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
-            </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-            <!--  <a href=""class="plus">
-              <i class="fas fa-plus d-flex align-items-center justify-content-center p-2"></i>
-              </a>  -->
-              <i class="fa fa-plus mt-1" aria-hidden="true"></i>
-                
-          </li>
-           <li class="nav-item mx-2 text-center">
-            <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
-              </a>      
-          </li>
-          <li class="nav-item mx-2 text-center">
-             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
-           </div>      
-          </li>
+        <!--row for Tabs End-->
+        </div>
+        <!--Container End-->
+    </section>
+    <!-- End Section of Mobile Devices -->
+    <!--------modal start------>
+    <div class="modal fade" id="postModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="background: #111!important;color: white;border: 1px solid #ccc;">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create a post</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"style="color: white;">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span class=""><img src="images/boy.png"style="width:50px;height:auto;background: white;"class="rounded-circle"></span><span class="mx-3" style="font-size: 20px;">Priyanka</span>
+                        <span class="mx-1"><select class="py-1 px-1"style="background: #111;color: white;border-radius: 50px;">
+               <option>Public</option>
+               <option>Classmates only</option>
+               <option>Campus only</option>
+             </select></span>
+                    </div>
+                    <div class="my-2">
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="What do you want to talk about" style="background: transparent;border: none;color: white;"></textarea>
+                    </div>
+                    <div class="my-2">
+                        <button style="color: #1DA1F2;font-size: 18px; background-color: #111;" class="hashtag btn">Add Hashtag</button><span style="color: grey;" class="mx-4">Help the right people see your post</span>
+                    </div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <div class="icons">
+                            <a href=""><i class="fas fa-plus mx-2"></i></a>
+                            <a href="" type="file"><i class="fas fa-image mx-2"></i></a>
+                            <a href=""><i class="fab fa-youtube mx-2"></i></a>
+                            <a href=""><i class="fas fa-file-alt mx-2"></i></a>
+
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary px-4" style="border-radius: 50px;">Post</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-0">
+                    <div class="btns">
+                        <button class="btn m-2">Celebrate an occasion</button>
+                        <button class="btn m-2">Write a Petition</button>
+                        <button class="btn m-2">Invite a Friend</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#post").click(function() {
+                $("#postModal").modal('show');
+
+                $('.hashtag').click(function() {
+                    var areaValue = $('#textarea').val();
+                    $('#textarea').val(areaValue + '#');
+                });
+
+
+            })
+        });
+    </script>
+    <!--------modal end------>
+
+    <!-------footer for mob view start------------>
+    <div class="mfooter">
+        <nav class="navbar navbar-light " id="navbar1" style="background-color: #111;border-top: 1px solid #444;">
+            <ul class=" d-flex justify-content-between " style="width: 100%;">
+                <li class="nav-item mx-2 text-center">
+                    <a href="index.html">
+                        <div><i class="fa fa-home" aria-hidden="true"></i></div>
+
+                    </a>
+
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href=""><i class="fas fa-book" aria-hidden="true"></i>
+          </a>
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href="" class="plus" data-toggle="modal" data-target="#postModal">
+                        <i class="fas fa-plus"></i>
+                    </a>
+
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <a href="notification.html"><i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+                </li>
+                <li class="nav-item mx-2 text-center">
+                    <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle" style="width: 30px;height: auto;background: #fff;">
+                    </div>
+                </li>
 
 
 
-        </ul>
-  </nav>
-</div>
+            </ul>
+        </nav>
+    </div>
+
+    </script>
+    <!-------footer for mob view end------------>
 
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-              
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
