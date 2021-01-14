@@ -114,6 +114,15 @@ input[type="search"] {
   overflow-y: auto;
  
 }
+.autocomplete-items::-webkit-scrollbar {
+  width: 0.4em;
+
+}
+.autocomplete-items::-webkit-scrollbar-thumb {
+background-color:rgb(155, 148, 148);
+border-radius: 5px;
+border: none;
+}
 
 .autocomplete-items div {
   padding: 10px;
@@ -130,6 +139,7 @@ input[type="search"] {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+
 @media (max-width: 576px) {
   .autocomplete-items {
   right:0px !important;
