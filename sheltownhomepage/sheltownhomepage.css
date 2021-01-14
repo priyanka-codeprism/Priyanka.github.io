@@ -128,11 +128,7 @@ input[type="search"] {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
-/*@media (max-width: 576px)  {
-  .autocomplete-items {
-    width:80%;
-  }
-}*/
+
 /*---------------------------1st part end---------------------------------------------*/
 
 /*------------------------all media queries-----------------------------*/
