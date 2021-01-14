@@ -109,8 +109,8 @@ input[type="search"] {
   /*position the autocomplete items to be the same width as the container:*/
   top: 100%;
   left: 0;
-  right: 0;
-  width: 92%;
+  right:90px;
+ 
 }
 
 .autocomplete-items div {
@@ -128,11 +128,11 @@ input[type="search"] {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
-@media (max-width: 576px)  {
+/*@media (max-width: 576px)  {
   .autocomplete-items {
     width:80%;
   }
-}
+}*/
 /*---------------------------1st part end---------------------------------------------*/
 
 /*------------------------all media queries-----------------------------*/
