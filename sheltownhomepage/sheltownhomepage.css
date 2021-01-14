@@ -97,6 +97,12 @@ input[type="search"] {
   padding-bottom: 25px !important;
   border-right: none;
 }
+input[type="search"]:focus,input[type="search"]:hover,input[type="search"]:active {
+  outline: 0!important;
+  -webkit-appearance:none;
+    box-shadow: none !important;
+    /*border: #ced4da;*/
+}
 .btn.btn-search {
   padding-top: 13px !important;
   padding-bottom: 13px !important;
