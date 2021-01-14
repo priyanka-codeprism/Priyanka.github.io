@@ -130,6 +130,13 @@ input[type="search"] {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+@media (max-width: 576px) {
+  .autocomplete-items {
+  right:0px !important;
+  
+ 
+}
+}
 
 /*---------------------------1st part end---------------------------------------------*/
 
