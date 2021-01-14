@@ -95,6 +95,7 @@ html {
 input[type="search"] {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
+  border-right: none;
 }
 .btn.btn-search {
   padding-top: 13px !important;
