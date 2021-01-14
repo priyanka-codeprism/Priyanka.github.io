@@ -115,7 +115,7 @@ input[type="search"] {
  
 }
 .autocomplete-items::-webkit-scrollbar {
-  width: 0.4em;
+  width: 0.2em;
 
 }
 .autocomplete-items::-webkit-scrollbar-thumb {
