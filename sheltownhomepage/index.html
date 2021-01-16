@@ -323,9 +323,9 @@
             <div class=" input-group form-container autocomplete">
               <input class="form-control "id="myInput" type="search" placeholder="Search Locality Where You Want To Live...."
                 aria-label="Search" autocomplete="off">
-                <span class="cross "style="padding: 0px 30px;border: 1px solid #ced4da;border-left: none;font-size: 30px;display: none;"><a href="#">&times;</a></span>
+                <span class="clear "style=""onclick="clearAll()">&times;</span>
                 <span class="loader "style="display: none;"></span>
-                <!--<span class="cross1 "style="display: none;border: 1px solid #ced4da;border-left: none;font-size: 30px;"><img src="images/load.gif"style="width:auto;height:40px;"></span>-->
+                
               <span class="input-group-btn">
                 <button class="btn btn-outline-success btn-search" type="submit"><i
                     class="fas fa-search mr-1"></i>Search</button></span>
@@ -344,7 +344,11 @@
     });
   });
 });*/
+function clearAll(){
+  document.getElementById('myInput').value = '';
+  document.querySelector(".clear").style.display = "none";
 
+}
 function autocomplete(inp, arr) { 
   var currentFocus;
   inp.addEventListener("input", function(e) {
@@ -373,8 +377,8 @@ function autocomplete(inp, arr) {
   });
  
   inp.addEventListener("keydown", function(e) {
-    document.querySelector(".cross").style.display = "none";
-     document.querySelector(".loader").style.display = "block";
+    document.querySelector(".clear").style.display = "none";
+     //document.querySelector(".loader").style.display = "block";
       var x = document.getElementById(this.id + "autocomplete-list");
       if (x) x = x.getElementsByTagName("div");
       if (e.keyCode == 40) {
@@ -391,10 +395,11 @@ function autocomplete(inp, arr) {
       }
   });
   inp.addEventListener("keyup", function(e) {
-    document.querySelector(".loader").style.display = "none";
-    document.querySelector(".cross").style.display = "block";
+    //document.querySelector(".loader").style.display = "none";
+    var c = document.querySelector(".clear");
+    c.setAttribute("style", "display: block; border: 1px solid #80bdff;border-left: none;");
 
-  });
+ });
   function addActive(x) {
     if (!x) return false;
     removeActive(x);

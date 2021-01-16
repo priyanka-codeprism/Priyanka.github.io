@@ -146,6 +146,15 @@ border: none;
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+.clear{
+  padding-right: 30px;
+  border: 1px solid #ced4da;
+  border-left: none;
+  font-size: 30px;
+  cursor:pointer;
+  display: none;
+ 
+}
 .loader,
 .loader:before,
 .loader:after {
@@ -205,14 +214,6 @@ border: none;
 }
 
 
-@media (max-width: 576px) {
-  .autocomplete-items {
-  right:0px !important;
-  
- 
-}
-}
-
 /*---------------------------1st part end---------------------------------------------*/
 
 /*------------------------all media queries-----------------------------*/
@@ -264,6 +265,14 @@ border: none;
   .faimage img {
     height: 200px !important;
   }
+  .autocomplete-items {
+  right:0px !important;
+}
+.clear{
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
 }
 @media (max-width: 386px) and (min-width: 381px) {
   .img1 {
