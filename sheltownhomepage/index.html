@@ -396,8 +396,9 @@ function autocomplete(inp, arr) {
   });
   inp.addEventListener("keyup", function(e) {
     //document.querySelector(".loader").style.display = "none";
-    var c = document.querySelector(".clear");
-    c.setAttribute("style", "display: block; border: 1px solid #80bdff;border-left: none;");
+    document.querySelector(".clear").style.display = "block";
+    //var c = document.querySelector(".clear");
+    //c.setAttribute("style", "display: block; border: 1px solid #80bdff;border-left: none;");
 
  });
   function addActive(x) {
